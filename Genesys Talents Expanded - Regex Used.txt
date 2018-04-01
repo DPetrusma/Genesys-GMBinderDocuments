@@ -1,0 +1,44 @@
+F:GENESYS TALENTS EXPANDED.+?2018
+R: 
+
+F:\n
+R:<br/>
+
+F:(Tier:|Activation:|Ranked:)(.+?)\r\n
+R:**\1**\2<br/>\n
+
+F:(Sources?:.+?)\r\n(.+?\r\n)
+R:\1<br/>\n\n###### \2
+
+F: (◆){n}
+Use this to replace difficulty and ability dice with <span class='difficulty'>d</span> and <span class='ability'>d</span>
+
+F: (■){n}
+Use this to replace setback and boost dice with <span class='setback'>b</span> and <span class='boost'>b</span>
+
+F: (a{2,5}|h{1,5}|f{1,5}|s{1,5}|t{1,5}|d{1,5}) 
+R: <span class='symbols'>\1</span> 
+
+F: (a{2,5}|h{1,5}|f{1,5}|s{1,5}|t{1,5}|d{1,5})\.
+R: <span class='symbols'>\1</span>\.
+
+F:^(a{2,5}|h{1,5}|f{1,5}|s{1,5}|t{1,5}|d{1,5}) 
+R:<span class='symbols'>\1</span> 
+
+F:(\w)\r\n(\w)
+R:\1 \2
+
+F:(Your character must have purchased.+?to benefit from this talent\.)
+R:\*\1\*
+
+F:(..Sources?:.+?)
+R:<br/>\1
+
+F:(Simple|Average|Hard|Daunting|Impossible)( \(.+? check)
+R:**\1\2**
+
+F:TIER ([0-9]) \..+?[0-9]{1,2}
+R:\<span class\="index-letter"\>Tier \1\<\/span\>
+
+F:^(\w.+?) ?\..+? [0-9][0-9]?
+R:\<l\i>\<span\>\1\<\/span\>\<span\>\<\/span\>\<\/li\>
