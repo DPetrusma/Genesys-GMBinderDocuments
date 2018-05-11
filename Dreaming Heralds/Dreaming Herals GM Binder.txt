@@ -716,22 +716,22 @@ appropriate.
     </thead>
     <tbody>
         <tr> 
-            <td>1</td><td>1d4 wolves</td>
+            <td>1</td><td>1d4 wolves [D20 SRD Link](http://www.d20srd.org/srd/monsters/wolf.htm)</td>
         </tr>
         <tr> 
             <td>2</td><td>Briar Trap*</td>
         </tr>
         <tr> 
-            <td>3</td><td>Strange fetishes</td>
+            <td>3</td><td>Strange fetishes*</td>
         </tr>
         <tr> 
-            <td>4</td><td>1 brown bear</td>
+            <td>4</td><td>1 brown bear[D20 SRD Link](http://www.d20srd.org/srd/monsters/bearBrown.htmm)</td>
         </tr>
         <tr> 
-            <td>5</td><td>1d6 stirges</td>
+            <td>5</td><td>1d6 stirges[D20 SRD Link](http://www.d20srd.org/srd/monsters/stirge.htm)</td>
         </tr>
         <tr> 
-            <td>6</td><td>1d3 dire wolves</td>
+            <td>6</td><td>1d3 dire wolves[D20 SRD Link](http://www.d20srd.org/srd/monsters/direWolf.htm)</td>
         </tr>
     </tbody>
 </table>
