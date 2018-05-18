@@ -632,12 +632,12 @@
 Level 1 D&D character can start with +2 proficiency and +3 from characteristic.
 Passive checks are 10 + normal modifiers.
 DC to difficulty and passive skill required
-DC 5 = Rank 1/0
-DC 10 = Rank 2/1
-DC 15 = Rank 3/2
-DC 20 = Rank 4/3
-DC 25 = Rank 5/4
-DC 30 = Story point/Rank 5
+DC 5 = Rank 1/0 Easy
+DC 10 = Rank 2/1 Average
+DC 15 = Rank 3/2 Hard
+DC 20 = Rank 4/3 Daunting
+DC 25 = Rank 5/4 Formidable
+DC 30 = Story point/Rank 5 Impossible
 
 DC15 Wisdom (Medicine) = Rank 2 Medicine (Passive)
 DC15 Wisdom (Survival) = DDD Survival (Cunning)
@@ -732,7 +732,7 @@ A short walk down a dirt track leading west from the Baron’s Road heads to the
 
 Devek Yarl is being kept in a small bedroom on the upper storey of the farmhouse. He is a fair-haired freckled teenager with a deathly pallor. His heart rate and breathing are extremely slow, and his skin is cold to the touch. Watching over him are his tearful mother, Elista, and his eldest sister, Abella.
 
-A DC 15 Wisdom (Medicine) check reveals that he is in some kind of magical sleep. Nothing short of a remove curse spell, or an antidote, can waken him. Close inspection also reveals a slightly bruised pinprick on his left hand.
+A **Hard (<span class='difficulty'>ddd</span>) Medicine check** reveals that he is in some kind of magical sleep. Nothing short of a remove curse spell, or an antidote, can waken him. Close inspection also reveals a slightly bruised pinprick on his left hand.
 
 If questioned, his sister Abella knows some more:
 
@@ -911,7 +911,7 @@ The ceiling here is 40 ft. high.
 The door opens into a large dusty entrance hall. A wooden staircase with a polished banister curves upwards around the room. In the gloom of the ceiling above the centre of the room is a golden chandelier that glints in the dim light filtering in from outside. Passages lead from the chamber to the north, east and west.
 </div>
 
-Ask all the characters to make a **Hard (<span class='difficulty'>dd</span>) Vigilance check**. Anyone who succeeds notices that there is a large circular area in the centre of the room, directly beneath the chandelier, that is not covered by dust. That is because this area of floor is illusionary, and covers a pit trap. See Hazard below. A character able to detect magic will notice a faint aura of illusion magic.
+Ask all the characters to make a **Hard (<span class='difficulty'>ddd</span>) Vigilance check**. Anyone who succeeds notices that there is a large circular area in the centre of the room, directly beneath the chandelier, that is not covered by dust. That is because this area of floor is illusionary, and covers a pit trap. See Hazard below. A character able to detect magic will notice a faint aura of illusion magic.
 
 If the characters think to look up, it is possible to see to the top of the stairs here, where an undead Herald waits patiently. See [area 15](#the-dreaming-heralds-the-temple-of-ra-second-floor-15-top-of-the-stairs).
 
@@ -919,13 +919,13 @@ If the characters think to look up, it is possible to see to the top of the stai
 
 That is not the end of their trouble. The bottom of the pit contains a pressure plate that causes the chandelier to fall onto whoever is in the pit. A character falling into the pit or anyone who climbs down into the pit will trigger the plate. All characters in the put when the chandelier falls must make a **Hard (<span class='difficulty'>dd</span>) Coordination check**. If they fail they take 1d6 damage with a successful check reducing this by half.
 
-**Treasure:** If the chandelier falls, the precious trinkets that adorn it can be removed. See area 15 for details.
+**Treasure:** If the chandelier falls, the precious trinkets that adorn it can be removed. See [area 15](#the-dreaming-heralds-the-temple-of-ra-second-floor-15-top-of-the-stairs) for details.
 
 #### 3. Scriptorium
 
 Both the entrances to this chamber are guarded with magical warding, which appears as a transparent sparkling barrier. Above each entrance way is a small symbol etched in the stone – an eagle-like bird (in fact a phoenix) surrounded by a sunburst halo.
 
-Any living creature that touches the warding must succeed at a Charisma DC 15 check or take 1d3 damage and be knocked back 5 ft. A character can attempt this multiple times, but will take damage each time she fails her save. A character wearing one of the holy symbols worn by the Heralds is immune to this effect.
+Any living creature that touches the warding must succeed at a **Hard (<span class='difficulty'>ddd</span>) Presence check** or take 1d3 damage and be knocked back 5 ft. A character can attempt this multiple times, but will take damage each time she fails her save. A character wearing one of the holy symbols worn by the Heralds is immune to this effect.
 
 <div class="footnote">The Dreaming Heralds<BR />
 <p>GENESYS</p></div>
@@ -1047,11 +1047,11 @@ The glowing globes in the ceiling have a permanent light spell cast on them, tha
 The door to the room hangs ajar, and peering beyond you see a simple bedchamber containing a desk and 2 chairs. More arresting is the skeleton lying in the doorway, a rusted spear embedded in its ribcage.
 </div>
 
-The skeleton is a human female, one of the raised Heralds, who was ordered by Kaufra to open this chamber, but triggered the spear trap that had been placed here. Characters who inspect the trap may make an **Average (<span class='difficulty'>dd</span>) Knowledge (Adventuring) check** to determine how the trap works, and locate a small catch behind a loose brick in to the left. They may use this knowledge to automatically disable the identical spear trap in area 13. The chamber contains nothing of interest.
+The skeleton is a human female, one of the raised Heralds, who was ordered by Kaufra to open this chamber, but triggered the spear trap that had been placed here. Characters who inspect the trap may make an **Average (<span class='difficulty'>dd</span>) Knowledge (Adventuring) check** to determine how the trap works, and locate a small catch behind a loose brick in to the left. They may use this knowledge to automatically disable the identical spear trap in [area 13](#the-dreaming-heralds-the-temple-of-ra-second-floor-13-lesser-hierophants-quarters). The chamber contains nothing of interest.
 
 #### 13. Lesser Hierophant's Quarters
 
-The door to this chamber is trapped with a spear that stabs at any character that opens the door, requiring a successful **Hard (<span class='difficulty'>ddd</span>) Coordination check** save to avoid 1d6 points of damage. It can be disabled as described in area 12.
+The door to this chamber is trapped with a spear that stabs at any character that opens the door, requiring a successful **Hard (<span class='difficulty'>ddd</span>) Coordination check** save to avoid 1d6 points of damage. It can be disabled as described in [area 12](#the-dreaming-heralds-the-temple-of-ra-second-floor-12-hierophants-quarters).
  
 <div class='read'>
 This spacious yet spartan living chamber appears to have been undisturbed for centuries. Simple furniture - a bed, a desk and some shelves – has been arranged tidily around the room. Lying on the bed, eyes closed, hands clasped over its chest, is a human figure dressed in white robes.
@@ -1085,9 +1085,9 @@ The chest is trapped to prevent petty pilferers with a simple poison needle trap
 The staircase winds upwards, giving an better view of the chandelier. From here, you can see several small golden sun- and-stars trinkets dangling from it. More pressing, a humanoid figure dressed in white robes waits at the top of the stairs, staring blankly.
 </div>
 
-**Creature:** The creature is a Herald (see NPC summary) who has been tasked with guarding the second floor. It will not move unless attacked or a character approaches within 20 ft., at which point it proceeds to move directly to area 16 to alert the Heralds there.
+**Creature:** The creature is a Herald (see NPC summary) who has been tasked with guarding the second floor. It will not move unless attacked or a character approaches within 20 ft., at which point it proceeds to move directly to [area 16](#the-dreaming-heralds-the-temple-of-ra-second-floor-16-dormitory) to alert the Heralds there.
 
-**Treasure:** If the chandelier can be removed, either by triggering the pressure plate in area 1 or otherwise, the trinkets can be removed easily enough. There are 7 golden suns and stars worth 5 gp each.
+**Treasure:** If the chandelier can be removed, either by triggering the pressure plate in [area 1](#the-dreaming-heralds-the-temple-of-ra-first-floor-1-temple-entrance) or otherwise, the trinkets can be removed easily enough. There are 7 golden suns and stars worth 5 gp each.
 
 #### 16. Dormitory
  
@@ -1097,7 +1097,7 @@ Rows of simple wooden pallets arranged in this room, without sheets or mattresse
 
 Some of the unfortunate Heralds came here for their long sleep but were slain by Kaufra whilst they slept.
 
-**Creatures:** 4 Heralds lie here. It takes them 1 round to get up from their prone position and prepare to fight. If alerted either by intruders, the alarm in area 11 or the sentry at the top of the stairs, they rise and patrol the 2nd floor of the temple. They attack any intruders on sight, and pursue them to the exits from the temple.
+**Creatures:** 4 Heralds lie here. It takes them 1 round to get up from their prone position and prepare to fight. If alerted either by intruders, the alarm in [area 11](#the-dreaming-heralds-the-temple-of-ra-second-floor-11-herbalists-laboratory) or the sentry at the top of the stairs, they rise and patrol the 2nd floor of the temple. They attack any intruders on sight, and pursue them to the exits from the temple.
 
 <div class="footnote">The Dreaming Heralds<BR />
 <p>GENESYS</p></div>
@@ -1108,7 +1108,7 @@ Some of the unfortunate Heralds came here for their long sleep but were slain by
 
 #### 17. Vestry
 
-The door to the staircase leading up here is locked and can be opened with the key found in the office (area 14). A character attempting to pick the lock requires a **Daunting (<span class='difficulty'>dddd</span>) Skullduggery check**.
+The door to the staircase leading up here is locked and can be opened with the key found in the office ([area 14](#the-dreaming-heralds-the-temple-of-ra-second-floor-14-office-and-treasury)). A character attempting to pick the lock requires a **Daunting (<span class='difficulty'>dddd</span>) Skullduggery check**.
  
 <div class='read'>
 Stairs lead up into the darkness from here, covered with a trail of long-dried blood.
@@ -1120,7 +1120,7 @@ The spike trap that killed Kaufra protects the stairs leading up to this chamber
 From the top of the stairs, the room stretches left and right to two identical wings. Long wooden benches rest against the walls. In the centre of each wing stands a pillar, carved in the form of heron-headed Ra. A pile of empty vials, some smashed, is in the eastern corner of the right wing.
 </div>
 
-This is where the sleeping draught was imbibed. A character inspecting the vials notices a grey-green residue, similar to the poison on the needle found in area 1. It has long since lot its potency.
+This is where the sleeping draught was imbibed. A character inspecting the vials notices a grey-green residue, similar to the poison on the needle found in [area 1](#the-dreaming-heralds-the-temple-of-ra-first-floor-1-temple-entrance). It has long since lot its potency.
 
 \columnbreak
 
@@ -1135,9 +1135,9 @@ An eerie violet light flickers here, illuminating murals on the walls depicting 
 
 As the characters enter this chamber, necrotic energy flares from the shrine to each of lying forms, causing them to rise and defend the chamber.
 
-**Creatures:** Kaufra and 7 Heralds attack all who enter here. The Heralds will engage the nearest intruder in melee, whilst Kaufra protects the shrine, casting spells if required. He will bodily prevent any character from reaching the shrine, however if 2 or more characters engage him in melee he is unable to block others. It takes a full round action to destroy the shrine, sweeping the skull candles from the top is enough. Once destroyed, all the Heralds in the temple collapse and rapidly turn to dust. Kaufra is then freed and will attempt to escape the shrine fleeing blindly into the Woods unless stopped.
+**Creatures:** [Kaufra](#the-dreaming-heralds-the-temple-of-ra-npc-statistics-kaufra-nemesis) and 7 [Heralds](#the-dreaming-heralds-the-temple-of-ra-npc-statistics-herald-minion) attack all who enter here. The Heralds will engage the nearest intruder in melee, whilst Kaufra protects the shrine, casting spells if required. He will bodily prevent any character from reaching the shrine, however if 2 or more characters engage him in melee he is unable to block others. It takes a full round action to destroy the shrine, sweeping the skull candles from the top is enough. Once destroyed, all the Heralds in the temple collapse and rapidly turn to dust. Kaufra is then freed and will attempt to escape the shrine fleeing blindly into the Woods unless stopped.
 
-**Treasure:** Kaufra has little need for worldly wealth, however there is a silver bowl carved with symbols of Ra that is worth 160 gp kept on top of the shrine for ritual purposes, which can also be used for the manufacture of the antidote to the sleeping draught, as described in area 11. The other treasure is Kaufra’s ebony-handled mace, the Eye of Ra. *This is +1 mace with the gleaming property*. It is inscribed with Celestial runes that spell out holy prayers to Ra.
+**Treasure:** Kaufra has little need for worldly wealth, however there is a silver bowl carved with symbols of Ra that is worth 160 gp kept on top of the shrine for ritual purposes, which can also be used for the manufacture of the antidote to the sleeping draught, as described in [area 11](#the-dreaming-heralds-the-temple-of-ra-second-floor-11-herbalists-laboratory). The other treasure is Kaufra’s ebony-handled mace, the *Eye of Ra*. It is inscribed with Celestial runes that spell out holy prayers to Ra.
 
 <div class="footnote">The Dreaming Heralds<BR />
 <p>GENESYS</p></div>
@@ -1191,13 +1191,15 @@ This walkway was once to allow Heralds to glory in the sun of their god, but was
 * Bite (Brawl; Damage 4; Critical 4; Range [Engaged]; Vicious 1)
 * Claws (Brawl; Damage 3; Critical 5; Range [Engaged])
 
-Each Herald wears a holy symbol of Ra around its neck, showing a phoenix) surrounded by a halo. These are worth 5 gp each, and also allow characters to bypass the magical barriers to the scriptorium (area 3).
+Each Herald wears a holy symbol of Ra around its neck, showing a phoenix) surrounded by a halo. These are worth 5 gp each, and also allow characters to bypass the magical barriers to the scriptorium ([area 3](#the-dreaming-heralds-the-temple-of-ra-first-floor-3-scriptorium)).
 
 Note that the reanimation can be described by the GM as "a flare of necrotic energy reaching from the shrine to the Herald, through any intervening walls".
 
 \columnbreak
 
 #### Wolf (Minion)
+
+[The Journey To The Temple](#the-dreaming-heralds-author-michaelknife-the-journey-to-the-temple)
 
 <div class="archetype">
 <span class="bra">2</span>
@@ -1227,6 +1229,8 @@ Note that the reanimation can be described by the GM as "a flare of necrotic ene
 **Equipment:** Bite (Brawl, Damage 5; Critical 3; Range [Engaged]; Vicious 2)
 
 #### Dire Wolf (Minion)
+
+[The Journey To The Temple](#the-dreaming-heralds-author-michaelknife-the-journey-to-the-temple)
 
 <div class="archetype">
 <span class="bra">3</span>
@@ -1264,6 +1268,8 @@ Note that the reanimation can be described by the GM as "a flare of necrotic ene
 
 #### Brown Bear (Rival)
 
+[The Journey To The Temple](#the-dreaming-heralds-author-michaelknife-the-journey-to-the-temple)
+
 <div class="archetype">
 <span class="bra">4</span>
 <span class="agi">2</span>
@@ -1295,6 +1301,8 @@ Note that the reanimation can be described by the GM as "a flare of necrotic ene
 * Thick Hide (+2 Soak)
 
 #### Stirge (Minion)
+
+[The Journey To The Temple](#the-dreaming-heralds-author-michaelknife-the-journey-to-the-temple)
 
 <div class="archetype">
 <span class="bra">2</span>
@@ -1329,6 +1337,8 @@ Note that the reanimation can be described by the GM as "a flare of necrotic ene
 \columnbreak
 
 #### Giant Snake (Rival)
+
+[1. Temple Entrance](#the-dreaming-heralds-the-temple-of-ra-first-floor-1-temple-entrance)
 
 <div class="archetype">
 <span class="bra">2</span>
