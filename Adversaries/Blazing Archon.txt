@@ -101,7 +101,7 @@
 }
 
 .phb p { 
-    font-size: 9pt; 
+    font-size: 11pt; 
   	letter-spacing: -0.4px;
   	line-height:1.15em;
   	text-indent:0px !important;
@@ -115,7 +115,10 @@
   }
 
 .phb wide {clear:both;}
-.phb ul {list-style: none;}
+.phb ul {
+    list-style: none;
+    font-size: 11pt
+}
 .phb ul li::before {
     content: "•"; 
     color: #761213;
@@ -1493,6 +1496,118 @@ You can use markup to create tables just fine, normally, but you do need to buil
 </div>
 
 \pagebreakNum
+
 <style>
     #p5{ display: none;}
 </style>
+
+### Blazing Archon (Armoured)
+
+<div class="adversary">
+<span class="bra">3</span>
+<span class="agi">4</span>
+<span class="int">1</span>
+<span class="cun">2</span>
+<span class="wil">3</span>
+<span class="pre">1</span>
+<br>
+<span class="lblbra">BRAWN</span>
+<span class="lblagi">AGILITY</span>
+<span class="lblint">INTELLECT</span>
+<span class="lblcun">CUNNING</span>
+<span class="lblwil">WILLPOWER</span>
+<span class="lblpre">PRESENCE</span>
+<br>
+<span class="lblsoak">SOAK VALUE</span>
+<span class="lblwound">W. THRESHOLD</span>
+<span class="lblstrain">S. THRESHOLD</span>
+<span class="lbldef">M/R DEFENSE</span>
+<br>
+<span class="soak">6</span>
+<span class="wound">20</span>
+<span class="strain">12</span>
+<span class="mdef">1</span>
+<span class="rdef">1</span>
+</div>
+
+<br/>
+
+**Skills:**
+* Melee (Light) 3
+* Brawl 3
+* Discipline 3
+* Resilence 2
+* Vigilance 2
+* Cool 1
+* Perception 3
+ 
+**Talents:**
+* Finesse (The Blazing Archon may use Agility instead of Brawn when making Melee (Light) checks)
+* Adversary 2 (Upgrade all combat checks targeting the Blazing Archon by 2)
+
+**Abilities:**
+* Elemental Immunity Fire (Fire elementals are immune to damage from sources with Burn)
+* Elemental Weakness Water (Fire elementals suffer 5 wounds when doused in water)
+* Extra-planar stability (Archons cannot be Immobilised or knocked Prone)
+* Darkvision (When making skill checks, Elementals remove up to <span class="setback">bb</span> imposed due to darkness)
+* Flame Blast (Once per encounter, the Blazing Archon may select up to 3 target characters in short or engaged rnage and make an **Average (<span class="difficulty">dd</span>) Resilience check**. If the check succeeds, each affected character suffers 5 damage +1 for each <span class="symbols">s</span>. The Blazing Archon may spend <span class="symbols">aa</span> to cause the affected targets to suffer the same damage next turn)
+
+**Equipment:** Flaming Kilij (Melee [Light]; Damage 8; Critical 3; Range [Engaged]; Burn 2; Burn may be activated with <span class="symbols">a</span> instead of <span class="symbols">aa</span>)
+
+\columnbreak
+
+### Blazing Archon (Enraged)
+
+<div class="adversary">
+<span class="bra">3</span>
+<span class="agi">4</span>
+<span class="int">1</span>
+<span class="cun">2</span>
+<span class="wil">3</span>
+<span class="pre">1</span>
+<br>
+<span class="lblbra">BRAWN</span>
+<span class="lblagi">AGILITY</span>
+<span class="lblint">INTELLECT</span>
+<span class="lblcun">CUNNING</span>
+<span class="lblwil">WILLPOWER</span>
+<span class="lblpre">PRESENCE</span>
+<br>
+<span class="lblsoak">SOAK VALUE</span>
+<span class="lblwound">W. THRESHOLD</span>
+<span class="lblstrain">S. THRESHOLD</span>
+<span class="lbldef">M/R DEFENSE</span>
+<br>
+<span class="soak">6</span>
+<span class="wound">20</span>
+<span class="strain">12</span>
+<span class="mdef">1</span>
+<span class="rdef">1</span>
+</div>
+
+<br/>
+
+**Skills:**
+* Melee (Light) 3
+* Brawl 3
+* Discipline 3
+* Resilence 2
+* Vigilance 2
+* Cool 1
+* Perception 3
+ 
+**Talents:**
+* Finesse (The Blazing Archon may use Agility instead of Brawn when making Melee (Light) checks)
+* Adversary 2 (Upgrade all combat checks targeting the Blazing Archon by 2)
+
+**Abilities:**
+* Elemental Immunity Fire (Fire elementals are immune to damage from sources with Burn)
+* Elemental Weakness Water (Fire elementals suffer 5 wounds when doused in water)
+* Extra-planar stability (Archons cannot be Immobilised or knocked Prone)
+* Darkvision (When making skill checks, Elementals remove up to <span class="setback">bb</span> imposed due to darkness)
+* Flame Blast (Once per encounter, the Blazing Archon may select up to 3 target characters in short or engaged rnage and make an **Average (<span class="difficulty">dd</span>) Resilience check**. If the check succeeds, each affected character suffers 5 damage +1 for each <span class="symbols">s</span>. The Blazing Archon may spend <span class="symbols">aa</span> to cause the affected targets to suffer the same damage next turn)
+* Fire form (Engaged characters take damage as if from a Severity 3 fire. If the Archon moves from short to engaged, one character takes 3 damage and is on fire until put out, according to pg 111 GCRB)
+* Uncontrolled (Always attacks whoever damaged it last. Else, closest it can see. No allies)
+* Many-armed (The Blazing Archon adds <span class="boost">b</span> to Brawl checks and may use <span class="symbols">aa</span> to hit a second engaged character with the same damage as the first target)
+
+**Equipment:** Flaming touch (Brawl; Damage 5; Critical 3; Range [Engaged]; Burn 2; Burn may be activated with <span class="symbols">a</span> instead of <span class="symbols">aa</span>)
