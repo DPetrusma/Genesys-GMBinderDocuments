@@ -1099,6 +1099,8 @@ Rows of simple wooden pallets arranged in this room, without sheets or mattresse
 
 Some of the unfortunate Heralds came here for their long sleep but were slain by Kaufra whilst they slept.
 
+\columnbreak
+
 **Creatures:** 4 Heralds lie here. It takes them 1 round to get up from their prone position and prepare to fight. If alerted either by intruders, the alarm in [area 11](#the-dreaming-heralds-the-temple-of-ra-second-floor-11-herbalists-laboratory) or the sentry at the top of the stairs, they rise and patrol the 2nd floor of the temple. They attack any intruders on sight, and pursue them to the exits from the temple.
 
 <div class="footnote">The Dreaming Heralds<BR />
