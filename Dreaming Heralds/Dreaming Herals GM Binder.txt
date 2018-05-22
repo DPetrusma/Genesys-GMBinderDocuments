@@ -825,7 +825,7 @@ Unless otherwise noted, the temple has the following physical characteristics:
 
 **Walls:** Walls are made of stone.
 
-**External doors:** External doors are made of stone, and locked. They require an **Impossible (<span class='difficulty'>ddddd</span>) Brawn check** to break down, or a **Daunting (<span class='difficulty'>dddd</span>) Skullduggery check** to pick the lock.
+**External doors:** External doors are made of stone, and locked. They require an **Formidable (<span class='difficulty'>ddddd</span>) Brawn check** to break down, or a **Daunting (<span class='difficulty'>dddd</span>) Skullduggery check** to pick the lock.
 
 **Internal doors:** Internal doors are made of wood. They can be broken down with a **Average (<span class='difficulty'>dd</span>) Brawn check** Strength check. Some are locked where noted - to pick the lock requires a **Daunting (<span class='difficulty'>dddd</span>) Skullduggery check**.
 
@@ -915,9 +915,9 @@ Ask all the characters to make a **Hard (<span class='difficulty'>ddd</span>) Vi
 
 If the characters think to look up, it is possible to see to the top of the stairs here, where an undead Herald waits patiently. See [area 15](#the-dreaming-heralds-the-temple-of-ra-second-floor-15-top-of-the-stairs).
 
-**Hazard:** An illusionary patch of floor covers a 10 ft. deep circular pit in the middle of the room. The illusion is purely visual and objects pass straight through it. Any character who steps on to the illusion must make a **Hard (<span class='difficulty'>dd</span>) Coordination check** or fall into the pit, taking 1d6 damage.
+**Hazard:** An illusionary patch of floor covers a 10 ft. deep circular pit in the middle of the room. The illusion is purely visual and objects pass straight through it. Any character who steps on to the illusion must make a **Hard (<span class='difficulty'>ddd</span>) Coordination check** or fall into the pit, taking 1d6 damage.
 
-That is not the end of their trouble. The bottom of the pit contains a pressure plate that causes the chandelier to fall onto whoever is in the pit. A character falling into the pit or anyone who climbs down into the pit will trigger the plate. All characters in the put when the chandelier falls must make a **Hard (<span class='difficulty'>dd</span>) Coordination check**. If they fail they take 1d6 damage with a successful check reducing this by half.
+That is not the end of their trouble. The bottom of the pit contains a pressure plate that causes the chandelier to fall onto whoever is in the pit. A character falling into the pit or anyone who climbs down into the pit will trigger the plate. All characters in the put when the chandelier falls must make a **Hard (<span class='difficulty'>ddd</span>) Coordination check**. If they fail they take 1d6 damage with a successful check reducing this by half.
 
 **Treasure:** If the chandelier falls, the precious trinkets that adorn it can be removed. See [area 15](#the-dreaming-heralds-the-temple-of-ra-second-floor-15-top-of-the-stairs) for details.
 
@@ -925,12 +925,12 @@ That is not the end of their trouble. The bottom of the pit contains a pressure 
 
 Both the entrances to this chamber are guarded with magical warding, which appears as a transparent sparkling barrier. Above each entrance way is a small symbol etched in the stone – an eagle-like bird (in fact a phoenix) surrounded by a sunburst halo.
 
-Any living creature that touches the warding must succeed at a **Hard (<span class='difficulty'>ddd</span>) Presence check** or take 1d3 damage and be knocked back 5 ft. A character can attempt this multiple times, but will take damage each time she fails her save. A character wearing one of the holy symbols worn by the Heralds is immune to this effect.
-
 <div class="footnote">The Dreaming Heralds<BR />
 <p>GENESYS</p></div>
 
 \pagebreakNum
+
+Any living creature that touches the warding must succeed at a **Hard (<span class='difficulty'>ddd</span>) Presence check** or take 1d3 damage and be knocked back 5 ft. A character can attempt this multiple times, but will take damage each time she fails her save. A character wearing one of the holy symbols worn by the Heralds is immune to this effect.
 
 <div class='read'>
 Eight wooden desks and chairs are arranged neatly for work in this chamber, covered  in  undisturbed  thick  dust. Several alcoves reach from floor to ceiling around the walls and within each are shelves piled high with scrolls. </div>
@@ -946,6 +946,8 @@ Two long wooden tables dominate the centre of this room. Bowls, chopping boards 
 </div>
 
 Magically preserved food can be found on shelves in the alcoves, mostly grain and root vegetables. There is nothing else of value here.
+
+\columnbreak
 
 #### 5. Dining Area
  
@@ -1201,6 +1203,8 @@ Note that the reanimation can be described by the GM as "a flare of necrotic ene
 
 [The Journey To The Temple](#the-dreaming-heralds-author-michaelknife-the-journey-to-the-temple)
 
+Source: [Genesys Bestiary](https://community.fantasyflightgames.com/topic/265621-genesys-bestiary/)
+
 <div class="archetype">
 <span class="bra">2</span>
 <span class="agi">3</span>
@@ -1270,6 +1274,8 @@ Note that the reanimation can be described by the GM as "a flare of necrotic ene
 
 [The Journey To The Temple](#the-dreaming-heralds-author-michaelknife-the-journey-to-the-temple)
 
+Source: [Genesys Bestiary](https://community.fantasyflightgames.com/topic/265621-genesys-bestiary/)
+
 <div class="archetype">
 <span class="bra">4</span>
 <span class="agi">2</span>
@@ -1304,9 +1310,11 @@ Note that the reanimation can be described by the GM as "a flare of necrotic ene
 
 [The Journey To The Temple](#the-dreaming-heralds-author-michaelknife-the-journey-to-the-temple)
 
+Source: [Genesys Bestiary](https://community.fantasyflightgames.com/topic/265621-genesys-bestiary/)
+
 <div class="archetype">
-<span class="bra">2</span>
-<span class="agi">2</span>
+<span class="bra">1</span>
+<span class="agi">3</span>
 <span class="int">1</span>
 <span class="cun">2</span>
 <span class="wil">1</span>
@@ -1314,27 +1322,25 @@ Note that the reanimation can be described by the GM as "a flare of necrotic ene
 </div>
 
 <div class="minion">
-<span class="soak">3</span>
+<span class="soak">1</span>
 <span class="wound">3</span>
-<span class="mdef">0</span>
+<span class="mdef">1</span>
 <span class="rdef">1</span>
 </div>
 
 **Skills (Group Only):**
 * Brawl
 * Coordination
-* Perception
-* Vigilance
  
 **Talents:** None
 
-**Abilities:** Flyer (can fly, see page 100 of the GCRB)
+**Abilities:**
+* Flyer (can fly, see page 100 of the GCRB)
+* Silhouette 0
+* Attach (After a successful attack, a group of stirges may spend <span class="symbols">aa</span> to attach to their target. A character with stirges attached suffers 3 wounds at the start of their turn. As an action, they or an ally may make an **Average (<span class='difficulty'>dd</span>) Athletics check** to remove the attached stirges)
 
 **Equipment:**
-* Claws (Brawl; Damage 4; Critical 3; Range [Engaged])
-* Blood draining bite (Brawl, Damage 3; Critical 4; Range [Engaged]; Disorient 2)
-
-\columnbreak
+* Proboscis (Brawl; Damage 1; Critical 4; Range [Engaged]; Pierce 3; may spend <span class="symbols">aa</span> to inflict 2 additional wounds)
 
 #### Giant Snake (Rival)
 
@@ -1374,6 +1380,8 @@ Note that the reanimation can be described by the GM as "a flare of necrotic ene
 
 #### Kaufra (Nemesis)
 
+[18. Desecrated Sanctum](#the-dreaming-heralds-the-temple-of-ra-third-floor-18-desecrated-sanctum)
+
 <div class="archetype">
 <span class="bra">3</span>
 <span class="agi">2</span>
@@ -1406,7 +1414,7 @@ Note that the reanimation can be described by the GM as "a flare of necrotic ene
 **Abilities:** Darkvision (When making skill checks, Kaufra removes up to <span class="setback">bb</span> imposed due to darkness).
 
 **Spells:** Kaufra can choose any magic action allowed for the Divine skill, and may select additional spell effects, as normal. His favoured spells are:
-* Inflict Wounds (Choose one target at short range and make an **Easy (<span class='difficulty'>d</span>) Divine check**; if the check succeeds, this magic attach inflicts 3 damage +1 damage per uncancelled <span class='symbols'>s</span>, with )
+* Inflict Wounds (Choose one target at short range and make an **Average (<span class='difficulty'>dd</span>) Divine check**; if the check succeeds, this magic attach inflicts 3 damage +1 damage per uncancelled <span class='symbols'>s</span>, with a Critical rating of 2 and Vicious 2)
 * Cause Fear (Choose one target at short range and make a **Daunting (<span class='difficulty'>dddd</span>) Divine check**; if the check succeeds, until the end of the character’s next turn, the target decreases the ability of any skill checks they make by one; the target’s strain and wound thresholds are reduced 2)
 * Hold Person (Choose two targets within short range and make a **Average (<span class='difficulty'>dd</span>) Divine check**; if the check succeeds, Kaufra can choose one additional target for each <span class='symbols'>a</span> and until the end of the character’s next turn, all target decreases the ability of any skill checks they make by one; if an affected character suffers strain for any reason, they suffer 1 additional strain).
 
@@ -1424,11 +1432,12 @@ If the antidote is given to Devek, he very quickly recovers. Award characters th
 
 DMs wanting to build on some of the elements introduced here have several options. Firstly, characters that rescued Hemekef have a problem on their hands. The priest is hopelessly lost and confused in his new world, and would want to be reunited with his brethren in the church. Secondly, what of the Herald’s prophecy? Whilst most believe it to be bunk, perhaps there is an element of truth to it, and action must be taken to ensure that the way is cleared for the forces of light. Or maybe the priests were mistaken and the prophecy refers to some dark events that must be prevented. Finally, what other mysteries lurk within the green gloom of Merthington Woods?
 
-* Internal Links - Press Ctrl+Space to get a list of all of your document's headers. Press tab on one to insert the link into your document. ie: [Welcome to your next campaign binder!](#welcome-to-your-next-campaign-binder)
-
+<!--
 \pagebreak
 
 ## Basic Editor Shortcuts
+
+* Internal Links - Press Ctrl+Space to get a list of all of your document's headers. Press tab on one to insert the link into your document. ie: [Welcome to your next campaign binder!](#welcome-to-your-next-campaign-binder)
 
 ### Find and Replace
 * `Ctrl+F` or `Cmd+F` - Find
@@ -1448,4 +1457,4 @@ DMs wanting to build on some of the elements introduced here have several option
 
 ### And Much More...
 * `Ctrl+Alt+H` or `Cmd+Alt+H` Shows all Editor Shortcuts
-
+-->
