@@ -1,0 +1,1453 @@
+<style>
+ .phb code {
+     font-size:10px;
+     padding-top: 0px;
+     padding-bottom: 0px;
+ }
+/* IMPORTS */
+
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,600,600i,700');
+
+/* Main Background */
+  .phb { background-image: url("https://www.gmbinder.com/images/5s6VJkT.png"); text-align:justify; text-indent:0px;}
+
+/* Fonts */
+
+.phb {
+    font-family: 'Crimson Text', serif;
+}
+
+.phb h1, .phb h2, .phb h3, .phb h4, .phb h5, .phb h6 { 
+    letter-spacing: 0.6px;
+    font-family: 'Bebas Neue';
+}
+
+.phb h1{
+    color: #1ABEEF;
+    font-weight:400;
+    font-variant: uppercase;
+    font-size:42pt;
+    margin-bottom:30px;
+}
+
+/* Makes the bigger "first letter" in paragraphs under H1 and H2*/
+.phb h1 + p:first-letter, .phb h2 + p:first-letter  {
+    font-family: 'Crimson Text';
+    color: #326DA1;
+    font-size:32pt;    
+    line-height:95%;
+    margin-bottom:-9px;
+    margin-right:2px;
+    margin-top:-5px;
+    float:left;
+}
+
+.phb h2 {
+    color: #1ABEEF;
+    font-variant: small-caps;
+    display:table;
+    font-size:32pt;
+    font-weight:300;
+    column-span:all;
+}
+
+/* create the offset underline under h2s */
+.phb h2:after {
+    content:"";
+    border-bottom: 2px solid #CCCCCC;
+    display: table;
+    width:100%;
+    margin-top:-5px;
+    margin-left:20px;
+}
+
+.phb h3 {
+    color: #1ABEEF;
+    font-variant: small-caps;
+    font-size: 18pt;
+    font-weight:1;
+    border:none;
+}
+
+.phb h4 {
+    color: #ed9629;
+    font-variant: small-caps;
+    font-size: 16pt;
+    text-align:center;
+}
+
+.phb h5 {
+    color: #326DA1;
+    font-weight: 1;
+    font-variant: small-caps;
+    font-size: 16pt;
+}
+
+.phb h6 {
+    color: #ea702b;
+    font-variant: small-caps;
+    font-size: 16pt;
+    display: table;
+    border-bottom: 1px solid #ea702b;
+}
+
+.phb p { 
+    font-size: 15px; 
+  	letter-spacing: -0.4px;
+  	line-height:1.15em;
+  	text-indent:0px !important;
+  	font-weight:400;
+  	padding-bottom:1px;
+  	column-fill:balance;
+  }
+  
+.phb p + p {
+    margin-top:0px;  
+  }
+
+.phb wide {clear:both;}
+.phb ul {
+    list-style: none;
+    font-family: 'Crimson Text';
+    font-size: 11pt
+}
+.phb ul li::before {
+    content: "•"; 
+    color: #F69337;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+
+/* Tables */
+.phb td {
+    font-family: 'Crimson Text', serif;
+    font-size:8pt;
+    font-weight:400;
+    text-align:left;
+}
+.phb td, th {border: 1px solid gray;}
+.phb table {overflow:auto;}
+.phb table tr:nth-child(odd) td {background-color: #E0F4FC;}
+.phb table thead th {
+    color: white; 
+    background-color: #F69337; 
+  	padding-top: 0.3em;
+    padding-left: 0.5em;
+    text-transform: uppercase;
+}
+.phb table tbody tr td {  padding: 0.5em;}
+.phb table thead {display: table-row-group; }
+.phb table .subheader td {
+    color:white;
+    text-transform:uppercase;
+    padding-bottom:2px;
+    background-color: #2D4864 !important;
+    font-size:10pt;
+    font-weight:bold;
+    }
+
+/* Genesys Notes */
+
+.phb .note
+{
+    position:relative;
+    color: white;
+    background-color: #2D4864;
+    border-radius: 0px 0px 30px 0px;
+    padding: 10px 20px;  
+    font-family: 'Crimson Text';
+    letter-spacing: 0.5px;
+    font-size:12ptx;
+    font-weight:600
+    }    
+
+.phb .note:before {
+    position:absolute;
+    content:" ";
+    border-style:solid;
+    border-width:1px;
+    -moz-border-image: -moz-linear-gradient(-45deg, rgba(219,219,219,.7) 0%, rgba(219,219,219,0) 50%, rgba(219,219,219,0) 100%);
+    -webkit-border-image: -webkit-linear-gradient(-45deg, rgba(219,219,219,.7) 0%,rgba(219,219,219,0) 50%,rgba(219,219,219,0) 100%);
+    border-image: linear-gradient(135deg, rgba(219,219,219,.7) 0%,rgba(219,219,219,0) 50%,rgba(219,219,219,0) 100%); 
+    left:4px;
+    top:4px;
+    right:4px;
+    bottom:4px;
+    border-image-slice:1;
+}
+
+.phb .note h5 {color:white;}
+.phb .note td {color:black;}
+.phb .note table tr:nth-child(even) td { background-color: #ffffff;}
+  
+  
+/* Example Block */
+
+.phb .example
+{
+    position:relative;
+    color: black;
+    background: rgba(204, 203, 199, 0.4);
+    border-radius: 0px 0px 30px 0px;
+    padding: 14px 20px;
+}
+
+/* Read-aloud */
+
+.phb .read {
+    display:block;
+    font-family: 'Crimson Text';
+    font-size:10pt;
+    font-style: italic;
+    color: rgb(230,0,0);
+    border: 1px dotted rgb(230,0,0);
+    border-radius:30px;
+    padding:15px;
+    position:relative;
+}
+
+.phb .read:before {
+    content:'';
+    position:absolute;
+    display:block;
+    border: 1px dotted rgb(230,0,0);
+    border-radius:30px;
+    left:2px;
+    top:2px;
+    right:2px;
+    bottom:2px;
+    }
+
+/* Footer */
+.phb .pageNumber { color: #000000}
+.phb .footnote { color: #000000 }
+.phb:nth-child(odd) .pageNumber { color: black;
+	right: 40px;
+	bottom: 52px;
+	width: 50px;
+	text-align: center;
+    font-family: 'Bebas Neue';
+    font-size:11pt;
+    font-weight:bold;
+}
+
+.phb:nth-child(even) .pageNumber { color: black;
+	left: 40px;
+	bottom: 52px;
+	width: 50px;
+    text-align: center;
+    font-family: 'Bebas Neue';
+    font-size:11pt;
+    font-weight:bold;
+}
+
+.phb .footnote { color: black 
+    font-family: 'Bebas Neue' 
+    font-weight: bold 
+    vertical-align: center;
+    padding-top:11px;
+}
+
+.phb:nth-child(even) .footnote {border-left:2px solid black;
+    padding-left:6px;
+}
+
+.phb:nth-child(odd) .footnote {border-right:2px solid black;
+    padding-right:6px;
+}
+
+.phb:after { 
+    background-image:url("none") 
+}
+
+
+
+/* Dice and Symbols */
+
+@font-face {
+  font-family: 'Genesys';
+  src: local('Genesys');
+}
+.phb .symbols {
+    font-family: Genesys;
+}
+
+@font-face {
+  font-family: 'Genesys1';
+  src: local('EotE Symbol');
+}
+.phb .dice {
+    font-family: Genesys1;
+}
+
+
+.phb .setback {
+    font-family: Genesys1;
+    color: black;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+.phb .note .setback, .phb .note .boost, .phb .note .challenge, .phb .note .proficiency, .phb .note .difficulty, .phb .note .ability {
+    text-shadow: -1px 0 #ffffff,0 1px #ffffff,1px 0 #ffffff,0 -1px #ffffff;
+}
+
+.phb .note  td > .setback, .phb .note td > .boost, .phb .note td > .challenge, .phb .note td > .proficiency, .phb .note td >  .difficulty, .phb .note td.ability {
+    text-shadow:  -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+.phb .boost {
+    font-family: Genesys1;
+    color: #76CDDB;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+.phb .challenge {
+    font-family: Genesys1;
+    color: #751317;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+.phb .proficiency {
+    font-family: Genesys1;
+    color: #FEF035;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+.phb .difficulty {
+    font-family: Genesys1;
+    color: #52287E;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+.phb .ability {
+    font-family: Genesys1;
+    color: #46AC4E;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+
+/* Archetypes */
+
+.phb .archetype {
+    background-image: url('https://www.gmbinder.com/images/wk1XTwj.png');
+    height:62px;
+    width:329px;
+    background-size:100%;
+    font-family: 'Bebas Neue';
+    font-size:14pt;
+
+    }
+
+.phb .archetype .bra {
+    position:relative;
+    left:14px;
+    top:6px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+}
+
+.phb .archetype .agi {
+    position:relative;
+    left:42px;
+    top:6px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+.phb .archetype .int {
+    position:relative;
+    left:68px;
+    top:6px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+
+.phb .archetype .cun {
+    position:relative;
+    left:95px;
+    top:6px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+.phb .archetype .wil {
+    position:relative;
+    left:122px;
+    top:6px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+.phb .archetype .pre {
+    position:relative;
+    left:148px;
+    top:6px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+/* Adversaries */
+
+.phb .adversary {
+    background-image: url('https://www.gmbinder.com/images/ks1JaPU.png');
+    height:47px;
+    width:329px;
+    background-position: -3px 0px;
+    background-size:102%;
+    font-family: 'Bebas Neue';
+    font-size:14pt;
+}
+
+.phb .adversary .soak {
+    position:relative;
+    left:26px;
+    top:13px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+.phb .adversary .wound {
+    position:relative;
+    left:79px;
+    top:13px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+.phb .adversary .strain {
+    position:relative;
+    left:135px;
+    top:13px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+.phb .adversary .mdef {
+    position:relative;
+    left:176px;
+    top:13px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+.phb .adversary .rdef {
+    position:relative;
+    left:175px;
+    top:13px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+
+/* MINION STAT BLOCK */
+
+.phb .minion {
+    background-image: url('https://www.gmbinder.com/images/K1aEwZa.png');
+    height:63px;
+    width:329px;
+    background-position: 42px 0px;
+    background-repeat:no-repeat;
+    background-size:75%;
+    font-family: 'Bebas Neue';
+    font-size:14pt;
+}
+
+.phb .minion .soak {
+    position:relative;
+    left:71px;
+    top:13px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+
+.phb .minion .wound {
+    position:relative;
+    left:125px;
+    top:13px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+
+.phb .minion .mdef {
+    position:relative;
+    left:165px;
+    top:13px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+.phb .minion .rdef {
+    position:relative;
+    left:165px;
+    top:13px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+
+/* Vehicles */
+
+.phb .vehicle {
+    background-image: url('https://www.gmbinder.com/images/JEgri2b.png');
+    height:80px;
+    width:329px;
+    background-size: 100%;
+    background-repeat:no-repeat;
+    font-family: 'Bebas Neue';
+    font-size:14pt;
+}
+
+
+.phb .vehicle .sil {
+    position:relative;
+    left:14px;
+    top:6px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+}
+
+.phb .vehicle .speed {
+    position:relative;
+    left:41px;
+    top:6px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+}
+
+.phb .vehicle .hand {
+    position:relative;
+    left:67px;
+    top:6px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+}
+
+.phb .vehicle .armor {
+    position:relative;
+    left:107px;
+    top:12px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+}
+.phb .vehicle .def {
+    position:relative;
+    left:163px;
+    top:12px;
+    text-align:center;
+    display:inline-block;
+    width:25px;    
+}
+.phb .vehicle .ht {
+    position:relative;
+    left:53px;
+    top:53px;
+    text-align:center;
+    display:inline-block;
+    width:25px;    
+}
+
+.phb .vehicle .ss {
+    position:relative;
+    left:107px;
+    top:53px;
+    text-align:center;
+    display:inline-block;
+    width:25px;    
+}
+
+/*Index*/
+
+.phb .index-letter {
+    color:rgb(118,18,19);
+    font-size:24pt;font-weight:bold; 
+    font-family:'Bebas Neue';
+    line-height:1.1em;
+}
+
+.phb .index {
+    list-style:none;
+    padding:0;
+    overflow-x:hidden;
+    max-width:329px;
+}
+
+.phb .index li::before {
+            content: ""; }
+            
+.phb .index li {
+    
+    display:flex;
+}
+            
+.phb .index li span:first-child {
+    margin-right:0.2em;
+    order:1;
+}
+            
+.phb .index li::after {
+  content: "";
+  border-bottom: 1px dotted;
+  flex-grow: 1;
+  order: 2;
+  position:relative;
+  top:-5px
+}
+
+.phb .index span + span {
+    order:3;
+    margin-left:0.2em;
+    }
+    
+/* NON BLENDED IMAGE BORDER */
+    
+.phb .non-blended {
+    padding:10px;
+    border-width:2px;
+    border-style:solid;
+    border-image:linear-gradient(135deg, rgba(230,0,0,1) 0%,rgba(230,0,0,0.01) 99%,rgba(230,0,0,0) 100%);
+    -moz-border-image:-moz-linear-gradient(-45deg, rgba(230,0,0,1) 0%, rgba(230,0,0,0.01) 99%, rgba(230,0,0,0) 100%); -webkit-border-image:-webkit-linear-gradient(-45deg, rgba(230,0,0,1) 0%,rgba(230,0,0,0.01) 99%,rgba(230,0,0,0) 100%);
+    border-image-slice: 1;
+}
+
+
+</style>
+
+# The Dreaming Heralds
+
+#### Source: [EN World](http://www.enworld.org/forum/rpgdownloads.php?do=download&downloadid=1008)
+#### Author: [MichaelKnife](http://www.enworld.org/forum/member.php?68452-MichaelKnife)
+
+<!--
+
+### Notes for Conversion
+Level 1 D&D character can start with +2 proficiency and +3 from characteristic.
+Passive checks are 10 + normal modifiers.
+DC to difficulty and passive skill required
+DC 5 = Rank 1/0 Easy
+DC 10 = Rank 2/1 Average
+DC 15 = Rank 3/2 Hard
+DC 20 = Rank 4/3 Daunting
+DC 25 = Rank 5/4 Formidable
+DC 30 = Story point/Rank 5 Impossible
+
+DC15 Wisdom (Medicine) = Rank 2 Medicine (Passive)
+DC15 Wisdom (Survival) = DDD Survival (Cunning)
+DC10 Strength = 2 Brawn 
+DC15 Strength = 3 Brawn (Passive?)
+DC20 Strength = 4 Brawn (Passive?)
+DC30 Strength = Impossible
+DC10 Dexterity = 2 Agility
+DC20 Dexterity for the lock/traps = DDDD Skulduggery (Agility)
+DC15 Intelligence (Search) = DDD Perception (Cunning)
+DC20 Intelligence (Religion) = Rank 3 Knowledge (Intelligence)
+DC20 Intelligence (Nature) = Rank 3 Medicine/Knowledge (Intelligence)
+DC15 Wisdom (Perception) = Rank 2 Vigilance (Willpower)
+
+-->
+
+### Preparation
+
+The Dreaming Heralds is a short D&D Next adventure suitable for 4-6 1 st level characters, which has been converted to work with the Genesys RPG by Fantasy Flight Games, for a party of 4-6 starting characters. It would work well as a side quest or introductory adventure for new characters. A rogue or other character skilled in dealing with traps would be useful to have, but is not essential. They are assumed to begin the adventure as travelling companions heading down the Baron’s Road.
+
+Whilst the adventure can be played as written, the DMs who wish to convert for their campaign mythology should change place names (the Baron’s Road, Merthington Woods) and use an appropriate sun god in place of Ra (e.g. Pelor for Greyhawk, Lathander for Forgotten Realms etc.). At several points throughout the adventure the characters find symbols of Ra – these should also be changed as appropriate for the relevant deity.
+
+Boxed text is to be read aloud to players.
+
+### Adventure Summary
+Whilst travelling down a lonely stretch of highway called the Baron’s Road, the characters meet Abel Yarl, a farmer. He pleads with them to help him find out what has happened to his son, Devek, who has fallen into a death-like slumber. After some investigation at the Yarl farm, the characters proceed into the woods to find a mysterious temple of Ra. Once there, they will need to brave the traps and defences of the temple to find an antidote that can save Devek.
+
+#### Adventure Background
+
+For as long as anyone can remember, the ancient oaks and elms of Merthington Woods have stood on the eastern edge of the Baron’s Road. Desolate and lonely, the Woods are shunned by the insular farming communities that live along the road, who tell stories of lost travellers being ripped apart by rabid wolves, and worse. Few brave souls enter the trees to test the truthfulness of these tales.
+
+110 years ago, however, a group of worshippers of the sun god Ra found a use for these rumours. Calling themselves the Heralds of the Morning, the sect cleaved to a mostly- forgotten prophecy of rebirth, in which an avatar of Ra was destined to enter the world and rout the forces of darkness. Using divinatory tools, the sect’s astrologer- mathematicians precisely calculated the date of this miracle, called the New Morning, to be some 116 years in the future (i.e. 6 years from the current time). This posed a problem for the human members of the sect, who would be dead by the time of the New Morning, and thus unable to rejoice in the arrival of their deity. The sect’s leaders came up with a plan. They would entomb themselves in a remote temple, and enter a magical sleep from which they would awaken at the correct moment to welcome Ra’s avatar to the world.
+
+The Heralds built a temple for themselves deep in Merthington Woods, hoping that the reputation of the forest would prevent passers-by disturbing their slumber. After making preparations for the New Morning, they surrounded their resting place with a series of traps to deter intruders. Then during a complex ritual, the faithful drank a concoction brewed by the sect’s herbalist, plunging them into deep sleep.
+
+Unfortunately, one of the Heralds was a traitor. Kaufra, a junior priest in the hierarchy with the rank of Initiate, was secretly an agent of evil. Long sworn to the gods of darkness and betrayal, he mimed drinking the sleeping draught and waited. Once the faithful had fallen unconscious, he proceeded to callously murder them, dedicating his slayings to the dark powers. And yet fate saw to it that his evil deeds did not go unrewarded. In a revel of unholy triumph, he stumbled into one of the traps that the Heralds had laid, and, impaled on iron spikes, he bled to death.
+
+Such foul behaviour and misadventure did not go unnoticed by the powers of evil. As a reward for his treachery, Kaufra was a raised as a fell undead creature to haunt the temple for eternity. He retains some memory of his former life, and spends his time in endless supplication to his dark gods. During the preceding century, he has raised many of the strangely preserved corpses of the other Heralds as his undead minions. Bound by magic to the temple, Kaufra despairs at his eternal imprisonment and longs for release into the world outside.
+
+<div class="footnote">The Dreaming Heralds<BR />
+<p>GENESYS</p></div>
+
+\pagebreakNum
+
+The temple has remained undiscovered in the woods since then, entangled in liana, until recently chanced upon by a teenager from one of the local farming communities. Despite many warnings from his parents, Devek Yarl would spend his free hours wandering in Merthington Woods, occasionally taking his younger sister Abella with him. One day, whilst alone, he came across the old temple. Unable to read the warnings on the front door, he triggered a trap when he tried to enter. A poison needle 3 stabbed his finger, covered in the same concoction the Heralds had drunk. Realizing he was injured, he somehow managed to stagger back to his parents’ farm, where he instantly collapsed into a coma.
+
+This was 3 days ago, and since then his parents have been fretful over his condition. Unwilling to abandon his family for too long to seek help, Devek’s father Abel has camped out on the Baron’s Road, and hopes to flag down aid from a rare wanderer.
+
+<div class='read'>
+You are travelling south along the
+Baron’s Road, a lonely stretch of
+highway bordered by farmland to the
+west and a dark wood to the east.
+Around mid-morning, a middle-aged
+human man dressed in simple workaday
+clothes steps out to the middle of the
+road. “Strangers, please help me. My
+son is sick…""
+</div>
+
+### Introduction
+
+This is Abel Yarl, the patriarch of a poor farming family who work a smallholding close to the Road. He lives with his wife, Elista, and their five children, Devek (13), Abella (12), Emiless (8), Torren (6) and little Wenderly (3). He is desperate to find help for his son’s condition, but is afraid to leave his family alone to make the journey to the nearest town to find a cleric.
+
+If the characters stop and talk to him, he reveals the following information:
+
+*Who are you?*
+
+“My name is Abel Yarl, I have a farm nearby.”
+
+*Where is your son?*
+
+“He is back at my farm, half a mile from here.”
+
+*What are you doing out here?*
+
+“I am looking for some help, a cleric or a healer to help my son.”
+
+\columnbreak
+
+*What happened to your son?*
+
+“He came out of Merthington Woods some two days ago, stumbling around and white as a ghost. He wasn’t making any sense, and as soon as we got him home, he collapsed and he hasn’t woken since.”
+
+*What was he doing in the Woods?*
+
+“Him and his sister were always going in there on dares, no matter what we told them. Them woods ain’t safe, never have been.”
+
+### The Farm
+
+A short walk down a dirt track leading west from the Baron’s Road heads to the Yarl Farm. It consists of a run-down stone farmhouse and several large wooden barns. The farm has seen better days, and yet the ground here is fertile enough for the family to do reasonably well, growing barley and wheat and keeping a small herd of sheep.
+
+Devek Yarl is being kept in a small bedroom on the upper storey of the farmhouse. He is a fair-haired freckled teenager with a deathly pallor. His heart rate and breathing are extremely slow, and his skin is cold to the touch. Watching over him are his tearful mother, Elista, and his eldest sister, Abella.
+
+A **Hard (<span class='difficulty'>ddd</span>) Medicine check** reveals that he is in some kind of magical sleep. Nothing short of a remove curse spell, or an antidote, can waken him. Close inspection also reveals a slightly bruised pinprick on his left hand.
+
+If questioned, his sister Abella knows some more:
+
+*Where did Devek go?*
+
+“He loved the Woods, and kept going deeper and deeper… I was too scared to follow him, but he told me has found a ruined building deeper in the woods.”
+
+*Where is the building?*
+
+“He told me his headed due east until he hit a stream, and then followed that north.”
+
+*What do you know about the building?*
+
+“Not much… he said it was made of stone, and had strange markings on the door. He brought this back.”
+
+Abella pulls out a small brick – inscribed on it is a sun disk and coiled snake symbol of Ra, recognizable as such to any character with a passing knowledge of religion.
+
+<div class="footnote">The Dreaming Heralds<BR />
+<p>GENESYS</p></div>
+
+\pagebreakNum
+
+*What do you know about the Woods?*
+
+"I don’t like them, they scare me. One time I saw a snake in there, as long as my arm. Jonquil told me he saw an owlbear once too..."
+
+If the characters need further persuading to investigate, Abel Yarl can offer them some money. The family fortune is pitiful, amounts to 5 gp and 26 sp, but they are desperate enough to offer everything they have.
+
+### The Journey To The Temple
+
+It is 3 miles to the temple, following Abella’s directions. There are no manmade trails through the forest, so travel speed is halved (thus will take 2 hours at a fast pace, 3 at a moderate pace or 6 at a slow pace). Impress upon the players the quiet loneliness of the woods, the lack of birdsong and the dusky gloom that covers the trees.
+
+Characters who look for tracks may make a **Hard (<span class='difficulty'>ddd</span>) Survival check**. Success indicates they find several sets of human footprints going back and forth on the same path – these are Devek’s tracks. At some point they branch off from Abella’s directions to a shortcut Devek knew. Characters who follow these tracks take 1 mile off the journey.
+
+For every hour of travel, roll a d20. On a result of 20 a random encounter occurs. If so, roll 1d6 on the following table to determine what the characters encounter. Alternately, you may choose an encounter you feel is appropriate.
+
+[Wolf (Minion)](#the-dreaming-heralds-the-temple-of-ra-npc-statistics-wolf-minion) <br/>
+[Brown Bear (Rival)](#the-dreaming-heralds-the-temple-of-ra-npc-statistics-brown-bear-rival) <br/>
+[Stirge (Minion)](#the-dreaming-heralds-the-temple-of-ra-npc-statistics-stirge-minion) <br/>
+[Dire Wolf (Minion)](#the-dreaming-heralds-the-temple-of-ra-npc-statistics-dire-wolf-minion)
+
+<table>
+  <thead>
+    <tr>
+      <th>d6</th><th>Encounter</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr> 
+      <td>1</td><td>1d4 wolves</td>
+    </tr>
+    <tr> 
+      <td>2</td><td>Briar Trap*</td>
+    </tr>
+    <tr> 
+      <td>3</td><td>Strange fetishes*</td>
+    </tr>
+    <tr> 
+      <td>4</td><td>1 brown bear</td>
+    </tr>
+    <tr> 
+      <td>5</td><td>1d6 stirges</td>
+    </tr>
+    <tr> 
+      <td>6</td><td>1d3 dire wolves</td>
+    </tr>
+  </tbody>
+</table>
+
+For creature encounters, characters travelling at a slow or moderate pace should be able to spot the creatures before they are seen, and should have a chance to avoid an encounter. Most of the animals of Merthington Woods are not interested in preying on humanoids, but will attack if cornered or desperate. Encounters marked with an asterisk are described below.
+
+**Briar trap:** Randomly select one character. Whilst walking, he accidentally snags his foot in a briar, and must make an **Average (<span class='difficulty'>dd</span>) Coordination check** to avoid stumbling. He gains <span class='boost'>b</span> on this save if he is keeping watch or searching whilst travelling. Failure indicates he twists their ankle and takes 1 point of damage. His speed is reduced by 10 ft., until he is able to take a long rest.
+
+**Strange fetishes:** Each character may make a **Hard (<span class='difficulty'>ddd</span>) Vigilance check**, with <span class='boost'>b</span> if she is searching. Any who succeed notice strange humanoid fetishes carved from twigs dangling in one particular grove of trees. Good-aligned characters get an uneasy feeling around them. No signs of their makers exist. It is up to the DM to pursue this mystery in later adventures if desired.
+
+<div class="footnote">The Dreaming Heralds<BR />
+<p>GENESYS</p></div>
+
+\pagebreakNum
+
+## The Temple of Ra
+
+The temple sits in an overgrown clearing in the woods. It is three stories high, and covered in vines. The building is squat and functional, and rises to a stone dome. The only markings revealing its religious dedication are on the doors to the outside.
+
+There are walkways around the second and third floors. A **Hard (<span class='difficulty'>ddd</span>) Athletics check** is required to climb up each floor. The walkway to the second floor is railed and characters would need to bend the bars (**Daunting (<span class='difficulty'>dddd</span>) Brawn check**) to gain access to it. A Small character could squeeze between the bars with a **Average (<span class='difficulty'>dd</span>) Coordination check**. The third floor walkway is open to the elements.
+
+Unless otherwise noted, the temple has the following physical characteristics:
+
+**Ceiling:** The ceiling is 20 ft. high.
+
+**Walls:** Walls are made of stone.
+
+**External doors:** External doors are made of stone, and locked. They require an **Impossible (<span class='difficulty'>ddddd</span>) Brawn check** to break down, or a **Daunting (<span class='difficulty'>dddd</span>) Skullduggery check** to pick the lock.
+
+**Internal doors:** Internal doors are made of wood. They can be broken down with a **Average (<span class='difficulty'>dd</span>) Brawn check** Strength check. Some are locked where noted - to pick the lock requires a **Daunting (<span class='difficulty'>dddd</span>) Skullduggery check**.
+
+**Lighting:** The temple is in darkness.
+
+**Windows:** There are several mildewed windows to the temple on the second floor, which are trivial to break broken. 
+
+There are no random encounters in the temple.
+
+**Traps**
+
+The Heralds set many mechanical traps in their temple, as defence against intruders. Unless otherwise noted, characters attempting to find traps (e.g. by examining doors) can locate them with an **Hard (<span class='difficulty'>ddd</span>) Perception check**. Attempts to disable traps can be made with a **Daunting (<span class='difficulty'>dddd</span>) Skullduggery check**. Checks to disable that fail with threat trigger the trap.
+
+\columnbreak
+
+#### NPC Summary
+
+##### Kaufra
+
+Once a lowly Initiate in the hierarchy of the Heralds of Morning, Kaufra has spent the last century entombed in the temple as an undead shadow of his former self, pleading with the dark powers he worships for release. He appears as a male human with pale yellowing skin stretched tight across his frame, and is covered in many puncture wounds from the trap that killed him (see [area 17](#the-dreaming-heralds-the-temple-of-ra-third-floor-17-vestry)). He wears the golden robes of the Hierophant, stolen from the body of his senior priest. The robes are covered in ragged holes from his death wounds.
+
+Cursed to stay in the temple, Kaufra is tied to the necrotic energy of the shrine in [area 18](#the-dreaming-heralds-the-temple-of-ra-third-floor-18-desecrated-sanctum). He hates and fears all living creatures, and is terrified of sunlight. If the characters somehow manage to engage him in conversation, he spits bile and unholy curses at them, whilst whining and pleading for them to free him from his entrapment.
+
+See [Statistics](#the-dreaming-heralds-the-temple-of-ra-npc-summary-kaufra) section for game information.
+
+##### The Heralds
+
+The Heralds are the priests of Ra who built this temple as a place to sleep whilst awaiting their New Morning. All bar one were slain by Kaufra after drinking the sleeping draught. They have been raised an undead creatures over the course of the last century, some serving as guardians of the temple.
+
+In undeath, they look much as they did in the life. The twisted magic of their animating force and the sleeping draught they drunk have combined to preserve their human appearance but has given them glowing white eyes. Closer observation reveals most have had their throats cut. They dress in flowing white robes, some stained with blood down the front.
+
+See [Statistics](#the-dreaming-heralds-the-temple-of-ra-npc-summary-the-heralds) section for game information.
+
+##### Lesser Hierophant Hemekef
+
+The second in charge of the Heralds, Lesser Hierophant Hemekef is still alive, albeit in a magically induced sleep. He appears to be a human male of about 60 years old, bald and with heavy wrinkles. He wears the Lesser Hierophant’s robes, white with one band of gold around the hem. If left alone he will rise in 6 years, however if the antidote is manufactured and administered he can be awoken immediately.
+
+<div class="footnote">The Dreaming Heralds<BR />
+<p>GENESYS</p></div>
+
+\pagebreakNum
+
+When awakened he is confused, and continually asks about the New Morning, whether the forces of light have arrived yet, and so forth. If his situation can be explained to him he will be full of sorrow for his fellow Heralds, yet willing to help with any information he can offer. He knows the layout to the temple, the location of all traps and the history to the space. **He is also a 5 th level neutral good cleric of Ra (Light domain), and can help with healing magic if given time to prepare his spells.** He is a serious, devout man who fervently believes in the prophecy of his sect.
+
+Award the character 5 XP for awakening Hemekef from his slumber.
+
+### Temple Map
+
+<img src='https://drive.google.com/uc?id=1o5RQ1IwQkJotKucBTVuDNjlZoI_Nw4SH' />
+
+<div class="footnote">The Dreaming Heralds<BR />
+<p>GENESYS</p></div>
+
+\pagebreakNum
+
+### First Floor
+
+#### 1. Temple Entrance
+
+<div class='read'>
+You emerge from a thicket of briars into a small clearing in front of a crumbling three storey stone building. An overgrown path opens into a clearing containing a pool filled with stagnant water. The path continues up to a large stone door leading into the building, emblazoned with a sunburst and coiled snake motif.
+</div>
+
+If the characters are following Devek’s tracks, they lead to the door, and back. Getting to the door involves getting past the pool.
+
+The pool is filled with water to a depth of about 2 ft., and emits is a terrible stench of rotting meat. Any players who approach the pool will waken the snake that lairs here, basking just below the surface of the water. See Creature entry below.
+
+The symbol on the door is a symbol of Ra. Below the symbol a strange warning is etched in Common: “Danger! Entry Forbidden! All Hail the New Morning!” If characters ask about the ‘New Morning’, allow them a **Daunting (<span class='difficulty'>dddd</span>) Knowledge (Lore) check** or a **Daunting (<span class='difficulty'>dddd</span>) Divine check**. A successful check reveals that the New Morning is an obscure prophecy foretelling the return of Ra’s forces of light to vanquish evil in the world. It is deemed heresy by the main church of Ra.
+
+Close inspection of the door reveals a poison needle trap, triggered when someone lifts the iron ring that serves as the door’s handle – the trap has been triggered however. The needle itself can be found on the floor, smeared in a viscous gray-green substance. Due to exposure to the air the poison is no longer active, but a character succeeding at an **Daunting (<span class='difficulty'>dddd</span>) Medicine check** recognizes this as a herbal poison that induces sleep. The door is locked but the lock has rusted, and the door is easy to push open (**Easy (<span class='difficulty'>d</span>) Brawn check**).
+
+Exploring the thick undergrowth to the right leads to the veranda ([area 6](#the-dreaming-heralds-the-temple-of-ra-first-floor-6-veranda)), but it is not immediately visible from here.
+
+**Creature:** 1 [Giant Snake (Rival)](#the-dreaming-heralds-the-temple-of-ra-npc-statistics-giant-snake-rival). The snake is only concerned with protecting its lair, but will attack any who come within 20 ft. of the pool. If the characters give the pool a wide berth, they can avoid engaging the beast in combat. <!--[Giant constrictor snake stats](http://www.d20srd.org/srd/monsters/snake.htm)-->
+
+\columnbreak
+
+#### 2. Entry Chamber
+
+The ceiling here is 40 ft. high.
+
+<div class='read'>
+The door opens into a large dusty entrance hall. A wooden staircase with a polished banister curves upwards around the room. In the gloom of the ceiling above the centre of the room is a golden chandelier that glints in the dim light filtering in from outside. Passages lead from the chamber to the north, east and west.
+</div>
+
+Ask all the characters to make a **Hard (<span class='difficulty'>ddd</span>) Vigilance check**. Anyone who succeeds notices that there is a large circular area in the centre of the room, directly beneath the chandelier, that is not covered by dust. That is because this area of floor is illusionary, and covers a pit trap. See Hazard below. A character able to detect magic will notice a faint aura of illusion magic.
+
+If the characters think to look up, it is possible to see to the top of the stairs here, where an undead Herald waits patiently. See [area 15](#the-dreaming-heralds-the-temple-of-ra-second-floor-15-top-of-the-stairs).
+
+**Hazard:** An illusionary patch of floor covers a 10 ft. deep circular pit in the middle of the room. The illusion is purely visual and objects pass straight through it. Any character who steps on to the illusion must make a **Hard (<span class='difficulty'>dd</span>) Coordination check** or fall into the pit, taking 1d6 damage.
+
+That is not the end of their trouble. The bottom of the pit contains a pressure plate that causes the chandelier to fall onto whoever is in the pit. A character falling into the pit or anyone who climbs down into the pit will trigger the plate. All characters in the put when the chandelier falls must make a **Hard (<span class='difficulty'>dd</span>) Coordination check**. If they fail they take 1d6 damage with a successful check reducing this by half.
+
+**Treasure:** If the chandelier falls, the precious trinkets that adorn it can be removed. See [area 15](#the-dreaming-heralds-the-temple-of-ra-second-floor-15-top-of-the-stairs) for details.
+
+#### 3. Scriptorium
+
+Both the entrances to this chamber are guarded with magical warding, which appears as a transparent sparkling barrier. Above each entrance way is a small symbol etched in the stone – an eagle-like bird (in fact a phoenix) surrounded by a sunburst halo.
+
+<div class="footnote">The Dreaming Heralds<BR />
+<p>GENESYS</p></div>
+
+\pagebreakNum
+
+Any living creature that touches the warding must succeed at a **Hard (<span class='difficulty'>ddd</span>) Presence check** or take 1d3 damage and be knocked back 5 ft. A character can attempt this multiple times, but will take damage each time she fails her save. A character wearing one of the holy symbols worn by the Heralds is immune to this effect.
+
+<div class='read'>
+Eight wooden desks and chairs are arranged neatly for work in this chamber, covered  in  undisturbed  thick  dust. Several alcoves reach from floor to ceiling around the walls and within each are shelves piled high with scrolls. </div>
+
+**Treasure:** Many of the scrolls crumble to desk when touched, or are blank, or contain worthless information regarding accounts or building plans. A character who spends time looking through the scrolls can uncover 4 scrolls covered with rare and beautiful calligraphy, praising Ra and the coming of the New Morning. They are worth 5gp each.
+
+Allow any character searching the room a **Hard (<span class='difficulty'>ddd</span>) Perception check** to notice that one of the shelves has a false back to it. This can be levered open to reveal a secret cubbyhole Alternately anyone who can detect magic reveals a faint aura of enchantment magic in the same area, from the 3 magical scrolls contained within. **The scrolls are kept in individual ivory cases: 2 scrolls of bless, and 1 scroll of lesser restoration.**
+
+#### 4. Kitchen and pantry
+
+<div class='read'>
+Two long wooden tables dominate the centre of this room. Bowls, chopping boards and other kitchen implements are arranged on the tables and hanging from the walls. The overall impression is one of neatness and order, though the thick layer of dust that covers all the surfaces suggest that whoever arranged this room has not been back for a very long time. Two staircases lead out of the room, one downwards and one upwards
+</div>
+
+Magically preserved food can be found on shelves in the alcoves, mostly grain and root vegetables. There is nothing else of value here.
+
+\columnbreak
+
+#### 5. Dining Area
+ 
+<div class='read'>
+A feast is laid out on a long table before you. 15 places have been set, and the table piled high with a side of pork, roasted vegetables, stews and a tureen of a greenish soup. Despite the covering of dust, wafts of steam still float up from the soup, and the food smells excellent.
+</div>
+
+This feast was prepared before the sleeping ritual was conducted, and preserved magically for the Heralds to eat when they awoke. The food is warm, nourishing and very tasty indeed.
+
+**Treasure:** There are two ornately wrought silver candlesticks on table, which would be worth 20 gp each to a collector.
+
+#### 6. Veranda
+ 
+<div class='read'>
+What once must have been a charming, sun-kissed veranda is now overgrown with vines and briars. Five nearly identical statues stand along the edge of the veranda depicting a naked man, arms held upward in supplication. Each man has a different animal’s head – a ram, an eagle, a serpent, a heron and a beetle. Short flights of stairs lead down into the gloom of the woods. A small animal skeleton rests next to the statue with the beetle’s head, at the southerly end of the veranda.
+</div>
+
+A character that opens the door to the veranda from the outside triggers an arrow trap set to fire at intruders. Any character standing directly in the door must succeed at a **Hard (<span class='difficulty'>ddd</span>) Coordination check** to avoid the arrow, or take 1d6 damage. Approaching from the inside allows the characters to bypass the trap and disable it with no check required.
+
+Closer inspection of the skeleton reveals it to be that of a small bear. A rusted scythe is embedded in its skeleton.
+
+**Hazards:** Each of the statues is trapped. The most southerly one has already been triggered, but the others remain deadly. A wicked scythe lashes out from the statue base targeting anyone with 5’ of the statue. 1d6 damage is  inflicted on any such creature that does not succeed at a **Hard (<span class='difficulty'>ddd</span>) Coordination check**. Once triggered, the traps do not reset.
+
+<div class="footnote">The Dreaming Heralds<BR />
+<p>GENESYS</p></div>
+
+\pagebreakNum
+
+### The Cellar
+
+Within the cellar the ceiling is only 10 ft. high. There is a dank smell to these chambers.
+
+#### 7. Flooded Cistern
+ 
+<div class='read'>
+A broken water tank has collapsed in the centre of this room, covering the floor of this cellar with ankle-deep water. Trickles spill from broken pipe work in the southeast corner, and the walls drip with condensation. A pack of filthy rats glare at you and hiss when you enter this room.
+</div>
+
+**Creature:** A swarm of 8 cave rats make this room their den. They attack anyone entering here, but will not pursue beyond the door to this room.
+
+#### 8. Trap Maker's Workshop
+ 
+<div class='read'>
+Sturdy tables are covered with tools and crafting implements, and a small forge and anvil rests in the southwest corner of this workshop. A small collection of rusted weapons – spears, arrows and swords – is carelessly stacked in one corner.
+</div>
+
+Close inspection of the tools reveals that they are specialized for creating traps. Half-finished arrows, scythes and trigger mechanisms cover the surfaces. By spending a turn studying the style of the mechanisms, a character receives advantage when attempting to disable any mechanical trap in the temple.
+
+The door to the east is swollen shut with water. Upon opening it floodwaters pour into the room. Any standing character must make an **Anverage (<span class='difficulty'>dd</span>) Brawn check** or be knocked prone.
+
+**Treasure:** From the specialized tools here a character could assemble 2 sets of thieves’ tools. The weapons in the corner include 2 long swords, 1 short sword, 3 spears and 35 arrows. However, all the metal parts of the weapons have rusted slightly, such that the weapons are of poor quality, and have the **Inferior** quality. They are worth a quarter of their listed value if sold.
+
+### 9. Storage Cellar
+ 
+<div class='read'>
+Boxes are piled high in the corners of this dank cellar. A door leads to the south, covered by an iron portcullis, with a winch next to it.
+</div>
+
+The Heralds used this area for storage. The boxes contain spare white robes, blankets, tools for stone working and some kegs of spoiled cider. Alas the preservation magic placed upstairs does cover this area, so none of the stored items have rotted or rusted, and are of no value.
+
+**Hazard:** The winch next to the portcullis triggers a trap. If turned, a 10 ft. deep pit open up beneath any characters standing with 10 ft. of the door. They must make a **Hard (<span class='difficulty'>ddd</span>) Coordination check** or fall into the pit taking 1d6 damage. The portcullis can be lifted with a **Daunting (<span class='difficulty'>dddd</span>) Brawn check**, or characters who thoroughly search the room will find a small lever in the northeast corner, hidden behind some of the boxes. Pulling the lever raises the portcullis safely.
+
+<div class="footnote">The Dreaming Heralds<BR />
+<p>GENESYS</p></div>
+
+\pagebreakNum
+
+### Second Floor
+
+#### 10. Reflection Room
+ 
+This room has dim light.
+ 
+<div class='read'>
+A set of rotten couches and meditation stools are arranged haphazardly around this room, whilst light streams through dirty windows.
+</div>
+
+The Heralds used this area for meditation and gentle reflection on the glory of Ra. It is long abandoned and contains nothing of value. A short corridor leads around the staircase to a corridor, of which there are three small cells, previously used for individual prayer, but now empty.
+
+#### 11. Herbalist's Laboratory
+ 
+<div class='read'>
+Bright light floods from two glowing globes hanging from the ceiling and a verdant, earthy scent wafts out of this room. Plants and creepers have overgrown the chamber, covering every available surface. Shattered glass covers the floor. On one table an intact alembic still stands, nestled by the green fronds, containing an effervescing pink liquid.
+</div>
+
+The doors to this chamber are protected by a permanent alarm spell that makes a sound like a ringing hand bell. If the alarm is triggered, the Heralds in room 16 are awoken and come to investigate the source of the alarm, attacking any intruders they find.
+
+This room was once the herbalist’s indoor laboratory, where he worked with the local plant specimens he gathered. Unwilling to let his precious plants die during his long sleep, he provided magical sunlight and irrigation to keep them alive.
+
+**Treasure:** The liquid in the alembic is magical, and counts as 2 healing potions (i.e., *painkillers*, though the character will need a means of transporting the liquid.
+
+Bundles of notes charting plant growth and herbal experiments can be found in a drawer in one of the tables here. Embedded in the notes is a short piece of text describing the manufacture of an antidote to the sleeping draught. It requires a combination of leaves from three plants (rosemary, blackvine and sundew), each of which can be found in this room. The leaves should be pounded in a spotless silver bowl with a drop of human or animal blood, and left to rest in sunlight for five minutes.
+
+The glowing globes in the ceiling have a permanent light spell cast on them, that functions as sunlight for the purposes of plant photosynthesis.
+
+#### 12. Hierophant's Quarters
+ 
+<div class='read'>
+The door to the room hangs ajar, and peering beyond you see a simple bedchamber containing a desk and 2 chairs. More arresting is the skeleton lying in the doorway, a rusted spear embedded in its ribcage.
+</div>
+
+The skeleton is a human female, one of the raised Heralds, who was ordered by Kaufra to open this chamber, but triggered the spear trap that had been placed here. Characters who inspect the trap may make an **Average (<span class='difficulty'>dd</span>) Knowledge (Adventuring) check** to determine how the trap works, and locate a small catch behind a loose brick in to the left. They may use this knowledge to automatically disable the identical spear trap in [area 13](#the-dreaming-heralds-the-temple-of-ra-second-floor-13-lesser-hierophants-quarters). The chamber contains nothing of interest.
+
+#### 13. Lesser Hierophant's Quarters
+
+The door to this chamber is trapped with a spear that stabs at any character that opens the door, requiring a successful **Hard (<span class='difficulty'>ddd</span>) Coordination check** save to avoid 1d6 points of damage. It can be disabled as described in [area 12](#the-dreaming-heralds-the-temple-of-ra-second-floor-12-hierophants-quarters).
+ 
+<div class='read'>
+This spacious yet spartan living chamber appears to have been undisturbed for centuries. Simple furniture - a bed, a desk and some shelves – has been arranged tidily around the room. Lying on the bed, eyes closed, hands clasped over its chest, is a human figure dressed in white robes.
+</div>
+
+This is the Lesser Hierophant Hemekef. He has the same deathly appearance as Devek Yarl, though is alive. More details can be found in the NPC Summary section.
+
+**Treasure:** A pouch containing 40sp is tucked
+into a drawer in the desk.
+
+<div class="footnote">The Dreaming Heralds<BR />
+<p>GENESYS</p></div>
+
+\pagebreakNum
+
+#### 14. Office and Treasury
+
+The doors to this room are both locked
+
+<div class='read'>
+A couple of small wooden desks line the walls of this dusty chamber, with blank paper neatly stacked to one side. In one corner of the room sits a small ironbound chest
+</div>
+
+The chest is trapped to prevent petty pilferers with a simple poison needle trap. If a character attempts to open the chest without disabling the trap, he must make a **Hard (<span class='difficulty'>ddd</span>) Coordination check**. If he fails, he is pricked by a needle and must make an additional **Average (<span class='difficulty'>dd</span>) Resilience check**. Failure on this second check incurs 2d6 points of poison damage.
+
+**Treasure:** The chest contains 2100 cp, 190 sp, and 110 gp, along with a small bronze key. This unlocks the door to the stairs leading to room 17
+
+#### 15. Top of the Stairs
+ 
+<div class='read'>
+The staircase winds upwards, giving an better view of the chandelier. From here, you can see several small golden sun- and-stars trinkets dangling from it. More pressing, a humanoid figure dressed in white robes waits at the top of the stairs, staring blankly.
+</div>
+
+**Creature:** The creature is a Herald (see NPC summary) who has been tasked with guarding the second floor. It will not move unless attacked or a character approaches within 20 ft., at which point it proceeds to move directly to [area 16](#the-dreaming-heralds-the-temple-of-ra-second-floor-16-dormitory) to alert the Heralds there.
+
+**Treasure:** If the chandelier can be removed, either by triggering the pressure plate in [area 1](#the-dreaming-heralds-the-temple-of-ra-first-floor-1-temple-entrance) or otherwise, the trinkets can be removed easily enough. There are 7 golden suns and stars worth 5 gp each.
+
+#### 16. Dormitory
+ 
+<div class='read'>
+Rows of simple wooden pallets arranged in this room, without sheets or mattresses. White robed figures lying prone on four of these uncomfortable beds are still, until, in unison, their glowing eyes turn toward you.
+</div>
+
+Some of the unfortunate Heralds came here for their long sleep but were slain by Kaufra whilst they slept.
+
+**Creatures:** 4 Heralds lie here. It takes them 1 round to get up from their prone position and prepare to fight. If alerted either by intruders, the alarm in [area 11](#the-dreaming-heralds-the-temple-of-ra-second-floor-11-herbalists-laboratory) or the sentry at the top of the stairs, they rise and patrol the 2nd floor of the temple. They attack any intruders on sight, and pursue them to the exits from the temple.
+
+<div class="footnote">The Dreaming Heralds<BR />
+<p>GENESYS</p></div>
+
+\pagebreakNum
+
+### Third Floor
+
+#### 17. Vestry
+
+The door to the staircase leading up here is locked and can be opened with the key found in the office ([area 14](#the-dreaming-heralds-the-temple-of-ra-second-floor-14-office-and-treasury)). A character attempting to pick the lock requires a **Daunting (<span class='difficulty'>dddd</span>) Skullduggery check**.
+ 
+<div class='read'>
+Stairs lead up into the darkness from here, covered with a trail of long-dried blood.
+</div>
+
+The spike trap that killed Kaufra protects the stairs leading up to this chamber. When a creature steps on the fifth stair, roughly halfway way up, it makes an ominous clicking noise. All characters standing on the stairs must make a **Hard (<span class='difficulty'>ddd</span>) Coordination check**, with the triggering character adding <span class='setback'>b</span> due to his position on the stairs. Any characters that fail the check are stabbed by one of the rusty spikes that emerge from the walls, for 1d8 damage. The trap resets after 3 rounds. As the characters reach the top of the stairs, read the following.
+ 
+<div class='read'>
+From the top of the stairs, the room stretches left and right to two identical wings. Long wooden benches rest against the walls. In the centre of each wing stands a pillar, carved in the form of heron-headed Ra. A pile of empty vials, some smashed, is in the eastern corner of the right wing.
+</div>
+
+This is where the sleeping draught was imbibed. A character inspecting the vials notices a grey-green residue, similar to the poison on the needle found in [area 1](#the-dreaming-heralds-the-temple-of-ra-first-floor-1-temple-entrance). It has long since lot its potency.
+
+\columnbreak
+
+#### 18. Desecrated Sanctum
+
+This room has dim light from the candles on
+the shrine.
+ 
+<div class='read'>
+An eerie violet light flickers here, illuminating murals on the walls depicting the sun god Ra in different poses – beckoning, kneeling, or prone. The murals have been defaced with runes daubed on in dried blood. The light comes from candles set in skulls on a table at one end of the room, draped in a ragged black cloth. Lying on the ground in various poses of disarray are 7 white- robed humans, as if sleeping. Another figure kneels before the shrine, dressed in a golden robe. It turns as you enter, revealing a face with desiccated skin drawn tight over the skull. Eyeless sockets stare at you, as it grabs a gleaming mace from beneath the shrine.
+</div>
+
+As the characters enter this chamber, necrotic energy flares from the shrine to each of lying forms, causing them to rise and defend the chamber.
+
+**Creatures:** [Kaufra](#the-dreaming-heralds-the-temple-of-ra-npc-statistics-kaufra-nemesis) and 7 [Heralds](#the-dreaming-heralds-the-temple-of-ra-npc-statistics-herald-minion) attack all who enter here. The Heralds will engage the nearest intruder in melee, whilst Kaufra protects the shrine, casting spells if required. He will bodily prevent any character from reaching the shrine, however if 2 or more characters engage him in melee he is unable to block others. It takes a full round action to destroy the shrine, sweeping the skull candles from the top is enough. Once destroyed, all the Heralds in the temple collapse and rapidly turn to dust. Kaufra is then freed and will attempt to escape the shrine fleeing blindly into the Woods unless stopped.
+
+**Treasure:** Kaufra has little need for worldly wealth, however there is a silver bowl carved with symbols of Ra that is worth 160 gp kept on top of the shrine for ritual purposes, which can also be used for the manufacture of the antidote to the sleeping draught, as described in [area 11](#the-dreaming-heralds-the-temple-of-ra-second-floor-11-herbalists-laboratory). The other treasure is Kaufra’s ebony-handled mace, the *Eye of Ra*. It is inscribed with Celestial runes that spell out holy prayers to Ra.
+
+<div class="footnote">The Dreaming Heralds<BR />
+<p>GENESYS</p></div>
+
+\pagebreakNum
+
+#### 19. Walkway
+ 
+<div class='read'>
+A walkway spans round the building here, giving a dizzy-making view of the forest floor below. What perhaps once were entrances to the building have been bricked over, and covered with arcane runes.
+</div>
+
+This walkway was once to allow Heralds to glory in the sun of their god, but was closed as a security measure before the ritual. The scribbles on the bricked-over doors are the words “No entrance” in Celestial.
+
+<div class="footnote">The Dreaming Heralds<BR />
+<p>GENESYS</p></div>
+
+\pagebreak
+ 
+### NPC Statistics
+
+#### Herald (Minion)
+
+<div class="archetype">
+<span class="bra">3</span>
+<span class="agi">2</span>
+<span class="int">1</span>
+<span class="cun">1</span>
+<span class="wil">1</span>
+<span class="pre">1</span>
+</div>
+
+<div class="minion">
+<span class="soak">3</span>
+<span class="wound">6</span>
+<span class="mdef">0</span>
+<span class="rdef">0</span>
+</div>
+
+**Skills (Group Only):**
+* Brawl
+* Vigilance
+ 
+**Talents:** None
+
+**Abilities:**
+* Undead (does not need to breathe, eat, or drink, and can survive underwater; immune to poisons and toxins)
+* Undying (The GM may spend <span class='symbols'>hhh</span> from any check a PC makes to return one previously defeated Herald to an existing minion group, removing damage from the group accordingly; the GM may spend <span class='symbols'>d</span> to return two Heralds to a minion group.)
+
+**Equipment:** 
+* Bite (Brawl; Damage 4; Critical 4; Range [Engaged]; Vicious 1)
+* Claws (Brawl; Damage 3; Critical 5; Range [Engaged])
+
+Each Herald wears a holy symbol of Ra around its neck, showing a phoenix) surrounded by a halo. These are worth 5 gp each, and also allow characters to bypass the magical barriers to the scriptorium ([area 3](#the-dreaming-heralds-the-temple-of-ra-first-floor-3-scriptorium)).
+
+Note that the reanimation can be described by the GM as "a flare of necrotic energy reaching from the shrine to the Herald, through any intervening walls".
+
+\columnbreak
+
+#### Wolf (Minion)
+
+[The Journey To The Temple](#the-dreaming-heralds-author-michaelknife-the-journey-to-the-temple)
+
+<div class="archetype">
+<span class="bra">2</span>
+<span class="agi">3</span>
+<span class="int">1</span>
+<span class="cun">3</span>
+<span class="wil">1</span>
+<span class="pre">1</span>
+</div>
+
+<div class="minion">
+<span class="soak">3</span>
+<span class="wound">5</span>
+<span class="mdef">0</span>
+<span class="rdef">0</span>
+</div>
+
+**Skills (Group Only):**
+* Athletics
+* Brawl
+* Perception
+ 
+**Talents:** None
+
+**Abilities:** Pack Tactics (when using the assist maneuver, wolves add <span class='boost'>bb</span> instead of <span class='boost'>b</span>)
+
+**Equipment:** Bite (Brawl, Damage 5; Critical 3; Range [Engaged]; Vicious 2)
+
+#### Dire Wolf (Minion)
+
+[The Journey To The Temple](#the-dreaming-heralds-author-michaelknife-the-journey-to-the-temple)
+
+<div class="archetype">
+<span class="bra">3</span>
+<span class="agi">3</span>
+<span class="int">1</span>
+<span class="cun">3</span>
+<span class="wil">1</span>
+<span class="pre">1</span>
+</div>
+
+<div class="minion">
+<span class="soak">4</span>
+<span class="wound">10</span>
+<span class="mdef">0</span>
+<span class="rdef">0</span>
+</div>
+
+**Skills (Group Only):**
+* Athletics
+* Brawl
+* Perception
+* Vigilance
+* Stealth
+ 
+**Talents:** None
+
+**Abilities:** Pack Tactics (when using the assist maneuver, dire wolves add <span class='boost'>bb</span> instead of <span class='boost'>b</span>)
+
+**Equipment:** Bite (Brawl, Damage 7; Critical 3; Range [Engaged]; Vicious 2)
+
+<div class="footnote">The Dreaming Heralds<BR />
+<p>GENESYS</p></div>
+
+\pagebreakNum
+
+#### Brown Bear (Rival)
+
+[The Journey To The Temple](#the-dreaming-heralds-author-michaelknife-the-journey-to-the-temple)
+
+<div class="archetype">
+<span class="bra">4</span>
+<span class="agi">2</span>
+<span class="int">1</span>
+<span class="cun">1</span>
+<span class="wil">1</span>
+<span class="pre">1</span>
+</div>
+
+<div class="minion">
+<span class="soak">6</span>
+<span class="wound">20</span>
+<span class="mdef">0</span>
+<span class="rdef">0</span>
+</div>
+
+**Skills:**
+* Athletics 1
+* Brawl 2
+* Resilience 2
+ 
+**Talents:** None
+
+**Abilities:** Silhouette 2
+
+**Equipment:**
+* Claws (Brawl; Damage 7; Critical 3; Range [Engaged]; Disorient 1)
+* Bite (Brawl, Damage 8; Critical 3; Range [Engaged]; Pierce 1; Vicious 2)
+* Thick Hide (+2 Soak)
+
+#### Stirge (Minion)
+
+[The Journey To The Temple](#the-dreaming-heralds-author-michaelknife-the-journey-to-the-temple)
+
+<div class="archetype">
+<span class="bra">2</span>
+<span class="agi">2</span>
+<span class="int">1</span>
+<span class="cun">2</span>
+<span class="wil">1</span>
+<span class="pre">1</span>
+</div>
+
+<div class="minion">
+<span class="soak">3</span>
+<span class="wound">3</span>
+<span class="mdef">0</span>
+<span class="rdef">1</span>
+</div>
+
+**Skills (Group Only):**
+* Brawl
+* Coordination
+* Perception
+* Vigilance
+ 
+**Talents:** None
+
+**Abilities:** Flyer (can fly, see page 100 of the GCRB)
+
+**Equipment:**
+* Claws (Brawl; Damage 4; Critical 3; Range [Engaged])
+* Blood draining bite (Brawl, Damage 3; Critical 4; Range [Engaged]; Disorient 2)
+
+\columnbreak
+
+#### Giant Snake (Rival)
+
+[1. Temple Entrance](#the-dreaming-heralds-the-temple-of-ra-first-floor-1-temple-entrance)
+
+<div class="archetype">
+<span class="bra">2</span>
+<span class="agi">3</span>
+<span class="int">1</span>
+<span class="cun">2</span>
+<span class="wil">1</span>
+<span class="pre">1</span>
+</div>
+
+<div class="minion">
+<span class="soak">3</span>
+<span class="wound">20</span>
+<span class="mdef">1</span>
+<span class="rdef">0</span>
+</div>
+
+**Skills:**
+* Athletics 1
+* Brawl 2
+* Vigilance 2
+ 
+**Talents:** None
+
+**Abilities:**
+
+**Equipment:** Poisonous Bite (Brawl, Damage 6; Critical 3; Range [Engaged]; Pierce 1; if the attack deals damage, the target must immediately make a **Hard (<span class='difficulty'>ddd</span>) Resilience check** or suffer an extra 3 wounds. This counts as a poison)
+
+<div class="footnote">The Dreaming Heralds<BR />
+<p>GENESYS</p></div>
+
+\pagebreakNum
+
+#### Kaufra (Nemesis)
+
+<div class="archetype">
+<span class="bra">3</span>
+<span class="agi">2</span>
+<span class="int">3</span>
+<span class="cun">2</span>
+<span class="wil">3</span>
+<span class="pre">4</span>
+</div>
+
+<div class="adversary">
+<span class="soak">3</span>
+<span class="wound">18</span>
+<span class="strain">19</span>
+<span class="mdef">1</span>
+<span class="rdef">1</span>
+</div>
+
+**Skills:**
+* Divine 3
+* Discipline 2
+* Knowledge (Forbidden) 2
+* Cool 2
+* Vigilance 3
+* Melee (Light) 2
+
+**Talents:**
+* Adversary 1 (Upgrade the difficulty of combat checks targetting this character once)
+* Dark Insight (use Knowledge [Forbidden] to determine spell effects).
+
+**Abilities:** Darkvision (When making skill checks, Kaufra removes up to <span class="setback">bb</span> imposed due to darkness).
+
+**Spells:** Kaufra can choose any magic action allowed for the Divine skill, and may select additional spell effects, as normal. His favoured spells are:
+* Inflict Wounds (Choose one target at short range and make an **Easy (<span class='difficulty'>d</span>) Divine check**; if the check succeeds, this magic attach inflicts 3 damage +1 damage per uncancelled <span class='symbols'>s</span>, with )
+* Cause Fear (Choose one target at short range and make a **Daunting (<span class='difficulty'>dddd</span>) Divine check**; if the check succeeds, until the end of the character’s next turn, the target decreases the ability of any skill checks they make by one; the target’s strain and wound thresholds are reduced 2)
+* Hold Person (Choose two targets within short range and make a **Average (<span class='difficulty'>dd</span>) Divine check**; if the check succeeds, Kaufra can choose one additional target for each <span class='symbols'>a</span> and until the end of the character’s next turn, all target decreases the ability of any skill checks they make by one; if an affected character suffers strain for any reason, they suffer 1 additional strain).
+
+\columnbreak
+
+**Equipment:**
+* The Eye of Ra (Melee [Light]; Damage 7; Critical 4; Range [Engaged]; Gleaming [Add <span class="setback">b</span> to all attacks targetting the wielder])
+* Forbidden Grimoire (A user with the Dark Insight talent can add the Additional Target and Enervate effects to curse spells with no increase in difficulty)
+
+### Ending the Adventure
+
+If the antidote is given to Devek, he very quickly recovers. Award characters that successfully awaken Devek 100 XP. The Yarl family is extremely grateful and blesses the characters. They attempt to press the family treasure into the hands of the characters, (5 gp and 26 sp), and offer them board and lodging (albeit peasant fare and a night sleeping in the hayloft) any time the characters are passing in the future.
+
+### Continuing from Here
+
+DMs wanting to build on some of the elements introduced here have several options. Firstly, characters that rescued Hemekef have a problem on their hands. The priest is hopelessly lost and confused in his new world, and would want to be reunited with his brethren in the church. Secondly, what of the Herald’s prophecy? Whilst most believe it to be bunk, perhaps there is an element of truth to it, and action must be taken to ensure that the way is cleared for the forces of light. Or maybe the priests were mistaken and the prophecy refers to some dark events that must be prevented. Finally, what other mysteries lurk within the green gloom of Merthington Woods?
+
+* Internal Links - Press Ctrl+Space to get a list of all of your document's headers. Press tab on one to insert the link into your document. ie: [Welcome to your next campaign binder!](#welcome-to-your-next-campaign-binder)
+
+\pagebreak
+
+## Basic Editor Shortcuts
+
+### Find and Replace
+* `Ctrl+F` or `Cmd+F` - Find
+* `Alt+Ctrl+F` or `Alt+Cmd+F` - Find & Replace
+
+### Editing
+* `Ctrl+Z` or `Cmd+Z` - Undo
+* `Ctrl+Shift+Z` or `Cmd+Shift+Z` - Redo
+* `Ctrl+D` or `Cmd+D` - Remove current line
+* `Ctrl+U` - Uppercase current selection
+* `Ctrl+Shift+U` - Lowercase current selection
+
+### Content Folding
+* `F2` - Fold / Unfold a block of content
+* `Ctrl+Cmd+Alt+0` Fold everything
+* `Shift+Cmd+Alt+0` UnFold everything
+
+### And Much More...
+* `Ctrl+Alt+H` or `Cmd+Alt+H` Shows all Editor Shortcuts
+
