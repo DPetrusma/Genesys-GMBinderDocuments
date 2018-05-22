@@ -825,7 +825,7 @@ Unless otherwise noted, the temple has the following physical characteristics:
 
 **Walls:** Walls are made of stone.
 
-**External doors:** External doors are made of stone, and locked. They require an **Impossible (<span class='difficulty'>ddddd</span>) Brawn check** to break down, or a **Daunting (<span class='difficulty'>dddd</span>) Skullduggery check** to pick the lock.
+**External doors:** External doors are made of stone, and locked. They require an **Formidable (<span class='difficulty'>ddddd</span>) Brawn check** to break down, or a **Daunting (<span class='difficulty'>dddd</span>) Skullduggery check** to pick the lock.
 
 **Internal doors:** Internal doors are made of wood. They can be broken down with a **Average (<span class='difficulty'>dd</span>) Brawn check** Strength check. Some are locked where noted - to pick the lock requires a **Daunting (<span class='difficulty'>dddd</span>) Skullduggery check**.
 
@@ -915,9 +915,9 @@ Ask all the characters to make a **Hard (<span class='difficulty'>ddd</span>) Vi
 
 If the characters think to look up, it is possible to see to the top of the stairs here, where an undead Herald waits patiently. See [area 15](#the-dreaming-heralds-the-temple-of-ra-second-floor-15-top-of-the-stairs).
 
-**Hazard:** An illusionary patch of floor covers a 10 ft. deep circular pit in the middle of the room. The illusion is purely visual and objects pass straight through it. Any character who steps on to the illusion must make a **Hard (<span class='difficulty'>dd</span>) Coordination check** or fall into the pit, taking 1d6 damage.
+**Hazard:** An illusionary patch of floor covers a 10 ft. deep circular pit in the middle of the room. The illusion is purely visual and objects pass straight through it. Any character who steps on to the illusion must make a **Hard (<span class='difficulty'>ddd</span>) Coordination check** or fall into the pit, taking 1d6 damage.
 
-That is not the end of their trouble. The bottom of the pit contains a pressure plate that causes the chandelier to fall onto whoever is in the pit. A character falling into the pit or anyone who climbs down into the pit will trigger the plate. All characters in the put when the chandelier falls must make a **Hard (<span class='difficulty'>dd</span>) Coordination check**. If they fail they take 1d6 damage with a successful check reducing this by half.
+That is not the end of their trouble. The bottom of the pit contains a pressure plate that causes the chandelier to fall onto whoever is in the pit. A character falling into the pit or anyone who climbs down into the pit will trigger the plate. All characters in the put when the chandelier falls must make a **Hard (<span class='difficulty'>ddd</span>) Coordination check**. If they fail they take 1d6 damage with a successful check reducing this by half.
 
 **Treasure:** If the chandelier falls, the precious trinkets that adorn it can be removed. See [area 15](#the-dreaming-heralds-the-temple-of-ra-second-floor-15-top-of-the-stairs) for details.
 
@@ -1098,6 +1098,8 @@ Rows of simple wooden pallets arranged in this room, without sheets or mattresse
 </div>
 
 Some of the unfortunate Heralds came here for their long sleep but were slain by Kaufra whilst they slept.
+
+\columnbreak
 
 **Creatures:** 4 Heralds lie here. It takes them 1 round to get up from their prone position and prepare to fight. If alerted either by intruders, the alarm in [area 11](#the-dreaming-heralds-the-temple-of-ra-second-floor-11-herbalists-laboratory) or the sentry at the top of the stairs, they rise and patrol the 2nd floor of the temple. They attack any intruders on sight, and pursue them to the exits from the temple.
 
