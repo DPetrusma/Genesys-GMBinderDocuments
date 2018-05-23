@@ -200,11 +200,13 @@
     font-family: 'Crimson Text';
     font-size:10pt;
     font-style: italic;
+    line-height:1.2;
     color: rgb(230,0,0);
     border: 1px dotted rgb(230,0,0);
-    border-radius:30px;
-    padding:15px;
+    border-radius:20px;
+    padding:12px;
     position:relative;
+    margin-bottom:10px;
 }
 
 .phb .read:before {
@@ -212,11 +214,11 @@
     position:absolute;
     display:block;
     border: 1px dotted rgb(230,0,0);
-    border-radius:30px;
-    left:2px;
-    top:2px;
-    right:2px;
-    bottom:2px;
+    border-radius:20px;
+    left:1px;
+    top:1px;
+    right:1px;
+    bottom:1px;
     }
 
 /* Footer */
@@ -687,15 +689,7 @@ The temple has remained undiscovered in the woods since then, entangled in liana
 This was 3 days ago, and since then his parents have been fretful over his condition. Unwilling to abandon his family for too long to seek help, Devek’s father Abel has camped out on the Baron’s Road, and hopes to flag down aid from a rare wanderer.
 
 <div class='read'>
-You are travelling south along the
-Baron’s Road, a lonely stretch of
-highway bordered by farmland to the
-west and a dark wood to the east.
-Around mid-morning, a middle-aged
-human man dressed in simple workaday
-clothes steps out to the middle of the
-road. “Strangers, please help me. My
-son is sick…""
+You are travelling south along the Baron’s Road, a lonely stretch of highway bordered by farmland to the west and a dark wood to the east. Around mid-morning, a middle-aged human man dressed in simple workaday clothes steps out to the middle of the road. “Strangers, please help me. Myson is sick…""
 </div>
 
 ### Introduction
@@ -732,7 +726,7 @@ A short walk down a dirt track leading west from the Baron’s Road heads to the
 
 Devek Yarl is being kept in a small bedroom on the upper storey of the farmhouse. He is a fair-haired freckled teenager with a deathly pallor. His heart rate and breathing are extremely slow, and his skin is cold to the touch. Watching over him are his tearful mother, Elista, and his eldest sister, Abella.
 
-A **Hard (<span class='difficulty'>ddd</span>) Medicine check** reveals that he is in some kind of magical sleep. Nothing short of a remove curse spell, or an antidote, can waken him. Close inspection also reveals a slightly bruised pinprick on his left hand.
+An **Average (<span class='difficulty'>dd</span>) Medicine check** reveals that he is in some kind of magical sleep. Nothing short of a remove curse spell, or an antidote, can waken him. Close inspection also reveals a slightly bruised pinprick on his left hand.
 
 If questioned, his sister Abella knows some more:
 
@@ -765,7 +759,7 @@ If the characters need further persuading to investigate, Abel Yarl can offer th
 
 It is 3 miles to the temple, following Abella’s directions. There are no manmade trails through the forest, so travel speed is halved (thus will take 2 hours at a fast pace, 3 at a moderate pace or 6 at a slow pace). Impress upon the players the quiet loneliness of the woods, the lack of birdsong and the dusky gloom that covers the trees.
 
-Characters who look for tracks may make a **Hard (<span class='difficulty'>ddd</span>) Survival check**. Success indicates they find several sets of human footprints going back and forth on the same path – these are Devek’s tracks. At some point they branch off from Abella’s directions to a shortcut Devek knew. Characters who follow these tracks take 1 mile off the journey.
+Characters who look for tracks may make an **Average (<span class='difficulty'>dd</span>) Survival check**. Success indicates they find several sets of human footprints going back and forth on the same path – these are Devek’s tracks. At some point they branch off from Abella’s directions to a shortcut Devek knew. Characters who follow these tracks take 1 mile off the journey.
 
 For every hour of travel, roll a d20. On a result of 20 a random encounter occurs. If so, roll 1d6 on the following table to determine what the characters encounter. Alternately, you may choose an encounter you feel is appropriate.
 
@@ -806,7 +800,7 @@ For creature encounters, characters travelling at a slow or moderate pace should
 
 **Briar trap:** Randomly select one character. Whilst walking, he accidentally snags his foot in a briar, and must make an **Average (<span class='difficulty'>dd</span>) Coordination check** to avoid stumbling. He gains <span class='boost'>b</span> on this save if he is keeping watch or searching whilst travelling. Failure indicates he twists their ankle and takes 1 point of damage. His speed is reduced by 10 ft., until he is able to take a long rest.
 
-**Strange fetishes:** Each character may make a **Hard (<span class='difficulty'>ddd</span>) Vigilance check**, with <span class='boost'>b</span> if she is searching. Any who succeed notice strange humanoid fetishes carved from twigs dangling in one particular grove of trees. Good-aligned characters get an uneasy feeling around them. No signs of their makers exist. It is up to the DM to pursue this mystery in later adventures if desired.
+**Strange fetishes:** Each character may make an **Average (<span class='difficulty'>dd</span>) Vigilance check**, with <span class='boost'>b</span> if she is searching. Any who succeed notice strange humanoid fetishes carved from twigs dangling in one particular grove of trees. Good-aligned characters get an uneasy feeling around them. No signs of their makers exist. It is up to the DM to pursue this mystery in later adventures if desired.
 
 <div class="footnote">The Dreaming Heralds<BR />
 <p>GENESYS</p></div>
@@ -817,7 +811,7 @@ For creature encounters, characters travelling at a slow or moderate pace should
 
 The temple sits in an overgrown clearing in the woods. It is three stories high, and covered in vines. The building is squat and functional, and rises to a stone dome. The only markings revealing its religious dedication are on the doors to the outside.
 
-There are walkways around the second and third floors. A **Hard (<span class='difficulty'>ddd</span>) Athletics check** is required to climb up each floor. The walkway to the second floor is railed and characters would need to bend the bars (**Daunting (<span class='difficulty'>dddd</span>) Brawn check**) to gain access to it. A Small character could squeeze between the bars with a **Average (<span class='difficulty'>dd</span>) Coordination check**. The third floor walkway is open to the elements.
+There are walkways around the second and third floors. An **Average (<span class='difficulty'>dd</span>) Athletics check** is required to climb up each floor. The walkway to the second floor is railed and characters would need to bend the bars (**Hard (<span class='difficulty'>ddd</span>) Brawn check**) to gain access to it. A Small character could squeeze between the bars with a **Easy (<span class='difficulty'>d</span>) Coordination check**. The third floor walkway is open to the elements.
 
 Unless otherwise noted, the temple has the following physical characteristics:
 
@@ -825,9 +819,9 @@ Unless otherwise noted, the temple has the following physical characteristics:
 
 **Walls:** Walls are made of stone.
 
-**External doors:** External doors are made of stone, and locked. They require an **Formidable (<span class='difficulty'>ddddd</span>) Brawn check** to break down, or a **Daunting (<span class='difficulty'>dddd</span>) Skullduggery check** to pick the lock.
+**External doors:** External doors are made of stone, and locked. They require a **Daunting (<span class='difficulty'>dddd</span>) Brawn check** to break down, or a **Hard (<span class='difficulty'>ddd</span>) Skullduggery check** to pick the lock.
 
-**Internal doors:** Internal doors are made of wood. They can be broken down with a **Average (<span class='difficulty'>dd</span>) Brawn check** Strength check. Some are locked where noted - to pick the lock requires a **Daunting (<span class='difficulty'>dddd</span>) Skullduggery check**.
+**Internal doors:** Internal doors are made of wood. They can be broken down with a **Easy (<span class='difficulty'>d</span>) Brawn check** Strength check. Some are locked where noted - to pick the lock requires a **Hard (<span class='difficulty'>ddd</span>) Skullduggery check**.
 
 **Lighting:** The temple is in darkness.
 
@@ -837,7 +831,7 @@ There are no random encounters in the temple.
 
 **Traps**
 
-The Heralds set many mechanical traps in their temple, as defence against intruders. Unless otherwise noted, characters attempting to find traps (e.g. by examining doors) can locate them with an **Hard (<span class='difficulty'>ddd</span>) Perception check**. Attempts to disable traps can be made with a **Daunting (<span class='difficulty'>dddd</span>) Skullduggery check**. Checks to disable that fail with threat trigger the trap.
+The Heralds set many mechanical traps in their temple, as defence against intruders. Unless otherwise noted, characters attempting to find traps (e.g. by examining doors) can locate them with an **Average (<span class='difficulty'>dd</span>) Perception check**. Attempts to disable traps can be made with a **Hard (<span class='difficulty'>ddd</span>) Skullduggery check**. Checks to disable that fail with threat trigger the trap.
 
 \columnbreak
 
@@ -868,7 +862,7 @@ The second in charge of the Heralds, Lesser Hierophant Hemekef is still alive, a
 
 \pagebreakNum
 
-When awakened he is confused, and continually asks about the New Morning, whether the forces of light have arrived yet, and so forth. If his situation can be explained to him he will be full of sorrow for his fellow Heralds, yet willing to help with any information he can offer. He knows the layout to the temple, the location of all traps and the history to the space. **He is also a 5 th level neutral good cleric of Ra (Light domain), and can help with healing magic if given time to prepare his spells.** He is a serious, devout man who fervently believes in the prophecy of his sect.
+When awakened he is confused, and continually asks about the New Morning, whether the forces of light have arrived yet, and so forth. If his situation can be explained to him he will be full of sorrow for his fellow Heralds, yet willing to help with any information he can offer. He knows the layout to the temple, the location of all traps and the history to the space. He cannot act in combat and so does have stats, though he can help with healing magic; Hemekeft can use the *Heal* magic action outside of combat with a dice pool of <span class='proficiency'>c</span><span class='ability'>dd</span>, but the strain means he cannot do this more than once an hour. He is a serious, devout man who fervently believes in the prophecy of his sect.
 
 Award the character 5 XP for awakening Hemekef from his slumber.
 
@@ -893,9 +887,9 @@ If the characters are following Devek’s tracks, they lead to the door, and bac
 
 The pool is filled with water to a depth of about 2 ft., and emits is a terrible stench of rotting meat. Any players who approach the pool will waken the snake that lairs here, basking just below the surface of the water. See Creature entry below.
 
-The symbol on the door is a symbol of Ra. Below the symbol a strange warning is etched in Common: “Danger! Entry Forbidden! All Hail the New Morning!” If characters ask about the ‘New Morning’, allow them a **Daunting (<span class='difficulty'>dddd</span>) Knowledge (Lore) check** or a **Daunting (<span class='difficulty'>dddd</span>) Divine check**. A successful check reveals that the New Morning is an obscure prophecy foretelling the return of Ra’s forces of light to vanquish evil in the world. It is deemed heresy by the main church of Ra.
+The symbol on the door is a symbol of Ra. Below the symbol a strange warning is etched in Common: “Danger! Entry Forbidden! All Hail the New Morning!” If characters ask about the ‘New Morning’, allow them a **Hard (<span class='difficulty'>ddd</span>) Knowledge (Lore) check** or a **Hard (<span class='difficulty'>ddd</span>) Divine check**. A successful check reveals that the New Morning is an obscure prophecy foretelling the return of Ra’s forces of light to vanquish evil in the world. It is deemed heresy by the main church of Ra.
 
-Close inspection of the door reveals a poison needle trap, triggered when someone lifts the iron ring that serves as the door’s handle – the trap has been triggered however. The needle itself can be found on the floor, smeared in a viscous gray-green substance. Due to exposure to the air the poison is no longer active, but a character succeeding at an **Daunting (<span class='difficulty'>dddd</span>) Medicine check** recognizes this as a herbal poison that induces sleep. The door is locked but the lock has rusted, and the door is easy to push open (**Easy (<span class='difficulty'>d</span>) Brawn check**).
+Close inspection of the door reveals a poison needle trap, triggered when someone lifts the iron ring that serves as the door’s handle – the trap has been triggered however. The needle itself can be found on the floor, smeared in a viscous gray-green substance. Due to exposure to the air the poison is no longer active, but a character succeeding at an **Hard (<span class='difficulty'>ddd</span>) Medicine check** recognizes this as a herbal poison that induces sleep. The door is locked but the lock has rusted, and the door is trivial to push open.
 
 Exploring the thick undergrowth to the right leads to the veranda ([area 6](#the-dreaming-heralds-the-temple-of-ra-first-floor-6-veranda)), but it is not immediately visible from here.
 
@@ -911,13 +905,13 @@ The ceiling here is 40 ft. high.
 The door opens into a large dusty entrance hall. A wooden staircase with a polished banister curves upwards around the room. In the gloom of the ceiling above the centre of the room is a golden chandelier that glints in the dim light filtering in from outside. Passages lead from the chamber to the north, east and west.
 </div>
 
-Ask all the characters to make a **Hard (<span class='difficulty'>ddd</span>) Vigilance check**. Anyone who succeeds notices that there is a large circular area in the centre of the room, directly beneath the chandelier, that is not covered by dust. That is because this area of floor is illusionary, and covers a pit trap. See Hazard below. A character able to detect magic will notice a faint aura of illusion magic.
+Ask all the characters to make an **Average (<span class='difficulty'>dd</span>) Vigilance check**. Anyone who succeeds notices that there is a large circular area in the centre of the room, directly beneath the chandelier, that is not covered by dust. That is because this area of floor is illusionary, and covers a pit trap. See Hazard below. A character able to detect magic will notice a faint aura of illusion magic.
 
 If the characters think to look up, it is possible to see to the top of the stairs here, where an undead Herald waits patiently. See [area 15](#the-dreaming-heralds-the-temple-of-ra-second-floor-15-top-of-the-stairs).
 
-**Hazard:** An illusionary patch of floor covers a 10 ft. deep circular pit in the middle of the room. The illusion is purely visual and objects pass straight through it. Any character who steps on to the illusion must make a **Hard (<span class='difficulty'>ddd</span>) Coordination check** or fall into the pit, taking 1d6 damage.
+**Hazard:** An illusionary patch of floor covers a 10 ft. deep circular pit in the middle of the room. The illusion is purely visual and objects pass straight through it. Any character who steps on to the illusion must make an **Average (<span class='difficulty'>dd</span>) Coordination check** or fall into the pit, taking 1d6 damage.
 
-That is not the end of their trouble. The bottom of the pit contains a pressure plate that causes the chandelier to fall onto whoever is in the pit. A character falling into the pit or anyone who climbs down into the pit will trigger the plate. All characters in the put when the chandelier falls must make a **Hard (<span class='difficulty'>ddd</span>) Coordination check**. If they fail they take 1d6 damage with a successful check reducing this by half.
+That is not the end of their trouble. The bottom of the pit contains a pressure plate that causes the chandelier to fall onto whoever is in the pit. A character falling into the pit or anyone who climbs down into the pit will trigger the plate. All characters in the put when the chandelier falls must make an **Average (<span class='difficulty'>dd</span>) Coordination check**. If they fail they take 1d6 damage with a successful check reducing this by half.
 
 **Treasure:** If the chandelier falls, the precious trinkets that adorn it can be removed. See [area 15](#the-dreaming-heralds-the-temple-of-ra-second-floor-15-top-of-the-stairs) for details.
 
@@ -930,14 +924,14 @@ Both the entrances to this chamber are guarded with magical warding, which appea
 
 \pagebreakNum
 
-Any living creature that touches the warding must succeed at a **Hard (<span class='difficulty'>ddd</span>) Presence check** or take 1d3 damage and be knocked back 5 ft. A character can attempt this multiple times, but will take damage each time she fails her save. A character wearing one of the holy symbols worn by the Heralds is immune to this effect.
+Any living creature that touches the warding must succeed at an **Average (<span class='difficulty'>dd</span>) Presence check** or take 1d3 damage and be knocked back 5 ft. A character can attempt this multiple times, but will take damage each time she fails her save. A character wearing one of the holy symbols worn by the Heralds is immune to this effect.
 
 <div class='read'>
 Eight wooden desks and chairs are arranged neatly for work in this chamber, covered  in  undisturbed  thick  dust. Several alcoves reach from floor to ceiling around the walls and within each are shelves piled high with scrolls. </div>
 
 **Treasure:** Many of the scrolls crumble to desk when touched, or are blank, or contain worthless information regarding accounts or building plans. A character who spends time looking through the scrolls can uncover 4 scrolls covered with rare and beautiful calligraphy, praising Ra and the coming of the New Morning. They are worth 5gp each.
 
-Allow any character searching the room a **Hard (<span class='difficulty'>ddd</span>) Perception check** to notice that one of the shelves has a false back to it. This can be levered open to reveal a secret cubbyhole Alternately anyone who can detect magic reveals a faint aura of enchantment magic in the same area, from the 3 magical scrolls contained within. **The scrolls are kept in individual ivory cases: 2 scrolls of bless, and 1 scroll of lesser restoration.**
+Allow any character searching the room an **Average (<span class='difficulty'>dd</span>) Perception check** to notice that one of the shelves has a false back to it. This can be levered open to reveal a secret cubbyhole Alternately anyone who can detect magic reveals a faint aura of enchantment magic in the same area, from the 3 magical scrolls contained within. **The scrolls are kept in individual ivory cases: 2 scrolls of bless, and 1 scroll of lesser restoration.**
 
 #### 4. Kitchen and pantry
 
@@ -965,11 +959,11 @@ This feast was prepared before the sleeping ritual was conducted, and preserved 
 What once must have been a charming, sun-kissed veranda is now overgrown with vines and briars. Five nearly identical statues stand along the edge of the veranda depicting a naked man, arms held upward in supplication. Each man has a different animal’s head – a ram, an eagle, a serpent, a heron and a beetle. Short flights of stairs lead down into the gloom of the woods. A small animal skeleton rests next to the statue with the beetle’s head, at the southerly end of the veranda.
 </div>
 
-A character that opens the door to the veranda from the outside triggers an arrow trap set to fire at intruders. Any character standing directly in the door must succeed at a **Hard (<span class='difficulty'>ddd</span>) Coordination check** to avoid the arrow, or take 1d6 damage. Approaching from the inside allows the characters to bypass the trap and disable it with no check required.
+A character that opens the door to the veranda from the outside triggers an arrow trap set to fire at intruders. Any character standing directly in the door must succeed at an **Average (<span class='difficulty'>dd</span>) Coordination check** to avoid the arrow, or take 1d6 damage. Approaching from the inside allows the characters to bypass the trap and disable it with no check required.
 
 Closer inspection of the skeleton reveals it to be that of a small bear. A rusted scythe is embedded in its skeleton.
 
-**Hazards:** Each of the statues is trapped. The most southerly one has already been triggered, but the others remain deadly. A wicked scythe lashes out from the statue base targeting anyone with 5’ of the statue. 1d6 damage is  inflicted on any such creature that does not succeed at a **Hard (<span class='difficulty'>ddd</span>) Coordination check**. Once triggered, the traps do not reset.
+**Hazards:** Each of the statues is trapped. The most southerly one has already been triggered, but the others remain deadly. A wicked scythe lashes out from the statue base targeting anyone with 5’ of the statue. 1d6 damage is  inflicted on any such creature that does not succeed at an **Average (<span class='difficulty'>dd</span>) Coordination check**. Once triggered, the traps do not reset.
 
 <div class="footnote">The Dreaming Heralds<BR />
 <p>GENESYS</p></div>
@@ -1008,7 +1002,7 @@ Boxes are piled high in the corners of this dank cellar. A door leads to the sou
 
 The Heralds used this area for storage. The boxes contain spare white robes, blankets, tools for stone working and some kegs of spoiled cider. Alas the preservation magic placed upstairs does cover this area, so none of the stored items have rotted or rusted, and are of no value.
 
-**Hazard:** The winch next to the portcullis triggers a trap. If turned, a 10 ft. deep pit open up beneath any characters standing with 10 ft. of the door. They must make a **Hard (<span class='difficulty'>ddd</span>) Coordination check** or fall into the pit taking 1d6 damage. The portcullis can be lifted with a **Daunting (<span class='difficulty'>dddd</span>) Brawn check**, or characters who thoroughly search the room will find a small lever in the northeast corner, hidden behind some of the boxes. Pulling the lever raises the portcullis safely.
+**Hazard:** The winch next to the portcullis triggers a trap. If turned, a 10 ft. deep pit open up beneath any characters standing with 10 ft. of the door. They must make an **Average (<span class='difficulty'>dd</span>) Coordination check** or fall into the pit taking 1d6 damage. The portcullis can be lifted with a **Hard (<span class='difficulty'>ddd</span>) Brawn check**, or characters who thoroughly search the room will find a small lever in the northeast corner, hidden behind some of the boxes. Pulling the lever raises the portcullis safely.
 
 <div class="footnote">The Dreaming Heralds<BR />
 <p>GENESYS</p></div>
@@ -1049,11 +1043,11 @@ The glowing globes in the ceiling have a permanent light spell cast on them, tha
 The door to the room hangs ajar, and peering beyond you see a simple bedchamber containing a desk and 2 chairs. More arresting is the skeleton lying in the doorway, a rusted spear embedded in its ribcage.
 </div>
 
-The skeleton is a human female, one of the raised Heralds, who was ordered by Kaufra to open this chamber, but triggered the spear trap that had been placed here. Characters who inspect the trap may make an **Average (<span class='difficulty'>dd</span>) Knowledge (Adventuring) check** to determine how the trap works, and locate a small catch behind a loose brick in to the left. They may use this knowledge to automatically disable the identical spear trap in [area 13](#the-dreaming-heralds-the-temple-of-ra-second-floor-13-lesser-hierophants-quarters). The chamber contains nothing of interest.
+The skeleton is a human female, one of the raised Heralds, who was ordered by Kaufra to open this chamber, but triggered the spear trap that had been placed here. Characters who inspect the trap may make an **Easy (<span class='difficulty'>d</span>) Knowledge (Adventuring) check** to determine how the trap works, and locate a small catch behind a loose brick in to the left. They may use this knowledge to automatically disable the identical spear trap in [area 13](#the-dreaming-heralds-the-temple-of-ra-second-floor-13-lesser-hierophants-quarters). The chamber contains nothing of interest.
 
 #### 13. Lesser Hierophant's Quarters
 
-The door to this chamber is trapped with a spear that stabs at any character that opens the door, requiring a successful **Hard (<span class='difficulty'>ddd</span>) Coordination check** save to avoid 1d6 points of damage. It can be disabled as described in [area 12](#the-dreaming-heralds-the-temple-of-ra-second-floor-12-hierophants-quarters).
+The door to this chamber is trapped with a spear that stabs at any character that opens the door, requiring a successful **Average (<span class='difficulty'>dd</span>) Coordination check** save to avoid 1d6 points of damage. It can be disabled as described in [area 12](#the-dreaming-heralds-the-temple-of-ra-second-floor-12-hierophants-quarters).
  
 <div class='read'>
 This spacious yet spartan living chamber appears to have been undisturbed for centuries. Simple furniture - a bed, a desk and some shelves – has been arranged tidily around the room. Lying on the bed, eyes closed, hands clasped over its chest, is a human figure dressed in white robes.
@@ -1077,9 +1071,9 @@ The doors to this room are both locked
 A couple of small wooden desks line the walls of this dusty chamber, with blank paper neatly stacked to one side. In one corner of the room sits a small ironbound chest
 </div>
 
-The chest is trapped to prevent petty pilferers with a simple poison needle trap. If a character attempts to open the chest without disabling the trap, he must make a **Hard (<span class='difficulty'>ddd</span>) Coordination check**. If he fails, he is pricked by a needle and must make an additional **Average (<span class='difficulty'>dd</span>) Resilience check**. Failure on this second check incurs 2d6 points of poison damage.
+The chest is trapped to prevent petty pilferers with a simple poison needle trap. If a character attempts to open the chest without disabling the trap, he must make an **Average (<span class='difficulty'>dd</span>) Coordination check**. If he fails, he is pricked by a needle and must make an additional **Easy (<span class='difficulty'>d</span>) Resilience check**. Failure on this second check incurs 2d6 points of poison damage.
 
-**Treasure:** The chest contains 2100 cp, 190 sp, and 110 gp, along with a small bronze key. This unlocks the door to the stairs leading to room 17
+**Treasure:** The chest contains 2100 cp, 190 sp, and 110 gp, along with a small bronze key. This unlocks the door to the stairs leading to [area 17](#the-dreaming-heralds-the-temple-of-ra-third-floor-17-vestry)
 
 #### 15. Top of the Stairs
  
@@ -1087,7 +1081,7 @@ The chest is trapped to prevent petty pilferers with a simple poison needle trap
 The staircase winds upwards, giving an better view of the chandelier. From here, you can see several small golden sun- and-stars trinkets dangling from it. More pressing, a humanoid figure dressed in white robes waits at the top of the stairs, staring blankly.
 </div>
 
-**Creature:** The creature is a Herald (see NPC summary) who has been tasked with guarding the second floor. It will not move unless attacked or a character approaches within 20 ft., at which point it proceeds to move directly to [area 16](#the-dreaming-heralds-the-temple-of-ra-second-floor-16-dormitory) to alert the Heralds there.
+**Creature:** The creature is a [Herald](#the-dreaming-heralds-the-temple-of-ra-npc-statistics-herald-minion) (see NPC summary) who has been tasked with guarding the second floor. It will not move unless attacked or a character approaches within 20 ft., at which point it proceeds to move directly to [area 16](#the-dreaming-heralds-the-temple-of-ra-second-floor-16-dormitory) to alert the Heralds there.
 
 **Treasure:** If the chandelier can be removed, either by triggering the pressure plate in [area 1](#the-dreaming-heralds-the-temple-of-ra-first-floor-1-temple-entrance) or otherwise, the trinkets can be removed easily enough. There are 7 golden suns and stars worth 5 gp each.
 
@@ -1112,13 +1106,13 @@ Some of the unfortunate Heralds came here for their long sleep but were slain by
 
 #### 17. Vestry
 
-The door to the staircase leading up here is locked and can be opened with the key found in the office ([area 14](#the-dreaming-heralds-the-temple-of-ra-second-floor-14-office-and-treasury)). A character attempting to pick the lock requires a **Daunting (<span class='difficulty'>dddd</span>) Skullduggery check**.
+The door to the staircase leading up here is locked and can be opened with the key found in the office ([area 14](#the-dreaming-heralds-the-temple-of-ra-second-floor-14-office-and-treasury)). A character attempting to pick the lock requires a **Hard (<span class='difficulty'>ddd</span>) Skullduggery check**.
  
 <div class='read'>
 Stairs lead up into the darkness from here, covered with a trail of long-dried blood.
 </div>
 
-The spike trap that killed Kaufra protects the stairs leading up to this chamber. When a creature steps on the fifth stair, roughly halfway way up, it makes an ominous clicking noise. All characters standing on the stairs must make a **Hard (<span class='difficulty'>ddd</span>) Coordination check**, with the triggering character adding <span class='setback'>b</span> due to his position on the stairs. Any characters that fail the check are stabbed by one of the rusty spikes that emerge from the walls, for 1d8 damage. The trap resets after 3 rounds. As the characters reach the top of the stairs, read the following.
+The spike trap that killed Kaufra protects the stairs leading up to this chamber. When a creature steps on the fifth stair, roughly halfway way up, it makes an ominous clicking noise. All characters standing on the stairs must make an **Average (<span class='difficulty'>dd</span>) Coordination check**, with the triggering character adding <span class='setback'>b</span> due to his position on the stairs. Any characters that fail the check are stabbed by one of the rusty spikes that emerge from the walls, for 1d8 damage. The trap resets after 3 rounds. As the characters reach the top of the stairs, read the following.
  
 <div class='read'>
 From the top of the stairs, the room stretches left and right to two identical wings. Long wooden benches rest against the walls. In the centre of each wing stands a pillar, carved in the form of heron-headed Ra. A pile of empty vials, some smashed, is in the eastern corner of the right wing.
@@ -1139,7 +1133,7 @@ An eerie violet light flickers here, illuminating murals on the walls depicting 
 
 As the characters enter this chamber, necrotic energy flares from the shrine to each of lying forms, causing them to rise and defend the chamber.
 
-**Creatures:** [Kaufra](#the-dreaming-heralds-the-temple-of-ra-npc-statistics-kaufra-nemesis) and 7 [Heralds](#the-dreaming-heralds-the-temple-of-ra-npc-statistics-herald-minion) attack all who enter here. The Heralds will engage the nearest intruder in melee, whilst Kaufra protects the shrine, casting spells if required. He will bodily prevent any character from reaching the shrine, however if 2 or more characters engage him in melee he is unable to block others. It takes a full round action to destroy the shrine, sweeping the skull candles from the top is enough. Once destroyed, all the Heralds in the temple collapse and rapidly turn to dust. Kaufra is then freed and will attempt to escape the shrine fleeing blindly into the Woods unless stopped.
+**Creatures:** [Kaufra](#the-dreaming-heralds-the-temple-of-ra-npc-statistics-kaufra-nemesis) and 7 [Heralds](#the-dreaming-heralds-the-temple-of-ra-npc-statistics-herald-minion) attack all who enter here. The Heralds will engage the nearest intruder in melee, whilst Kaufra protects the shrine, casting spells if required. He will bodily prevent any character from reaching the shrine, however if 2 or more characters engage him in melee he is unable to block others. It takes an action to destroy the shrine; sweeping the skull candles from the top is enough. Once destroyed, all the Heralds in the temple collapse and rapidly turn to dust. Kaufra is then freed and will attempt to escape the shrine fleeing blindly into the Woods unless stopped.
 
 **Treasure:** Kaufra has little need for worldly wealth, however there is a silver bowl carved with symbols of Ra that is worth 160 gp kept on top of the shrine for ritual purposes, which can also be used for the manufacture of the antidote to the sleeping draught, as described in [area 11](#the-dreaming-heralds-the-temple-of-ra-second-floor-11-herbalists-laboratory). The other treasure is Kaufra’s ebony-handled mace, the *Eye of Ra*. It is inscribed with Celestial runes that spell out holy prayers to Ra.
 
@@ -1417,8 +1411,8 @@ Source: [Genesys Bestiary](https://community.fantasyflightgames.com/topic/265621
 
 **Spells:** Kaufra can choose any magic action allowed for the Divine skill, and may select additional spell effects, as normal. His favoured spells are:
 * Inflict Wounds (Choose one target at short range and make an **Average (<span class='difficulty'>dd</span>) Divine check**; if the check succeeds, this magic attach inflicts 3 damage +1 damage per uncancelled <span class='symbols'>s</span>, with a Critical rating of 2 and Vicious 2)
-* Cause Fear (Choose one target at short range and make a **Daunting (<span class='difficulty'>dddd</span>) Divine check**; if the check succeeds, until the end of the character’s next turn, the target decreases the ability of any skill checks they make by one; the target’s strain and wound thresholds are reduced 2)
-* Hold Person (Choose two targets within short range and make a **Average (<span class='difficulty'>dd</span>) Divine check**; if the check succeeds, Kaufra can choose one additional target for each <span class='symbols'>a</span> and until the end of the character’s next turn, all target decreases the ability of any skill checks they make by one; if an affected character suffers strain for any reason, they suffer 1 additional strain).
+* Cause Fear (Choose one target at short range and make a **Hard (<span class='difficulty'>ddd</span>) Divine check**; if the check succeeds, until the end of the character’s next turn, the target decreases the ability of any skill checks they make by one; the target’s strain and wound thresholds are reduced 2)
+* Hold Person (Choose two targets within short range and make an **Average (<span class='difficulty'>dd</span>) Divine check**; if the check succeeds, Kaufra can choose one additional target for each <span class='symbols'>a</span> and until the end of the character’s next turn, all target decreases the ability of any skill checks they make by one; if an affected character suffers strain for any reason, they suffer 1 additional strain).
 
 \columnbreak
 
