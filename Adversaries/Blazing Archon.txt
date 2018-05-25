@@ -2,7 +2,7 @@
 
 /* IMPORTS */
 
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,600,700');
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
 
 /* Main Background */
@@ -117,7 +117,8 @@
 .phb wide {clear:both;}
 .phb ul {
     list-style: none;
-    font-size: 11pt
+    font-size: 11pt;
+    /*font-weight: 700;*/
 }
 .phb ul li::before {
     content: "•"; 
@@ -400,6 +401,7 @@
     padding:15px;
     position:relative;
     background-color:#761213;
+    margin-bottom:25px;
     --notchSize: 10px;
   
     clip-path: 
@@ -870,6 +872,16 @@
     font-size:9pt;
 }
 
+.phb .adversary .woundparagon {
+    position:relative;
+    left:85px;
+    top:6px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-size:9pt;
+}
+
 .phb .adversary .lblstrain {
     position:relative;
     left:89px;
@@ -884,6 +896,15 @@
 .phb .adversary .strain {
     position:relative;
     left:139px;
+    top:6px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-size:9pt;
+}
+.phb .adversary .strainparagon {
+    position:relative;
+    left:137px;
     top:6px;
     width:25px;
     text-align:center;
@@ -1251,13 +1272,13 @@ You can create example boxes like this with `<div class='example'></div>`
 
 <div style="margin-top:25px;"></div>
 
-<div class="read"> Read Aloud Text  like this is created with the HTML DIV tag and the "read" class. It normally has some more stuff in it so I'm just gonna type a bit of random mumbo jumbo to make the box a little bigger.  USE ITC SYMBOL FONT HERE</div>
-
-<div style="margin-top:25px;"></div>
-
 \columnbreak
 
-<div style="margin-top:25px;"></div>
+<div class="read"> Read Aloud Text  like this is created with the HTML DIV tag and the "read" class. It normally has some more stuff in it so I'm just gonna type a bit of random mumbo jumbo to make the box a little bigger.  USE ITC SYMBOL FONT HERE</div>
+
+<!--<div style="margin-top:25px;"></div>-->
+
+<!--<div style="margin-top:25px;"></div>-->
 
 ### Stat Blocks
 
@@ -1363,8 +1384,6 @@ Start with an Archetype then add:
 `</div>`
 
 Or use "minion" for the class, and delete the strain span.
-
-
 
 <div class="footnote">THEME TESTER<BR />
 <p>GENESYS</p>
@@ -1501,7 +1520,7 @@ You can use markup to create tables just fine, normally, but you do need to buil
     #p5{ display: none;}
 </style>
 
-### Blazing Archon (Armoured)
+### Blazing Archon (Armoured/Enraged)
 
 <div class="adversary">
 <span class="bra">3</span>
@@ -1524,8 +1543,8 @@ You can use markup to create tables just fine, normally, but you do need to buil
 <span class="lbldef">M/R DEFENSE</span>
 <br>
 <span class="soak">6</span>
-<span class="wound">20</span>
-<span class="strain">12</span>
+<span class="woundparagon">20/20</span>
+<span class="strainparagon">12/12</span>
 <span class="mdef">1</span>
 <span class="rdef">1</span>
 </div>
@@ -1533,27 +1552,40 @@ You can use markup to create tables just fine, normally, but you do need to buil
 <br/>
 
 **Skills:**
-* Melee (Light) 3
-* Brawl 3
-* Discipline 3
-* Resilence 2
-* Vigilance 2
-* Cool 1
-* Perception 3
+Melee (Light) 3, Brawl 3, Discipline 3, Resilence 2, Vigilance 2, Cool 1, Perception 3
  
 **Talents:**
-* Finesse (The Blazing Archon may use Agility instead of Brawn when making Melee (Light) checks)
-* Adversary 2 (Upgrade all combat checks targeting the Blazing Archon by 2)
+Finesse *(The Blazing Archon may use Agility instead of Brawn when making Melee (Light) checks)*
+
+Adversary 2 *(Upgrade all combat checks targeting the Blazing Archon by 2)*
 
 **Abilities:**
-* Elemental Immunity Fire (Fire elementals are immune to damage from sources with Burn)
-* Elemental Weakness Water (Fire elementals suffer 5 wounds when doused in water)
-* Extra-planar stability (Archons cannot be Immobilised or knocked Prone)
-* Darkvision (When making skill checks, Elementals remove up to <span class="setback">bb</span> imposed due to darkness)
-* Flame Blast (Once per encounter, the Blazing Archon may select up to 3 target characters in short or engaged rnage and make an **Average (<span class="difficulty">dd</span>) Resilience check**. If the check succeeds, each affected character suffers 5 damage +1 for each <span class="symbols">s</span>. The Blazing Archon may spend <span class="symbols">aa</span> to cause the affected targets to suffer the same damage next turn)
+Paragon
 
-**Equipment:** Flaming Kilij (Melee [Light]; Damage 8; Critical 3; Range [Engaged]; Burn 2; Burn may be activated with <span class="symbols">a</span> instead of <span class="symbols">aa</span>)
+Elemental Immunity Fire *(Fire elementals are immune to damage from sources with Burn)*
 
+Elemental Weakness Water *(Fire elementals suffer 5 wounds when doused in water)*
+
+Extra-planar stability *(Archons cannot be Immobilised or knocked Prone)*
+
+Darkvision *(When making skill checks, Elementals remove up to <span class="setback">bb</span> imposed due to darkness)*
+
+Flame Blast *(Once per encounter, the Blazing Archon may select up to 3 target characters in short or engaged rnage and make an **Average (<span class="difficulty">dd</span>) Resilience check**. If the check succeeds, each affected character suffers 5 damage +1 for each <span class="symbols">s</span>. The Blazing Archon may spend <span class="symbols">aa</span> to cause the affected targets to suffer the same damage next turn)*
+
+Fire form [Enraged Form] *(Engaged characters take damage as if from a Severity 3 fire. If the Archon moves from short to engaged, one character takes 3 damage and is on fire until put out, according to pg 111 GCRB)*
+
+Uncontrolled [Enraged Form] *(Always attacks whoever damaged it last. Else, closest it can see. No allies)*
+
+Many-armed [Enraged Form] *(The Blazing Archon adds <span class="boost">b</span> to Brawl checks and may use <span class="symbols">aa</span> to hit a second engaged character with the same damage as the first target)*
+
+**Equipment:**
+Flame Blast *(Resilience; Damage 5; Critical 2; Range [Short]; Burn 1; Burn may be activated with <span class="symbols">a</span> instead of <span class="symbols">aa</span>; Slow-Firing 3; Blast 5)*
+
+Flaming Kilij [Armoured Form] *(Melee [Light]; Damage 8; Critical 3; Range [Engaged]; Burn 2; Burn may be activated with <span class="symbols">a</span> instead of <span class="symbols">aa</span>)*
+
+Flaming touch [Enraged Form] *(Brawl; Damage 5; Critical 3; Range [Engaged]; Burn 2; Burn may be activated with <span class="symbols">a</span> instead of <span class="symbols">aa</span>)*
+
+<!--
 \columnbreak
 
 ### Blazing Archon (Enraged)
@@ -1606,8 +1638,9 @@ You can use markup to create tables just fine, normally, but you do need to buil
 * Extra-planar stability (Archons cannot be Immobilised or knocked Prone)
 * Darkvision (When making skill checks, Elementals remove up to <span class="setback">bb</span> imposed due to darkness)
 * Flame Blast (Once per encounter, the Blazing Archon may select up to 3 target characters in short or engaged rnage and make an **Average (<span class="difficulty">dd</span>) Resilience check**. If the check succeeds, each affected character suffers 5 damage +1 for each <span class="symbols">s</span>. The Blazing Archon may spend <span class="symbols">aa</span> to cause the affected targets to suffer the same damage next turn)
-* Fire form (Engaged characters take damage as if from a Severity 3 fire. If the Archon moves from short to engaged, one character takes 3 damage and is on fire until put out, according to pg 111 GCRB)
-* Uncontrolled (Always attacks whoever damaged it last. Else, closest it can see. No allies)
-* Many-armed (The Blazing Archon adds <span class="boost">b</span> to Brawl checks and may use <span class="symbols">aa</span> to hit a second engaged character with the same damage as the first target)
+* Fire form [Enraged Form] (Engaged characters take damage as if from a Severity 3 fire. If the Archon moves from short to engaged, one character takes 3 damage and is on fire until put out, according to pg 111 GCRB)
+* Uncontrolled [Enraged Form] (Always attacks whoever damaged it last. Else, closest it can see. No allies)
+* Many-armed [Enraged Form] (The Blazing Archon adds <span class="boost">b</span> to Brawl checks and may use <span class="symbols">aa</span> to hit a second engaged character with the same damage as the first target)
 
-**Equipment:** Flaming touch (Brawl; Damage 5; Critical 3; Range [Engaged]; Burn 2; Burn may be activated with <span class="symbols">a</span> instead of <span class="symbols">aa</span>)
+**Equipment:** Flaming touch [Enraged Form] (Brawl; Damage 5; Critical 3; Range [Engaged]; Burn 2; Burn may be activated with <span class="symbols">a</span> instead of <span class="symbols">aa</span>)
+-->
