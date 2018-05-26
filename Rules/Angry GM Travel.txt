@@ -1206,44 +1206,39 @@
 
 Source: [The Angry GM](http://theangrygm.com/getting-there-is-half-the-fun/)
 
-### To Map Or Not to Map
-
-First of all, lets talk about mapping. It's not necessary to have a map with detailed travel distances. You can use blobby little vague maps. Or no maps at all. The key isn’t to get hung up on the map itself, but rather on the choices the map creates.
-
-Whether you use a map or not, the key is to figure out the different routes that the party can take 
-
-For example, let’s say the adventure is all about getting from Onett to Twoson. The map offers three basic routes: directly through the Goblin Woods, along the Road, or through the Hills of Ancient Ruins. Those represent the choices the party can make. In addition, the party could also choose to shave some time off the Road by leaving the road and traveling north of the lake.
-
-Figure out roughly how long each route will take. The Road might take ten days. The path through the Goblin Woods might take four days (accounting for the slowdown of the terrain). The Hills might take seven days. That’s just the baseline.
-
-You don’t have to show the party the map. If you don't, just explain that they can travel directly through the Goblin Woods and get there in four days, but they will have to manage a river crossing. They can follow a long, winding road which will take ten days. Or they can follow an old road into the Hills of Ancient Ruins and then cut north once the old road gives out until they hit the river ford. That whole trek will take seven days. That gives them enough information to choose their route. At least based on time.
-
-Once you start tracking the party’s movement, you can just eyeball it as best you can based on the fraction of time traveled. Or just narrate the trip. Mapping – and mapping accurately – is NOT super important.
-
-### Designing Routes or the Map
-
-First, you have to create the wilderness through which the party will be traveling. And you can do this in one of two ways. You can either design a few different routes for the party to choose from. Or you can draw a map. As noted above, the map doesn’t have to be accurate by any stretch. It just have to show the relative distances and where the different types of terrain are.
-
-Either way, you’re looking to figure out five things:
+Offer a few basic routes to the destination, and decide on roughly how long each route will take. For example:
+* Directly through the woods, including a river crossing, will take 4 days
+* The long, winding road will take 10 days
+* An old road through the ruins, then following the river, takes 7 days
+ 
+For each route, decide on the following attributes, giving each a rating from 1 to 5:
 * **Length** - How long is each route?
 * **Danger** - How dangerous is each route (or each section)? 
 * **Navigation** - How easy is each route to navigate (or each section)? 
 * **Resources** - What’s the available of resources along each route (or each section)? 
 * **Discovery** - How likely is the party to get sidetracked by an interesting discovery on each route? 
 
-Before I launch into specific mechanics, let me explain that I like to grade each one of those things on a five point scale.
-
-First of all, Danger is measured from 1 to 5:
+Example ratings for Danger:
 * 1 is a relatively safe, civilized region or a barren, desolate region.
 * 2 is a dangerous frontier.
 * 3 is enemy territory.
 * 4 is regularly patrolled, extremely hostile territory. 
 * 5 is reserved for the sort of terrain which is filled with monsters that are actively trying to destroy all intruders and can detect the intruders with supernatural means (Hell, or The Land of the Dead).
+ 
+Example ratings for Navigation:
+* 1 Gently rolling flatlands
+* 5 Deserts
+* +1/-1 for Fantasy factors like confounding fair curses or the blessings of the Land Spirits
 
-Navigation and Resources are both measured in terms of a DC. But either can be moot. For example, following a road or river makes Navigation moot. And traveling through civilized, friendly farmland makes Resources moot. Otherwise, set the DCs as follows: 
+Example ratings for Resources:
+* 1 Verdant forests and lush meadows
+* 5 Deserts
+* +1/-1 for Fantasy factors like confounding fair curses or the blessings of the Land Spirits
+ 
+Of course, certain routes will have no rating for a given attribute; for example, following a road or river makes Navigation moot. And traveling through civilized, friendly farmland makes Resources moot. In that case, ignore that attribute.
 
-##### Navigation/Resources DC
-| Rating | Difficulty
+##### Table I.1 Route Attribute Difficulty
+| Rating | Difficulty |
 |:----:|:-------------:|:-:|
 | 1 | <span class='difficulty'>d</span> |
 | 2  | <span class='difficulty'>dd</span> |
@@ -1251,24 +1246,15 @@ Navigation and Resources are both measured in terms of a DC. But either can be m
 | 4 | <span class='difficulty'>dddd</span> |
 | 5 | <span class='difficulty'>ddddd</span> |
 
-
-Verdant forests and lush meadows have a resource rating of 1; deserts have a Resource rating of 5. Gently rolling flatlands have a Navigation rating of 1; a desert has a Navigation rating of 5. If you want to add a Fantasy Factor like confounding fair curses or the blessings of the Land Spirits, add or subtract 1 to the Navigation or Resource rating.
-
-\pagebreak
-
 ### Choosing a Route
 
-The first step in traveling is to choose a route. The players need to somehow find out what the lay of the land is and learn any interesting details about the routes in question. They should have a rough idea about how long each route is, how dangerous, how difficult it is to navigate, and how difficult it is to forage, because they are going to need to plan their food supplies accordingly. Presumably, they will have access to a map or local knowledge or research.
+The first step for the players is choosing a route, and they need to somehow find out what the lay of the land is and learn any interesting details about the routes in question. They should have a rough idea about how long each route is, how dangerous, how difficult it is to navigate, and how difficult it is to forage, because they are going to need to plan their food supplies accordingly. Presumably, they will have access to a map or local knowledge or research.
 
-As the GM, it’s your job to find ways to get this information in front of your players. As far as discoveries, you can use that as a way to entice the players along a particular route or just vaguely hint at it or leave it as a surprise. Discoveries mainly come up as a way to drive choices along the way.
-
-Now, the party doesn’t have to know everything. Partway through a trip through a forest, they can encounter signs that are passing into goblin territory or cursed land or something and they can make a decision then and there about whether to press through the new territory or whether to try to go around or even retreat and try a different route. Those sorts of surprises can help add decisions to a longer trip.
-
-At this point, it is important for you, the GM, to know how long the route should take in days. That’s how you’ll be tracking things. Not in miles. In days.
+However, the party doesn't need to know everything. Partway through a trip through a forest, they can encounter signs that are passing into goblin territory or cursed land, for example, and they can make a decision then and there about whether to press through the new territory or whether to try to go around or even retreat and try a different route.
 
 ### The Travel Day
 
-Once the party sets out, it’s time to resolve each day of travel. At the beginning of the day, the party decides what kind of pace to set: Slow, Medium, or Fast.
+Once the players decide on a route and set out, it's time to resolve each day of travel. At the beginning of the day, the party decides what kind of pace to set: Slow, Medium, or Fast.
 
 At a **Slow Pace**, the party is moving carefully and quietly. They gain the following effects:
 
@@ -1278,6 +1264,8 @@ At a **Slow Pace**, the party is moving carefully and quietly. They gain the fol
 * Navigation checks enjoy <span class='boost'>b</span>.
 * The party’s speed is reduced by a third. So every three days of travel count as only two days of travel.
 
+\pagebreakNum
+
 At a **Medium pace**, the party travels normally. They may forage for food with <span class='setback'>b</span>.
 
 At a **Fast pace**, the party travels more quickly. They gain the following effects:
@@ -1286,83 +1274,57 @@ At a **Fast pace**, the party travels more quickly. They gain the following effe
 * The party suffers <span class='setback'>b</span> on all checks to perceive dangers and on navigation checks.
 * Hostile creatures enjoy <span class='boost'>b</span> on checks to detect or track the party.
 
-Once the party has set the pace for the day, they can change the pace based on what happens to them during the day. Don’t worry, you’ll resolve all of that stuff at the end of the day.
+Once the party has set the pace for the day, they can change the pace based on what happens to them during the day, but that will be resolved later.
 
-Now, roll six 6-sided dice. Each one represents a time-period of the day. Morning, Afternoon, Evening, Dusk, Midnight, Predawn. For each one that shows the Danger number or less, an encounter MIGHT happen.
+Roll 6d6, representing a time period of the day -  **Morning**, **Afternoon**, **Evening**, **Dusk**, **Midnight**, **Predawn**. For each one that shows the Danger number or less, an encounter *might* happen. Now roll 1d6, and if that shows the Discovery number or less, you need to tantalize the party with something interesting off the road for them to check out. A ruined tower, a sign of magic, an old tomb, an ancient henge, a shrine, etc. The key is that it has to be far enough off the path that the party has to choose whether to waste a few hours investigating it or to ignore it.
 
-For example, if the Danger is 3, and your six dice show 5, 2, 3, 4, 1, 6; the party will have three encounters that day. One in the evening, one at dusk, and one at predawn. Notice that the danger number is actually the number of encounters you will expect to happen in one day.
-
-Finally, roll one more d6. If that shows the Discovery number or less, you need to tantalize the party with something interesting off the road for them to check out. A ruined tower, a sign of magic, an old tomb, an ancient henge, a shrine, or whatever. The key is that it has to be far enough off the path that the party has to choose whether to waste a few hours investigating it or to ignore it.
-
-Now, play out the daytime encounters as they happen. After each encounter, the party might spend some time resting, recovering, or whatever. Don’t worry about that. They might also decide to change their pace. That’s fine too.
-
-When playing out the encounters, remember that surprise is a definite possibility. If the party is moving slowly and quietly and the enemy doesn’t detect them, they should be able to plan an ambush or bypass the encounter. If the party is rushing, they might very well be surprised and ambushed themselves. In fact, it is entirely possible that neither party detects the other and the encounter never happens.
+Play out the daytime encounters as they happen, remembering that surprise is a possibility. If the party is moving slowly and quietly and the enemy doesn't detect them, they should be able to plan an ambush or bypass the encounter. If the party is rushing, they might very well be surprised and ambushed themselves. In fact, it is entirely possible that neither party detects the other and the encounter never happens.
 
 If no encounters or discoveries happen, the day passes uneventfully and the PCs find a place to make camp for the night.
 
-\pagebreak
-
 ### Making Camp
 
-It’s time for some bookkeeping.
+First of all, you have to find out if the party is lost. To do this, have the best navigator make a **Survival check** or **Knowledge (Geography)**, with a difficulty according to the Navigation rating of the route and **Table I.1**. If the party traveled at a Fast pace at any point during the day, apply <span class='setback'>b</span>. Make this roll in secret. If they fail, the party has gotten lost at some point during the day. They just don't know it yet.
 
-First of all, you have to find out if the party is lost. To do this, have the best navigator make a navigation roll against the Navigation DC of the terrain. If the party traveled at a Fast pace at any point during the day, apply <span class='setback'>b</span>. Make this roll in secret. If they fail, the party has gotten lost at some point during the day. They just don’t know it yet.
+Now, calculate how many days of travel the party logged during the day. If the party isn't lost, this is determined by their pace. They either log 2/3, 1, or 1 1/3 days depending on the slowest pace they moved at during the day. If the party has now logged enough days to finish their route, they will reach their destination tomorrow. If the party stopped to investigate a discovery, subtract 1/3 from their progress unless they spent the whole day on the discovery, in which case they make no progress. Use your best judgment. Likewise, use your best judgment if the party does something weird like stopping halfway through the day.
 
-Now, figure out how many days of travel the party logged during the day. If the party isn’t lost, this is determined by their pace. They either log 2/3, 1, or 1 1/3 days depending on the slowest pace they moved at during the day. If the party has now logged enough days to finish their route, they will reach their destination tomorrow. If the party stopped to investigate a discovery, subtract 1/3 from their progress unless they spent the whole day on the discovery. In which case, they make no progress. Use your best judgment. Likewise, use your best judgment if the party does something weird like stopping halfway through the day.
+Finally, calculate how much food and water the party has consumed.
 
-Finally, figure out how much food and water the party has consumed.
-* If the party moved at a slow pace all day, allow each of them to make a check against the Forage DC.
-* If the party didn’t move slowly all day but never moved at a fast pace at all, have each make a Forage check with <span class='setback'>b</span>.
+* **Slow Pace:** Allow each character to make a **Survival check** with a difficulty according to the Resources rating of the route and **Table I.1**
+* **Medium Pace:** Allow each character to make a **Survival check**, adding <span class='setback'>b</span>, with a difficulty according to the Resources rating of the route and **Table I.1**
+* **Fast Pace:** No character can forage for food
 
-If anyone fails, that means the party didn’t find enough food to feed themselves. Each failure requires someone to consume one pound of food from their supply (one day worth of rations). Assume that, as long as anyone succeeds at foraging, the party turned up enough water to refill their waterskins and drink their fill. But if they are traveling through a desert, you can modify that.
-
-If everyone fails to forage, they drain their waterskins and are now out of water. If their waterskins were already drained and they don’t have a backup supply, they are now dehydrating.
+Each character that fails did not find enough food, and so they must consume one day's worth of rations. If any character generates <span class="symbols">t</span>, they find enough food to provide for another character. Assume that, as long as anyone succeeds at foraging, the party turned up enough water to refill their waterskins and drink their fill, unless of course water would be extra difficult to come by, such as in a desert. If everyone fails, they drain their waterskins and are now out of water. If their waterskins were already drained and they don't have a backup supply, they are now dehydrating. *(This still required some Genesys rules)*
 
 This process should go quickly. Roll for Navigation and determine if they are lost and then mark off the progress if they aren’t. Then, everyone rolls a forage checks and marks off food. Done and done. Now, it’s time for the night.
 
-\columnbreak
+Play out the nighttime encounters (if any), remembering the possibilities for detection and ambush. Roll randomly to determine who is awake and on watch for each encounter.
 
-### The Night
-
-It really doesn’t matter who is taking which watch shift and when. There are enough hours in the night that a party of any size can all get a good night sleep and still have a watch rotation with each character taking a shift. If the party really wants to fight about it or someone refuses to take watch or someone takes extra shifts because they are an elf and require less sleep, fine. So be it. But otherwise, just assume that everyone takes a watch sometime.
-
-Now play out the nighttime encounters. Remember the possibilities for detection and ambush. Roll randomly to determine who is awake on watch for each encounter. Play them out. If no encounters happen, the night passes uneventfully. Hooray.
-
-When the party wakes up, you do it all again.
+Once the night has passed, start again from [The Travel Day](#how-to-actually-handle-travel-table-i1-route-attribute-difficulty-the-travel-day) until they arrive at their destination.
 
 ### Being Lost
 
-What happens when the party is lost? The easy way to handle it is to assume that each day of travel doesn’t count as any progress. When the party makes camp, log zero progress. Roll a secret check for the navigator. If this check succeeds, the navigator will recognize that the party has become lost the next morning as the party is starting to set out. Otherwise, the party continues to make no progress every day.
+If the party is lost (by failing their check against the Navigation rating in [Making Camp](#how-to-actually-handle-travel-table-i1-route-attribute-difficulty-making-camp)), each day of travel doesn't contribute any progress. Make a secret **Survival check** or **Knowledge (Geography)**, again with a difficulty according to the Navigation rating of the route and **Table I.1**. If the check succeeds, the navigator will recognize that the party has become lost the next morning as the party is starting to set out. Otherwise, the party continues to make no progress every day.
 
-There are a few other ways to handle it. First of all, if the party travels in one direction long enough, they are going to discover an unexpected feature. They will hit a river, a new type of terrain, a lake, a road. If you drew a map, determine randomly what they will hit and where they will hit it or just pick something. Assume they travel in a straight line in a random direction from the middle of whatever terrain or route they were in. Use your best judgment.
+\pagebreakNum
 
-If the party knows the trip should have taken three to five days, and they hit day seven, they are going to realize they are lost.
+There are other ways for the party to realise they are lost:
+* If the party travels in one direction long enough, they are going to discover an unexpected feature. They will hit a river, a new type of terrain, a lake, a road. If you drew a map, determine randomly what they will hit and where they will hit it or just pick something. Assume they travel in a straight line in a random direction from the middle of whatever terrain or route they were in.
+* If the party knows the trip should have taken three to five days, and they hit day seven, they are going to realize they are lost.
+ 
+*(Alternatively, each day that they travel while lost, roll a d6 when logging their progress. On a 1, they managed to travel in the right direction and log progress normally. On a 5 or 6, they are losing ground and subtract however much progress they would have made based on their route. For anything else, add no progress.)*
 
-Alternatively, each day that they travel while lost, roll a d6 when logging their progress. On a 1, they managed to travel in the right direction and log progress normally. On a 5 or 6, they are losing ground and subtract however much progress they would have made based on their route. For anything else, add no progress.
+Once the party realises they are lost, they need to decide on a new plan. They might pick a direction they know will lead them to something, they might try to find a landmark to make toward, or they might try to backtrack. You can resolve each of those simply by assuming the party starts a new route and figuring it out accordingly. At this point, the party is no longer lost on the new route. The important thing is that the party can't just get unlost. They need to have an alternative plan once they are lost. Otherwise, they will just keep wandering.
 
-Once the party realizes they are lost, either because they hit a feature they shouldn’t have or because they realized they have been traveling too long or because the navigator figured out they got lost somewhere, they need to figure out a new plan.
+\pagebreakNum
 
-\pagebreak
+### Encounters
 
-They might pick a direction they know will lead them to something (“we’ll head north until we find the river” or “we’ll keep traveling in this direction until we find the edge of the forest”), they might try to find a landmark to make toward (“we know that mountain peak is to the southeast, if we keep toward it, we should be able to find our way back to the road” or “can I climb a tree and see if I can spot the lake from here”), or they might try to backtrack (“can we follow our own trail back home?”).
-
-You can resolve each of those simply by assuming the party starts a new route and figuring it out accordingly. At this point, the party is no longer lost on the new route. The important thing is that the party can’t just get unlost. They need to have an alternative plan once they are lost. Otherwise, they will just keep wandering.
-
-### Random Encounters
-
-When designing random encounters, it’s important to note a few things.
-
-First of all, random encounters represent all of the potential dangers and hazards an area might present to travelers. They aren't just a list of combat encounters. In fact, even when it is a list of encounters, it is a list of potential encounters. Remember, the party might evade an encounter. Or the encounter might evade the party. And you don’t even have to assume every encounter is hostile although I advise against using random encounters for friendly encounters.
-
-Bandits might be willing to let the party go for a price, especially if the party looks powerful and they aren’t sure of the odds. Some monsters might ignore the party if the party throws some food at them before retreating. Orcs might trade threats and insults with the party in social interACTION!, with each side trying to get the other to back down and go away. Some animals might merely threaten the party and try to frighten them away from their nest or other territory.
-
-Random encounters can also represent hazards. Quicksand in swamps, flash floods in hills and badlands, booby traps in kobold territory. They can also be obstacles like rockfalls across a road or a washed out bridge.
-
-In general, the party should deal with one to two of them a day unless they start wandering through very dangerous territory. That means that three days of travel is roughly equivalent to a short dungeon adventure.
+The encounters represent all of the *potential* dangers and hazards an area might present to travelers. They aren't just a list of combat encounters. Remember, the party might evade an encounter, or vice versa, and you don’t even have to assume every encounter is hostile: Bandits might be willing to accept coin to leave the part alone; some monsters might ignore the party if they distract it with food; Orcs might trade threats and insults with the party in a structured social encounter; Some animals might merely threaten the party and try to frighten them away from their nest or other territory. The encounters can also represent hazards: Quicksand in swamps; flash floods in hills and badlands; booby traps in kobold territory. They can also be obstacles like rockfalls across a road or a washed out bridge.
 
 Your encounters should be interesting, but not complicated. Focus on single creatures or small groups of identical creatures. Instead of a list of encounters, you can just have a small bestiary of creatures you can mix and match easily to get the results you want. In goblin territory, you can get a lot of mileage by mixing and matching goblin skirmishers, goblin archers, and giant spider pets in different combinations.
 
-Keep in mind that the party will have the opportunity to rest and recover more frequently in the wild and will probably encounter fewer encounters than a typical dungeon day. To compensate, it’s important to skew your combat encounters toward the hard end of the difficulty curve. Use the guidelines in your particular edition of D&D or Pathfinder to up the difficulty. Hard should be the baseline difficulty for wilderness encounters to keep them meaningful.
+Keep in mind that the party will have the opportunity to rest and recover more frequently in the wild. To compensate, it’s important to skew your combat encounters toward the hard end of the difficulty curve.
 
 ### Discoveries
 
@@ -1372,4 +1334,4 @@ Discoveries are basically just encounters that somehow bait the party into check
 
 An old ruined tower with an intact cellar, for example, might have a strongbox in the basement with some money and other trinkets, but it might be protected by a booby trap. Or something living in the cellar. An ancient shrine might reward an offering with a minor blessing or boon and might punish anyone taking from the offering bowl.
 
-These discoveries are your chance to give the players something to interact with if they are willing to waste time. Remember, if the rat survives the trap, he ends up with some free cheese for his trouble. You’ll need one or two discoveries for every three days of travel, more than likely. But it’s always good to have a pile of them in case you ever need one on the fly.
+These discoveries are your chance to give the players something to interact with if they are willing to waste time. Remember, if the rat survives the trap, he ends up with some free cheese for his trouble. You'll need one or two discoveries for every three days of travel, more than likely. But it’s always good to have a pile of them in case you ever need one on the fly.
