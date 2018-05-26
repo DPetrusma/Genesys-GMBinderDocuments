@@ -1502,7 +1502,7 @@ You can use markup to create tables just fine, normally, but you do need to buil
     #p5{ display: none;}
 </style>
 
-### Blazing Archon (Armoured/Enraged)
+###### Blazing Archon (Armoured/Enraged)
 
 <div class="adversary">
 <span class="bra">3</span>
@@ -1533,46 +1533,46 @@ You can use markup to create tables just fine, normally, but you do need to buil
 
 <br/>
 
-**Skills:**
+### Skills
 Melee (Light) 3, Brawl 3, Discipline 3, Resilence 2, Vigilance 2, Cool 1, Perception 3
  
-**Talents:**
-Finesse *(The Blazing Archon may use Agility instead of Brawn when making Melee (Light) checks)*
+### Talents
+**Finesse** The Blazing Archon may use Agility instead of Brawn when making Melee (Light) checks
 
-Adversary 2 *(Upgrade all combat checks targeting the Blazing Archon by 2)*
+**Adversary 2** Upgrade all combat checks targeting the Blazing Archon by 2
 
-**Abilities:**
-Paragon Fortitude *(This character has multiple Wound and Strain thresholds, each of which is tracked separately. All damage and healing must be completely applied to only one threshold. When a threshold is exceeded, all ongoing conditions and effects affecting this character end. Once a threshold has been exceeded, that threshold cannot receive any healing for the remainder of the encounter. If all wound or all strain thresholds are exceeded, this character is killed)*
+### Abilities
+**Paragon Fortitude** This character has multiple Wound and Strain thresholds, each of which is tracked separately. All damage and healing must be completely applied to only one threshold. When a threshold is exceeded, all ongoing conditions and effects affecting this character end. Once a threshold has been exceeded, that threshold cannot receive any healing for the remainder of the encounter. If all wound or all strain thresholds are exceeded, this character is defeated
 
-Paragon Fury *(This character may take one additional turn in each round of combat for each of its wound thresholds that have been exceeded. Each subsequent turn the character gains is inserted immediately after any one PC's turn)*
+**Paragon Fury** This character may take one additional turn in each round of combat for each of its wound thresholds that have been exceeded. Each subsequent turn the character gains is inserted immediately after any one PC's turn
 
-Paragon Transformation *(This character has multiple forms, each corresponding to one of its pairs of wound/strain thresholds. It begins the encounter in its primary form. When that form's wound or strain threshold is exceeded, it assumes its next form immediately. Statistics, talents, abilities, or equipment keyed to a specific form are only used when this character is in that form)*
+**Paragon Transformation** This character has multiple forms, each corresponding to one of its pairs of wound/strain thresholds. It begins the encounter in its primary form. When that form's wound or strain threshold is exceeded, it assumes its next form immediately. Statistics, talents, abilities, or equipment keyed to a specific form are only used when this character is in that form
 
-Elemental *(Fire elementals are immune to damage from fire, and damage from cold or water have their critical rating reduced to 1)*
+**Elemental** Fire elementals are immune to damage from fire, and damage from cold or water have their critical rating reduced to 1
 
 <!--Darkvision *(When making skill checks, Elementals remove up to <span class="setback">bb</span> imposed due to darkness)*-->
 
 <!--Flame Blast *(Once per encounter, the Blazing Archon may select up to 3 target characters in short or engaged rnage and make an **Average (<span class="difficulty">dd</span>) Resilience check**. If the check succeeds, each affected character suffers 5 damage +1 for each <span class="symbols">s</span>. The Blazing Archon may spend <span class="symbols">aa</span> to cause the affected targets to suffer the same damage next turn)*-->
 
-Fire form [Enraged Form] *(At the end of this character's turn, engaged characters suffer 3 wounds. When this character moves from short range to engaged, one engaged character suffers 3 wounds)*
+**Fire form [Enraged Form]** At the end of this character's turn, engaged characters suffer 3 wounds. When this character moves from short range to engaged, one engaged character suffers 3 wounds
 
-Uncontrolled [Enraged Form] *(This character does not have allies and is not an ally of any character. On each turn, it attacks the last character that dealt damage to it. If no character has done damage to it, it attacks the nearest character that it can see. If it cannot see any character, it attacks the nearest object)*
+**Uncontrolled [Enraged Form]** This character does not have allies and is not an ally of any character. On each turn, it attacks the last character that dealt damage to it. If no character has done damage to it, it attacks the nearest character that it can see. If it cannot see any character, it attacks the nearest object
 
-Many-armed [Enraged Form] *(The Blazing Archon adds <span class="boost">b</span> to Brawl checks and may use <span class="symbols">aa</span> to hit a second engaged character with the same damage as the first target)*
+**Many-armed [Enraged Form]** *he Blazing Archon adds <span class="boost">b</span> to Brawl checks and may use <span class="symbols">aa</span> to hit a second engaged character with the same damage as the first target
 
-**Equipment:**
-Flame Blast *(Resilience; Damage 5; Critical 2; Range [Short]; Burn 1; Overchage [Burn]; Slow-Firing 3; Blast 5)*
+### Equipment
+**Flame Blast** Resilience; Damage 5; Critical 2; Range (Short); Burn 1; Overchage (Burn); Slow-Firing 3; Blast 5
 
-Flaming Kilij [Armoured Form] *(Melee [Light]; Damage 8; Critical 3; Range [Engaged]; Burn 2; Overchage [Burn])*
+**Flaming Kilij [Armoured Form]** Melee (Light); Damage 8; Critical 3; Range (Engaged); Burn 2; Overchage (Burn)
 
-Flaming touch [Enraged Form] *(Brawl; Damage 5; Critical 3; Range [Engaged]; Burn 2; Overchage [Burn])*
+**Flaming touch [Enraged Form]** Brawl; Damage 5; Critical 3; Range (Engaged); Burn 2; Overchage (Burn)
 
 Paragon Ability Source: [Angry GM](http://theangrygm.com/elemental-boogaloo/)
 
 
-**Extra Rules**
+### Extra Rules
 
-Overcharge (Quality): The named quality of the weapon requires 1 less <span class="symbols">a</span> to activate, to a minimum of 1
+**Overcharge (Quality)** The named quality of the weapon requires 1 fewer <span class="symbols">a</span> to activate, to a minimum of 1
 
 <!--
 ### Blazing Archon (Enraged)
