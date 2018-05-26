@@ -865,16 +865,6 @@
 
 .phb .adversary .wound {
     position:relative;
-    left:91px;
-    top:6px;
-    width:25px;
-    text-align:center;
-    display:inline-block;
-    font-size:9pt;
-}
-
-.phb .adversary .woundparagon {
-    position:relative;
     left:75px;
     top:6px;
     width:55px;
@@ -895,15 +885,6 @@
     color:white;
 }
 .phb .adversary .strain {
-    position:relative;
-    left:139px;
-    top:6px;
-    width:25px;
-    text-align:center;
-    display:inline-block;
-    font-size:9pt;
-}
-.phb .adversary .strainparagon {
     position:relative;
     left:92px;
     top:6px;
@@ -927,7 +908,7 @@
 
 .phb .adversary .mdef {
     position:relative;
-    left:178px;
+    left:114px;
     top:6px;
     width:25px;
     text-align:center;
@@ -936,7 +917,7 @@
 }
 .phb .adversary .rdef {
     position:relative;
-    left:170px;
+    left:106px;
     top:6px;
     width:25px;
     text-align:center;
@@ -1544,8 +1525,8 @@ You can use markup to create tables just fine, normally, but you do need to buil
 <span class="lbldef">M/R DEFENSE</span>
 <br>
 <span class="soak">6</span>
-<span class="woundparagon">20/20</span>
-<span class="strainparagon">12/12</span>
+<span class="wound">20/20</span>
+<span class="strain">12/12</span>
 <span class="mdef">1</span>
 <span class="rdef">1</span>
 </div>
@@ -1575,7 +1556,7 @@ Elemental *(Fire elementals are immune to damage from fire, and damage from cold
 
 Fire form [Enraged Form] *(At the end of this character's turn, engaged characters suffer 3 wounds. When this character moves from short range to engaged, one engaged character suffers 3 wounds)*
 
-Uncontrolled [Enraged Form] *(Always attacks whoever damaged it last. Else, closest it can see. No allies)*
+Uncontrolled [Enraged Form] *(This character does not have allies and is not an ally of any character. On each turn, it attacks the last character that dealt damage to it. If no character has done damage to it, it attacks the nearest character that it can see. If it cannot see any character, it attacks the nearest object)*
 
 Many-armed [Enraged Form] *(The Blazing Archon adds <span class="boost">b</span> to Brawl checks and may use <span class="symbols">aa</span> to hit a second engaged character with the same damage as the first target)*
 
