@@ -1,0 +1,1339 @@
+<style>
+
+/* IMPORTS */
+
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+/* Main Background */
+  .phb { background-image: url("https://www.gmbinder.com/images/TqYKFv2.jpg"); text-align:justify; text-indent:0px;}
+  .phb::after {background-image:none;}
+
+/* Fonts */
+
+.phb {
+    font-family: 'EB Garamond', serif;
+    padding-top:70px;
+    /*font-weight:400;*/
+}
+
+.phb h1, .phb h2, .phb h3, .phb h4, .phb h5, .phb h6 { 
+    letter-spacing: 0.6px;
+    font-family: 'Bolton';
+    text-align:center;
+}
+
+.phb h1{
+    color: #761213;
+    font-weight:400;
+    text-transform: uppercase;
+    font-size:22pt;
+    margin-bottom:30px;
+}
+
+/* Makes the bigger "first letter" in paragraphs under H1 and H2*/
+.phb h1 + p:first-letter, .phb h2 + p:first-letter  {
+    font-family: 'Bolton';
+    color: #761213;
+    font-size:24.3pt;    
+    line-height:100%;
+    margin-bottom:-9px;
+    margin-right:2px;
+    margin-top:2px;
+    float:left;
+}
+
+.phb h2 {
+    color: #761213;
+    text-transform: uppercase;
+    font-size:16pt;
+    font-weight:300;
+}
+
+
+.phb h3 {
+    color: #761213;
+     text-transform: uppercase;
+    font-size: 11pt;
+    font-weight:1;
+    border:none;
+}
+
+.phb h4 {
+    color: #dfcfb5;
+    text-transform: uppercase;
+    font-size: 10pt;
+    text-align:center;
+    margin-bottom:15px;
+
+}
+
+.phb .wide-note-top h4, .phb .wide-note-bottom h4 {
+    
+    column-span:all;
+}
+
+.phb h4 + p:first-letter  {
+    font-family: 'Bolton';
+    color: ##dfcfb5;
+    font-size:24.3pt;    
+    line-height:100%;
+    margin-bottom:-9px;
+    margin-right:2px;
+    margin-top:2px;
+    float:left;
+
+}
+
+.phb h5 {
+    color: #761213;
+    font-weight: 1;
+    text-transform: uppercase;
+    font-size: 16pt;
+    text-align:left;
+}
+
+.phb h6 {
+    color: #761213;
+    text-transform: uppercase;
+    font-size: 16pt;
+    display: table;
+    border-bottom: 1px solid #ea702b;
+}
+
+.phb p { 
+    font-size: 11pt; 
+  	letter-spacing: -0.4px;
+  	line-height:1.15em;
+  	text-indent:0px !important;
+  	font-weight:400;
+  	padding-bottom:1px;
+  	column-fill:balance;
+  }
+  
+.phb p + p {
+    margin-top:0px;  
+  }
+
+.phb wide {clear:both;}
+.phb ul {
+    list-style: none;
+    font-size: 11pt;
+    /*font-weight: 700;*/
+}
+.phb ul li::before {
+    content: "•"; 
+    color: #761213;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+
+/* Tables */
+.phb td {
+    font-family: 'EB Garamond', serif;
+    font-size:8pt;
+    font-weight:400;
+    text-align:left;
+}
+.phb td, th {border: 1px solid gray;}
+.phb table {overflow:auto;}
+.phb table tbody tr:nth-child(odd) {background: transparent;}
+.phb table tr:nth-child(even) td {background-color: #b5a192;}
+.phb table thead th {
+    color: white; 
+    background-color: #c05734; 
+  	padding-top: 0.3em;
+    padding-left: 0.5em;
+    text-transform: uppercase;
+    font-family: 'Bolton', serif;
+    font-weight: 400;
+}
+.phb table tbody tr td {  padding: 0.5em;}
+.phb table thead {display: table-row-group; }
+
+
+/* Genesys Notes */
+
+.phb .note
+{
+    position:relative;
+    width:289px;
+    color: #dfcfb5;
+    /*background-color: #57391b;*/
+    padding: 10px 20px;  
+    font-family: 'EB Garamond';
+    letter-spacing: 0.5px;
+    font-size:12ptx;
+    background-color:#56391b;
+    margin-left:15px;
+    
+    }
+    
+.phb .note-wrapper:before {
+    content:" ";
+    background-image:url('https://www.gmbinder.com/images/4fERGtC.png');
+    height:64px;
+    width:289px;
+    position:relative;
+    left:0px;
+    display:block;
+    background-repeat:no-repeat;
+    background-size:cover;
+    margin-left:15px;
+}
+
+.phb .note-wrapper:after {
+    content:" ";
+    background-image:url('https://www.gmbinder.com/images/FnU5pjn.png');
+    height:64px;
+    width:289px;
+    position:relative;
+    left:0px;
+    display:block;
+    background-repeat:no-repeat;
+    background-size:cover;
+    margin-left:15px;
+}
+
+.phb .wide-note-wrapper-top {
+    column-span:all; 
+    position:relative;
+    top:-75px;
+    }
+
+.phb .wide-note-wrapper-bottom {
+    column-span:all; 
+    position:absolute;
+    bottom:0px;
+    left:1.7cm;
+}
+
+.phb .wide-note-wrapper-bottom:before {
+    content:" ";
+    background-image:url('https://www.gmbinder.com/images/xiunaI0.png');
+    display:block;
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:89px;
+    width:100%;
+    }
+    
+.phb .wide-note-wrapper-top:after {
+    content:" ";
+    background-image:url('https://www.gmbinder.com/images/jaBYxab.png');
+    display:block;
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:89px;
+    width:100%;
+    }
+    
+.phb .wide-note-top {
+
+    width:100%;
+    color: #dfcfb5;
+    padding: 10px 20px;  
+    font-family: 'EB Garamond';
+    letter-spacing: 0.5px;
+    font-size:12ptx;
+    background-color:#56391b;
+    padding-top:75px;
+    column-count:2;
+    column-gap:1cm;
+    column-fill:auto;
+}
+
+.phb .wide-note-bottom {
+    
+    width:687px;
+    color: #dfcfb5;
+    padding: 10px 20px;  
+    font-family: 'EB Garamond';
+    letter-spacing: 0.5px;
+    font-size:12ptx;
+    background-color:#56391b;
+    padding-bottom:75px;
+    column-count:2;
+    column-gap:1cm;
+    column-fill:auto;
+
+}
+
+.phb .wide-note-bottom .bg-top {
+
+    position: absolute;
+    width: 100%;
+    height: 223px;
+    top: 25px;
+    left: 0px;
+    z-index: 2;
+    background-image:url('https://www.gmbinder.com/images/FUiMT6F.png');
+    background-repeat:no-repeat;
+    background-size:687px 223px;
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,.05)), to(rgba(0,0,0,0)));
+    
+}
+
+
+.phb .wide-note-bottom .bg-bot {
+
+    position: absolute;
+    width: 100%;
+    height: 223px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 2;
+    background-image:url('https://www.gmbinder.com/images/N54LUB6.png');
+    background-repeat:no-repeat;
+    background-size:687px 223px;
+    -webkit-mask-image:-webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,.05)), to(rgba(0,0,0,0)));
+    
+}
+
+
+.phb .wide-note-top .bg-top {
+
+    position: absolute;
+    width: 100%;
+    height: 223px;
+    top: -15px;
+    left: 0px;
+    z-index: 2;
+    background-image:url('https://www.gmbinder.com/images/Fv6LvKN.png');
+    background-repeat:no-repeat;
+    background-size:687px 223px;
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,.05)), to(rgba(0,0,0,0)));
+    
+}
+
+
+.phb .wide-note-top .bg-bot {
+
+    position: absolute;
+    width: 100%;
+    height: 223px;
+    bottom: 25px;
+    left: 0px;
+    z-index: 2;
+    background-image:url('https://www.gmbinder.com/images/ImVMfBQ.png');
+    background-repeat:no-repeat;
+    background-size:687px 223px;
+    -webkit-mask-image:-webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,.05)), to(rgba(0,0,0,0)));
+    
+}
+
+.phb .note .bg-top {
+    position: absolute;
+    width: 100%;
+    height: 223px;
+    top: -50px;
+    left: 0px;
+    z-index: 2;
+    background-image:url('https://www.gmbinder.com/images/qlfPZDn.png');
+    background-repeat:no-repeat;
+    background-size:289px 223px;
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,.05)), to(rgba(0,0,0,0)));
+    
+}
+
+
+.phb .note .bg-bot {
+    position: absolute;
+    width: 100%;
+    height: 223px;
+    bottom: -50px;
+    left: 0px;
+    z-index: 2;
+    background-image:url('https://www.gmbinder.com/images/Gx0Yt8z.png');
+    background-repeat:no-repeat;
+    background-size:289px 223px;
+    -webkit-mask-image:-webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,.05)), to(rgba(0,0,0,0)));
+    
+}
+
+
+.phb .wide-note-bottom p, .phb .wide-note-top p, .phb .note p, .phb .wide-note-bottom ul, .phb .wide-note-top ul, .phb .note ul {
+  z-index:5;
+}
+
+
+.phb .note h5 {color:white;}
+.phb .note td {color:black;}
+.phb .note table tr:nth-child(even) td { background-color: #ffffff;}
+
+
+  
+  
+/* Example Block */
+
+
+
+
+.phb .example
+{
+    position:relative;
+    color: white;
+    background:#724A2D;
+    background:
+		linear-gradient(135deg, transparent 10px, #c00 0) top left,
+		linear-gradient(225deg, transparent 10px, #c00 0) top right,
+		linear-gradient(315deg, transparent 10px, #c00 0) bottom right,
+		linear-gradient(45deg,  transparent 10px, #c00 0) bottom left;
+    background-repeat: no-repeat;
+    background-size: 51% 51%;
+    background-image:
+		radial-gradient(circle at 0 0, rgba(204,0,0,0) 14px, #724A2D 15px),
+		radial-gradient(circle at 100% 0, rgba(204,0,0,0) 14px, #724A2D 15px),
+		radial-gradient(circle at 100% 100%, rgba(204,0,0,0) 14px, #724A2D 15px),
+		radial-gradient(circle at 0 100%, rgba(204,0,0,0) 14px, #724A2D 15px);
+    padding: 14px 20px;
+}
+
+
+/* Read-aloud */
+
+.phb .read {
+    display:block;
+    font-family: 'PT Sans', sans-serif;
+    font-size:10pt;
+    font-style: italic;
+    color:#fff793;
+    padding:15px;
+    position:relative;
+    background-color:#761213;
+    margin-bottom:25px;
+    --notchSize: 10px;
+  
+    clip-path: 
+     polygon(
+      0% var(--notchSize), 
+      var(--notchSize) 0%, 
+      calc(100% - var(--notchSize)) 0%, 
+      100% var(--notchSize), 
+      100% calc(100% - var(--notchSize)), 
+      calc(100% - var(--notchSize)) 100%, 
+      var(--notchSize) 100%, 
+      0% calc(100% - var(--notchSize))
+    );
+}
+
+
+/* Footer */
+
+.phb:nth-child(odd) .pageNumber { color: #761213;
+	right: 5px;
+	bottom: 22px;
+	width: 50px;
+	text-align: center;
+    font-family: 'Bolton';
+    font-size:12pt;
+}
+
+.phb:nth-child(even) .pageNumber { color: #761213;
+	left: 5px;
+	bottom: 22px;
+	width: 50px;
+    text-align: center;
+    font-family: 'Bolton';
+    font-size:12pt;
+}
+
+.phb .footnote, .phb:nth-child(even) .footnote { 
+    color: #775231; 
+    font-family: 'JSL Ancient' ;
+    font-size:8pt;
+    vertical-align: center;
+    text-align:center;
+    position:absolute;
+    top:30px;
+    left:300px;
+}
+
+.phb .footnote .p {
+    font-size:4.2pt;
+    }
+}
+
+.phb:after { 
+    background-image:url("none") 
+}
+
+
+
+/* Dice and Symbols */
+
+@font-face {
+  font-family: 'Genesys';
+  src: local('Genesys');
+}
+.phb .symbols {
+    font-family: Genesys;
+}
+
+@font-face {
+  font-family: 'Genesys1';
+  src: local('EotE Symbol');
+}
+.phb .dice {
+    font-family: Genesys1;
+}
+
+
+.phb .setback {
+    font-family: Genesys1;
+    color: black;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+.phb .note .setback, .phb .note .boost, .phb .note .challenge, .phb .note .proficiency, .phb .note .difficulty, .phb .note .ability {
+    text-shadow: -1px 0 #dfcfb5,0 1px #dfcfb5,1px 0 #dfcfb5,0 -1px #dfcfb5;
+}
+
+.phb .note  td > .setback, .phb .note td > .boost, .phb .note td > .challenge, .phb .note td > .proficiency, .phb .note td >  .difficulty, .phb .note td.ability {
+    text-shadow:  -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+.phb .boost {
+    font-family: Genesys1;
+    color: #76CDDB;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+.phb .challenge {
+    font-family: Genesys1;
+    color: #751317;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+.phb .proficiency {
+    font-family: Genesys1;
+    color: #FEF035;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+.phb .difficulty {
+    font-family: Genesys1;
+    color: #52287E;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+.phb .ability {
+    font-family: Genesys1;
+    color: #46AC4E;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+
+/* Archetypes */
+
+.phb .archetype {
+    background-image: url('https://www.gmbinder.com/images/ydDYUwN.png');
+    height:62px;
+    width:329px;
+    background-size:100%;
+
+
+    }
+
+.phb .archetype .bra {
+    position:relative;
+    left:18px;
+    top:17px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .archetype .lblbra {
+    position:relative;
+    left:19px;
+    top:13px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .archetype .agi {
+    position:relative;
+    left:45px;
+    top:16px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .archetype .lblagi {
+    position:relative;
+    left:45px;
+    top:13px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .archetype .int {
+    position:relative;
+    left:72px;
+    top:16px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+        font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .archetype .lblint {
+    position:relative;
+    left:68px;
+    top:13px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .archetype .cun {
+    position:relative;
+    left:98px;
+    top:16px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+        font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .archetype .lblcun {
+    position:relative;
+    left:95px;
+    top:13px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+
+.phb .archetype .wil {
+    position:relative;
+    left:124px;
+    top:16px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+        font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .archetype .lblwil {
+    position:relative;
+    left:119px;
+    top:13px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+
+.phb .archetype .pre {
+    position:relative;
+    left:150px;
+    top:16px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+        font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .archetype .lblpre {
+    position:relative;
+    left:148px;
+    top:13px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+/* Adversaries */
+
+.phb .adversary {
+    background-image: url('https://www.gmbinder.com/images/bkEqK0z.png');
+    height:80px;
+    width:344px;
+    background-position: -3px 0px;
+    background-size:102%;
+    font-family: 'Bolton';
+    position:relative;
+}
+
+.phb .adversary .bra {
+    position:relative;
+    left:38px;
+    top:8px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .adversary .lblbra {
+    position:relative;
+    left:38px;
+    top:3px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .adversary .agi {
+    position:relative;
+    left:56px;
+    top:8px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .adversary .lblagi {
+    position:relative;
+    left:56px;
+    top:3px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .adversary .int {
+    position:relative;
+    left:75px;
+    top:8px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .adversary .lblint {
+    position:relative;
+    left:72px;
+    top:3px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .adversary .cun {
+    position:relative;
+    left:94px;
+    top:8px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .adversary .lblcun {
+    position:relative;
+    left:93px;
+    top:3px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+
+.phb .adversary .wil {
+    position:relative;
+    left:113px;
+    top:8px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .adversary .lblwil {
+    position:relative;
+    left:108px;
+    top:3px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+
+.phb .adversary .pre {
+    position:relative;
+    left:132px;
+    top:8px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .adversary .lblpre {
+    position:relative;
+    left:130px;
+    top:3px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .adversary .lblsoak {
+    position:relative;
+    left:31px;
+    top:5px;
+    text-align:center;
+    display:inline-block;
+    width:45px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+
+.phb .adversary .soak {
+    position:relative;
+    left:42px;
+    top:6px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-size:9pt;
+}
+
+.phb .adversary .lblwound {
+    position:relative;
+    left:59px;
+    top:5px;
+    text-align:center;
+    display:inline-block;
+    width:45px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .adversary .wound {
+    position:relative;
+    left:75px;
+    top:6px;
+    width:55px;
+    text-align:center;
+    display:inline-block;
+    font-size:9pt;
+}
+
+.phb .adversary .lblstrain {
+    position:relative;
+    left:89px;
+    top:5px;
+    text-align:center;
+    display:inline-block;
+    width:45px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+.phb .adversary .strain {
+    position:relative;
+    left:92px;
+    top:6px;
+    width:58px;
+    text-align:center;
+    display:inline-block;
+    font-size:9pt;
+}
+
+.phb .adversary .lbldef {
+    position:relative;
+    left:120px;
+    top:5px;
+    text-align:center;
+    display:inline-block;
+    width:45px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .adversary .mdef {
+    position:relative;
+    left:114px;
+    top:6px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-size:9pt;
+}
+.phb .adversary .rdef {
+    position:relative;
+    left:106px;
+    top:6px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-size:9pt;
+}
+
+/* MINION STAT BLOCK */
+
+.phb .minion {
+    background-image: url('https://www.gmbinder.com/images/RoOXD1Y.png');
+    height:80px;
+    width:344px;
+    background-position: 27px 0px;
+    background-repeat:no-repeat;
+    background-size:85%;
+    font-family: 'Bolton';
+    font-size:14pt;
+     position:relative;
+}
+
+.phb .minion .bra {
+    position:relative;
+    left:42px;
+    top:1px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .minion .lblbra {
+    position:relative;
+    left:42px;
+    top:-14px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .minion .agi {
+    position:relative;
+    left:58px;
+    top:1px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .minion .lblagi {
+    position:relative;
+    left:58px;
+    top:-14px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .minion .int {
+    position:relative;
+    left:73px;
+    top:1px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .minion .lblint {
+    position:relative;
+    left:70px;
+    top:-14px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .minion .cun {
+    position:relative;
+    left:88px;
+    top:1px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+        font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .minion .lblcun {
+    position:relative;
+    left:87px;
+    top:-14px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+
+.phb .minion .wil {
+    position:relative;
+    left:104px;
+    top:1px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .minion .lblwil {
+    position:relative;
+    left:98px;
+    top:-14px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+
+.phb .minion .pre {
+    position:relative;
+    left:118px;
+    top:1px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .minion .lblpre {
+    position:relative;
+    left:116px;
+    top:-14px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .minion .lblsoak {
+    position:relative;
+    left:72px;
+    top:-24px;
+    text-align:center;
+    display:inline-block;
+    width:45px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+
+.phb .minion .soak {
+    position:relative;
+    left:82px;
+    top:-31px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-size:9pt;
+}
+
+.phb .minion .lblwound {
+    position:relative;
+    left:100px;
+    top:-24px;
+    text-align:center;
+    display:inline-block;
+    width:45px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .minion .wound {
+    position:relative;
+    left:130px;
+    top:-31px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-size:9pt;
+}
+
+.phb .minion .lbldef {
+    position:relative;
+    left:127px;
+    top:-24px;
+    text-align:center;
+    display:inline-block;
+    width:45px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .minion .mdef {
+    position:relative;
+    left:167px;
+    top:-31px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-size:9pt;
+}
+.phb .minion .rdef {
+    position:relative;
+    left:153px;
+    top:-31px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-size:9pt;
+}
+
+
+/*Index*/
+
+.phb .index-letter {
+    color:rgb(118,18,19);
+    font-size:24pt;font-weight:bold; 
+    font-family:'Bebas Neue';
+    line-height:1.1em;
+}
+
+.phb .index {
+    list-style:none;
+    padding:0;
+    overflow-x:hidden;
+    max-width:329px;
+}
+
+.phb .index li::before {
+            content: ""; }
+            
+.phb .index li {
+    
+    display:flex;
+}
+            
+.phb .index li span:first-child {
+    margin-right:0.2em;
+    order:1;
+}
+            
+.phb .index li::after {
+  content: "";
+  border-bottom: 1px dotted;
+  flex-grow: 1;
+  order: 2;
+  position:relative;
+  top:-5px
+}
+
+.phb .index span + span {
+    order:3;
+    margin-left:0.2em;
+    }
+
+
+</style>
+
+# How to Actually Handle Travel
+
+Source: [The Angry GM](http://theangrygm.com/getting-there-is-half-the-fun/)
+
+Offer a few basic routes to the destination, and decide on roughly how long each route will take. For example:
+* Directly through the woods, including a river crossing, will take 4 days
+* The long, winding road will take 10 days
+* An old road through the ruins, then following the river, takes 7 days
+ 
+For each route, decide on the following attributes, giving each a rating from 1 to 5:
+* **Length** - How long is each route?
+* **Danger** - How dangerous is each route (or each section)? 
+* **Navigation** - How easy is each route to navigate (or each section)? 
+* **Resources** - What’s the available of resources along each route (or each section)? 
+* **Discovery** - How likely is the party to get sidetracked by an interesting discovery on each route? 
+
+Example ratings for Danger:
+* 1 is a relatively safe, civilized region or a barren, desolate region.
+* 2 is a dangerous frontier.
+* 3 is enemy territory.
+* 4 is regularly patrolled, extremely hostile territory. 
+* 5 is reserved for the sort of terrain which is filled with monsters that are actively trying to destroy all intruders and can detect the intruders with supernatural means (Hell, or The Land of the Dead).
+ 
+Example ratings for Navigation:
+* 1 Gently rolling flatlands
+* 5 Deserts
+* +1/-1 for Fantasy factors like confounding fair curses or the blessings of the Land Spirits
+
+Example ratings for Resources:
+* 1 Verdant forests and lush meadows
+* 5 Deserts
+* +1/-1 for Fantasy factors like confounding fair curses or the blessings of the Land Spirits
+ 
+Of course, certain routes will have no rating for a given attribute; for example, following a road or river makes Navigation moot. And traveling through civilized, friendly farmland makes Resources moot. In that case, ignore that attribute.
+
+##### Table I.1 Route Attribute Difficulty
+| Rating | Difficulty |
+|:----:|:-------------:|:-:|
+| 1 | <span class='difficulty'>d</span> |
+| 2  | <span class='difficulty'>dd</span> |
+| 3 | <span class='difficulty'>ddd</span> |
+| 4 | <span class='difficulty'>dddd</span> |
+| 5 | <span class='difficulty'>ddddd</span> |
+
+### Choosing a Route
+
+The first step for the players is choosing a route, and they need to somehow find out what the lay of the land is and learn any interesting details about the routes in question. They should have a rough idea about how long each route is, how dangerous, how difficult it is to navigate, and how difficult it is to forage, because they are going to need to plan their food supplies accordingly. Presumably, they will have access to a map or local knowledge or research.
+
+However, the party doesn't need to know everything. Partway through a trip through a forest, they can encounter signs that are passing into goblin territory or cursed land, for example, and they can make a decision then and there about whether to press through the new territory or whether to try to go around or even retreat and try a different route.
+
+### The Travel Day
+
+Once the players decide on a route and set out, it's time to resolve each day of travel. At the beginning of the day, the party decides what kind of pace to set: Slow, Medium, or Fast.
+
+At a **Slow Pace**, the party is moving carefully and quietly. They gain the following effects:
+
+* The party gains <span class='boost'>b</span> to all checks to perceive danger
+* All hostile creatures gain <span class='setback'>b</span> to detect the party, allowing the party to surprise enemies.
+* The party can forage for food normally if they maintain a slow pace for the entire day.
+* Navigation checks enjoy <span class='boost'>b</span>.
+* The party’s speed is reduced by a third. So every three days of travel count as only two days of travel.
+
+\pagebreakNum
+
+At a **Medium pace**, the party travels normally. They may forage for food with <span class='setback'>b</span>.
+
+At a **Fast pace**, the party travels more quickly. They gain the following effects:
+* Their speed is increased by a third. So every three days of travel count as four days.
+* The party cannot forage for food at all.
+* The party suffers <span class='setback'>b</span> on all checks to perceive dangers and on navigation checks.
+* Hostile creatures enjoy <span class='boost'>b</span> on checks to detect or track the party.
+
+Once the party has set the pace for the day, they can change the pace based on what happens to them during the day, but that will be resolved later.
+
+Roll 6d6, representing a time period of the day -  **Morning**, **Afternoon**, **Evening**, **Dusk**, **Midnight**, **Predawn**. For each one that shows the Danger number or less, an encounter *might* happen. Now roll 1d6, and if that shows the Discovery number or less, you need to tantalize the party with something interesting off the road for them to check out. A ruined tower, a sign of magic, an old tomb, an ancient henge, a shrine, etc. The key is that it has to be far enough off the path that the party has to choose whether to waste a few hours investigating it or to ignore it.
+
+Play out the daytime encounters as they happen, remembering that surprise is a possibility. If the party is moving slowly and quietly and the enemy doesn't detect them, they should be able to plan an ambush or bypass the encounter. If the party is rushing, they might very well be surprised and ambushed themselves. In fact, it is entirely possible that neither party detects the other and the encounter never happens.
+
+If no encounters or discoveries happen, the day passes uneventfully and the PCs find a place to make camp for the night.
+
+### Making Camp
+
+First of all, you have to find out if the party is lost. To do this, have the best navigator make a **Survival check** or **Knowledge (Geography)**, with a difficulty according to the Navigation rating of the route and **Table I.1**. If the party traveled at a Fast pace at any point during the day, apply <span class='setback'>b</span>. Make this roll in secret. If they fail, the party has gotten lost at some point during the day. They just don't know it yet.
+
+Now, calculate how many days of travel the party logged during the day. If the party isn't lost, this is determined by their pace. They either log 2/3, 1, or 1 1/3 days depending on the slowest pace they moved at during the day. If the party has now logged enough days to finish their route, they will reach their destination tomorrow. If the party stopped to investigate a discovery, subtract 1/3 from their progress unless they spent the whole day on the discovery, in which case they make no progress. Use your best judgment. Likewise, use your best judgment if the party does something weird like stopping halfway through the day.
+
+Finally, calculate how much food and water the party has consumed.
+
+* **Slow Pace:** Allow each character to make a **Survival check** with a difficulty according to the Resources rating of the route and **Table I.1**
+* **Medium Pace:** Allow each character to make a **Survival check**, adding <span class='setback'>b</span>, with a difficulty according to the Resources rating of the route and **Table I.1**
+* **Fast Pace:** No character can forage for food
+
+Each character that fails did not find enough food, and so they must consume one day's worth of rations *(3 days' worth of rations is 1 encumbrace)*. If any character generates <span class="symbols">t</span>, they find enough food to provide for another character. Assume that, as long as anyone succeeds at foraging, the party turned up enough water to refill their waterskins and drink their fill, unless of course water would be extra difficult to come by, such as in a desert. If everyone fails, they drain their waterskins and are now out of water. If their waterskins were already drained and they don't have a backup supply, they are now dehydrating. *(This still required some Genesys rules)*
+
+For each day a character does not have enough food, i.e., they failed at foraging and have no rations, their strain threshold is temporarily reduced by 1. Once they have enough food at least two days in a row, their strain threshold increases by one per day until it is at its initial level. Similarly for lacking water, but the temporary reduction is 3 per day instead of 1.
+
+This process should go quickly. Roll for Navigation and determine if they are lost and then mark off the progress if they aren’t. Then, everyone rolls a forage checks and marks off food. Done and done. Now, it’s time for the night.
+
+Play out the nighttime encounters (if any), remembering the possibilities for detection and ambush. Roll randomly to determine who is awake and on watch for each encounter.
+
+Once the night has passed, start again from [The Travel Day](#how-to-actually-handle-travel-table-i1-route-attribute-difficulty-the-travel-day) until they arrive at their destination.
+
+\pagebreakNum
+
+### Being Lost
+
+If the party is lost (by failing their check against the Navigation rating in [Making Camp](#how-to-actually-handle-travel-table-i1-route-attribute-difficulty-making-camp)), each day of travel doesn't contribute any progress. Make a secret **Survival check** or **Knowledge (Geography)**, again with a difficulty according to the Navigation rating of the route and **Table I.1**. If the check succeeds, the navigator will recognize that the party has become lost the next morning as the party is starting to set out. Otherwise, the party continues to make no progress every day.
+
+There are other ways for the party to realise they are lost:
+* If the party travels in one direction long enough, they are going to discover an unexpected feature. They will hit a river, a new type of terrain, a lake, a road. If you drew a map, determine randomly what they will hit and where they will hit it or just pick something. Assume they travel in a straight line in a random direction from the middle of whatever terrain or route they were in.
+* If the party knows the trip should have taken three to five days, and they hit day seven, they are going to realize they are lost.
+ 
+*(Alternatively, each day that they travel while lost, roll a d6 when logging their progress. On a 1, they managed to travel in the right direction and log progress normally. On a 5 or 6, they are losing ground and subtract however much progress they would have made based on their route. For anything else, add no progress.)*
+
+Once the party realises they are lost, they need to decide on a new plan. They might pick a direction they know will lead them to something, they might try to find a landmark to make toward, or they might try to backtrack. You can resolve each of those simply by assuming the party starts a new route and figuring it out accordingly. At this point, the party is no longer lost on the new route. The important thing is that the party can't just get unlost. They need to have an alternative plan once they are lost. Otherwise, they will just keep wandering.
+
+\pagebreakNum
+
+### Encounters
+
+The encounters represent all of the *potential* dangers and hazards an area might present to travelers. They aren't just a list of combat encounters. Remember, the party might evade an encounter, or vice versa, and you don’t even have to assume every encounter is hostile: Bandits might be willing to accept coin to leave the part alone; some monsters might ignore the party if they distract it with food; Orcs might trade threats and insults with the party in a structured social encounter; Some animals might merely threaten the party and try to frighten them away from their nest or other territory. The encounters can also represent hazards: Quicksand in swamps; flash floods in hills and badlands; booby traps in kobold territory. They can also be obstacles like rockfalls across a road or a washed out bridge.
+
+Your encounters should be interesting, but not complicated. Focus on single creatures or small groups of identical creatures. Instead of a list of encounters, you can just have a small bestiary of creatures you can mix and match easily to get the results you want. In goblin territory, you can get a lot of mileage by mixing and matching goblin skirmishers, goblin archers, and giant spider pets in different combinations.
+
+Keep in mind that the party will have the opportunity to rest and recover more frequently in the wild. To compensate, it’s important to skew your combat encounters toward the hard end of the difficulty curve.
+
+### Discoveries
+
+It can be tough to come up with discoveries on the fly. But, the party should only encounter one or two during an entire trip unless they are wandering through an ancient kingdom lousy with ruins.
+
+Discoveries are basically just encounters that somehow bait the party into checking them out. But most of them should offer some kind of reward. Either something interesting or something valuable or both.
+
+An old ruined tower with an intact cellar, for example, might have a strongbox in the basement with some money and other trinkets, but it might be protected by a booby trap. Or something living in the cellar. An ancient shrine might reward an offering with a minor blessing or boon and might punish anyone taking from the offering bowl.
+
+These discoveries are your chance to give the players something to interact with if they are willing to waste time. Remember, if the rat survives the trap, he ends up with some free cheese for his trouble. You'll need one or two discoveries for every three days of travel, more than likely. But it’s always good to have a pile of them in case you ever need one on the fly.

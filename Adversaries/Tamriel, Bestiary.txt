@@ -1,0 +1,1378 @@
+<style>
+
+/* IMPORTS */
+
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+/* Main Background */
+  .phb { background-image: url("https://www.gmbinder.com/images/TqYKFv2.jpg"); text-align:justify; text-indent:0px;}
+  .phb::after {background-image:none;}
+
+/* Fonts */
+
+.phb {
+    font-family: 'EB Garamond', serif;
+    padding-top:70px;
+    /*font-weight:400;*/
+}
+
+.phb h1, .phb h2, .phb h3, .phb h4, .phb h5, .phb h6 { 
+    letter-spacing: 0.6px;
+    font-family: 'Bolton';
+    text-align:center;
+}
+
+.phb h1{
+    color: #761213;
+    font-weight:400;
+    text-transform: uppercase;
+    font-size:22pt;
+    margin-bottom:30px;
+}
+
+/* Makes the bigger "first letter" in paragraphs under H1 and H2*/
+.phb h1 + p:first-letter, .phb h2 + p:first-letter  {
+    font-family: 'Bolton';
+    color: #761213;
+    font-size:24.3pt;    
+    line-height:100%;
+    margin-bottom:-9px;
+    margin-right:2px;
+    margin-top:2px;
+    float:left;
+}
+
+.phb h2 {
+    color: #761213;
+    text-transform: uppercase;
+    font-size:16pt;
+    font-weight:300;
+}
+
+
+.phb h3 {
+    color: #761213;
+     text-transform: uppercase;
+    font-size: 11pt;
+    font-weight:1;
+    border:none;
+}
+
+.phb h4 {
+    color: #dfcfb5;
+    text-transform: uppercase;
+    font-size: 10pt;
+    text-align:center;
+    margin-bottom:15px;
+
+}
+
+.phb .wide-note-top h4, .phb .wide-note-bottom h4 {
+    
+    column-span:all;
+}
+
+.phb h4 + p:first-letter  {
+    font-family: 'Bolton';
+    color: ##dfcfb5;
+    font-size:24.3pt;    
+    line-height:100%;
+    margin-bottom:-9px;
+    margin-right:2px;
+    margin-top:2px;
+    float:left;
+
+}
+
+.phb h5 {
+    color: #761213;
+    font-weight: 1;
+    text-transform: uppercase;
+    font-size: 16pt;
+    text-align:left;
+}
+
+.phb h6 {
+    color: #761213;
+    text-transform: uppercase;
+    font-size: 16pt;
+    display: table;
+    border-bottom: 1px solid #ea702b;
+}
+
+.phb p { 
+    font-size: 11pt; 
+  	letter-spacing: -0.4px;
+  	line-height:1.15em;
+  	text-indent:0px !important;
+  	font-weight:400;
+  	padding-bottom:1px;
+  	column-fill:balance;
+  }
+  
+.phb p + p {
+    margin-top:0px;  
+  }
+
+.phb wide {clear:both;}
+.phb ul {
+    list-style: none;
+    font-size: 11pt;
+    /*font-weight: 700;*/
+}
+.phb ul li::before {
+    content: "•"; 
+    color: #761213;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+
+/* Tables */
+.phb td {
+    font-family: 'EB Garamond', serif;
+    font-size:8pt;
+    font-weight:400;
+    text-align:left;
+}
+.phb td, th {border: 1px solid gray;}
+.phb table {overflow:auto;}
+.phb table tbody tr:nth-child(odd) {background: transparent;}
+.phb table tr:nth-child(even) td {background-color: #b5a192;}
+.phb table thead th {
+    color: white; 
+    background-color: #c05734; 
+  	padding-top: 0.3em;
+    padding-left: 0.5em;
+    text-transform: uppercase;
+    font-family: 'Bolton', serif;
+    font-weight: 400;
+}
+.phb table tbody tr td {  padding: 0.5em;}
+.phb table thead {display: table-row-group; }
+
+
+/* Genesys Notes */
+
+.phb .note
+{
+    position:relative;
+    width:289px;
+    color: #dfcfb5;
+    /*background-color: #57391b;*/
+    padding: 10px 20px;  
+    font-family: 'EB Garamond';
+    letter-spacing: 0.5px;
+    font-size:12ptx;
+    background-color:#56391b;
+    margin-left:15px;
+    
+    }
+    
+.phb .note-wrapper:before {
+    content:" ";
+    background-image:url('https://www.gmbinder.com/images/4fERGtC.png');
+    height:64px;
+    width:289px;
+    position:relative;
+    left:0px;
+    display:block;
+    background-repeat:no-repeat;
+    background-size:cover;
+    margin-left:15px;
+}
+
+.phb .note-wrapper:after {
+    content:" ";
+    background-image:url('https://www.gmbinder.com/images/FnU5pjn.png');
+    height:64px;
+    width:289px;
+    position:relative;
+    left:0px;
+    display:block;
+    background-repeat:no-repeat;
+    background-size:cover;
+    margin-left:15px;
+}
+
+.phb .wide-note-wrapper-top {
+    column-span:all; 
+    position:relative;
+    top:-75px;
+    }
+
+.phb .wide-note-wrapper-bottom {
+    column-span:all; 
+    position:absolute;
+    bottom:0px;
+    left:1.7cm;
+}
+
+.phb .wide-note-wrapper-bottom:before {
+    content:" ";
+    background-image:url('https://www.gmbinder.com/images/xiunaI0.png');
+    display:block;
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:89px;
+    width:100%;
+    }
+    
+.phb .wide-note-wrapper-top:after {
+    content:" ";
+    background-image:url('https://www.gmbinder.com/images/jaBYxab.png');
+    display:block;
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:89px;
+    width:100%;
+    }
+    
+.phb .wide-note-top {
+
+    width:100%;
+    color: #dfcfb5;
+    padding: 10px 20px;  
+    font-family: 'EB Garamond';
+    letter-spacing: 0.5px;
+    font-size:12ptx;
+    background-color:#56391b;
+    padding-top:75px;
+    column-count:2;
+    column-gap:1cm;
+    column-fill:auto;
+}
+
+.phb .wide-note-bottom {
+    
+    width:687px;
+    color: #dfcfb5;
+    padding: 10px 20px;  
+    font-family: 'EB Garamond';
+    letter-spacing: 0.5px;
+    font-size:12ptx;
+    background-color:#56391b;
+    padding-bottom:75px;
+    column-count:2;
+    column-gap:1cm;
+    column-fill:auto;
+
+}
+
+.phb .wide-note-bottom .bg-top {
+
+    position: absolute;
+    width: 100%;
+    height: 223px;
+    top: 25px;
+    left: 0px;
+    z-index: 2;
+    background-image:url('https://www.gmbinder.com/images/FUiMT6F.png');
+    background-repeat:no-repeat;
+    background-size:687px 223px;
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,.05)), to(rgba(0,0,0,0)));
+    
+}
+
+
+.phb .wide-note-bottom .bg-bot {
+
+    position: absolute;
+    width: 100%;
+    height: 223px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 2;
+    background-image:url('https://www.gmbinder.com/images/N54LUB6.png');
+    background-repeat:no-repeat;
+    background-size:687px 223px;
+    -webkit-mask-image:-webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,.05)), to(rgba(0,0,0,0)));
+    
+}
+
+
+.phb .wide-note-top .bg-top {
+
+    position: absolute;
+    width: 100%;
+    height: 223px;
+    top: -15px;
+    left: 0px;
+    z-index: 2;
+    background-image:url('https://www.gmbinder.com/images/Fv6LvKN.png');
+    background-repeat:no-repeat;
+    background-size:687px 223px;
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,.05)), to(rgba(0,0,0,0)));
+    
+}
+
+
+.phb .wide-note-top .bg-bot {
+
+    position: absolute;
+    width: 100%;
+    height: 223px;
+    bottom: 25px;
+    left: 0px;
+    z-index: 2;
+    background-image:url('https://www.gmbinder.com/images/ImVMfBQ.png');
+    background-repeat:no-repeat;
+    background-size:687px 223px;
+    -webkit-mask-image:-webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,.05)), to(rgba(0,0,0,0)));
+    
+}
+
+.phb .note .bg-top {
+    position: absolute;
+    width: 100%;
+    height: 223px;
+    top: -50px;
+    left: 0px;
+    z-index: 2;
+    background-image:url('https://www.gmbinder.com/images/qlfPZDn.png');
+    background-repeat:no-repeat;
+    background-size:289px 223px;
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,.05)), to(rgba(0,0,0,0)));
+    
+}
+
+
+.phb .note .bg-bot {
+    position: absolute;
+    width: 100%;
+    height: 223px;
+    bottom: -50px;
+    left: 0px;
+    z-index: 2;
+    background-image:url('https://www.gmbinder.com/images/Gx0Yt8z.png');
+    background-repeat:no-repeat;
+    background-size:289px 223px;
+    -webkit-mask-image:-webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,.05)), to(rgba(0,0,0,0)));
+    
+}
+
+
+.phb .wide-note-bottom p, .phb .wide-note-top p, .phb .note p, .phb .wide-note-bottom ul, .phb .wide-note-top ul, .phb .note ul {
+  z-index:5;
+}
+
+
+.phb .note h5 {color:white;}
+.phb .note td {color:black;}
+.phb .note table tr:nth-child(even) td { background-color: #ffffff;}
+
+
+  
+  
+/* Example Block */
+
+
+
+
+.phb .example
+{
+    position:relative;
+    color: white;
+    background:#724A2D;
+    background:
+		linear-gradient(135deg, transparent 10px, #c00 0) top left,
+		linear-gradient(225deg, transparent 10px, #c00 0) top right,
+		linear-gradient(315deg, transparent 10px, #c00 0) bottom right,
+		linear-gradient(45deg,  transparent 10px, #c00 0) bottom left;
+    background-repeat: no-repeat;
+    background-size: 51% 51%;
+    background-image:
+		radial-gradient(circle at 0 0, rgba(204,0,0,0) 14px, #724A2D 15px),
+		radial-gradient(circle at 100% 0, rgba(204,0,0,0) 14px, #724A2D 15px),
+		radial-gradient(circle at 100% 100%, rgba(204,0,0,0) 14px, #724A2D 15px),
+		radial-gradient(circle at 0 100%, rgba(204,0,0,0) 14px, #724A2D 15px);
+    padding: 14px 20px;
+}
+
+
+/* Read-aloud */
+
+.phb .read {
+    display:block;
+    font-family: 'PT Sans', sans-serif;
+    font-size:10pt;
+    font-style: italic;
+    color:#fff793;
+    padding:15px;
+    position:relative;
+    background-color:#761213;
+    margin-bottom:25px;
+    --notchSize: 10px;
+  
+    clip-path: 
+     polygon(
+      0% var(--notchSize), 
+      var(--notchSize) 0%, 
+      calc(100% - var(--notchSize)) 0%, 
+      100% var(--notchSize), 
+      100% calc(100% - var(--notchSize)), 
+      calc(100% - var(--notchSize)) 100%, 
+      var(--notchSize) 100%, 
+      0% calc(100% - var(--notchSize))
+    );
+}
+
+
+/* Footer */
+
+.phb:nth-child(odd) .pageNumber { color: #761213;
+	right: 5px;
+	bottom: 22px;
+	width: 50px;
+	text-align: center;
+    font-family: 'Bolton';
+    font-size:12pt;
+}
+
+.phb:nth-child(even) .pageNumber { color: #761213;
+	left: 5px;
+	bottom: 22px;
+	width: 50px;
+    text-align: center;
+    font-family: 'Bolton';
+    font-size:12pt;
+}
+
+.phb .footnote, .phb:nth-child(even) .footnote { 
+    color: #775231; 
+    font-family: 'JSL Ancient' ;
+    font-size:8pt;
+    vertical-align: center;
+    text-align:center;
+    position:absolute;
+    top:30px;
+    left:300px;
+}
+
+.phb .footnote .p {
+    font-size:4.2pt;
+    }
+}
+
+.phb:after { 
+    background-image:url("none") 
+}
+
+
+
+/* Dice and Symbols */
+
+@font-face {
+  font-family: 'Genesys';
+  src: local('Genesys');
+}
+.phb .symbols {
+    font-family: Genesys;
+}
+
+@font-face {
+  font-family: 'Genesys1';
+  src: local('EotE Symbol');
+}
+.phb .dice {
+    font-family: Genesys1;
+}
+
+
+.phb .setback {
+    font-family: Genesys1;
+    color: black;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+.phb .note .setback, .phb .note .boost, .phb .note .challenge, .phb .note .proficiency, .phb .note .difficulty, .phb .note .ability {
+    text-shadow: -1px 0 #dfcfb5,0 1px #dfcfb5,1px 0 #dfcfb5,0 -1px #dfcfb5;
+}
+
+.phb .note  td > .setback, .phb .note td > .boost, .phb .note td > .challenge, .phb .note td > .proficiency, .phb .note td >  .difficulty, .phb .note td.ability {
+    text-shadow:  -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+.phb .boost {
+    font-family: Genesys1;
+    color: #76CDDB;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+.phb .challenge {
+    font-family: Genesys1;
+    color: #751317;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+.phb .proficiency {
+    font-family: Genesys1;
+    color: #FEF035;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+.phb .difficulty {
+    font-family: Genesys1;
+    color: #52287E;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+.phb .ability {
+    font-family: Genesys1;
+    color: #46AC4E;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+
+/* Archetypes */
+
+.phb .archetype {
+    background-image: url('https://www.gmbinder.com/images/ydDYUwN.png');
+    height:62px;
+    width:329px;
+    background-size:100%;
+
+
+    }
+
+.phb .archetype .bra {
+    position:relative;
+    left:18px;
+    top:17px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .archetype .lblbra {
+    position:relative;
+    left:19px;
+    top:13px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .archetype .agi {
+    position:relative;
+    left:45px;
+    top:16px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .archetype .lblagi {
+    position:relative;
+    left:45px;
+    top:13px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .archetype .int {
+    position:relative;
+    left:72px;
+    top:16px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+        font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .archetype .lblint {
+    position:relative;
+    left:68px;
+    top:13px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .archetype .cun {
+    position:relative;
+    left:98px;
+    top:16px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+        font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .archetype .lblcun {
+    position:relative;
+    left:95px;
+    top:13px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+
+.phb .archetype .wil {
+    position:relative;
+    left:124px;
+    top:16px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+        font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .archetype .lblwil {
+    position:relative;
+    left:119px;
+    top:13px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+
+.phb .archetype .pre {
+    position:relative;
+    left:150px;
+    top:16px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+        font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .archetype .lblpre {
+    position:relative;
+    left:148px;
+    top:13px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+/* Adversaries */
+
+.phb .adversary {
+    background-image: url('https://www.gmbinder.com/images/bkEqK0z.png');
+    height:80px;
+    width:344px;
+    background-position: -3px 0px;
+    background-size:102%;
+    font-family: 'Bolton';
+    position:relative;
+}
+
+.phb .adversary .bra {
+    position:relative;
+    left:38px;
+    top:8px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .adversary .lblbra {
+    position:relative;
+    left:38px;
+    top:3px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .adversary .agi {
+    position:relative;
+    left:56px;
+    top:8px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .adversary .lblagi {
+    position:relative;
+    left:56px;
+    top:3px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .adversary .int {
+    position:relative;
+    left:75px;
+    top:8px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .adversary .lblint {
+    position:relative;
+    left:72px;
+    top:3px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .adversary .cun {
+    position:relative;
+    left:94px;
+    top:8px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .adversary .lblcun {
+    position:relative;
+    left:93px;
+    top:3px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+
+.phb .adversary .wil {
+    position:relative;
+    left:113px;
+    top:8px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .adversary .lblwil {
+    position:relative;
+    left:108px;
+    top:3px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+
+.phb .adversary .pre {
+    position:relative;
+    left:132px;
+    top:8px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .adversary .lblpre {
+    position:relative;
+    left:130px;
+    top:3px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .adversary .lblsoak {
+    position:relative;
+    left:31px;
+    top:5px;
+    text-align:center;
+    display:inline-block;
+    width:45px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+
+.phb .adversary .soak {
+    position:relative;
+    left:42px;
+    top:6px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-size:9pt;
+}
+
+.phb .adversary .lblwound {
+    position:relative;
+    left:59px;
+    top:5px;
+    text-align:center;
+    display:inline-block;
+    width:45px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .adversary .wound {
+    position:relative;
+    left:75px;
+    top:6px;
+    width:55px;
+    text-align:center;
+    display:inline-block;
+    font-size:9pt;
+}
+
+.phb .adversary .lblstrain {
+    position:relative;
+    left:89px;
+    top:5px;
+    text-align:center;
+    display:inline-block;
+    width:45px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+.phb .adversary .strain {
+    position:relative;
+    left:92px;
+    top:6px;
+    width:58px;
+    text-align:center;
+    display:inline-block;
+    font-size:9pt;
+}
+
+.phb .adversary .lbldef {
+    position:relative;
+    left:120px;
+    top:5px;
+    text-align:center;
+    display:inline-block;
+    width:45px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .adversary .mdef {
+    position:relative;
+    left:114px;
+    top:6px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-size:9pt;
+}
+.phb .adversary .rdef {
+    position:relative;
+    left:106px;
+    top:6px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-size:9pt;
+}
+
+/* MINION STAT BLOCK */
+
+.phb .minion {
+    background-image: url('https://www.gmbinder.com/images/RoOXD1Y.png');
+    height:80px;
+    width:344px;
+    background-position: 27px 0px;
+    background-repeat:no-repeat;
+    background-size:85%;
+    font-family: 'Bolton';
+    font-size:14pt;
+     position:relative;
+}
+
+.phb .minion .bra {
+    position:relative;
+    left:42px;
+    top:1px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .minion .lblbra {
+    position:relative;
+    left:42px;
+    top:-14px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .minion .agi {
+    position:relative;
+    left:58px;
+    top:1px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .minion .lblagi {
+    position:relative;
+    left:58px;
+    top:-14px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .minion .int {
+    position:relative;
+    left:73px;
+    top:1px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .minion .lblint {
+    position:relative;
+    left:70px;
+    top:-14px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .minion .cun {
+    position:relative;
+    left:88px;
+    top:1px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+        font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .minion .lblcun {
+    position:relative;
+    left:87px;
+    top:-14px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+
+.phb .minion .wil {
+    position:relative;
+    left:104px;
+    top:1px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .minion .lblwil {
+    position:relative;
+    left:98px;
+    top:-14px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+
+.phb .minion .pre {
+    position:relative;
+    left:118px;
+    top:1px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .minion .lblpre {
+    position:relative;
+    left:116px;
+    top:-14px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .minion .lblsoak {
+    position:relative;
+    left:72px;
+    top:-24px;
+    text-align:center;
+    display:inline-block;
+    width:45px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+
+.phb .minion .soak {
+    position:relative;
+    left:82px;
+    top:-31px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-size:9pt;
+}
+
+.phb .minion .lblwound {
+    position:relative;
+    left:100px;
+    top:-24px;
+    text-align:center;
+    display:inline-block;
+    width:45px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .minion .wound {
+    position:relative;
+    left:130px;
+    top:-31px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-size:9pt;
+}
+
+.phb .minion .lbldef {
+    position:relative;
+    left:127px;
+    top:-24px;
+    text-align:center;
+    display:inline-block;
+    width:45px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .minion .mdef {
+    position:relative;
+    left:167px;
+    top:-31px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-size:9pt;
+}
+.phb .minion .rdef {
+    position:relative;
+    left:153px;
+    top:-31px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-size:9pt;
+}
+
+
+/*Index*/
+
+.phb .index-letter {
+    color:rgb(118,18,19);
+    font-size:24pt;font-weight:bold; 
+    font-family:'Bebas Neue';
+    line-height:1.1em;
+}
+
+.phb .index {
+    list-style:none;
+    padding:0;
+    overflow-x:hidden;
+    max-width:329px;
+}
+
+.phb .index li::before {
+            content: ""; }
+            
+.phb .index li {
+    
+    display:flex;
+}
+            
+.phb .index li span:first-child {
+    margin-right:0.2em;
+    order:1;
+}
+            
+.phb .index li::after {
+  content: "";
+  border-bottom: 1px dotted;
+  flex-grow: 1;
+  order: 2;
+  position:relative;
+  top:-5px
+}
+
+.phb .index span + span {
+    order:3;
+    margin-left:0.2em;
+    }
+
+
+</style>
+
+######  Golden Saint Pelaurig (Nemesis)
+
+<div class="adversary">
+<span class="bra">4</span>
+<span class="agi">4</span>
+<span class="int">4</span>
+<span class="cun">3</span>
+<span class="wil">5</span>
+<span class="pre">3</span>
+<br>
+<span class="lblbra">BRAWN</span>
+<span class="lblagi">AGILITY</span>
+<span class="lblint">INTELLECT</span>
+<span class="lblcun">CUNNING</span>
+<span class="lblwil">WILLPOWER</span>
+<span class="lblpre">PRESENCE</span>
+<br>
+<span class="lblsoak">SOAK VALUE</span>
+<span class="lblwound">W. THRESHOLD</span>
+<span class="lblstrain">S. THRESHOLD</span>
+<span class="lbldef">M/R DEFENSE</span>
+<br>
+<span class="soak">8</span>
+<span class="wound">28</span>
+<span class="strain">24</span>
+<span class="mdef">3</span>
+<span class="rdef">3</span>
+</div>
+
+<br/>
+
+### Skills
+Athletics 3, Coordination 2, Charm 2, Arcana 3, Cool 2, Deception 3, Coercion 4, Ranged 2, Melee (Light) 3, Melee (Heavy) 4, Resilience 2, Perception 2, Vigilance 2
+
+### Talents
+**Adversary 2** Upgrade difficulty of all combat checks against this creature twice
+
+**Confidence 4** This character reduces the difficulty of Fear checks by 4.
+
+### Abilities
+**Daedra** Non-magical weapons deal half damage (after soak), rounded up, to Daedra. Count as a Daedra for spellcasting purposes.
+
+**Normal Weapon Immunity** This character takes no damage from non-magical weapons.
+
+**Arrogance** Add <span class="setback">b</span> to all **Cool** or **Leadership** checks targeting a Mazken or Aureal.
+
+**Mad God’s Visage** Mazken and Aureals add <span class="boost">bb</span> to all **Arcane** checks
+
+**Command** As a maneuver, Pelaurig can add <span class="boost">b</span> the next action performed by an ally.
+
+**Aura of Mania** When in sight of a Pelaurig, allies may suffer 1 Strain to add <span class="boost">b</span> to their next action.
+
+### Equipment
+**Aureal Longsword** Melee (Light); Damage 8; Critical 3; Range (Engaged); Pierce 3; Vicious 2
+
+**Aureal Claymore** Melee (Heavy); Damage 10; Critical 2; Range (Engaged); Pierce 3, Vicious 2, Cumbersome 3
+
+\columnbreak
+
+######  Stone Golem (Nemesis)
+These golems often take the form of humanoid stone statues, and can be difficult to detect when still. They are frequently constructed with multiple limbs, each wielding a weapon, and can attack relentlessly with all of them.
+
+<div class="adversary">
+<span class="bra">5</span>
+<span class="agi">2</span>
+<span class="int">1</span>
+<span class="cun">2</span>
+<span class="wil">3</span>
+<span class="pre">1</span>
+<br>
+<span class="lblbra">BRAWN</span>
+<span class="lblagi">AGILITY</span>
+<span class="lblint">INTELLECT</span>
+<span class="lblcun">CUNNING</span>
+<span class="lblwil">WILLPOWER</span>
+<span class="lblpre">PRESENCE</span>
+<br>
+<span class="lblsoak">SOAK VALUE</span>
+<span class="lblwound">W. THRESHOLD</span>
+<span class="lblstrain">S. THRESHOLD</span>
+<span class="lbldef">M/R DEFENSE</span>
+<br>
+<span class="soak">7</span>
+<span class="wound">24</span>
+<span class="strain">18</span>
+<span class="mdef">4</span>
+<span class="rdef">0</span>
+</div>
+
+<br/>
+
+### Skills
+Melee (Light) 2, Vigilance 2
+
+### Talents
+**Adversary 1** Upgrade difficulty of all combat checks against this creature once
+
+### Abilities
+**Silhouette 2**
+
+**Construct** A construct does not require food, drink, air, or sleep. Constructs are immune to poison, disease, Coercion, Fear, Charm, or any mind-affecting ability
+
+**Magic Resistance** A golem upgrades the difficulty of any magic skill check targeting it by one
+
+**Multiple Limbs** A stone golem has four to six limbs, and wields a weapon in each hand. A stone golem does not increase the difficulty of its attacks to activate auto-fire, and its initial target does not need to be the target with the highest difficulty and defense. A stone golem may attack twice when taking the attack action, but may only activate auto-fire from a single attack per turn
+
+### Equipment
+**Swords** Melee(Light); Damage 8; Critical 2; Range (Engaged); Defensive 1, Pierce 1, Auto-fire
+
+\pagebreak
+
+######  Valroth Demon (Apex Nemesis)
+These huge, fiery demons are the greatest of their kind. They appear as massive horned figures wreathed in infernal fire and writhing shadows, wielding a huge flaming sword and a cruelly barbed whip. Many serve as champions and executioners for their infernal masters. All other demons obey their commands, and they often lead hordes of demons into battle.
+
+<div class="adversary">
+<span class="bra">6</span>
+<span class="agi">3</span>
+<span class="int">3</span>
+<span class="cun">4</span>
+<span class="wil">5</span>
+<span class="pre">4</span>
+<br>
+<span class="lblbra">BRAWN</span>
+<span class="lblagi">AGILITY</span>
+<span class="lblint">INTELLECT</span>
+<span class="lblcun">CUNNING</span>
+<span class="lblwil">WILLPOWER</span>
+<span class="lblpre">PRESENCE</span>
+<br>
+<span class="lblsoak">SOAK VALUE</span>
+<span class="lblwound">W. THRESHOLD</span>
+<span class="lblstrain">S. THRESHOLD</span>
+<span class="lbldef">M/R DEFENSE</span>
+<br>
+<span class="soak">8</span>
+<span class="wound">45</span>
+<span class="strain">30</span>
+<span class="mdef">2</span>
+<span class="rdef">1</span>
+</div>
+
+<br/>
+
+### Skills
+Athletics 3, Cool 3, Discipline 4, Leadership 3, Melee (Light) 4, Resilience 4, Vigilance 3
+
+### Talents
+**Adversary 2** Upgrade difficulty of all combat checks against this creature twice
+
+### Abilities
+**Silhouette 3**
+
+**Demonic** A demon is immune to poison and disease. A demon doubles its soak vs. non-magical attacks
+
+**Terrifying** At the start of the encounter, all of their opponents must make a Formidable fear check as an out-of-turn incidental. If there are multiple sources of fear in the encounter, the opponents only make one fear check against the most terrifying enemy
+
+**Devastating** When a valroth inflicts a Critical Injury, +40 is added to the resulting Critical Injury result
+
+**Fireborn** A valroth does not suffer damage from natural heat or flame, and doubles its soak for purposes of reducing damage from magical fire
+
+**Magic Resistance** A golem upgrades the difficulty of any magic skill check targeting it by one
+
+**Fire and Shadow** A valroth is surrounded by magical flames and shadows, granting it +1 Defense. For each ranged band farther than  Engaged that an enemy is from a valroth, increase its Defense by 1
+
+**Hellfire Aura** A creature that begins its turn in Engaged range with a Valroth suffers 4 wounds from the demon's blazing aura
+
+**Multiattack** A valroth does not increase the difficulty of combined checks to attack with its flaming sword and whip, and may spend 2 Advantage or Triumph to hit with each additional weapon
+
+**Whip Drag** A valroth that Ensnares a target with its whip may suffer 2 strain to drag the target one range band closer, to a minimum of Engaged. While a target is Ensnared, the valroth cannot use its whip to make attacks
+
+### Equipment
+**Flaming Sword** Melee (Light); Damage: 16; Critical: 2; Range (Short); Burn 2, Defensive 1, Pierce 2, Vicious 2
+
+**Barbed Whip** Melee (Light); Damage: 12; Critical: 3; Range (Medium); Ensnare 3, Pierce 2

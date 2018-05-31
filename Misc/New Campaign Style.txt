@@ -1,0 +1,380 @@
+<style>
+
+.phb { background-image: url("https://www.gmbinder.com/images/5s6VJkT.png"); text-align:justify; text-indent:0px;}
+  
+.phb td {
+    font-family: 'Crimson Text', serif;
+    font-size:8pt;
+    font-weight:400;
+    text-align:left;
+}
+.phb td, th {border: 1px solid gray;}
+.phb table {overflow:auto;}
+.phb table tr:nth-child(odd) td {
+    background-color: #E0F4FC;/*indigo*/;
+    /*color:white;*/
+}
+/*
+.phb table tr:nth-child(even) td {
+    background-color: beige;
+}
+*/
+.phb table thead th {
+    color: white; 
+    background-color: #F69337; 
+  	padding-top: 0.3em;
+    padding-left: 0.5em;
+    text-transform: uppercase;
+}
+.phb table tbody tr td {  padding: 0.5em;}
+.phb table thead {display: table-row-group; }
+
+.phb table .subheader td {
+    color:white;
+    text-transform:uppercase;
+    padding-bottom:2px;
+    background-color: #2D4864 !important;
+    font-size:10pt;
+    font-weight:bold;
+    }
+    
+</style>
+
+# Welcome  to your next campaign binder!
+
+## Overview on Creating
+
+GMBinder uses markdown for its primary content. To learn about Markdown and its supporting syntax, [check this out](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+In addition, GM Binder allows for HTML content within your document. However, "User Beware" warnings apply. Especially now in this early stage. Using HTML for things like images and links is pretty safe. However, structured HTML like divs, tables, etc, may have undesired consequences.
+
+## GMBinder Specific
+### Page Breaks
+* Using `\pagebreak` will result in a page break. Or press `Ctrl+;` or `Cnd+;` to insert this.
+* Using `\pagebreakNUm` will result in a page break with page number. Or press `Ctrl+'` or `Cnd+'` to insert this.
+
+### Links
+* Internal Links - Press Ctrl+Space to get a list of all of your document's headers. Press tab on one to insert the link into your document. ie: [Welcome to your next campaign binder!](#welcome-to-your-next-campaign-binder)
+* External Links - Using the standard markdown link syntax with an external URL will result in a link that opens a new tab. ie: [Staff of Darkening](https://www.dndbeyond.com/magic-items/29957-staff-of-anti-thunder-and-darkening)
+* If you would like the actual URL to show in your external link, a simple solution is to simply wrap it with < and >. ie: <https://www.gmbinder.com>
+
+### Table of Contents
+In the menu above, you'll see a Table of Contents for your document.
+
+### Images
+There are a couple ways you can place images. If you would like something positioned like you see on this page, you will need to provide the appropriate styles to do so. For example: 
+
+`<img src='https://www.gmbinder.com/assets/img/books.jpg' style='position:absolute;bottom:45px;right:30px;width:380px; mix-blend-mode:multiply;' />`
+
+If you would like to place an image in-line within your content, simply providing an image tag with an external URL will be sufficient. Do be aware that your images should be sized appropriately for the content.
+
+\columnbreak
+
+### Wrapping to Column Two
+Sometimes you want your content in column 1 to be cut short and continue on to column 2. The simplest way to accomplish this is to use:
+
+`\columnbreak`
+___
+You can also press `Ctrl+.` or `Cnd+.` to insert this.
+
+### Footnotes
+This is an example of using html and built in styles to get a desired output.
+
+`<div class='footnote'>Part 1 | Introduction</div>`
+
+<img src='https://www.gmbinder.com/assets/img/books.jpg' style='position:absolute;bottom:45px;right:30px;width:350px; mix-blend-mode:multiply;' />
+<div class='footnote'>Part 1 | Tutorial</div>
+
+## Basic Editor Shortcuts
+
+### Find and Replace
+* `Ctrl+F` or `Cmd+F` - Find
+* `Alt+Ctrl+F` or `Alt+Cmd+F` - Find & Replace
+
+### Editing
+* `Ctrl+Z` or `Cmd+Z` - Undo
+* `Ctrl+Shift+Z` or `Cmd+Shift+Z` - Redo
+* `Ctrl+D` or `Cmd+D` - Remove current line
+* `Ctrl+U` - Uppercase current selection
+* `Ctrl+Shift+U` - Lowercase current selection
+
+### Content Folding
+* `F2` - Fold / Unfold a block of content
+* `Ctrl+Cmd+Alt+0` Fold everything
+* `Shift+Cmd+Alt+0` UnFold everything
+
+### And Much More...
+* `Ctrl+Alt+H` or `Cmd+Alt+H` Shows all Editor Shortcuts
+
+
+\pagebreakNum
+<div class='wide'>
+
+| Name | Skill | Range | Damage | Critical | Encumbrance | Qualities | Rarity | Price |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Mithril Longsword | +4 | 2 | Engaged | Defensive 1 | 1 | 6 | 300 |
+| Adamant Longsword | +4 | 2 | Engaged | Defensive 1 | 1 | 6 | 300 |
+| Dwarven Longsword | +4 | 2 | Engaged | Defensive 1 | 1 | 6 | 300 |
+
+##### Bludgeons
+| Name | Skill | Range | Damage | Critical | Encumbrance | Qualities | Rarity | Price |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Belaying Pin | Melee (Light) | Engaged | +1 | 4 | 1 | Inferior | 1 | 100 |
+| Wooden Cudgel | Melee (Light) | Engaged | +1 | 3 | 1 | | 2 | 200 |
+| Bronze Virge | Melee (Light) | Engaged | +2 | 4 | 1 | | 3 | 500 |
+| Flanged Steel Mace | Melee (Light) | Engaged | +2 | 3 | 1 | | 6 | 700 |
+| Steel Morningstar | Melee (Heavy) | Engaged | +3 | 4 | 1 | | 6 | 800 |
+| Dwarven Crystal | Melee (Light) | Engaged | +2 | 3 | 1 | | 8 | 900 |
+| Dwarven Stargem | Melee (Heavy) | Engaged | +3 | 4 | 1 | | 8 | 1,000 |
+
+#### Throwing Blades
+| Name | Skill | Range | Damage | Critical | Encumbrance | Qualities | Rarity | Price |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Bronze Throwing Knife | Ranged (Light) | Short | +1 | 3 | 1 |  | 2 | 100 |
+| Steel Throwing Knife | Ranged (Light) | Short | +2 | 3 | 1 | Pierce 1 | 3 | 200 |
+| Steel Circleknife | Ranged (Light) | Short | +2 | 2 | 1 | Pierce 1 | 4 | 300 |
+| Mithral Throwing Knife | Ranged (Light) | Short | +3 | 2 | 1 | Pierce 1 | 5 | 400 |
+| Halfling Godseye | Ranged (Light) | Short | +2 | 1 | 1 | Pierce 1 | 6 | 500 |
+
+Bludgeons
+Belaying Pin 1 sp 1d4 bludgeoning 1/4 lb Improvised, Light
+Wooden Cudgel 1 gp 1d4 bludgeoning 2 lb Light
+Bronze Virge 6 gp 1d6 bludgeoning 4 lb
+Flanged Steel Mace 1d6 bludgeoning Crushing (+1), Heavy
+Steel Morningstar 1d8 bludgeoning Heavy, Penetrating (+1), Two-Handed
+Dwarven Crystal 1d6 bludgeoning Crushing (+2), Heavy, Versatile (1d8)
+Dwarven Stargem 1d8 bludgeoning Heavy, Penetrating (+3), Two-Handed
+
+<table>
+    <thead>
+        <tr>
+            <th>ROLL</th><th>RESULT</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr> 
+            <td><span class='symbols'>a or t</span></td><td>Recover 1 strain. Add <span class='boost'>b</span> to next check by yourself or  ally.  </td>
+        </tr>
+        <tr class="subheader">
+            <td colspan="2">"Subheader" is a tr class</td>
+        </tr>
+        <tr>
+        <td><span class='symbols'>aa or t</span></td><td> Perform an immediate free maneuver (still max 2 per turn). Add <span class='boost'>b</span> to next skill check by opponent.</td>
+        </tr>
+        <tr>
+        <td><span class='symbols'>aaa or t</span></td><td> Negate enemy defense. Ignore environment. Damage a target's gear/limbs. Gain +1 defense for 1 turn.</td>
+        </tr>
+    </tbody>
+</table>
+
+</div>
+
+
+\pagebreakNum
+
+
+# Ready. Set. Go!
+This is your playground. Feel free to remove this and the content above, or keep it around for a reference.
+
+<div class='footnote'>Part 2 | Your Introduction</div>
+
+<div class='classTable wide'>
+
+##### Swords
+| Name | Damage | Critical | Range | Qualities | Encumbrance | Rarity | Price |
+|:---:|:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|
+| Mithril Longsword | +4 | 2 | Engaged | Defensive 1 | 1 | 6 | 300 |
+
+#### Testing
+
+| d8  | Loot |
+|:---:|:-----------:|
+|  1  | 100gp |
+|  2  | 200gp |
+|  3  | 300gp |
+|  4  | 400gp |
+|  5  | 500gp |
+|  6  | 600gp |
+|  7  | 700gp |
+|  8  | 1000gp |
+
+
+
+</div>
+Brawling
+Bludgeons
+Bludgeons
+Sickles
+Spears
+Staves
+Crossbows
+Slings
+Axes
+Backswords
+Flails
+Hammers
+Polearms
+Straightswords
+Throwing Blades
+
+WEAPON TABLE
+Weapon Cost Damage Weight Properties
+
+Simple Melee Weapons
+
+Brawling
+Unarmed — 1 bludgeoning — Light
+Gauntlet Focus — 1d4 bludgeoning — Light
+Leather Cestus 8 sp 1d4 bludgeoning 1/2 lb Light
+Bronze Punching Dagger 4 gp 1d4 piercing 1 lb Finesse, Light
+Bronze Tiger Claws 8 gp 1d4 slashing 1/2 lb Finesse, Light
+Steel Studded Cestus 1d4 bludgeoning Light, Crushing (+1)
+Steel Punching Dagger 1d4 piercing Finesse, Light, Penetrating (+1)
+Steel Tiger Claws 1d4 slashing Accurate (+1), Finesse, Light
+Mithral Punching Dagger 1d4 slashing Finesse, Light, Penetrating (+2)
+Mithral Tiger Claws 1d4 piercing Accurate (+2), Finesse, Light
+Elven Razorleaf 1d4 piercing Finesse, Light, Penetrating (+3)
+
+Bludgeons
+Belaying Pin 1 sp 1d4 bludgeoning 1/4 lb Improvised, Light
+Wooden Cudgel 1 gp 1d4 bludgeoning 2 lb Light
+Bronze Virge 6 gp 1d6 bludgeoning 4 lb
+Flanged Steel Mace 1d6 bludgeoning Crushing (+1), Heavy
+Steel Morningstar 1d8 bludgeoning Heavy, Penetrating (+1), Two-Handed
+Dwarven Crystal 1d6 bludgeoning Crushing (+2), Heavy, Versatile (1d8)
+Dwarven Stargem 1d8 bludgeoning Heavy, Penetrating (+3), Two-Handed
+
+Daggers
+Wooden Stake 5 cp 1d3 piercing 1/4 lb Finesse, Improvised, Light
+Simple Knife 1 sp 1d4 piercing 1/2 lb Finesse, Improvised, Light
+Ceremonial Knife Focus — 1d4 piercing — Finesse, Light
+Bronze Dagger 8 gp 1d4 piercing 1 lb Finesse, Light
+Bronze Longknife 18 gp 1d6 piercing 2 lb Finesse, Light
+Steel Dueling Dagger 1d4 piercing Defensive (+1), Finesse, Light
+Steel Shortsword 1d6 piercing Accurate (+1), Finesse, Light
+Mithral Dueling Dagger 1d4 piercing Defensive (+2), Finesse, Light
+Mithral Shortsword 1d6 piercing Accurate (+2), Finesse, Light
+Elven Duelsing Sword 1d6 piercing Accurate (+2), Defensive (+1), Finesse, Light
+
+Sickles
+Gaff 1 sp 1d4 slashing 1 lb Improvised, Light
+Bronze Sickle 4 gp 1d6 slashing 2 lb Light
+Steel Sickle 1d6 slashing Accurate (+1), Light
+Mithral Sickle 1d6 slashing Accurate (+2), Light
+Elven Crescent 1d8 slashing Accurate (+3), Light
+
+Spears
+Bronze Javelin 4 gp 1d6 piercing 2 lb Thrown (range 20/60)
+Bronze Spear 12 gp 1d6 piercing 3 lb Versatile (1d8)
+Bronze Pike 18 gp 1d8 piercing 12 lb Heavy, Reach, Two-Handed
+Steel Boarspear 1d6 piercing Penetrating (+1), Versatile (1d8)
+Steel Winged Spear 1d8 piercing Heavy, Defensive (+1), Two-Handed
+Steel Pike 1d8 piercing Heavy, Penetrating (+1), Reach, Two-Handed
+Mithral Spear 1d6 piercing Accurate (+2), Thrown (range 20/60),Versatile (1d8)
+Dwarven Vanguard 1d8 piercing Defensive (+3), Reach, Two-Handed
+
+Staves
+Reedwood Fighting Stick 1 gp 1d6 bludgeoning 1 lb
+Staff Focus — 1d8 bludgeoning — Two-handed
+Reedwood Staff 8 gp 1d8 bludgeoning 4 lb Two-handed
+Bronzeshod Staff 1d8 bludgeoning Crushing (+1), Two-handed
+Steelshod Staff 1d8 bludgeoning Crushing (+2), Two-handed
+Mithral Staff 1d8 bludgeoning Crushing (+3), Two-handed
+
+Simple Ranged Weapons
+
+Crossbows
+
+Woodprod Crossbow 25 gp 1d8 piercing 5 lb Ammunition (range 80/320), Loading, Two-Handed
+Composite Crossbow 1d8 piercing 8 lb Accurate (+1), Ammunition (range 80/320),Loading, Two-Handed
+Steelprod Crossbow 1d8 piercing 18 lb Accurate (+2), Ammunition (range 80/320),Loading, Two-Handed
+Dwarven Impaler 1d8 piercing 20 lb Accurate (+3), Ammunition (range 80/320),Loading, Two-Handed
+
+Slings
+Sling 3 gp 1d4 bludgeoning — Ammunition (range 30/120)
+Halfling Slingstaff 1d6 bludgeoning 1 lb Ammunition (range 60/240), Crushing (+1),Two-Handed
+
+Thrown Object
+Rock — 1 bludgeoning 1/4 lb Improvised, Thrown (Range 10/30)
+
+Furniture — 1d6 bludgeoning 10 lb Improvised, Thrown (Range 10/30), Two-
+Handed
+
+Martial Melee Weapons
+
+Axes
+
+Bronze Handaxe 8 gp 1d6 slashing 2 lb Light, Thrown (range 20/60)
+Bronze Battleaxe 18 gp 1d8 slashing 4 lb Versatile (1d10)
+Steel Battleaxe 1d8 slashing Crushing (+1), Versatile (1d10)
+Steel Greataxe 1d12 slashing 7 lb Heavy, Two-Handed
+Mithral Handaxe 1d6 slashing Exceptional (+1), Light, Thrown (range 20/60)
+Adamant Battleaxe 1d8 slashing Crushing (+2), Versatile (1d10)
+Adamant Greataxe 1d12 slashing Crushing (+2), Heavy, Two-Handed
+Elven Moonaxe 1d6 slashing Exceptional (+2), Light, Thrown (range 20/60)
+Dwarven Waraxe 1d8 slashing Crushing (+3), Versatile (1d10)
+Dwarven Peaksplitter 1d12 slashing Crushing (+3), Heavy, Two-Handed
+
+Backswords
+
+Bronze Cutlass 18 gp 1d6 slashing 3 lb Finesse, Light
+Bronze Falchion 22 gp 1d8 slashing 4 lb Light
+Steel Cutlass 1d6 slashing Accurate (+1), Finesse, Light
+Steel Falchion 1d8 slashing Crushing (+1)
+Mithral Cutlass 1d6 slashing Accurate (+2), Finesse, Light
+Adamant Falchion 1d8 slashing Crushing (+2), Heavy, Versatile (1d10)
+Elven Crescent Sword 1d6 slashing Accurate (+3), Finesse, Light
+Dwarven Cleaver 1d8 slashing Crushing (+3), Heavy, Versatile (1d10)
+
+Flails
+
+Bronze Chain Flail 15 gp 1d8 bludgeoning 2 lb
+Steel Ball-and-Chain 1d8 bludgeoning Heavy, Penetrating (+1)
+Adamant Ball-and-Chain 1d8 bludgeoning Heavy, Crushing (+2)
+Dwarven Gemfail 1d8 bludgeoning Heavy, Crushing (+3)
+
+Hammers
+
+Bronze Warhammer 16 gp 1d8 bludgeoning 3 lb Versatile (1d10)
+Bronze Warpick 12 gp 1d8 piercing 2 lb
+Steel Warhammer 1d8 bludgeoning Crushing (+1), Versatile (1d10)
+Steel Warpick 1d8 piercing Penetrating (+1)
+Steel Greathammer 2d6 bludgeoning Crushing (+1), Heavy, Two-Handed
+Adamant Warpick 1d8 piercing Penetrating (+2)
+Adamant Greathammer 2d6 bludgeoning Crushing (+2), Heavy, Two-Handed
+Dwarven Impaler 1d8 piercing Penetrating (+3)
+Dwarven Rockbreaker 2d6 bludgeoning Crushing (+3), Versatile (1d10)
+
+Polearms
+Bronze Maul 20 gp 1d10 bludgeoning 8 lb Heavy, Reach, Two-Handed
+Bronze Poleaxe 22 gp 1d10 slashing 7 lb Heavy, Reach, Two-Handed
+Steel Glaive 2d6 slashing 6 lb Heavy, Reach, Two-Handed
+Steel Maul 1d10 slashing Crushing (+1), Heavy, Reach, Two-Handed
+Steel Halberd 1d10 slashing Heavy, Penetrating (+1), Reach, Two-Handed
+Adamant Glaive 2d6 slashing Accurate (+1), Heavy, Reach, Two-Handed
+Adamant Maul 1d10 slashing Crushing (+2), Heavy, Reach, Two-Handed
+Dwarven Armorcutter 1d10 slashing Heavy, Penetrating (+3), Reach, Two-Handed
+
+Straightswords
+Bronze Longsword 25 gp 1d8 slashing 3 lb Heavy, Versatile (1d10)
+Steel Longsword 1d8 slashing Accurate (+1), Heavy, Versatile (1d10)
+Steel Greatsword 2d6 slashing 6 lb Heavy, Two-Handed
+Mithral Longsword 1d8 slashing Accurate (+2), Heavy, Versatile (1d10)
+Adamant Greatsword 2d6 slashing Accurate (+2), Heavy, Two-Handed
+Nerathi Claymore 2d6 slashing Accurate (+3), Heavy, Two-Handed
+
+Martial Ranged Weapons
+
+Bows
+
+Wooden Bow 22 gp 1d8 piercing 2 lb Ammunition (Range 80/320), Two-Handed
+Composite Horn Bow 1d8 piercing 3 lb Ammunition (Range 80/320), Penetrating , Two-Handed
+Composite Reedwood Bow 1d8 piercing 3 lb Ammunition (Range 80/320), Penetrating (+2), Two-Handed
+Elven Bronzewood Bow 1d8 piercing 4 lb Ammunition (Range 80/320), Penetrating (+3), Two-Handed
+
+Throwing Blades
+Bronze Throwing Knife 8 gp 1d4 piercing 1/2 lb Finesse, Light, Thrown (Range 20/60)
+Steel Throwing Knife 1d4 slashing Penetrating (+1), Finesse, Thrown (range 20/60)
+Steel Circleknife 1d4 slashing Accurate (+1), Finesse, Thrown (range 20/60)
+Mithral Throwing Knife 1d4 slashing Penetrating (+2), Finesse, Thrown (range 20/60)
+Halfling Godseye 1d4 slashing Accurate (+3), Finesse, Thrown (range 20/60)
