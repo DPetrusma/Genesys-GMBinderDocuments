@@ -2,8 +2,9 @@
 
 /* IMPORTS */
 
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=Almendra');
 
 /* Main Background */
   .phb { background-image: url("https://www.gmbinder.com/images/TqYKFv2.jpg"); text-align:justify; text-indent:0px;}
@@ -14,7 +15,6 @@
 .phb {
     font-family: 'EB Garamond', serif;
     padding-top:70px;
-    /*font-weight:400;*/
 }
 
 .phb h1, .phb h2, .phb h3, .phb h4, .phb h5, .phb h6 { 
@@ -102,7 +102,7 @@
 }
 
 .phb p { 
-    font-size: 11pt; 
+    font-size: 9pt; 
   	letter-spacing: -0.4px;
   	line-height:1.15em;
   	text-indent:0px !important;
@@ -116,11 +116,7 @@
   }
 
 .phb wide {clear:both;}
-.phb ul {
-    list-style: none;
-    font-size: 11pt;
-    /*font-weight: 700;*/
-}
+.phb ul {list-style: none;}
 .phb ul li::before {
     content: "•"; 
     color: #761213;
@@ -149,6 +145,14 @@
     font-family: 'Bolton', serif;
     font-weight: 400;
 }
+.phb table .subheader td {
+    color:white;
+    text-transform:uppercase;
+    padding-bottom:2px;
+    background-color: #724A2D !important;
+    font-size:10pt;
+    font-weight:bold;
+    }
 .phb table tbody tr td {  padding: 0.5em;}
 .phb table thead {display: table-row-group; }
 
@@ -402,7 +406,6 @@
     padding:15px;
     position:relative;
     background-color:#761213;
-    margin-bottom:25px;
     --notchSize: 10px;
   
     clip-path: 
@@ -528,6 +531,7 @@
 /* Archetypes */
 
 .phb .archetype {
+    /*background-image: url('https://drive.google.com/uc?id=1g3A8rDXM_APNZ7piZJyujNQeptjKkXKF');*/
     background-image: url('https://www.gmbinder.com/images/ydDYUwN.png');
     height:62px;
     width:329px;
@@ -713,7 +717,7 @@
 
 .phb .adversary .agi {
     position:relative;
-    left:56px;
+    left:57px;
     top:8px;
     width:25px;
     text-align:center;
@@ -736,7 +740,7 @@
 
 .phb .adversary .int {
     position:relative;
-    left:75px;
+    left:76px;
     top:8px;
     width:25px;
     text-align:center;
@@ -759,7 +763,7 @@
 
 .phb .adversary .cun {
     position:relative;
-    left:94px;
+    left:95px;
     top:8px;
     width:25px;
     text-align:center;
@@ -783,7 +787,7 @@
 
 .phb .adversary .wil {
     position:relative;
-    left:113px;
+    left:114px;
     top:8px;
     width:25px;
     text-align:center;
@@ -807,7 +811,7 @@
 
 .phb .adversary .pre {
     position:relative;
-    left:132px;
+    left:133px;
     top:8px;
     width:25px;
     text-align:center;
@@ -865,9 +869,9 @@
 
 .phb .adversary .wound {
     position:relative;
-    left:75px;
+    left:91px;
     top:6px;
-    width:55px;
+    width:25px;
     text-align:center;
     display:inline-block;
     font-size:9pt;
@@ -886,9 +890,9 @@
 }
 .phb .adversary .strain {
     position:relative;
-    left:92px;
+    left:139px;
     top:6px;
-    width:58px;
+    width:25px;
     text-align:center;
     display:inline-block;
     font-size:9pt;
@@ -908,7 +912,7 @@
 
 .phb .adversary .mdef {
     position:relative;
-    left:114px;
+    left:178px;
     top:6px;
     width:25px;
     text-align:center;
@@ -917,7 +921,7 @@
 }
 .phb .adversary .rdef {
     position:relative;
-    left:106px;
+    left:170px;
     top:6px;
     width:25px;
     text-align:center;
@@ -1202,432 +1206,133 @@
 
 </style>
 
+# Genesys CRB
 
+##### Armour tables
 
-
-<div class="note-wrapper">
-<div class='note'>
-<div class="bg-top"></div>
-
-#### Symbol Key
-
-
-Note: The bottom line of these boxes title's should be underlined with the HTML underline tag. <br />
-<span class='symbols'>a</span> = Advantage<br>
-<span class='symbols'>h</span> = Threat<br>
-<span class='symbols'>f</span> = Failure<br>
-<span class='symbols'>s</span> = Success<br>
-<span class='symbols'>t</span> = Triumph<br>
-<span class='symbols'>d</span> = Despair<br>
-<span class='setback'>b</span> = Setback Dice<br>
-<span class='boost'>b</span> = Boost Dice<br>
-<span class='difficulty'>d</span> = Difficulty Dice<br>
-<span class='ability'>d</span> = Ability Dice<br>
-<span class='challenge'>c</span> = Challenge Dice<br>
-<span class='proficiency'>c</span> = Proficiency Dice <br>
-
-You can create a "Note" box like this with `<div class='note'></div>`. To create the dice and their symbols
-
-<div class="bg-bot"></div>
-</div>
-</div>
-
-<div style="margin-top:10px;"></div>
-
- To create the dice and their symbols, use: 
- 
-`<span class='symbols'>a, h, f, s, t, d </span>`
-`<span class='setback'>b</span>`
-`<span class='boost'>b</span`
-`<span class='difficulty'>d</span>`
-`<span class='ability'>d</span>`
-`<span class='challenge'>c</span>`
-`<span class='proficiency'>c</span>`
-
-
-<div class='example'>
-
-##### Example
-You can create example boxes like this with `<div class='example'></div>`
-
-</div>
-
-<div style="margin-top:25px;"></div>
-
-\columnbreak
-
-<div class="read"> Read Aloud Text  like this is created with the HTML DIV tag and the "read" class. It normally has some more stuff in it so I'm just gonna type a bit of random mumbo jumbo to make the box a little bigger.  USE ITC SYMBOL FONT HERE</div>
-
-<!--<div style="margin-top:25px;"></div>-->
-
-<!--<div style="margin-top:25px;"></div>-->
-
-### Stat Blocks
-
-You can create a number of stat blocks as seen in the book with the following code:
-
-### Archetype Statblock
-
-
-
-<div class="archetype">
-<span class="bra">121</span>
-<span class="agi">2</span>
-<span class="int">3</span>
-<span class="cun">4</span>
-<span class="wil">5</span>
-<span class="pre">6</span>
-<br>
-<span class="lblbra">BRAWN</span>
-<span class="lblagi">AGILITY</span>
-<span class="lblint">INTELLECT</span>
-<span class="lblcun">CUNNING</span>
-<span class="lblwil">WILLPOWER</span>
-<span class="lblpre">PRESENCE</span>
-</div>
-
-`<div class="archetype">`
-`<span class="bra">1</span>`
-`<span class="agi">2</span>`
-`<span class="int">3</span>`
-`<span class="cun">4</span>`
-`<span class="wil">5</span>`
-`<span class="pre">6</span>` <br />
-`</div>`
-
-### Nemesis Stat Block
-
-<div class="adversary">
-<span class="bra">121</span>
-<span class="agi">2</span>
-<span class="int">3</span>
-<span class="cun">4</span>
-<span class="wil">5</span>
-<span class="pre">6</span>
-<br>
-<span class="lblbra">BRAWN</span>
-<span class="lblagi">AGILITY</span>
-<span class="lblint">INTELLECT</span>
-<span class="lblcun">CUNNING</span>
-<span class="lblwil">WILLPOWER</span>
-<span class="lblpre">PRESENCE</span>
-<br>
-<span class="lblsoak">SOAK VALUE</span>
-<span class="lblwound">W. THRESHOLD</span>
-<span class="lblstrain">S. THRESHOLD</span>
-<span class="lbldef">M/R DEFENSE</span>
-<br>
-<span class="soak">7</span>
-<span class="wound">18</span>
-<span class="strain">19</span>
-<span class="mdef">0</span>
-<span class="rdef">1</span>
-</div>
-
-### Rival and Minion Stat Block
-
-what just happened here
-
-<div class="minion">
-<span class="bra">121</span>
-<span class="agi">2</span>
-<span class="int">3</span>
-<span class="cun">4</span>
-<span class="wil">5</span>
-<span class="pre">6</span>
-<br>
-<span class="lblbra">BRAWN</span>
-<span class="lblagi">AGILITY</span>
-<span class="lblint">INTELLECT</span>
-<span class="lblcun">CUNNING</span>
-<span class="lblwil">WILLPOWER</span>
-<span class="lblpre">PRESENCE</span>
-<br>
-<span class="lblsoak">SOAK VALUE</span>
-<span class="lblwound">W. THRESHOLD</span>
-<span class="lbldef">M/R DEFENSE</span>
-<br>
-<span class="soak">7</span>
-<span class="wound">18</span>
-<span class="mdef">0</span>
-<span class="rdef">1</span>
-</div>
-
-
-
-Start with an Archetype then add:
-
-`<div class="adversary">`
-`<span class="soak">7</span>`
-`<span class="wound">18</span>`
-`<span class="strain">19</span>`
-`<span class="mdef">0</span>`
-`<span class="rdef">1</span>`
-`</div>`
-
-Or use "minion" for the class, and delete the strain span.
-
-<div class="footnote">THEME TESTER<BR />
-<p>GENESYS</p>
-</div>
-
-\pagebreakNum
-
-
-<div class="wide-note-wrapper-top">
-<div class="wide-note-top">
-<div class="bg-top"></div>
-
-#### Wide Note
-
-In the Genesys book there are notes and tables that span both columns like this. Simply add the "wide" class to either one to get this effect. Be careful, though, as it does wreak havoc on the page's formatting - be prepared to manually position some of the paragraphs and items on these pages.
-
-<br/>
-
-##### Table Titles are a Headline 5
-| Other Stuff will go here | In a wide table | 
-|:---:|:---:| 
-| And Here |  And Here | 
-| <span class='difficulty'>d</span> <span class='symbols'>a</span> | Symbols work in tables too! |
-
-
-### Bug List
-
-<div class="bg-bot"></div>
-</div>
-</div>
-
-
-##### Chart of Examples
+<div class="wide">
 <table>
     <thead>
         <tr>
-            <th>ROLL</th><th>RESULT</th>
+            <th>Type</th><th>Defense</th><th>Soak</th><th>Encumbrance</th><th>HP</th><th>Price</th><th>Qualities</th>
         </tr>
     </thead>
     <tbody>
+        <tr class="subheader">
+            <td colspan="7">Genesys Fantasy</td>
+        </tr>
         <tr> 
-            <td><span class='symbols'>a or t</span></td><td>Recover 1 strain. Add <span class='boost'>b</span> to next check by yourself or  ally.  </td>
+            <td>Chainmail</td><td>0</td><td>+2</td><td>3</td><td>2</td><td>550</td><td>Impede 1 (Stealth)</td>
         </tr>
-        <tr>
-        <td><span class='symbols'>aa or t</span></td><td> Perform an immediate free maneuver (still max 2 per turn). Add <span class='boost'>b</span> to next skill check by opponent.</td>
+        <tr> 
+            <td>Heavy Robes</td><td>1</td><td>+0</td><td>1</td><td>1</td><td>45</td><td></td>
         </tr>
-        <tr>
-        <td><span class='symbols'>aaa or t</span></td><td> Negate enemy defense. Ignore environment. Damage a target's gear/limbs. Gain +1 defense for 1 turn.</td>
+        <tr> 
+            <td>Leather</td><td>0</td><td>+1</td><td>2</td><td>1</td><td>50</td><td></td>
+        </tr>
+        <tr> 
+            <td>Magic Plate</td><td>2</td><td>+2</td><td>3</td><td>2</td><td>2,400</td><td></td>
+        </tr>
+        <tr> 
+            <td>Plate Armour</td><td>1</td><td>+2</td><td>4</td><td>2</td><td>1,250</td><td>Impede 2 (Stealth)</td>
+        </tr>
+        <tr class="subheader">
+            <td colspan="7">Genesys Steampunk</td>
+        </tr>
+        <tr> 
+            <td>Amplimotive Armour</td><td>1</td><td>+2</td><td>3</td><td>2</td><td>1,250</td><td>Increase Brawn and Silhouette by 1</td>
+        </tr>
+        <tr> 
+            <td>Cogsuit</td><td>1</td><td>+1</td><td>3</td><td>2</td><td>275</td><td></td>
+        </tr>
+        <tr> 
+            <td>Insulated Garb</td><td>0</td><td>+1</td><td>3</td><td>2</td><td>170</td><td>Enhance 2 (Resilience [environmental extremes])</td>
+        </tr>
+        <tr class="subheader">
+            <td colspan="7">Genesys Weird War</td>
+        </tr>
+        <tr> 
+            <td>Illirium BG-42 Vest</td><td>0</td><td>+2</td><td>4</td><td>2</td><td>600</td><td>Once per encounter as an incidental, gain melee and ranged defense 2 until the end of your next turn</td>
+        </tr>
+        <tr> 
+            <td>Tesla Coil</td><td>2</td><td>+0</td><td>2</td><td>1</td><td>550</td><td></td>
+        </tr>
+        <tr class="subheader">
+            <td colspan="7">Genesys Space Opera</td>
+        </tr>
+        <tr> 
+            <td>Elite Shock Armour</td><td>1</td><td>+2</td><td>5</td><td>3</td><td>4,000</td><td>Increase Brawn by 1, to a maximum of 5. Encumbrance is 10 + Brawn. Environmentally sealed.</td>
+        </tr>
+        <tr> 
+            <td>Personal Force Field</td><td>3</td><td>+0</td><td>1</td><td>1</td><td>2,000</td><td></td>
         </tr>
     </tbody>
 </table>
+</div>
 
-You can use markup to create tables just fine, normally, but you do need to build the table in HTML if you want to use a "Subheader" row (such as a weapon table). Unforunately Markdown doesn't support applying a class to a table row!
+\pagebreak
 
-     You can also create an index for your document (and with a little bit of formatting, use this to create a table of contents as well!) The title page for index is just a Headline 2, wide, and centered. The code for the letters and rows is below:
+# Star Wars
 
-`<span class="index-letter">A</span>`
-`<ul class="index">`
-`<li><span>Apple</span><span>32</span></li>`
-`<li><span>Angry</span><span>25</span></li>`
-`</ul>`
-
-     This will automatically space the dots for you, so no worrying about counting them out! You can see the example on the next page.
-
-\columnbreak
-
-
-
-
-
-
-\pagebreakNum
+##### Armour tables
 
 <div class="wide">
-
-<center>
-
-## Index
-
+<table>
+    <thead>
+        <tr>
+            <th>Type</th><th>Defense</th><th>Soak</th><th>Encumbrance</th><th>HP</th><th>Price</th><th>Qualities</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="subheader">
+            <td colspan="7">Star Wars</td>
+        </tr>
+        <tr> 
+            <td>"Steelskin" Anti-Concussive Armor</td><td>0</td><td>+3</td><td>8</td><td>1</td><td>6,500</td><td>Impede 1 (Brawn, Agility). Resist 1 (Staggered, Disoriented)</td>
+        </tr>
+        <tr> 
+            <td>"Storm" Charge Suit</td><td>0</td><td>+2</td><td>3</td><td>0</td><td>2,000</td><td>Attackers generating <span class='symbols'>hh</span> are disorientated for 1 round. Attackers generating <span class='symbols'>d</span> suffer 8 damage. Can use as a weapon: Brawl; Damage +0; Critical 5, Range (Engaged); stun 3</td>
+        </tr>
+        <tr> 
+            <td>A/KT Moutaineer Armour</td><td>1</td><td>+1</td><td>3</td><td>2</td><td>1,800</td><td>Enhance 2 (Athletics [climbing])</td>
+        </tr>
+        <tr> 
+            <td>A/KT Tracker Utility Vest</td><td>0</td><td>+0</td><td>1</td><td>1</td><td>100</td><td>Increase Encumbrance threshold by 2</td>
+        </tr>
+        <tr> 
+            <td>Mk. III Flak Vest</td><td>0</td><td>+1</td><td>3</td><td>2</td><td>300</td><td>+1 Soak against damage from the Blast quality</td>
+        </tr>
+        <tr> 
+            <td>Armoured Drop Suit</td><td>1</td><td>+1</td><td>6</td><td>3</td><td>7,500</td><td>Ignore damage from falling</td>
+        </tr>
+        <tr> 
+            <td>Powered Capacitative Armour</td><td>1</td><td>+1</td><td>4</td><td>2</td><td>3,000</td><td>As a maneauver, power up to add +1 defense and +1 soak, but lose free maneauver until powered down</td>
+        </tr>
+        <tr> 
+            <td>Flare Jacket</td><td>0</td><td>+1</td><td>3</td><td>2</td><td>1,500</td><td>Once per encounter as a maneauver, all characters in short or engaged range make a <b>Hard (<span class="difficulty">ddd</span>) Vigilance check</b>. Failure means they are staggered for 1 round, plus 1 round per <span class='symbols'>hhh</span></td>
+        </tr>
+    </tbody>
+</table>
 </div>
 
-<div style="margin-top:25px;"></div>
+*(This is all probably too much to keep straight. Maybe only use Enhance and Impede keywords?)*
 
-<span class="index-letter">A</span>
-<ul class="index">
-<li><span>Apple</span><span>32</span></li>
-<li><span>Angry</span><span>25</span></li>
-</ul>
+**Enhance X (Skill/Characteristic)** Add X <span class="boost">b</span> to checks involving the listed skills or characteristics. Specific situations may be listed in brackets.
 
+**Impede X (Skill/Characteristic)** Add X <span class="setback">b</span> to checks involving the listed skills or characteristics. Specific situations may be listed in brackets.
 
-\columnbreak
+**Support X (Skill/Characteristic)** Remove X <span class="setback">b</span> to checks involving the listed skills or characteristics. Specific situations may be listed in brackets.
 
-<div style="margin-top:25px;"></div>
+**Disrupt X (Skill/Characteristic)** Add X <span class="setback">b</span> to checks make by characters targetting the wearer involving the listed skills or characteristics. Specific situations may be listed in brackets.
 
-<span class="index-letter">B</span>
-<ul class="index">
-<li><span>Bangarang</span><span>42</span></li>
-<li><span>Batman</span><span>33, 126</span></li>
-</ul>
+**Amplify X (Skill/Characteristic)** Add X <span class="symbols">s</span> to checks involving the listed skills or characteristics. Specific situations may be listed in brackets.
 
-<div class="footnote">THEME TESTER<BR />
-<p>GENESYS</p></div>
+**Intensify X (Skill/Characteristic)** Add X <span class="symbols">a</span> to checks involving the listed skills or characteristics. Specific situations may be listed in brackets.
 
+**Hinder X (Skill/Characteristic)** Add X <span class="symbols">h</span> to checks involving the listed skills or characteristics. Specific situations may be listed in brackets.
 
-<div class="wide-note-wrapper-bottom">
-<div class="wide-note-bottom">
+**Resist X (Quality)** When hit by a weapon with the listed quality, reduce the quality's magnitude by X.
 
-<div class="bg-top"></div>
+\pagebreak
 
-#### Change Log
-
-##### 2/8/18
-
-* Updated sheet to use the "EB Garamond" font in leiu of Minion. This will keep the document more uniform as all fonts can now be hosted.
-* Adjusted font sizes/weights to more accurately represent the book.
-* Added "Minion" statblock
-* Updated "Adversary" statblock - the characteristics are now applied separately with an "archetype" statblock. * Resized statblocks to prevent background clipping
-*Sswapped position of "Handling" and "speed" in vehicle stat block - **Note: PREVIOUSLY MADE STAT BLOCKS NEED TO SWAP THESE SPANS AS WELL, OR FORMATTING WILL BE BROKEN**
-* Corrected a bug that prevented subheaders on certain table rows.
-* Added spacing between paragraphs.
-* Provided instructions to indent subsequent paragraphs - cannot be done automaticaly as forced paragraph breaks are neccessary for breaking columns sometimes.
-* Removed image sizing from the non-blended image - image sizing should be done in the image tag.
-* Made some improvements to the Style Guide
-* General cleaning of CSS code
-
-
-<div class="bg-bot"></div>
-</div>
-</div>
-
-\pagebreakNum
-
-<style>
-    #p5{ display: none;}
-</style>
-
-###### Blazing Archon (Armoured/Enraged)
-
-<div class="adversary">
-<span class="bra">3</span>
-<span class="agi">4</span>
-<span class="int">1</span>
-<span class="cun">2</span>
-<span class="wil">3</span>
-<span class="pre">1</span>
-<br>
-<span class="lblbra">BRAWN</span>
-<span class="lblagi">AGILITY</span>
-<span class="lblint">INTELLECT</span>
-<span class="lblcun">CUNNING</span>
-<span class="lblwil">WILLPOWER</span>
-<span class="lblpre">PRESENCE</span>
-<br>
-<span class="lblsoak">SOAK VALUE</span>
-<span class="lblwound">W. THRESHOLD</span>
-<span class="lblstrain">S. THRESHOLD</span>
-<span class="lbldef">M/R DEFENSE</span>
-<br>
-<span class="soak">6</span>
-<span class="wound">20/20</span>
-<span class="strain">12/12</span>
-<span class="mdef">1</span>
-<span class="rdef">1</span>
-</div>
-
-<br/>
-
-### Skills
-Melee (Light) 3, Brawl 3, Discipline 3, Resilence 2, Vigilance 2, Cool 1, Perception 3
- 
-### Talents
-**Finesse** The Blazing Archon may use Agility instead of Brawn when making Melee (Light) checks
-
-**Adversary 2** Upgrade all combat checks targeting the Blazing Archon by 2
-
-### Abilities
-**Paragon Fortitude** This character has multiple Wound and Strain thresholds, each of which is tracked separately. All damage and healing must be completely applied to only one threshold. When a threshold is exceeded, all ongoing conditions and effects affecting this character end. Once a threshold has been exceeded, that threshold cannot receive any healing for the remainder of the encounter. If all wound or all strain thresholds are exceeded, this character is defeated
-
-**Paragon Fury** This character may take one additional turn in each round of combat for each of its wound thresholds that have been exceeded. Each subsequent turn the character gains is inserted immediately after any one PC's turn
-
-**Paragon Transformation** This character has multiple forms, each corresponding to one of its pairs of wound/strain thresholds. It begins the encounter in its primary form. When that form's wound or strain threshold is exceeded, it assumes its next form immediately. Statistics, talents, abilities, or equipment keyed to a specific form are only used when this character is in that form
-
-**Elemental** Fire elementals are immune to damage from fire, and damage from cold or water have their critical rating reduced to 1
-
-<!--Darkvision *(When making skill checks, Elementals remove up to <span class="setback">bb</span> imposed due to darkness)*-->
-
-<!--Flame Blast *(Once per encounter, the Blazing Archon may select up to 3 target characters in short or engaged rnage and make an **Average (<span class="difficulty">dd</span>) Resilience check**. If the check succeeds, each affected character suffers 5 damage +1 for each <span class="symbols">s</span>. The Blazing Archon may spend <span class="symbols">aa</span> to cause the affected targets to suffer the same damage next turn)*-->
-
-**Fire form [Enraged Form]** At the end of this character's turn, engaged characters suffer 3 wounds. When this character moves from short range to engaged, one engaged character suffers 3 wounds
-
-**Uncontrolled [Enraged Form]** This character does not have allies and is not an ally of any character. On each turn, it attacks the last character that dealt damage to it. If no character has done damage to it, it attacks the nearest character that it can see. If it cannot see any character, it attacks the nearest object
-
-**Many-armed [Enraged Form]** *he Blazing Archon adds <span class="boost">b</span> to Brawl checks and may use <span class="symbols">aa</span> to hit a second engaged character with the same damage as the first target
-
-### Equipment
-**Flame Blast** Resilience; Damage 5; Critical 2; Range (Short); Burn 1; Overchage (Burn); Slow-Firing 3; Blast 5
-
-**Flaming Kilij [Armoured Form]** Melee (Light); Damage 8; Critical 3; Range (Engaged); Burn 2; Overchage (Burn)
-
-**Flaming touch [Enraged Form]** Brawl; Damage 5; Critical 3; Range (Engaged); Burn 2; Overchage (Burn)
-
-Paragon Ability Source: [Angry GM](http://theangrygm.com/elemental-boogaloo/)
-
-
-### Extra Rules
-
-**Overcharge (Quality)** The named quality of the weapon requires 1 fewer <span class="symbols">a</span> to activate, to a minimum of 1
-
-<!--
-### Blazing Archon (Enraged)
-
-<div class="adversary">
-<span class="bra">3</span>
-<span class="agi">4</span>
-<span class="int">1</span>
-<span class="cun">2</span>
-<span class="wil">3</span>
-<span class="pre">1</span>
-<br>
-<span class="lblbra">BRAWN</span>
-<span class="lblagi">AGILITY</span>
-<span class="lblint">INTELLECT</span>
-<span class="lblcun">CUNNING</span>
-<span class="lblwil">WILLPOWER</span>
-<span class="lblpre">PRESENCE</span>
-<br>
-<span class="lblsoak">SOAK VALUE</span>
-<span class="lblwound">W. THRESHOLD</span>
-<span class="lblstrain">S. THRESHOLD</span>
-<span class="lbldef">M/R DEFENSE</span>
-<br>
-<span class="soak">6</span>
-<span class="wound">20</span>
-<span class="strain">12</span>
-<span class="mdef">1</span>
-<span class="rdef">1</span>
-</div>
-
-<br/>
-
-**Skills:**
-* Melee (Light) 3
-* Brawl 3
-* Discipline 3
-* Resilence 2
-* Vigilance 2
-* Cool 1
-* Perception 3
- 
-**Talents:**
-* Finesse (The Blazing Archon may use Agility instead of Brawn when making Melee (Light) checks)
-* Adversary 2 (Upgrade all combat checks targeting the Blazing Archon by 2)
-
-**Abilities:**
-* Elemental Immunity Fire (Fire elementals are immune to damage from sources with Burn)
-* Elemental Weakness Water (Fire elementals suffer 5 wounds when doused in water)
-* Extra-planar stability (Archons cannot be Immobilised or knocked Prone)
-* Darkvision (When making skill checks, Elementals remove up to <span class="setback">bb</span> imposed due to darkness)
-* Flame Blast (Once per encounter, the Blazing Archon may select up to 3 target characters in short or engaged rnage and make an **Average (<span class="difficulty">dd</span>) Resilience check**. If the check succeeds, each affected character suffers 5 damage +1 for each <span class="symbols">s</span>. The Blazing Archon may spend <span class="symbols">aa</span> to cause the affected targets to suffer the same damage next turn)
-* Fire form [Enraged Form] (Engaged characters take damage as if from a Severity 3 fire. If the Archon moves from short to engaged, one character takes 3 damage and is on fire until put out, according to pg 111 GCRB)
-* Uncontrolled [Enraged Form] (Always attacks whoever damaged it last. Else, closest it can see. No allies)
-* Many-armed [Enraged Form] (The Blazing Archon adds <span class="boost">b</span> to Brawl checks and may use <span class="symbols">aa</span> to hit a second engaged character with the same damage as the first target)
-
-**Equipment:** Flaming touch [Enraged Form] (Brawl; Damage 5; Critical 3; Range [Engaged]; Burn 2; Burn may be activated with <span class="symbols">a</span> instead of <span class="symbols">aa</span>)
--->
+# Edge of Tamriel

@@ -1,0 +1,3657 @@
+<style>
+ .phb code {
+     font-size:10px;
+     padding-top: 0px;
+     padding-bottom: 0px;
+ }
+/* IMPORTS */
+
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,600,600i,700');
+
+/* Main Background */
+  .phb { background-image: url("https://www.gmbinder.com/images/5s6VJkT.png"); text-align:justify; text-indent:0px;}
+
+/* Fonts */
+
+.phb {
+    font-family: 'Crimson Text', serif;
+}
+
+.phb h1, .phb h2, .phb h3, .phb h4, .phb h5, .phb h6 { 
+    letter-spacing: 0.6px;
+    font-family: 'Bebas Neue';
+}
+
+.phb h1{
+    color: #1ABEEF;
+    font-weight:400;
+    font-variant: uppercase;
+    font-size:42pt;
+    margin-bottom:30px;
+}
+
+/* Makes the bigger "first letter" in paragraphs under H1 and H2*/
+.phb h1 + p:first-letter, .phb h2 + p:first-letter  {
+    font-family: 'Crimson Text';
+    color: #326DA1;
+    font-size:32pt;    
+    line-height:95%;
+    margin-bottom:-9px;
+    margin-right:2px;
+    margin-top:-5px;
+    float:left;
+}
+
+.phb h2 {
+    color: #1ABEEF;
+    font-variant: small-caps;
+    display:table;
+    font-size:32pt;
+    font-weight:300;
+    column-span:all;
+}
+
+/* create the offset underline under h2s */
+.phb h2:after {
+    content:"";
+    border-bottom: 2px solid #CCCCCC;
+    display: table;
+    width:100%;
+    margin-top:-5px;
+    margin-left:20px;
+}
+
+.phb h3 {
+    color: #1ABEEF;
+    font-variant: small-caps;
+    font-size: 18pt;
+    font-weight:1;
+    border:none;
+}
+
+.phb h4 {
+    color: #ed9629;
+    font-variant: small-caps;
+    font-size: 16pt;
+    text-align:center;
+}
+
+.phb h5 {
+    color: #326DA1;
+    font-weight: 1;
+    font-variant: small-caps;
+    font-size: 16pt;
+}
+
+.phb h6 {
+    color: #ea702b;
+    font-variant: small-caps;
+    font-size: 16pt;
+    display: table;
+    border-bottom: 1px solid #ea702b;
+}
+
+.phb p { 
+    font-size: 15px; 
+  	letter-spacing: -0.4px;
+  	line-height:1.15em;
+  	text-indent:0px !important;
+  	font-weight:400;
+  	padding-bottom:1px;
+  	column-fill:balance;
+  }
+  
+.phb p + p {
+    margin-top:0px;  
+  }
+
+.phb wide {clear:both;}
+.phb ul {list-style: none;}
+.phb ul li::before {
+    content: "•"; 
+    color: #F69337;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+
+/* Tables */
+.phb td {
+    font-family: 'Crimson Text', serif;
+    font-size:8pt;
+    font-weight:400;
+    text-align:left;
+}
+.phb td, th {border: 1px solid gray;}
+.phb table {overflow:auto;}
+.phb table tr:nth-child(odd) td {background-color: #E0F4FC;}
+.phb table thead th {
+    color: white; 
+    background-color: #F69337; 
+  	padding-top: 0.3em;
+    padding-left: 0.5em;
+    text-transform: uppercase;
+}
+.phb table tbody tr td {  padding: 0.5em;}
+.phb table thead {display: table-row-group; }
+.phb table .subheader td {
+    color:white;
+    text-transform:uppercase;
+    padding-bottom:2px;
+    background-color: #2D4864 !important;
+    font-size:10pt;
+    font-weight:bold;
+    }
+
+/* Genesys Notes */
+
+.phb .note
+{
+    position:relative;
+    color: white;
+    background-color: #2D4864;
+    border-radius: 0px 0px 30px 0px;
+    padding: 10px 20px;  
+    font-family: 'Crimson Text';
+    letter-spacing: 0.5px;
+    font-size:12ptx;
+    font-weight:600
+    }    
+
+.phb .note:before {
+    position:absolute;
+    content:" ";
+    border-style:solid;
+    border-width:1px;
+    -moz-border-image: -moz-linear-gradient(-45deg, rgba(219,219,219,.7) 0%, rgba(219,219,219,0) 50%, rgba(219,219,219,0) 100%);
+    -webkit-border-image: -webkit-linear-gradient(-45deg, rgba(219,219,219,.7) 0%,rgba(219,219,219,0) 50%,rgba(219,219,219,0) 100%);
+    border-image: linear-gradient(135deg, rgba(219,219,219,.7) 0%,rgba(219,219,219,0) 50%,rgba(219,219,219,0) 100%); 
+    left:4px;
+    top:4px;
+    right:4px;
+    bottom:4px;
+    border-image-slice:1;
+}
+
+.phb .note h5 {color:white;}
+.phb .note td {color:black;}
+.phb .note table tr:nth-child(even) td { background-color: #ffffff;}
+  
+  
+/* Example Block */
+
+.phb .example
+{
+    position:relative;
+    color: black;
+    background: rgba(204, 203, 199, 0.4);
+    border-radius: 0px 0px 30px 0px;
+    padding: 14px 20px;
+}
+
+/* Read-aloud */
+
+.phb .read {
+    display:block;
+    font-family: 'Crimson Text';
+    font-size:10pt;
+    font-style: italic;
+    color: rgb(230,0,0);
+    border: 1px dotted rgb(230,0,0);
+    border-radius:30px;
+    padding:15px;
+    position:relative;
+}
+
+.phb .read:before {
+    content:'';
+    position:absolute;
+    display:block;
+    border: 1px dotted rgb(230,0,0);
+    border-radius:30px;
+    left:2px;
+    top:2px;
+    right:2px;
+    bottom:2px;
+    }
+
+/* Footer */
+.phb .pageNumber { color: #000000}
+.phb .footnote { color: #000000 }
+.phb:nth-child(odd) .pageNumber { color: black;
+	right: 40px;
+	bottom: 52px;
+	width: 50px;
+	text-align: center;
+    font-family: 'Bebas Neue';
+    font-size:11pt;
+    font-weight:bold;
+}
+
+.phb:nth-child(even) .pageNumber { color: black;
+	left: 40px;
+	bottom: 52px;
+	width: 50px;
+    text-align: center;
+    font-family: 'Bebas Neue';
+    font-size:11pt;
+    font-weight:bold;
+}
+
+.phb .footnote { color: black 
+    font-family: 'Bebas Neue' 
+    font-weight: bold 
+    vertical-align: center;
+    padding-top:11px;
+}
+
+.phb:nth-child(even) .footnote {border-left:2px solid black;
+    padding-left:6px;
+}
+
+.phb:nth-child(odd) .footnote {border-right:2px solid black;
+    padding-right:6px;
+}
+
+.phb:after { 
+    background-image:url("none") 
+}
+
+
+
+/* Dice and Symbols */
+
+@font-face {
+  font-family: 'Genesys';
+  src: local('Genesys');
+}
+.phb .symbols {
+    font-family: Genesys;
+}
+
+@font-face {
+  font-family: 'Genesys1';
+  src: local('EotE Symbol');
+}
+.phb .dice {
+    font-family: Genesys1;
+}
+
+
+.phb .setback {
+    font-family: Genesys1;
+    color: black;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+.phb .note .setback, .phb .note .boost, .phb .note .challenge, .phb .note .proficiency, .phb .note .difficulty, .phb .note .ability {
+    text-shadow: -1px 0 #ffffff,0 1px #ffffff,1px 0 #ffffff,0 -1px #ffffff;
+}
+
+.phb .note  td > .setback, .phb .note td > .boost, .phb .note td > .challenge, .phb .note td > .proficiency, .phb .note td >  .difficulty, .phb .note td.ability {
+    text-shadow:  -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+.phb .boost {
+    font-family: Genesys1;
+    color: #76CDDB;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+.phb .challenge {
+    font-family: Genesys1;
+    color: #751317;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+.phb .proficiency {
+    font-family: Genesys1;
+    color: #FEF035;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+.phb .difficulty {
+    font-family: Genesys1;
+    color: #52287E;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+.phb .ability {
+    font-family: Genesys1;
+    color: #46AC4E;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+
+/* Archetypes */
+
+.phb .archetype {
+    background-image: url('https://www.gmbinder.com/images/wk1XTwj.png');
+    height:62px;
+    width:329px;
+    background-size:100%;
+    font-family: 'Bebas Neue';
+    font-size:14pt;
+
+    }
+
+.phb .archetype .bra {
+    position:relative;
+    left:14px;
+    top:6px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+}
+
+.phb .archetype .agi {
+    position:relative;
+    left:42px;
+    top:6px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+.phb .archetype .int {
+    position:relative;
+    left:68px;
+    top:6px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+
+.phb .archetype .cun {
+    position:relative;
+    left:95px;
+    top:6px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+.phb .archetype .wil {
+    position:relative;
+    left:122px;
+    top:6px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+.phb .archetype .pre {
+    position:relative;
+    left:148px;
+    top:6px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+/* Adversaries */
+
+.phb .adversary {
+    background-image: url('https://www.gmbinder.com/images/ks1JaPU.png');
+    height:47px;
+    width:329px;
+    background-position: -3px 0px;
+    background-size:102%;
+    font-family: 'Bebas Neue';
+    font-size:14pt;
+}
+
+.phb .adversary .soak {
+    position:relative;
+    left:26px;
+    top:13px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+.phb .adversary .wound {
+    position:relative;
+    left:79px;
+    top:13px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+.phb .adversary .strain {
+    position:relative;
+    left:135px;
+    top:13px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+.phb .adversary .mdef {
+    position:relative;
+    left:176px;
+    top:13px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+.phb .adversary .rdef {
+    position:relative;
+    left:175px;
+    top:13px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+
+/* MINION STAT BLOCK */
+
+.phb .minion {
+    background-image: url('https://www.gmbinder.com/images/K1aEwZa.png');
+    height:63px;
+    width:329px;
+    background-position: 42px 0px;
+    background-repeat:no-repeat;
+    background-size:75%;
+    font-family: 'Bebas Neue';
+    font-size:14pt;
+}
+
+.phb .minion .soak {
+    position:relative;
+    left:71px;
+    top:13px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+
+.phb .minion .wound {
+    position:relative;
+    left:125px;
+    top:13px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+
+.phb .minion .mdef {
+    position:relative;
+    left:165px;
+    top:13px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+.phb .minion .rdef {
+    position:relative;
+    left:165px;
+    top:13px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+
+/* Vehicles */
+
+.phb .vehicle {
+    background-image: url('https://www.gmbinder.com/images/JEgri2b.png');
+    height:80px;
+    width:329px;
+    background-size: 100%;
+    background-repeat:no-repeat;
+    font-family: 'Bebas Neue';
+    font-size:14pt;
+}
+
+
+.phb .vehicle .sil {
+    position:relative;
+    left:14px;
+    top:6px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+}
+
+.phb .vehicle .speed {
+    position:relative;
+    left:41px;
+    top:6px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+}
+
+.phb .vehicle .hand {
+    position:relative;
+    left:67px;
+    top:6px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+}
+
+.phb .vehicle .armor {
+    position:relative;
+    left:107px;
+    top:12px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+}
+.phb .vehicle .def {
+    position:relative;
+    left:163px;
+    top:12px;
+    text-align:center;
+    display:inline-block;
+    width:25px;    
+}
+.phb .vehicle .ht {
+    position:relative;
+    left:53px;
+    top:53px;
+    text-align:center;
+    display:inline-block;
+    width:25px;    
+}
+
+.phb .vehicle .ss {
+    position:relative;
+    left:107px;
+    top:53px;
+    text-align:center;
+    display:inline-block;
+    width:25px;    
+}
+
+/*Index*/
+
+.phb .index-letter {
+    color:rgb(118,18,19);
+    font-size:24pt;font-weight:bold; 
+    font-family:'Bebas Neue';
+    line-height:1.1em;
+}
+
+.phb .index {
+    list-style:none;
+    padding:0;
+    overflow-x:hidden;
+    max-width:329px;
+}
+
+.phb .index li::before {
+            content: ""; }
+            
+.phb .index li {
+    
+    display:flex;
+}
+            
+.phb .index li span:first-child {
+    margin-right:0.2em;
+    order:1;
+}
+            
+.phb .index li::after {
+  content: "";
+  border-bottom: 1px dotted;
+  flex-grow: 1;
+  order: 2;
+  position:relative;
+  top:-5px
+}
+
+.phb .index span + span {
+    order:3;
+    margin-left:0.2em;
+    }
+    
+/* NON BLENDED IMAGE BORDER */
+    
+.phb .non-blended {
+    padding:10px;
+    border-width:2px;
+    border-style:solid;
+    border-image:linear-gradient(135deg, rgba(230,0,0,1) 0%,rgba(230,0,0,0.01) 99%,rgba(230,0,0,0) 100%);
+    -moz-border-image:-moz-linear-gradient(-45deg, rgba(230,0,0,1) 0%, rgba(230,0,0,0.01) 99%, rgba(230,0,0,0) 100%); -webkit-border-image:-webkit-linear-gradient(-45deg, rgba(230,0,0,1) 0%,rgba(230,0,0,0.01) 99%,rgba(230,0,0,0) 100%);
+    border-image-slice: 1;
+}
+
+
+</style>
+
+# Genesys Talents Expanded
+
+\pagebreak
+
+<span class="index-letter">Tier 1</span>
+<ul class="index">
+<li><span>All-Terrain Driver</span><span></span></li>
+<li><span>Bad Cop</span><span></span></li>
+<li><span>Black Market Contacts</span><span></span></li>
+<li><span>Brace</span><span></span></li>
+<li><span>Bought Info</span><span></span></li>
+<li><span>Call 'Em</span><span></span></li>
+<li><span>Clever Retort</span><span></span></li>
+<li><span>Defensive Sysops</span><span></span></li>
+<li><span>Desperate Recovery</span><span></span></li>
+<li><span>Duelist</span><span></span></li>
+<li><span>Durable</span><span></span></li>
+<li><span>Extra Ammo</span><span></span></li>
+<li><span>Familiar Sky</span><span></span></li>
+<li><span>Forager</span><span></span></li>
+<li><span>Good Cop</span><span></span></li>
+<li><span>Grit</span><span></span></li>
+<li><span>Hamstring Shot</span><span></span></li>
+<li><span>Hidden Storage</span><span></span></li>
+<li><span>Jump Up</span><span></span></li>
+<li><span>Knack for It</span><span></span></li>
+<li><span>Know Somebody</span><span></span></li>
+<li><span>Knowledge Specialization</span><span></span></li>
+<li><span>Let’s Ride</span><span></span></li>
+<li><span>Medical Specialist</span><span></span></li>
+<li><span>Museum Worthy</span><span></span></li>
+<li><span>One with Nature</span><span></span></li>
+<li><span>Parry</span><span></span></li>
+<li><span>Physician</span><span></span></li>
+<li><span>Proper Upbringing</span><span></span></li>
+<li><span>Quick Draw</span><span></span></li>
+<li><span>Quick Strike</span><span></span></li>
+<li><span>Rapid Reaction</span><span></span></li>
+<li><span>Rapid Recovery</span><span></span></li>
+<li><span>Redundant Systems</span><span></span></li>
+<li><span>Reflect</span><span></span></li>
+<li><span>Second Wind</span><span></span></li>
+<li><span>Signature Vehicle</span><span></span></li>
+<li><span>Smooth Talker</span><span></span></li>
+<li><span>Solid Repairs</span><span></span></li>
+<li><span>Soothing Tone</span><span></span></li>
+<li><span>Surgeon</span><span></span></li>
+<li><span>Swift</span><span></span></li>
+<li><span>Toughened</span><span></span></li>
+<li><span>Unremarkable</span><span></span></li>
+<li><span>Wheel and Deal</span><span></span></li>
+</ul>
+<span class="index-letter">Tier 2</span>
+<ul class="index">
+<li><span>Barrage</span><span></span></li>
+<li><span>Basic Military Training</span><span></span></li>
+<li><span>Beast Wrangler</span><span></span></li>
+<li><span>Berserk</span><span></span></li>
+<li><span>Blackmail</span><span></span></li>
+<li><span>Blooded</span><span></span></li>
+<li><span>Body Guard</span><span></span></li>
+<li><span>Burly</span><span></span></li>
+<li><span>Command</span><span></span></li>
+<li><span>Confidence</span><span></span></li>
+<li><span>Coordinated Assault</span><span></span></li>
+<li><span>Counteroffer</span><span></span></li>
+<li><span>Cutting Question</span><span></span></li>
+<li><span>Daring Aviator</span><span></span></li>
+<li><span>Debilitating Shot</span><span></span></li>
+<li><span>Deceptive Taunt</span><span></span></li>
+<li><span>Defensive Stance</span><span></span></li>
+<li><span>Defensive Sysops (Improved)</span><span></span></li>
+<li><span>Disorient</span><span></span></li>
+<li><span>Distracting Behavior</span><span></span></li>
+<li><span>Dual Wielder</span><span></span></li>
+<li><span>Dynamic Fire</span><span></span></li>
+<li><span>Fan the Hammer</span><span></span></li>
+<li><span>Fancy Paint Job</span><span></span></li>
+<li><span>Fearsome</span><span></span></li>
+<li><span>Fine Tuning</span><span></span></li>
+<li><span>Finesse</span><span></span></li>
+<li><span>Freerunning</span><span></span></li>
+<li><span>Go Without</span><span></span></li>
+<li><span>Grapple</span><span></span></li>
+<li><span>Hard Headed</span><span></span></li>
+<li><span>Heightened Awareness</span><span></span></li>
+<li><span>Hold Together</span><span></span></li>
+<li><span>Hunter</span><span></span></li>
+<li><span>Hunter's Quarry</span><span></span></li>
+<li><span>Inspiring Rhetoric</span><span></span></li>
+<li><span>Inventor</span><span></span></li>
+<li><span>Knockdown</span><span></span></li>
+<li><span>Know-It-All</span><span></span></li>
+<li><span>Known Schematic</span><span></span></li>
+<li><span>Loom</span><span></span></li>
+<li><span>Lucky Strike</span><span></span></li>
+<li><span>Multiple Opponents</span><span></span></li>
+<li><span>Mystic Theurge</span><span></span></li>
+<li><span>Overstocked Ammo</span><span></span></li>
+<li><span>Physical Training</span><span></span></li>
+<li><span>Quick Draw (Improved)</span><span></span></li>
+<li><span>Reconstruct the Scene</span><span></span></li>
+<li><span>Researcher</span><span></span></li>
+<li><span>Resist Disarm</span><span></span></li>
+<li><span>Scathing Tirade</span><span></span></li>
+<li><span>Selective Detonation</span><span></span></li>
+<li><span>Sense Emotions</span><span></span></li>
+<li><span>Shield Slam</span><span></span></li>
+<li><span>Shortcut</span><span></span></li>
+<li><span>Side Step</span><span></span></li>
+<li><span>Speaks Binary</span><span></span></li>
+<li><span>Spur</span><span></span></li>
+<li><span>Stalker</span><span></span></li>
+<li><span>Strong Arm</span><span></span></li>
+<li><span>Stunning Blow</span><span></span></li>
+<li><span>Suppressing Fire</span><span></span></li>
+<li><span>Technical Aptitude</span><span></span></li>
+<li><span>Time to Go</span><span></span></li>
+<li><span>Tinkerer</span><span></span></li>
+<li><span>Touch of Fate</span><span></span></li>
+<li><span>Unarmed Parry</span><span></span></li>
+<li><span>Uncanny Senses</span><span></span></li>
+<li><span>Unstoppable</span><span></span></li>
+<li><span>Vehicle Combat Training</span><span></span></li>
+<li><span>Well Read</span><span></span></li>
+<li><span>Well Rounded</span><span></span></li>
+</ul>
+
+\pagebreak
+
+<span class="index-letter">Tier 3</span>
+<ul class="index">
+<li><span>Ambush</span><span></span></li>
+<li><span>Animal Companion</span><span></span></li>
+<li><span>Armor Master</span><span></span></li>
+<li><span>Bad Press</span><span></span></li>
+<li><span>Barrel Roll</span><span></span></li>
+<li><span>Blind Spot</span><span></span></li>
+<li><span>Body Guard (Improved)</span><span></span></li>
+<li><span>Capital Sendoff</span><span></span></li>
+<li><span>Confidence (Improved)</span><span></span></li>
+<li><span>Congenial</span><span></span></li>
+<li><span>Constant Vigilance</span><span></span></li>
+<li><span>Creative Killer</span><span></span></li>
+<li><span>Crippling Blow</span><span></span></li>
+<li><span>Cunning Snare</span><span></span></li>
+<li><span>Customized Cooling Unit</span><span></span></li>
+<li><span>Daring Turn</span><span></span></li>
+<li><span>Dirty Tricks</span><span></span></li>
+<li><span>Disarm</span><span></span></li>
+<li><span>Disarming Smile</span><span></span></li>
+<li><span>Distinctive Style</span><span></span></li>
+<li><span>Dodge</span><span></span></li>
+<li><span>Double or Nothing</span><span></span></li>
+<li><span>Eagle Eyes</span><span></span></li>
+<li><span>Encoded Communique</span><span></span></li>
+<li><span>Encouraging Words</span><span></span></li>
+<li><span>Fear the Shadows</span><span></span></li>
+<li><span>Feint</span><span></span></li>
+<li><span>Feral Strength</span><span></span></li>
+<li><span>Field Commander</span><span></span></li>
+<li><span>Fire Control</span><span></span></li>
+<li><span>Forgot to Count?</span><span></span></li>
+<li><span>Form On Me</span><span></span></li>
+<li><span>Fortified Structure</span><span></span></li>
+<li><span>Freerunning (Improved)</span><span></span></li>
+<li><span>Frenzied Attack</span><span></span></li>
+<li><span>Full Throttle</span><span></span></li>
+<li><span>Greased Palms</span><span></span></li>
+<li><span>Grenadier</span><span></span></li>
+<li><span>Harass</span><span></span></li>
+<li><span>Hard-Boiled</span><span></span></li>
+<li><span>Heroic Recovery</span><span></span></li>
+<li><span>Heroic Resilience</span><span></span></li>
+<li><span>Heroic Will</span><span></span></li>
+<li><span>Hindering Shot</span><span></span></li>
+<li><span>Hunter's Quarry (Improved)</span><span></span></li>
+<li><span>Informant</span><span></span></li>
+<li><span>Inspiring Rhetoric (Improved)</span><span></span></li>
+<li><span>Interjection</span><span></span></li>
+<li><span>Intimidating</span><span></span></li>
+<li><span>Iron Body</span><span></span></li>
+<li><span>Larger Project</span><span></span></li>
+<li><span>Lethal Blows</span><span></span></li>
+<li><span>Natural</span><span></span></li>
+<li><span>No Escape</span><span></span></li>
+<li><span>Nobody's Fool</span><span></span></li>
+<li><span>Opportunist</span><span></span></li>
+<li><span>Outside the Box</span><span></span></li>
+<li><span>Overwhelm Defenses</span><span></span></li>
+<li><span>Painkiller Specialization</span><span></span></li>
+<li><span>Parry (Improved)</span><span></span></li>
+<li><span>Pin</span><span></span></li>
+<li><span>Plausible Deniability</span><span></span></li>
+<li><span>Point Blank</span><span></span></li>
+<li><span>Powerful Blast</span><span></span></li>
+<li><span>Preemptive Avoidance</span><span></span></li>
+<li><span>Rapid Archery</span><span></span></li>
+<li><span>Reflect (Improved)</span><span></span></li>
+<li><span>Resourceful Refit</span><span></span></li>
+<li><span>Scathing Tirade (Improved)</span><span></span></li>
+<li><span>Seize the Initiative</span><span></span></li>
+<li><span>Sense Advantage</span><span></span></li>
+<li><span>Share Pain</span><span></span></li>
+<li><span>Shortcut (Improved)</span><span></span></li>
+<li><span>Signature Spell</span><span></span></li>
+<li><span>Skilled Teacher</span><span></span></li>
+<li><span>Sound Investments</span><span></span></li>
+<li><span>Spur (Improved)</span><span></span></li>
+<li><span>Studious Plotting</span><span></span></li>
+<li><span>Stunning Blow (Improved)</span><span></span></li>
+<li><span>Sunder Expertise</span><span></span></li>
+<li><span>Time to Go (Improved)</span><span></span></li>
+<li><span>Tricky Target</span><span></span></li>
+<li><span>Tumble</span><span></span></li>
+<li><span>Tuned Maneuvering Thrusters</span><span></span></li>
+<li><span>Twisted Words</span><span></span></li>
+<li><span>Up the Ante</span><span></span></li>
+<li><span>Utility Belt</span><span></span></li>
+<li><span>Valuable Facts</span><span></span></li>
+<li><span>Wraithbane</span><span></span></li>
+</ul>
+
+\pagebreak
+
+<span class="index-letter">Tier 4</span>
+<ul class="index">
+<li><span>Armor Master (Improved)</span><span></span></li>
+<li><span>Better Luck Next Time</span><span></span></li>
+<li><span>Body Guard (Supreme)</span><span></span></li>
+<li><span>Bolstered Armor</span><span></span></li>
+<li><span>Brilliant Evasion</span><span></span></li>
+<li><span>Can’t We Talk About This?</span><span></span></li>
+<li><span>Capital Sendoff (Improved)</span><span></span></li>
+<li><span>Careful Planning</span><span></span></li>
+<li><span>Center of Being</span><span></span></li>
+<li><span>Circle of Shelter</span><span></span></li>
+<li><span>Commanding Presence</span><span></span></li>
+<li><span>Comrades in Arms</span><span></span></li>
+<li><span>Contingency Plan</span><span></span></li>
+<li><span>Deadeye</span><span></span></li>
+<li><span>Deadly Accuracy</span><span></span></li>
+<li><span>Defensive</span><span></span></li>
+<li><span>Defensive Driving</span><span></span></li>
+<li><span>Deflection</span><span></span></li>
+<li><span>Discredit</span><span></span></li>
+<li><span>Distracting Behavior (Improved)</span><span></span></li>
+<li><span>Don't Shoot!</span><span></span></li>
+<li><span>Double or Nothing (Improved)</span><span></span></li>
+<li><span>Enduring</span><span></span></li>
+<li><span>Field Commander (Improved)</span><span></span></li>
+<li><span>Fortune Favors the Bold</span><span></span></li>
+<li><span>Full Throttle</span><span></span></li>
+<li><span>Full Throttle (Supreme)</span><span></span></li>
+<li><span>Holistic Navigation</span><span></span></li>
+<li><span>How Convenient!</span><span></span></li>
+<li><span>In The Know</span><span></span></li>
+<li><span>Incite Rebellion</span><span></span></li>
+<li><span>Inspiring Rhetoric (Supreme)</span><span></span></li>
+<li><span>It's Not that Bad</span><span></span></li>
+<li><span>Jury Rigged</span><span></span></li>
+<li><span>Mad Inventor</span><span></span></li>
+<li><span>Menace</span><span></span></li>
+<li><span>Moving Target</span><span></span></li>
+<li><span>Not Today</span><span></span></li>
+<li><span>Offensive Driving</span><span></span></li>
+<li><span>Overbalance</span><span></span></li>
+<li><span>Overcharge</span><span></span></li>
+<li><span>Precise Aim</span><span></span></li>
+<li><span>Prey on the Weak</span><span></span></li>
+<li><span>Prime Positions</span><span></span></li>
+<li><span>Prophetic Aim</span><span></span></li>
+<li><span>Rain of Death</span><span></span></li>
+<li><span>Reflect (Supreme)</span><span></span></li>
+<li><span>Reinforced Frame</span><span></span></li>
+<li><span>Reroute Processors</span><span></span></li>
+<li><span>Resolve</span><span></span></li>
+<li><span>Savvy Negotiator</span><span></span></li>
+<li><span>Scathing Tirade (Supreme)</span><span></span></li>
+<li><span>Second Chances</span><span></span></li>
+<li><span>Showboat</span><span></span></li>
+<li><span>Skilled Slicer</span><span></span></li>
+<li><span>Sorry About the Mess</span><span></span></li>
+<li><span>Speaks Binary (Improved)</span><span></span></li>
+<li><span>Spin Attack</span><span></span></li>
+<li><span>Spitfire</span><span></span></li>
+<li><span>Spur (Supreme)</span><span></span></li>
+<li><span>Street Smarts</span><span></span></li>
+<li><span>Supporting Evidence</span><span></span></li>
+<li><span>That's How It's Done</span><span></span></li>
+<li><span>Unrelenting Skeptic</span><span></span></li>
+</ul>
+
+\pagebreak
+
+<span class="index-letter">Tier 5</span>
+<ul class="index">
+<li><span>Armor Master (Supreme)</span><span></span></li>
+<li><span>Baleful Gaze</span><span></span></li>
+<li><span>Biggest Fan</span><span></span></li>
+<li><span>Center of Being (Improved)</span><span></span></li>
+<li><span>Coordination Dodge</span><span></span></li>
+<li><span>Crucial Point</span><span></span></li>
+<li><span>Custom Loadout</span><span></span></li>
+<li><span>Dedication</span><span></span></li>
+<li><span>Double or Nothing (Supreme)</span><span></span></li>
+<li><span>Full Throttle (Improved)</span><span></span></li>
+<li><span>Heavy Hitter</span><span></span></li>
+<li><span>Indomitable</span><span></span></li>
+<li><span>Intense Focus</span><span></span></li>
+<li><span>Just Kidding!</span><span></span></li>
+<li><span>Master</span><span></span></li>
+<li><span>Master Driver/Pilot</span><span></span></li>
+<li><span>Master Grenadier</span><span></span></li>
+<li><span>Master Instructor</span><span></span></li>
+<li><span>Master Merchant</span><span></span></li>
+<li><span>Overcharge (Improved)</span><span></span></li>
+<li><span>Pressure Point</span><span></span></li>
+<li><span>Ruinous Repartee</span><span></span></li>
+<li><span>Speaks Binary (Supreme)</span><span></span></li>
+<li><span>Superhuman Reflexes</span><span></span></li>
+<li><span>Thorough Assessment</span><span></span></li>
+<li><span>Unrelenting Skeptic (Improved)</span><span></span></li>
+<li><span>Community Created</span><span></span></li>
+<li><span>Catfall</span><span></span></li>
+<li><span>Deflect Spell</span><span></span></li>
+<li><span>Intuitive Casting</span><span></span></li>
+<li><span>Overchannel</span><span></span></li>
+<li><span>Respected</span><span></span></li>
+<li><span>Specialist Knowledge</span><span></span></li>
+<li><span>Street Slang</span><span></span></li>
+<li><span>Adroitness</span><span></span></li>
+<li><span>Familiar</span><span></span></li>
+<li><span>Fighter’s Stance</span><span></span></li>
+<li><span>Pact Magic</span><span></span></li>
+<li><span>Prepared Spell</span><span></span></li>
+<li><span>Blindsense</span><span></span></li>
+<li><span>Blood Magic</span><span></span></li>
+<li><span>Bonded Implement</span><span></span></li>
+<li><span>Combat Caster</span><span></span></li>
+<li><span>Distant Spell</span><span></span></li>
+<li><span>Familiar (Improved)</span><span></span></li>
+<li><span>Forbidden Knowledge</span><span></span></li>
+<li><span>Life or Death</span><span></span></li>
+<li><span>Lingering Spell</span><span></span></li>
+<li><span>Magic Resistance</span><span></span></li>
+<li><span>Maximize Spell</span><span></span></li>
+<li><span>Overchannel (Improved)</span><span></span></li>
+<li><span>Pinning Fire</span><span></span></li>
+<li><span>Shape Spell</span><span></span></li>
+<li><span>Shield Master</span><span></span></li>
+<li><span>Sneak Attack</span><span></span></li>
+<li><span>Turn Undead</span><span></span></li>
+<li><span>Assassin Strike</span><span></span></li>
+<li><span>Blood Magic (Improved)</span><span></span></li>
+<li><span>Faith Healing</span><span></span></li>
+<li><span>Familiar (Supreme)</span><span></span></li>
+<li><span>Finesse (Improved)</span><span></span></li>
+<li><span>Flurry of Blows</span><span></span></li>
+<li><span>Life or Death (Improved)</span><span></span></li>
+<li><span>Mage Hunter</span><span></span></li>
+<li><span>Mystic Theurge (Improved)</span><span></span></li>
+<li><span>Pinning Fire (Improved)</span><span></span></li>
+<li><span>Quickened Spell</span><span></span></li>
+<li><span>Reflexive Barrier</span><span></span></li>
+<li><span>Signature Spell (Improved)</span><span></span></li>
+<li><span>Sneak Attack (Improved)</span><span></span></li>
+<li><span>Vision of the Future</span><span></span></li>
+<li><span>Barbaric Strength</span><span></span></li>
+<li><span>Blood Magic (Supreme)</span><span></span></li>
+<li><span>Bouncing Spell</span><span></span></li>
+<li><span>Life or Death (Supreme)</span><span></span></li>
+<li><span>Sneak Attack (Supreme)</span><span></span></li>
+<li><span>Turn Undead (Improved)</span><span></span></li>
+<li><span>Sources</span><span></span></li>
+</ul>
+
+\pagebreak
+
+\pagebreak
+
+# Gensys Talents Expanded
+<div class="note wide">Genesys Talents Expanded is a community effort to bring a wider selection of talents to the Genesys Roleplaying System, published by Fantasy Flight Games, to provide GM’s and players more options for constructing their campaigns and characters. The bulk of these talents are from Fantasy Flight Games publications, mostly from the Star Wars Roleplaying games; Edge of the Empire, Age of Rebellion, and Force and Destiny. Talents from the Star Wars games, which do not fit the nature and/or standards of Genesys, were modified and/or renamed, or omitted altogether.<br/>
+Additional talents, at the end of the collection, were created and vetted by the Genesys gaming community.</div>
+
+### TIER 1
+###### All-Terrain Driver
+**Tier:** 1<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+Do not suffer usual penalties for driving through difficult terrain when using Driving. <br/>
+Sources: ACRB, ETU, ND<br/>
+
+###### Bad Cop
+**Tier:** 1<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+May spend <span class='symbols'>aa</span> from a Deception or Coercion check to upgrade ability of a single ally's subsequent Social Interaction check against the target a number of times equal to ranks in Bad Cop. <br/>
+Sources: FH, KTP<br/>
+
+###### Black Market Contacts
+**Tier:** 1<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** Yes<br/>
+When purchasing illegal goods, may reduce rarity by 1 per rank of Black Market Contacts, increasing cost by 50 percent of base cost per reduction. <br/>
+Source: ECRB<br/>
+
+\columnbreak
+
+###### Brace
+**Tier:** 1<br/>
+**Activation:** Active (Maneuver)<br/>
+**Ranked:** Yes<br/>
+As a maneuver, the character may Brace himself. This allows a character to remove <span class='setback'>b</span> per rank of Brace from the next skill check based on changing conditions, inclement weather, unstable surfaces, zero gravity, heavy gravity, or other disruptive physical obstacles that would make a skill check more difficult.<br/>
+Sources: ACRB, ECRB<br/>
+
+###### Bought Info
+**Tier:** 1<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+When making any knowledge skill check, your character can instead use this talent to spend an amount of currency equal to fifty times the difficulty of the check and automatically succeed on the knowledge check with one uncanceled <span class='symbols'>s</span> (instead of rolling). At your GM’s discretion, your character may not be able to use Bought Info if the information is particularly sensitive or difficult to find, or buying it doesn’t make narrative sense.<br/>
+Source: GCRB<br/>
+
+###### Call 'Em
+**Tier:** 1<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+Do not add  <span class='setback'>b</span> to combat checks due to the use of the Aim maneuver.<br/>
+Source: FC<br/>
+
+\pagebreakNum
+
+###### Clever Retort
+**Tier:** 1<br/>
+**Activation:** Active (Incidental, Out of Turn)<br/>
+**Ranked:** No<br/>
+Once per encounter, your character may use this talent to add automatic <span class='symbols'>hh</span> to another character’s social skill check.<br/>
+Source: GCRB<br/>
+
+###### Defensive Sysops
+**Tier:** 1<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+When attempting to defend a computer system against intrusion (or when someone attempts to hack a computer owned or programmed  by  your  character)  your character adds <span class='setback'>bb</span> to their opponent’s checks. If your character has access to the computer system when the intrusion takes place, they are automatically aware of the intrusion.<br/>
+Source: GCRB<br/>
+
+###### Desperate Recovery
+**Tier:** 1<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+Before your character heals strain at the end of an encounter, if their strain is more than half of their strain threshold, they heal two additional strain.<br/>
+Source: GCRB<br/>
+
+###### Duelist
+**Tier:** 1<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+Your character adds <span class='boost'>b</span> to their melee combat checks while engaged with a single opponent. Your character adds <span class='setback'>b</span> to their melee combat checks while engaged with three or more opponents.<br/>
+Source: GCRB<br/>
+
+###### Durable
+**Tier:** 1<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+Your character reduces any Critical Injury result they suffer by 10 per rank of Durable, to a minimum of 01.<br/>
+Source: GCRB<br/>
+
+\columnbreak
+
+###### Extra Ammo
+**Tier:** 1<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+Cannot run out of ammo due to a <span class='symbols'>d</span>. Items with Limited Ammo quality run out of ammo as normal.<br/>
+Sources: ACRB, ECRB<br/>
+
+###### Familiar Sky
+**Tier:** 1<br/>
+**Activation:** Active (Maneuver)<br/>
+**Ranked:** No<br/>
+Once per session, may perform a Familiar Sky maneuver; make a **Hard (<span class='difficulty'>ddd</span>) Knowledge check** to reveal the current type of environment and other useful information.<br/>
+Sources: ACRB, ECRB
+
+###### Forager
+**Tier:** 1<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+Your character removes up to <span class='setback'>bb</span> from any skill checks they make to find food, water, or shelter. Checks to forage or search the area that your character makes take half the time they would normally.<br/>
+Source: GCRB<br/>
+
+###### Good Cop
+**Tier:** 1<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+May spend <span class='symbols'>aa</span> from a Charm or Negotiation check to upgrade ability of a single ally's subsequent Social Interaction check against the target a number of times equal to ranks in Good Cop.<br/>
+Sources: JOY, FH, ND<br/>
+
+###### Grit
+**Tier:** 1<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+Each rank of Grit increases your character’s strain threshold by one.<br/>
+Source: GCRB<br/>
+
+\pagebreakNum
+
+###### Hamstring Shot
+**Tier:** 1<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Once per round, your character may use this talent to perform a ranged combat check against one non-vehicle target within range of the weapon used. If the check is successful, halve the damage inflicted by the attack (before reducing damage by the target’s soak). The target is immobilized until the end of its next turn.<br/>
+Source: GCRB<br/>
+
+###### Hidden Storage
+**Tier:** 1<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+Gain hidden storage in vehicles or equipment that holds items with total encumbrance equal to ranks in Hidden Storage. <br/>
+Sources: ACRB, EBGR, ECRB<br/>
+
+###### Jump Up
+**Tier:** 1<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+Once per round during your character’s turn, your character may use this talent to stand from a prone or seated position as an incidental.<br/>
+Source: GCRB<br/>
+
+###### Knack for It
+**Tier:** 1<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+When you purchase this talent for your character, select one skill. Your character removes <span class='setback'>bb</span> from any checks they make using this skill. Each additional time you purchase this talent for your character, select two additional skills. Your character also removes <span class='setback'>bb</span> from any checks they make using these skills. You cannot select combat or magic skills when choosing skills for this talent.<br/>
+Source: GCRB<br/>
+
+\columnbreak
+
+###### Know Somebody
+**Tier:** 1<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** Yes<br/>
+Once per session, when attempting to purchase a legally available item, your character may use this talent to reduce its rarity by one per rank of Know Somebody.<br/>
+Source: GCRB
+
+###### Knowledge Specialization
+**Tier:** 1<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+When acquired, choose 1 Knowledge skill. When making that skill check, may spend a <span class='symbols'>t</span> result to gain additional <span class='symbols'>s</span> equal to ranks in Knowledge Specialization.<br/>
+Sources: ACRB, ECRB, FCRB<br/>
+
+###### Let’s Ride
+**Tier:** 1<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+Once per round during your character's turn, your character can use this talent to mount or dismount from a vehicle or animal, or move from one position in a vehicle to another (such as from the cockpit to a gun turret) as an incidental. In addition, if your character suffers a short-range fall (see page 112) from a vehicle or animal, they suffer no damage and land on their feet.<br/>
+Source: GCRB<br/>
+
+###### Medical Specialist
+**Tier:** 1<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+Patients recover 1 additional wound per rank of Medical Specialist when they recover wounds from long term care.<br/>
+Sources: ACRB, ECRB<br/>
+
+###### Museum Worthy
+**Tier:** 1<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Once per session, take Museum Worthy action, make a **Hard (<span class='difficulty'>ddd</span>) Knowledge check** to ascertain information regarding a relic, ruin, or piece of history.<br/>
+Source: ETU<br/>
+
+\pagebreakNum
+
+###### One with Nature
+**Tier:** 1<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+When in the wilderness, your character may make a **Simple (–) Survival check**, instead of Discipline or Cool, to recover strain at the end of an encounter (see page 117).<br/>
+Source: GCRB<br/>
+
+###### Parry
+**Tier:** 1<br/>
+**Activation:** Active (Incidental, Out of Turn)<br/>
+**Ranked:** Yes<br/>
+When your character suffers a hit from a melee combat check, after damage is calculated but before soak is applied (so immediately after Step 3 of Perform a Combat check, page 102), your character may suffer 3 strain to use this talent to reduce the damage of the hit by two plus their ranks in Parry. This talent can only be used once per hit, and your character needs to be wielding a Melee weapon.<br/>
+Source: GCRB<br/>
+
+###### Physician
+**Tier:** 1<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+When making a Medicine check to help a character heal wounds, the target heals 1 additional strain per rank of Physician.<br/>
+Source: FCRB<br/>
+
+###### Proper Upbringing
+**Tier:** 1<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** Yes<br/>
+When your character makes a social skill check in polite company (as determined by your GM), they may suffer a number of strain to use this talent to add an equal number of a to the check. The number may not exceed your character’s ranks in Proper Upbringing.<br/>
+Source: GCRB<br/>
+
+\columnbreak
+
+###### Quick Draw
+**Tier:** 1<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+Once per round on your character’s turn, they may use this talent to draw or holster an easily accessible weapon or item as an incidental. Quick Draw also reduces a weapon’s Prepare rating by one, to a minimum of one.<br/>
+Source: GCRB<br/>
+
+###### Quick Strike
+**Tier:** 1<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+Your character adds <span class='boost'>b</span> for each rank of Quick Strike to any combat checks they make against any targets that have not yet taken their turn in the current encounter.<br/>
+Source: GCRB<br/>
+
+###### Rapid Reaction
+**Tier:** 1<br/>
+**Activation:** Active (Incidental, Out of Turn)<br/>
+**Ranked:** Yes<br/>
+Your character may suffer a number of strain to use this talent to add an equal number of <span class='symbols'>s</span> to a Vigilance or Cool check they make to determine Initiative order. The number may not exceed your character’s ranks in Rapid Reaction.<br/>
+Source: GCRB<br/>
+
+###### Rapid Recovery
+**Tier:** 1<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+When healing strain after an encounter, heal 1 additional strain per rank of Rapid Recovery.<br/>
+Sources: ABGR, ACRB, ECRB, FBGR, FCRB<br/>
+
+###### Redundant Systems
+**Tier:** 1<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Once per session, may take a Redundant Systems action; make an Easy (<span class='difficulty'>ddd</span>) Mechanics check to harvest components from a functioning device to repair a broken one without breaking the first device.<br/>
+Sources: ACRB, ECRB<br/>
+
+\pagebreakNum
+
+###### Reflect
+**Tier:** 1<br/>
+**Activation:** Active (Incidental, Out of Turn)<br/>
+**Ranked:** Yes<br/>
+When your character suffers a hit from a Ranged combat check, after damage is calculated but before soak is applied, your character may suffer 3 strain to use this talent to reduce the damage of the hit by two plus their ranks in Reflect. This talent can only be used once per hit, and your character needs to be wielding a Shield deemed appropriate by the GM.<br/>
+Sources: FBGR, FCRB<br/>
+
+###### Second Wind
+**Tier:** 1<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** Yes<br/>
+Once per encounter, your character may use this talent to heal an amount of strain equal to their ranks in Second Wind.<br/>
+Source: GCRB<br/>
+
+###### Signature Vehicle
+**Tier:** 1<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+Choose one starship or vehicle with a silhouette of 3 or lower that your character owns. This vehicle is your character's "Signature Vehicle." Upgrade the ability of all Mechanics checks made to work on the vehicle once. If the vehicle ever lost or destroyed, the character may apply Signature Vehicle to a new vehicle that meets the requirements.<br/>
+Sources: SOT, SM<br/>
+
+###### Smooth Talker
+**Tier:** 1<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** Yes<br/>
+When first acquired choose 1 skill; Charm, Coercion, Deception, or Negotiation. When making checks with that skill spend <span class='symbols'>t</span> to gain additional <span class='symbols'>s</span> equal to ranks in Smooth Talker.<br/>
+Sources: ACRB, ECRB, FCRB<br/>
+
+\columnbreak
+
+###### Solid Repairs
+**Tier:** 1<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+The character repairs +1 hull trauma per rank of Solid Repairs whenever he repairs a starship or vehicle.<br/>
+Sources: ABGR, ACRB, ECRB, FCRB<br/>
+
+###### Soothing Tone
+**Tier:** 1<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Once per encounter, take a Soothing Tone action; make an **Average (<span class='difficulty'>dd</span>) Knowledge check** to allow a beast to recover strain equal to <span class='symbols'>s</span>.<br/>
+Sources: SOT, SS<br/>
+
+###### Surgeon
+**Tier:** 1<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+When your character makes a Medicine check to heal wounds, the target heals one additional wound per rank of Surgeon.<br/>
+Source: GCRB<br/>
+
+###### Swift
+**Tier:** 1<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+Your character does not suffer the penalties for moving through difficult terrain (they move through difficult terrain at normal speed without spending additional maneuvers).<br/>
+Source: GCRB<br/>
+
+###### Toughened
+**Tier:** 1<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+Each rank of Toughened increases your character’s wound threshold by two.<br/>
+Source: GCRB<br/>
+
+###### Unremarkable
+**Tier:** 1<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+Other characters add <span class='symbols'>f</span> to any checks made to find or identify your character in a crowd.<br/>
+Source: GCRB<br/>
+
+\pagebreakNum
+
+###### Wheel and Deal
+**Tier:** 1<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+When selling good legally, gain 10% more currency per rank of Wheel and Deal.<br/>
+Sources: ACRB, ECRB
+
+\pagebreakNum
+
+### TIER 2
+
+###### Barrage
+**Tier:** 2<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+Add 1 damage per rank of Barrage to 1 hit of successful attack while using Ranged (Heavy) or Gunnery skills at long or extreme range.<br/>
+Sources: ABGR, FIB, EBGR, ECRB<br/>
+
+###### Basic Military Training
+**Tier:** 2<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+Athletics, Ranged (Heavy), and Resilience are now career skills for your character.<br/>
+Source: GCRB<br/>
+
+###### Beast Wrangler
+**Tier:** 2<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+Add <span class='boost'>b</span> per rank of Beast Wrangler to checks to tame or wrangle creatures.<br/>
+Source: SOT<br/>
+
+###### Berserk
+**Tier:** 2<br/>
+**Activation:** Active (Maneuver)<br/>
+**Ranked:** No<br/>
+Once per encounter, your character may use this talent. Until the end of the encounter or until they are incapacitated, your character adds <span class='symbols'>saa</span> to all melee combat checks they make. However, opponents add <span class='symbols'>s</span> to all combat checks targeting your character.<span class='symbols'>f</span>
+While berserk, your character cannot make ranged combat checks. At the end of the encounter (or when they are incapacitated), your character suffers 6 strain.<br/>
+Source: GCRB<br/>
+
+###### Blackmail
+**Tier:** 2<br/>
+**Activation:** Active (Incidental, Out of Turn)<br/>
+**Ranked:** No<br/>
+When an NPC exceeds his strain threshold, may spend 1 Story Point to convince that NPC to perform a single task of choice instead.<br/>
+Source: DA<br/>
+
+\columnbreak
+
+###### Blooded
+**Tier:** 2<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+Add <span class='boost'>b</span> per rank of Blooded to all checks to resist or recover from poisons, venoms, or toxins. Reduce duration of ongoing poisons by 1 round per rank of Blooded to a minimum of 1.<br/>
+Sources: ACRB, ECRB<br/>
+
+###### Body Guard
+**Tier:** 2<br/>
+**Activation:** Active (Maneuver)<br/>
+**Ranked:** Yes<br/>
+Once per round, perform the Body Guard maneuver to guard an engaged character. Suffer a number of strain no greater than ranks of Body Guard, then until the beginning of the next turn upgrade the difficulty of combat checks targeting the character by that number.<br/>
+Sources: ACRB, FIB, EBGR, ECRB, FBGR, FCRB
+
+###### Burly
+**Tier:** 2<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+Reduce any wielded weapon's Cumbersome quality and Encumbrance rating by a number equal to ranks in Burly to a minimum of 1.<br/>
+Sources: FIB, DC<br/>
+
+###### Command
+**Tier:** 2<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+Add <span class='boost'>b</span> per rank of Command when making Leadership checks. Affected targets add <span class='boost'>b</span> to Discipline checks for next 24 hours.<br/>
+Sources: ACRB, ECRB, FCRB<br/>
+
+###### Confidence
+**Tier:** 2<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+May decrease difficulty of Discipline checks to avoid fear by 1 per rank of Confidence, to a minimum of Easy (<span class='difficulty'>d</span>).<br/>
+Sources: ACRB, ECRB, FCRB<br/>
+
+\pagebreakNum
+
+###### Coordinated Assault
+**Tier:** 2<br/>
+**Activation:** Active (Maneuver)<br/>
+**Ranked:** Yes<br/>
+Once per turn, your character may use this talent to have a number of allies engaged with your character equal to your ranks in Leadership add <span class='symbols'>a</span> to all combat checks they make until the end of your character’s next turn. The range of this talent increases by one band per rank of Coordinated Assault beyond the first.<br/>
+Source: GCRB<br/>
+
+###### Counteroffer
+**Tier:** 2<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Once per session, your character may use this talent to choose one non-nemesis adversary within medium range and make an opposed Negotiation versus Discipline check. If successful, the target becomes staggered until the end of their next turn. At your GM’s discretion, you may spend <span class='symbols'>t</span> on this check to have the adversary become an ally until the end of the encounter. However, the duration of this may be shortened or extended depending on whether your GM feels your offer is appealing to the adversary and whether your character follows through on their offer!<br/>
+Source: GCRB<br/>
+
+###### Cutting Question
+**Tier:** 2<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+Once per encounter, when making a Coercion skill check, the character may use Deception skill instead.<br/>
+Source: DA<br/>
+
+###### Daring Aviator
+**Tier:** 2<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** Yes<br/>
+Before your character makes a Driving or Piloting check, they may add a number of <span class='symbols'>h</span> to the results to use this talent to add an equal number of <span class='symbols'>s</span>. The number may not exceed your character’s ranks in Daring Aviator.<br/>
+Source: GCRB
+
+\columnbreak
+
+###### Debilitating Shot
+**Tier:** 2<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+Upon successful attack with a starship or vehicle weapon, may spend <span class='symbols'>aa</span> to reduce the maximum speed of the target by 1 until the end of the next round.<br/>
+Sources: ACRB, ND<br/>
+
+###### Deceptive Taunt
+**Tier:** 2<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Once per session, may make Deceptive Taunt action. Make opposed Deception check. If successful, one adversary must attack the character during adversary's next turn.<br/>
+Source: FH<br/>
+
+###### Defensive Stance
+**Tier:** 2<br/>
+**Activation:** Active (Maneuver)<br/>
+**Ranked:** Yes<br/>
+Once per round, your character may suffer a number of strain no greater than their ranks in Defensive Stance to use this talent. Then, until the end of your character’s next turn, upgrade the difficulty of all melee combat checks targeting your character a number of times equal to the strain suffered.<br/>
+Source: GCRB<br/>
+
+###### Defensive Sysops (Improved)
+**Tier:** 2<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Defensive Sysops talent to benefit from this talent.* Before adding <span class='setback'>bb</span> from Defensive Sysops to a check, use this talent to add <span class='symbols'>fh</span> to the results of the check instead.<br/>
+Source: GCRB<br/>
+
+###### Disorient
+**Tier:** 2<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+After hitting with combat check, may spend <span class='symbols'>aa</span> to disorient target for number of rounds equal to ranks in Disorient.<br/>
+Sources: ACRB, ECRB<br/>
+
+\pagebreakNum
+
+###### Distracting Behavior
+**Tier:** 2<br/>
+**Activation:** Active (Maneuver)<br/>
+**Ranked:** Yes<br/>
+Make a Distracting Behavior maneuver and suffer strain no greater than ranks in Cunning. Until the beginning of next turn, equal number of NPC's suffer <span class='symbols'>h</span> on checks. Range increases with additional ranks.<br/>
+Source: FH<br/>
+
+###### Dual Wielder
+**Tier:** 2<br/>
+**Activation:** Active (Maneuver)<br/>
+**Ranked:** No<br/>
+Your character may use this talent to decrease the difficulty of the next combined combat check (see Two-Weapon Combat, on page 108) they make during the same turn by one.<br/>
+Source: GCRB<br/>
+
+###### Dynamic Fire
+**Tier:** 2<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+When making a ranged attack while engaged with an opponent, may suffer 2 strain to reduce the ranged modifier by 1.<br/>
+Source: ACRB
+
+###### Fan the Hammer
+**Tier:** 2<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+Once per encounter before making a combat check with a pistol (your GM has the final say on whether a weapon is a pistol or not), your character may use this talent to add the Auto-fire quality to the pistol when resolving the check. If your character does, the weapon runs out of ammo exactly as with an Out of Ammo result (see page 104).<br/>
+Source: GCRB<br/>
+
+###### Fancy Paint Job
+**Tier:** 2<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Signature Vehicle talent to benefit from this talent.* Upgrade all Charm, Deception, and Negotiation checks made in the presence of Signature Vehicle once.<br/>
+Sources: SOT, SM<br/>
+
+###### Fearsome
+**Tier:** 2<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+When an adversary becomes engaged with the character, the character may force the adversary to make a fear check, with the difficulty equal to the character's ranks in Fearsome.<br/>
+Sources: DC, FCRB<br/>
+
+###### Fine Tuning
+**Tier:** 2<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+When reducing the amount of system strain a starship or vehicle suffers, reduce 1 additional strain per rank of Fine Tuning.<br/>
+Sources: ACRB, ECRB, FCRB<br/>
+
+###### Finesse
+**Tier:** 2<br/>
+**Activation:** Passive<br/>
+**Ranked:**
+The character may use Agility instead of<br/> Brawn for Brawl and Melee (Light) checks.<br/>
+Source: GHC<br/>
+
+###### Freerunning
+**Tier:** 2<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+Suffer 1 strain when making a Move maneuver to move to any location within short range.<br/>
+Source: EV<br/>
+
+###### Go Without
+**Tier:** 2<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+Once per session, count as having the right tools for the job when performing the next skill check this turn.<br/>
+Source: DOH<br/>
+
+\pagebreakNum
+
+###### Grapple
+**Tier:** 2<br/>
+**Activation:** Active (Maneuver)<br/>
+**Ranked:** No<br/>
+Once per round, the character may perform the Grapple maneuver. Until the beginning of the character's next turn, enemies must spend two maneuvers instead of one maneuver to move from engaged range to short range of him.<br/>
+Sources: ND, KTP
+
+###### Hard Headed
+**Tier:** 2<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** Yes<br/>
+When staggered or disoriented, perform the Hard Headed action; make a **Daunting (<span class='difficulty'>dddd</span>) Discipline check** to remove status. Difficulty reduced per rank of Hard Headed.<br/>
+Sources: ACRB, ECRB<br/>
+
+###### Heightened Awareness
+**Tier:** 2<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+Allies within short range of your character add <span class='boost'>b</span> to their Perception and Vigilance checks. Allies engaged with your character add <span class='boost'>bb</span> instead.<br/>
+Source: GCRB<br/>
+
+###### Hold Together
+**Tier:** 2<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+Spend 1 Story Point to perform a Hold Together incidental immediately after vehicle or starship takes damage to turn it into system strain.<br/>
+Sources: ACRB, ECRB<br/>
+
+###### Hunter
+**Tier:** 2<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+Add <span class='boost'>b</span> per rank of Hunter to all checks when interacting with beast or animals (including combat checks). Add +10 to Critical Injury results against beasts or animals per rank of Hunter.<br/>
+Sources: ECRB, FCRB<br/>
+
+\columnbreak
+
+###### Hunter's Quarry
+**Tier:** 2<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Take Hunter's Quarry action, make a **Hard (<span class='difficulty'>ddd</span>) Survival check** to upgrade the ability of all attacks made against a target within long range until the end of the character's next turn.<br/>
+Sources: ETU, SS<br/>
+
+###### Inspiring Rhetoric
+**Tier:** 2<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Your character may use this talent to make an **Average (<span class='difficulty'>dd</span>) Leadership check**. For each s the check generates, one ally within short range heals one strain. For each a, one ally benefiting from Inspiring Rhetoric heals one additional strain.<br/>
+Source: GCRB<br/>
+
+###### Inventor
+**Tier:** 2<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** Yes<br/>
+When your character makes a check to construct new items or modify existing ones, use this talent to add a number of <span class='boost'>b</span> to the check equal to ranks of Inventor. In addition, your character may attempt to reconstruct devices that they have heard described but have not seen and do not have any kinds of plans or schematics for.<br/>
+Source: GCRB<br/>
+
+###### Knockdown
+**Tier:** 2<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+After hitting with a melee attack, may spend a <span class='symbols'>t</span> to knock the target prone.<br/>
+Sources: ABGR, ACRB, EBGR, ECRB
+
+###### Know-It-All
+**Tier:** 2<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+Once per session, perfectly recall an important fact previously learned as if a Story Point had been spent.<br/>
+Source: DA<br/>
+
+\pagebreakNum
+
+###### Known Schematic
+**Tier:** 2<br/>
+**Activation:** Active (Maneuver)<br/>
+**Ranked:** No<br/>
+Once per session, may perform the Known Schematic maneuver; make a **Hard (<span class='difficulty'>ddd</span>) Knowledge check**. Success grants familiarity with a building or ship's design.<br/>
+Sources: ACRB, ECRB<br/>
+
+###### Loom
+**Tier:** 2<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+When an ally engaged with the character makes a successful Charm, Deception, or Negotiation check, the character adds a per rank in Coercion to the ally's check.<br/>
+Source: DC<br/>
+
+###### Lucky Strike
+**Tier:** 2<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+When your character purchases this talent, choose one characteristic. After your character makes a successful combat check, you may spend one Story Point to use this talent to add damage equal to your character’s ranks in that characteristic to one hit of the combat check.<br/>
+Source: GCRB<br/>
+
+###### Multiple Opponents
+**Tier:** 2<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+Your character adds <span class='boost'>b</span> to his Brawl and Melee combat checks when engaged with multiple opponents. This includes single groups of multiple minions.<br/>
+Source: FCRB<br/>
+
+###### Mystic Theurge
+**Tier:** 2<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+When purchasing this talent, choose one magic skill. That skill becomes a career skill but your character may only use it for one check per encounter.<br/>
+Source: GHC<br/>
+
+\columnbreak
+
+###### Overstocked Ammo
+**Tier:** 2<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+*Your character must have purchased the Signature Vehicle talent to benefit from this talent.* Increase the value of the Limited Ammo quality of any weapons mounted on Signature Vehicle by 1 per rank of Overstocked Ammo.<br/>
+Source: SOT<br/>
+
+###### Physical Training
+**Tier:** 2<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+Add <span class='boost'>b</span> per rank of Physical Training to Athletics and Resilience checks.<br/>
+Sources: ACRB, DOH
+
+Quick Draw (Improved)
+**Tier:** 2<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Quick Draw Talent to benefit from this talent.* May use Quick Draw twice per round. This also allows you to reduce the prepare rating by 2 to a minimum of one.<br/>
+Source: FC<br/>
+
+###### Reconstruct the Scene
+**Tier:** 2<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Perform the Reconstruct the Scene action; make a **Hard (<span class='difficulty'>ddd</span>) Perception check** to identify the physical characteristics of person present at the scene within 24 hours.<br/>
+Sources: ND, EV<br/>
+
+###### Researcher
+**Tier:** 2<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+On a successful Knowledge check, character and allies gain automatic a per rank of Researcher on checks to act on those facts until the end of his next turn.<br/>
+Sources: DA, LBE<br/>
+
+\pagebreakNum
+
+###### Resist Disarm
+**Tier:** 2<br/>
+**Activation:** Active (Incidental, Out of Turn)<br/>
+**Ranked:** No<br/>
+Suffer 2 strain to avoid being disarmed or have weapon damaged or destroyed.<br/>
+Source: FCRB<br/>
+
+###### Scathing Tirade
+**Tier:** 2<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Your character may use this talent to make an **Average (<span class='difficulty'>dd</span>) Coercion check**. For each s the check generates, one enemy within short range suffers 1 strain. For each a, one enemy affected by Scathing Tirade suffers 1 additional strain.<br/>
+Source: GCRB<br/>
+
+###### Selective Detonation
+**Tier:** 2<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** Yes<br/>
+When using a weapon with the Blast quality spend a to exclude 1 target that would be affected by the explosion, up to ranks in Selective Detonation.<br/>
+Sources: ACRB, DC<br/>
+
+###### Sense Emotions
+**Tier:** 2<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+Add <span class='boost'>b</span> to all Charm, Coercion, and Deception checks.<br/>
+Sources: ECRB, FBGR, FCRB<br/>
+
+###### Shield Slam
+**Tier:** 2<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+When attacking a minion or rival with a shield, may spend <span class='symbols'>aaaa</span> or a <span class='symbols'>t</span> to stagger the target for 1 round.<br/>
+Source: GHC
+
+###### Shortcut
+**Tier:** 2<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+During a chase, add <span class='boost'>b</span> per rank in Shortcut to any checks made to catch or escape an opponent.<br/>
+Sources: ACRB, ECRB, EV, SS<br/>
+
+###### Side Step
+**Tier:** 2<br/>
+**Activation:** Active (Maneuver)<br/>
+**Ranked:** Yes<br/>
+Once per round, your character may suffer a number of strain no greater than their ranks in Side Step to use this talent. Until the end of your character’s next turn, upgrade the difficulty of all ranged combat checks targeting your character a number of times equal to the strain suffered.<br/>
+Source: GCRB<br/>
+
+###### Speaks Binary
+**Tier:** 2<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+When directing non-sentient NPC artificial life forms, may grant them <span class='boost'>b</span> per rank of Speaks Binary on checks.<br/>
+Sources: ABGR, ACRB, ECRB<br/>
+
+###### Spur
+**Tier:** 2<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Take a Spur action; make a **Hard (<span class='difficulty'>ddd</span>) Riding check** to increase a beast's top speed by 1. The beast suffers 2 strain every round it stays spurred.<br/>
+Source: SOT<br/>
+
+###### Stalker
+**Tier:** 2<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+Add <span class='boost'>b</span> per rank of Stalker to all Stealth and Coordination checks.<br/>
+Sources: ABGR, ACRB, ECRB<br/>
+
+###### Strong Arm
+**Tier:** 2<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+Treat thrown weapons as if they had 1 greater range.<br/>
+Sources: ACRB, EBGR, ECRB<br/>
+
+###### Stunning Blow
+**Tier:** 2<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+While making Melee checks, may inflict damage as strain instead of wounds. This does not ignore soak.<br/>
+Sources: ACRB, ECRB<br/>
+
+\pagebreakNum
+
+###### Suppressing Fire
+**Tier:** 2<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+The character and each ally within short range may spend a on their failed combat checks to inflict one strain on the target per rank of Suppressing Fire. Each character can only activate this effect once per round.<br/>
+Sources: FIB, KTP<br/>
+
+###### Technical Aptitude
+**Tier:** 2<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+When making a Computer skill check may spend <span class='symbols'>aa</span> or <span class='symbols'>t</span> to reduce the time spent to complete the task by 50%<br/>
+Sources: ACRB, ECRB, FCRB
+
+###### Time to Go
+**Tier:** 2<br/>
+**Activation:** Active (Maneuver)<br/>
+**Ranked:** No<br/>
+The character may spend 1 Story Point to perform a Move maneuver as an incidental to attempt to move into cover or out of the blast range of a weapon or explosion.<br/>
+Sources: ACRB, DC<br/>
+
+###### Tinkerer
+**Tier:** 2<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+May add 1 additional hard point to a number of items equal to ranks in Tinkerer. Each item may only be modified once.<br/>
+Sources: ACRB, ECRB, KTP<br/>
+
+###### Touch of Fate
+**Tier:** 2<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+Once per session, add <span class='boost'>bb</span> to any 1 check.<br/>
+Sources: ACRB, ECRB, FCRB<br/>
+
+\columnbreak
+
+###### Unarmed Parry
+**Tier:** 2<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+May Parry while unarmed. Reduce strain cost to Parry while unarmed by 1 (to a minimum of 1).<br/>
+Source: ND<br/>
+
+###### Uncanny Senses
+**Tier:** 2<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+Add <span class='boost'>bb</span> per rank of Uncanny Senses to all Perception and Vigilance checks.<br/>
+Sources: ACRB, ECRB, FCRB<br/>
+
+###### Unstoppable
+**Tier:** 2<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+If a Critical Injury roll is 1 or reduced to 1, do not receive the critical injury.<br/>
+Source: ACRB<br/>
+
+###### Vehicle Combat Training
+**Tier:** 2<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+Gunnery, Driving, and Piloting become career skills.<br/>
+Source: ACRB<br/>
+
+###### Well Read
+**Tier:** 2<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+Choose any 3 Knowledge skills. They permanently become career skills.<br/>
+Source: LBE<br/>
+
+###### Well Rounded
+**Tier:** 2<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+Choose any 2 non-magic skills. They permanently become career skills.<br/>
+Sources: ACRB, EBGR, ECRB, FBGR, FCRB
+
+\pagebreakNum
+
+### TIER 3
+###### Ambush
+**Tier:** 3<br/>
+**Activation:** Active (Maneuver)<br/>
+**Ranked:** No<br/>
+Once per round while benefiting from cover, may make the Ambush maneuver. Add damage equal to Stealth skill to one hit of next successful combat check against a target within short range before the end of the turn.<br/>
+Source: FIB<br/>
+
+###### Animal Companion
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+Your character creates a bond with a single animal approved by your GM. This animal must be silhouette 0 (no larger than a mid-sized dog). The bond persists as long as your character chooses, although at your GM’s discretion, the bond may also be broken due to abusive treatment or other extenuating circumstances. As long as the bond persists, the animal follows your character, and you dictate the animal’s overall behavior (although, since the animal is only bonded with the character, not dominated, it may still perform inconvenient actions such as scratching furniture, consuming rations, and marking territory). Once per round in structured encounters, your character may spend one maneuver to direct their animal in performing one action and one maneuver during your character’s turn. The animal must be within hearing and visual range of your character (generally medium range) to do this. Otherwise, the animal does not contribute to the encounter. The specifics of its behavior are up to you and your GM. For every additional rank of Animal Companion your character has, increase the allowed silhouette of the companion by one (this may mean your character gets a new companion, or their companion grows in size). This talent can also change in flavor depending on the nature of your game setting. While an animal companion may make sense in many settings, in a futuristic setting it may make more sense for the “animal” to be a robot or drone, for example.<br/>
+Source: GCRB<br/>
+
+###### Armor Master
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+When wearing armor, Increase total soak value by 1.<br/>
+Sources: ACRB, EBGR, ECRB, KTP<br/>
+
+\columnbreak
+
+###### Bad Press
+**Tier:** 3<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Once per session, choose an organization and make a **Hard (<span class='difficulty'>ddd</span>) Deception check**. On success, organization members have their strain thresholds reduced by 1, plus 1 per sss, until the end of the session. When he does this, the player must explain how the PC disseminated the propaganda such that it has affected his targets. The chosen organization must be narrow and cohesive enough to be affected by bad publicity.<br/>
+Source: DA
+
+###### Barrel Roll
+**Tier:** 3<br/>
+**Activation:** Active (Incidental, Out of Turn)<br/>
+**Ranked:** No<br/>
+Your character can only use this talent while piloting a starfighter or airplane of Silhouette 3 or less. When your vehicle suffers a hit from a ranged combat check, after damage is calculated but before armor is applied, your character may have their vehicle suffer 3 system strain to use this talent. Then, reduce the damage suffered by a number equal to their ranks in Piloting.<br/>
+Source: GCRB<br/>
+
+###### Blind Spot
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+Your character, and allies within short range, add automatic a to combat checks they make while benefiting from cover.<br/>
+Sources: FIB, KTP<br/>
+
+###### Body Guard (Improved)
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Body Guard talent to benefit from this talent.* Once per session, when an ally protected by the Body Guard maneuver suffers a hit, suffer the hit instead.<br/>
+Sources: LBE, FIB, EBGR, FCRB<br/>
+
+\pagebreakNum
+
+###### Capital Sendoff
+**Tier:** 3<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Take a Capital Sendoff action targeting two ships or vehicles at Close range; make a **Hard (<span class='difficulty'>ddd</span>) Cool check** to cause the targets to suffer a minor collision.<br/>
+Source: SOT<br/>
+
+###### Confidence (Improved)
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Confidence talent to benefit from this talent.* May spend a on a fear check to steady the nerves of allies making the same fear check. If the character does so each ally within short range who makes the fear check adds automatic successes equal to the character's rank in confidence.<br/>
+Source: LBE<br/>
+
+###### Congenial
+**Tier:** 3<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** Yes<br/>
+May suffer a number of strain to downgrade difficulty of Charm or Negotiation checks or upgrade difficulty when target by Charm or Negotiation checks, by an equal number Strain suffered this way cannot exceed ranks in Congenial.<br/>
+Sources: FH, FC, DOH<br/>
+
+###### Constant Vigilance
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+May always use Vigilance when making checks to determine initiative.<br/>
+Source: EV<br/>
+
+###### Creative Killer
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+Reduce the crit rating of improvised weapons by 2 (to a minimum of 1).<br/>
+Source: ACRB
+
+\columnbreak
+
+###### Crippling Blow
+**Tier:** 3<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+Increase the difficulty of next combat check by 1. If check deals damage, target suffers 1 strain whenever he moves for the remainder of the encounter.<br/>
+Sources: ACRB, ECRB, FCRB<br/>
+
+###### Cunning Snare
+**Tier:** 3<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Once per encounter as an action, may create a trap. Any other character who moves to engaged range of the trap must make an Opposed Vigilance vs. Survival check to avoid harm and ill effects.<br/>
+Source: FIB<br/>
+
+###### Customized Cooling Unit
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+*Your character must have purchased the Signature Vehicle talent to benefit from this talent.* Increase the system strain threshold of Signature Vehicle by 2 per rank of Customized Cooling Unit.<br/>
+Source: SOT<br/>
+
+###### Daring Turn
+**Tier:** 3<br/>
+**Activation:** Active (Maneuver)<br/>
+**Ranked:** No<br/>
+When an opponent has gained the advantage on a starship or vehicle being piloted, may spent 2 strain perform a Daring Turn maneuver to remove the effects.<br/>
+Source: SOT<br/>
+
+###### Dirty Tricks
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+When a character inflicts a Critical Injury, the target also adds <span class='setback'>bb</span> to their next action.<br/>
+Source: GHC<br/>
+
+\pagebreakNum
+
+###### Disarm
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+May spend <span class='symbols'>t</span> or <span class='symbols'>aa</span> with a successful Brawl or Melee check to disarm opponent.<br/>
+Source: FCRB<br/>
+
+###### Disarming Smile
+**Tier:** 3<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** Yes<br/>
+Take the Disarming Smile action; succeed at an opposed Charm check against a target within short range to lower all defenses of a target by ranks in Disarming Smile until the end of the encounter.<br/>
+Source: FC<br/>
+
+###### Distinctive Style
+**Tier:** 3<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+When making a Computers check to hack a system or break into a secured network, before rolling, your character may use this talent to add <span class='symbols'>sshh</span> to the results. If you are using the optional hacking rules on page 232 and your check generates <span class='symbols'>hh</span>, your GM should spend it on the I Know You! option in Table III.2-22 on page 234 of the Genesys Core Rulebook.<br/>
+Source: GCRB
+
+###### Dodge
+**Tier:** 3<br/>
+**Activation:** Active (Incidental, Out of Turn)<br/>
+**Ranked:** Yes<br/>
+When your character is targeted by a combat check (ranged or melee), they may suffer a number of strain no greater than their ranks in Dodge to use this talent. Then, upgrade the difficulty of the combat check targeting your character a number of times equal to the strain suffered.<br/>
+Source: GCRB<br/>
+
+###### Double or Nothing
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+Suffer 2 strain to perform the Double or Nothing incidental to increase the difficulty of the next check by one. Then, after canceling opposing symbols, double the amount of remaining <span class='symbols'>a</span>.<br/>
+Source: FC<br/>
+
+###### Eagle Eyes
+**Tier:** 3<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+Once per encounter before making a ranged combat check, you may use this talent to increase your weapon’s range by one range band (to a maximum of extreme range). This lasts for the duration of the combat check.<br/>
+Source: GCRB<br/>
+
+###### Encoded Communique
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+Upgrade the difficulty of checks to decrypt this character's coded messages without the proper cipher a number of times equal to Computers skill.<br/>
+Source: DA<br/>
+
+###### Encouraging Words
+**Tier:** 3<br/>
+**Activation:** Active (Incidental, Out of Turn)<br/>
+**Ranked:** No<br/>
+After an engaged ally fails a check, may suffer 1 strain to assist that ally's next check this encounter as an out of turn incidental.<br/>
+Sources: DA, LBE, DOH<br/>
+
+###### Fear the Shadows
+**Tier:** 3<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Once per session, may make a **Hard (<span class='difficulty'>ddd</span>) Deception check** to force a single minion group or rival to flee the encounter.<br/>
+Source: EV<br/>
+
+###### Feint
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+Spend <span class='symbols'>t</span> or <span class='symbols'>aaa</span> generated on a missed melee attack to upgrade difficulty of opponent's next attack targeting character by ranks in Feint.<br/>
+Source: FCRB<br/>
+
+\pagebreakNum
+
+###### Feral Strength
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+Add 1 damage per rank of Feral Strength to one hit of successful attacks made using Brawl or Melee skills.<br/>
+Sources: ABGR, ACRB, EBGR, ECRB
+
+###### Field Commander
+**Tier:** 3<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Your character may use this talent to make an **Average (<span class='difficulty'>dd</span>) Leadership check**. If successful, a number of allies equal to your character’s Presence may immediately suffer 1 strain to perform one maneuver (out of turn). If there are any questions as to which allies take their maneuvers first, your character is the final arbiter.<br/>
+Source: GCRB<br/>
+
+###### Fire Control
+**Tier:** 3<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Take the Fire Control action; all combat checks made from current starship or vehicle count their target's silhouette as one higher than normal until the beginning of next turn.<br/>
+Source: ACRB<br/>
+
+###### Forgot to Count?
+**Tier:** 3<br/>
+**Activation:** Active (Incidental, Out of Turn)<br/>
+**Ranked:** No<br/>
+When an opponent makes a ranged combat check, you can spend <span class='symbols'>hh</span> from that check to use this talent to cause their weapon to run out of ammo (see page 104), as long as the weapon can normally run out of ammunition.<br/>
+Source: GCRB<br/>
+
+###### Form On Me
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+Allies equal to ranks in Leadership in short range gain the benefits of the Gain the Advantage action.<br/>
+Source: ACRB<br/>
+
+\columnbreak
+
+###### Fortified Structure
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+*Your character must have purchased the Signature Vehicle talent to benefit from this talent.* Increase the hull trauma threshold of Signature Vehicle by 1 per rank of Fortified Structure.<br/>
+Source: SOT<br/>
+
+###### Freerunning (Improved)
+**Tier:** 3<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Freerunning talent to benefit from this talent.* Suffer 4 strain when making a move maneuver to move to any location within medium range.<br/>
+Source: EV<br/>
+
+###### Frenzied Attack
+**Tier:** 3<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** Yes<br/>
+When making a Melee or Brawl check, suffer a number of strain to upgrade the attack an equal number of times. The strain suffered may not exceed ranks in Frenzied Attack.<br/>
+Sources: ACRB, ECRB<br/>
+
+###### Full Throttle
+**Tier:** 3<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Take a Full Throttle action; make a **Hard (<span class='difficulty'>ddd</span>) Piloting check** to increase a vehicle's top speed by 1 for a number of rounds equal to Cunning.<br/>
+Sources: ABGR, ACRB, EBGR, ECRB, FCRB
+
+###### Greased Palms
+**Tier:** 3<br/>
+**Activation:** Active (Maneuver)<br/>
+**Ranked:** Yes<br/>
+Before making a social check, may spend up to 50 units of currency per rank of Greased Palms to upgrade the ability of the check once for every 50 spent.<br/>
+Sources: ACRB, JOY, FH<br/>
+
+\pagebreakNum
+
+###### Grenadier
+**Tier:** 3<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** Yes<br/>
+When your character makes a ranged combat check with a weapon that has the Blast item quality, you may spend one Story Point to use this talent to trigger the weapon’s Blast quality, instead of spending a (even if the attack misses). In addition, your character treats grenades as having a range of medium.<br/>
+Source: GCRB<br/>
+
+###### Harass
+**Tier:** 3<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+Whenever the character's animal companion makes a successful combat check against a target, it may forgo inflicting damage to upgrade the difficulty of the target's next check once instead.<br/>
+Source: SS<br/>
+
+###### Hard-Boiled
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+When recovering strain after an encounter, may spend a up to ranks in Hard-Boiled to recover 1 wound per a spent.<br/>
+Source: ND<br/>
+
+###### Heroic Recovery
+**Tier:** 3<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+Once per encounter, may spend a Story Point to recover 4 strain.<br/>
+Source: GHC<br/>
+
+###### Heroic Resilience
+**Tier:** 3<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** Yes<br/>
+Immediately after being hit by an attack but before suffering damage, spend 1 Story Point to increase soak by ranks in Resilience.<br/>
+Sources: FIB, DC<br/>
+
+\columnbreak
+
+###### Heroic Will
+**Tier:** 3<br/>
+**Activation:** Active (Incidental, Out of Turn)<br/>
+**Ranked:** No<br/>
+When you purchase this talent for your character, choose two characteristics. You may spend a Story Point to use this talent to have your character ignore the effects of all Critical Injuries on any skill checks using those two characteristics until the end of the current encounter. (Your character still suffers the Critical Injuries; they just ignore the effects.
+See page 114.)<br/>
+Source: GCRB<br/>
+
+###### Hindering Shot
+**Tier:** 3<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** Yes<br/>
+Spend a story point and increase the difficulty of next Gunnery check by 1. If check deals damage, target starship or vehicle suffers system strain equal to speed when it moves for a number of turns equal to ranks in Hindering Shot.<br/>
+Source: ND
+
+###### Hunter's Quarry (Improved)
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Hunter's Quarry talent to benefit from this talent.* Suffer 2 strain to perform Hunter's Quarry action as a maneuver.<br/>
+Sources: ETU, SS<br/>
+
+###### Informant
+**Tier:** 3<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+Once per session, may reveal a contact who can shed light on a chosen subject.<br/>
+Sources: DA, ND<br/>
+
+###### Inspiring Rhetoric (Improved)
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Inspiring Rhetoric talent to benefit from this talent.* Allies affected by your character’s Inspiring Rhetoric add <span class='boost'>b</span> to all skill checks they make for a number of rounds equal to your character’s ranks in Leadership.<br/>
+Source: GCRB<br/>
+
+\pagebreakNum
+
+###### Interjection
+**Tier:** 3<br/>
+**Activation:** Active (Incidental, Out of Turn)<br/>
+**Ranked:** No<br/>
+After another character makes a social check, suffer 3 strain to take an interjection incidental make an **Average (<span class='difficulty'>dd</span>) Vigilance check** to add <span class='symbols'>s</span> or <span class='symbols'>f</span> equal to <span class='symbols'>s</span>, and <span class='symbols'>a</span> or <span class='symbols'>h</span> equal to a to the check.<br/>
+Source: DA<br/>
+
+###### Intimidating
+**Tier:** 3<br/>
+**Activation:** Active (Incidental, Out of Turn)<br/>
+**Ranked:** Yes<br/>
+May suffer a number of strain to downgrade difficulty of Coercion checks, or upgrade difficulty when targeted by Coercion checks, by an equal number. Strain suffered this way cannot exceed ranks in Intimidating.<br/>
+Sources: ACRB, ECRB, FBGR, FCRB<br/>
+
+###### Iron Body
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+Remove <span class='setback'>b</span> per rank of Iron Body from Coordination and Resilience checks. Reduce the critical rating of unarmed attacks by 1 per rank of Iron Body (to a minimum of 1).<br/>
+Source: ND<br/>
+
+###### Larger Project
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+*Your character must have purchased the Signature Vehicle talent to benefit from this talent.* Signature Vehicle can have a silhouette 1 larger per rank of Larger Projec<br/>t Sources: SOT, SM<br/>
+
+###### Lethal Blows
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+Add +10 per rank of Lethal Blows to any Critical Injury results inflicted on opponents.<br/>
+Sources: ACRB, ECRB, SS
+
+\columnbreak
+
+###### Natural
+**Tier:** 3<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+When your character purchases this talent, choose two skills. Once per session, your character may use this talent to reroll one skill check that uses one of those two skills.<br/>
+Source: GCRB<br/>
+
+###### No Escape
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+May spend <span class='symbols'>aa</span> from a Coercion check or <span class='symbols'>hh</span> from a foe's Discipline check; that target cannot perform a free maneuver during his next turn.<br/>
+Source: KTP<br/>
+
+###### Nobody's Fool
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+May upgrade difficulty of incoming Charm, Coercion, or Deception checks once per rank of Nobody's Fool.<br/>
+Sources: ACRB, ECRB, FCRB<br/>
+
+###### Opportunist
+**Tier:** 3<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** Yes<br/>
+When your character purchases this talent, choose one non-combat, non-magic skill. When you roll a check using this skill, you may suffer strain up to ranks in Opportunist to convert that many <span class='symbols'>s</span> to <span class='symbols'>a</span>.<br/>
+Source: SM<br/>
+
+###### Outside the Box
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+Choose one characteristic when purchasing this talent. Once per session, make one skill check using that characteristic rather than the characteristic linked to that skill.<br/>
+Source: ACRB<br/>
+
+\pagebreakNum
+
+###### Overwhelm Defenses
+**Tier:** 3<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** Yes<br/>
+Upon unsuccessful attack with a starship or vehicle weapon, may spend <span class='symbols'>aa</span> per rank of Overwhelm Defenses. Reduce the defense in the targeted zone by 1 for every <span class='symbols'>aa</span> spent.<br/>
+Sources: ACRB, ND<br/>
+
+###### Painkiller Specialization
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+When your character uses painkillers (or their equivalent, depending on the setting), the target heals one additional wound per rank of Painkiller Specialization. The sixth painkiller and beyond each day still has no effect.<br/>
+Source: GCRB<br/>
+
+###### Parry (Improved)
+**Tier:** 3<br/>
+**Activation:** Active (Incidental, Out of Turn)<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Parry talent to benefit from this talent.* When your character suffers a hit from a melee combat check and uses Parry to reduce the damage from that hit, after the attack is resolved, you may spend <span class='symbols'>d</span> or <span class='symbols'>hhh</span> from the attacker’s check to use this talent. Then, your character automatically hits the attacker once with a Brawl or Melee weapon your character is wielding. The hit deals the weapon’s base damage, plus any damage from applicable talents or abilities. Your character can’t use this talent if the original attack incapacitates them.<br/>
+Source: GCRB<br/>
+
+###### Pin
+**Tier:** 3<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Take Pin action; make an Opposed athletics check to immobilize an engaged opponent until the end of the character's next turn. Spend <span class='symbols'>t</span> to extend duration one round.<br/>
+Source: ETU<br/>
+
+\columnbreak
+
+###### Plausible Deniability
+**Tier:** 3<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Take a Plausible Deniability action makes a **Hard (<span class='difficulty'>ddd</span>) Coercion check** to convince one bystander equal to your Willpower to depart quietly.<br/>
+Source: DA<br/>
+
+###### Point Blank
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+Add 1 damage per rank of Point Blank to damage of one hit of successful attack while using Ranged (Heavy) or Ranged (Light) skills at short range or engaged.<br/>
+Sources: ABGR, ACRB, EBGR, ECRB<br/>
+
+###### Powerful Blast
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+Increase Blast damage dealt by +1 per rank of Powerful Blast.<br/>
+Sources: ACRB, DC<br/>
+
+###### Preemptive Avoidance
+**Tier:** 3<br/>
+**Activation:** Active (Incidental, Out of Turn)<br/>
+**Ranked:** No<br/>
+May spend 1 Story Point to disengage from engaged enemy as an out-of-turn incidental.<br/>
+Source: FCRB<br/>
+
+###### Rapid Archery
+**Tier:** 3<br/>
+**Activation:** Active (Maneuver)<br/>
+**Ranked:** No<br/>
+While your character is armed with a bow (or similar weapon, at your GM’s discretion) they may suffer 2 strain to use this talent. During the next ranged combat check your character makes this turn, the bow gains the Linked quality with a value equal to their ranks in the Ranged skill.<br/>
+Source: GCRB<br/>
+
+\pagebreakNum
+
+###### Reflect (Improved)
+**Tier:** 3<br/>
+**Activation:** Active (Incidental, Out of Turn)<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Reflect Talent to benefit from this talent.* Your character may use reflect while wielding a melee weapon deemed appropriate by the GM. When reflecting a hit that generated d or <span class='symbols'>hhh</span> may hit one target in medium range with the same damage as the initial hit, after original attack resolves.<br/>
+Sources: FBGR, FCRB
+
+###### Resourceful Refit
+**Tier:** 3<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+May perform the Resourceful Refit action, make an **Average (<span class='difficulty'>dd</span>) Mechanics check** to scavenge an old attachment to construct a new one, reducing its price by that of the dismantled attachment.<br/>
+Source: SM<br/>
+
+###### Scathing Tirade (Improved)
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Scathing Tirade talent to benefit from this talent.* Enemies affected by your character’s Scathing Tirade add <span class='setback'>b</span> to all skill checks they make for a number of rounds equal to your character’s ranks in Coercion.<br/>
+Source: GCRB<br/>
+
+###### Seize the Initiative
+**Tier:** 3<br/>
+**Activation:** Active (Maneuver)<br/>
+**Ranked:** No<br/>
+Once per session, as a maneuver, may make a **Hard (<span class='difficulty'>ddd</span>) Athletics check**. On success, other PCs may take their turns immediately.<br/>
+Source: FIB<br/>
+
+###### Sense Advantage
+**Tier:** 3<br/>
+**Activation:** Active (Incidental, Out of Turn)<br/>
+**Ranked:** No<br/>
+Once per session, may add <span class='setback'>bb</span> to 1 NPC's skill check.<br/>
+Sources: FBGR, FCRB<br/>
+
+\columnbreak
+
+###### Share Pain
+**Tier:** 3<br/>
+**Activation:** Active (Incidental, Out of Turn)<br/>
+**Ranked:** No<br/>
+May perform the Share Pain incidental when animal companion suffers wounds. Reduce wounds suffered to half, then character suffers wounds equal to number reduced.<br/>
+Source: FCRB<br/>
+
+###### Shortcut (Improved)
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Shortcut talent to benefit from this talent.* When engaging in a chase or race, may suffer 2 strain to add <span class='symbols'>s</span> equal to ranks in Shortcut to the check.<br/>
+Sources: ND, EV, SS<br/>
+
+###### Signature Spell
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+When purchased choose one spell the character is able to cast. This spell becomes your character's "Signature Spell". Whenever casting the Signature Spell reduce the difficulty by one.<br/>
+Source: GHC<br/>
+
+###### Skilled Teacher
+**Tier:** 3<br/>
+**Activation:** Active (Incidental, Out of Turn)<br/>
+**Ranked:** Yes<br/>
+Before an ally within short range makes a skill check, if that ally has fewer ranks in that skill than your character does, your character may suffer a number of strain no greater than ranks in Skilled Teacher to add an equal number of <span class='symbols'>s</span> to the ally’s check.<br/>
+Source: DOH
+
+###### Sound Investments
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+At the start of each session, gain 100 money units for each rank of Sound Investments.<br/>
+Sources: ACRB, FH<br/>
+
+\pagebreakNum
+
+###### Spur (Improved)
+**Tier:** 3<br/>
+**Activation:** Active (Maneuver)<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Spur talent to benefit from this talent.* Suffer 1 strain to attempt Spur as a maneuver and decrease its difficulty to Average (<span class='difficulty'>dd</span>).<br/>
+Source: SOT<br/>
+
+###### Studious Plotting
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+When making a Streetwise or Survival skill check to navigate, the character may use Intellect instead of Cunning.<br/>
+Source: SS<br/>
+
+###### Stunning Blow (Improved)
+**Tier:** 3<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Stunning Blow talent to benefit from this talent.* When dealing strain damage with Melee or Brawl checks, may spend <span class='symbols'>t</span> to stagger target for 1 round per <span class='symbols'>t</span>.<br/>
+Sources: ACRB, ECRB<br/>
+
+###### Sunder Expertise
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+Each a your character spends to activate a weapon's Sunder quality damages the target item two steps, instead of one.<br/>
+Source: DOH<br/>
+
+###### Time to Go (Improved)
+**Tier:** 3<br/>
+**Activation:** Active (Maneuver)<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Time to Go talent to benefit from this talent.* When activating Time to Go, allow 1 engaged ally to also perform an out of turn Move maneuver as an incidental to attempt to move into cover or out of the blast range of a weapon or explosion.<br/>
+Sources: ACRB, DC<br/>
+
+\columnbreak
+
+###### Tricky Target
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+Count vehicle or starship piloted as having a silhouette 1 lower when being attacked.<br/>
+Sources: ABGR, ACRB, ECRB, FCRB<br/>
+
+###### Tumble
+**Tier:** 3<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+While engaged with one or more adversaries, may suffer 2 strain to move to short range as an incidental.<br/>
+Source: GHC
+
+###### Tuned Maneuvering Thrusters
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+*Your character must have purchased the Signature Vehicle talent to benefit from this talent.* Increase the handling of Signature Vehicle by 1 per rank of Tuned Maneuvering Thrusters.<br/>
+Source: SOT<br/>
+
+###### Twisted Words
+**Tier:** 3<br/>
+**Activation:** Active (Incidental, Out of Turn)<br/>
+**Ranked:** No<br/>
+When an incoming social check generates <span class='symbols'>hh</span> or d, may suffer 1 strain as an incidental to inflict strain equal to ranks in Coercion on speaker.<br/>
+Source: DA<br/>
+
+###### Up the Ante
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+When gambling win 10% more credits per rank of Up the Ante.<br/>
+Source: FC<br/>
+
+\pagebreakNum
+
+###### Utility Belt
+**Tier:** 3<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+Spend 1 Story Point to perform a Utility Belt incidental; produce an undocumented item (maximum 1 encumbrance) or weapon (with Limited Ammo One quality) from a tool belt or a satchel.<br/>
+Sources: ACRB, ECRB<br/>
+
+###### Valuable Facts
+**Tier:** 3<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Once per encounter, perform a Valuable Facts action: make an **Average (<span class='difficulty'>dd</span>) Knowledge check**. If successful, add <span class='symbols'>t</span> to one ally's skill check during the encounter.<br/>
+Sources: DA, FBGR, FCRB<br/>
+
+###### Wraithbane
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+Reduce the Critical rating of weapon by 1, to a minimum of 1, when attacking an undead adversary.<br/>
+Source: GHC
+
+\pagebreakNum
+
+### TIER 4
+###### Armor Master (Improved)
+**Tier:** 4<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Armor Master talent to benefit from this talent.* When wearing armor with a soak value of 2 or higher, increase defense by 1.<br/>
+Sources: ACRB, ECRB, KTP<br/>
+
+###### Better Luck Next Time
+**Tier:** 4<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Take a Better Luck Next Time action; make a **Hard (<span class='difficulty'>ddd</span>) Cool check** to force a competitor to suffer a major misfortune.<br/>
+Source: EV<br/>
+
+###### Body Guard (Supreme)
+**Tier:** 4<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Body Guard talent to benefit from this talent.* Body Guard maneuver may protect a number of engaged characters up to ranks in Resilience.<br/>
+Source: FIB<br/>
+
+###### Bolstered Armor
+**Tier:** 4<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+*Your character must have purchased the Signature Vehicle talent to benefit from this talent.* Increase the armor value of Signature Vehicle by 1 per rank of Bolstered Armor.<br/>
+Source: SOT<br/>
+
+###### Brilliant Evasion
+**Tier:** 4<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Once per vehicle encounter, your character may take Brilliant Evasion action. Select 1 opponent and make Opposed Driving or Piloting check to stop opponent from attacking character for rounds equal to Agility.<br/>
+Sources: ACRB, ECRB<br/>
+
+\columnbreak
+
+###### Can’t We Talk About This?
+**Tier:** 4<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Your character can use this talent to make an opposed Charm or Deception versus Discipline check targeting a single non-nemesis adversary within medium range. If the check succeeds, the target cannot attack your character (or perform hostile actions against your character) until the end of their next turn. You may spend <span class='symbols'>aa</span> to increase the length of the effect by one additional turn, and spend <span class='symbols'>t</span> to extend the benefits to all of their identified allies within short range. The effect ends immediately if your character or a known ally attacks the target. In addition, your GM may rule that some targets are immune to this ability. An automated sentry turret, for example, has no interest in resolving a conflict through talking, nor would someone consumed by rage and the desire for revenge against your character.<br/>
+Source: GCRB
+
+###### Capital Sendoff (Improved)
+**Tier:** 4<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Capital Sendoff talent to benefit from this talent.* When performing a Capital Sendoff, the targets suffer a major collision instead.<br/>
+Source: SOT<br/>
+
+###### Careful Planning
+**Tier:** 4<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Once per session, may introduce a "fact" into the narrative as if a Story Point had been spent.<br/>
+Sources: ACRB, KTP<br/>
+
+###### Center of Being
+**Tier:** 4<br/>
+**Activation:** Active (Maneuver)<br/>
+**Ranked:** Yes<br/>
+Take a Center of Being maneuver. Until the beginning of next turn, attacks against the character increase their critical rating by 1 per rank of Center of Being.<br/>
+Source: FCRB<br/>
+
+\pagebreakNum
+
+###### Circle of Shelter
+**Tier:** 4<br/>
+**Activation:** Active (Incidental, Out of Turn)<br/>
+**Ranked:** No<br/>
+When an engaged ally suffers a hit, may use Parry or Reflect incidental against the hit.<br/>
+Sources: FBGR, FCRB<br/>
+
+###### Commanding Presence
+**Tier:** 4<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+Once per session, may take Commanding Presence action; make an opposed Cool vs. Discipline check to force target to leave the encounter.<br/>
+Source: LBE<br/>
+
+###### Comrades in Arms
+**Tier:** 4<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Once per encounter, make a **Hard (<span class='difficulty'>ddd</span>) Discipline check**. If successful, one ally per success within medium range gains +1 defense for the remainder of the encounter. The effect does not stack from multiple uses, or from multiple characters.<br/>
+Source: DOR<br/>
+
+###### Contingency Plan
+**Tier:** 4<br/>
+**Activation:** Active (Incidental, Out of Turn)<br/>
+**Ranked:** No<br/>
+Choose Willpower, Cunning, or Presence when purchasing this talent. Spend 1 Story Point to recover strain equal to the level of this characteristic.<br/>
+Sources: DA, FCRB<br/>
+
+###### Deadeye
+**Tier:** 4<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+After your character inflicts a Critical Injury with a ranged weapon and rolls the result, your character may suffer 2 strain to use this talent. Then, you may select any Critical Injury of the same severity to apply to the target instead.<br/>
+Source: GCRB<br/>
+
+\columnbreak
+
+###### Deadly Accuracy
+**Tier:** 4<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+When acquired, choose 1 combat skill. Add damage equal to ranks in that skill to one hit of successful attack made using that skill. May not choose the same skill more than once.<br/>
+Sources: ABGR, ACRB, ECRB<br/>
+
+###### Defensive
+**Tier:** 4<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+Each rank of Defensive increases your character’s melee defense and ranged defense by one.<br/>
+Source: GCRB<br/>
+
+###### Defensive Driving
+**Tier:** 4<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+Increase the defense of any vehicle your character pilots by one per rank of Defensive Driving. The specifics of this talent require the optional vehicle rules, on page 220. If your game does not use these rules, this talent adds <span class='setback'>b</span> per rank to combat checks targeting your character’s vehicle or your character while piloting it.<br/>
+Source: GCRB<br/>
+
+###### Deflection
+**Tier:** 4<br/>
+**Activation:** Active (Incidental, Out of Turn)<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Reflect talent to benefit from this talent.* After using Reflect, may spend 1 Story Point to perform Move maneuver as out-of-turn incidental to close distance with or engage opponent.<br/>
+Source: FCRB<br/>
+
+###### Discredit
+**Tier:** 4<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Once per encounter, take the Discredit action,
+make a **Hard (<span class='difficulty'>ddd</span>) Deception check** to upgrade the difficulty of one character's social checks once, plus once for every <span class='symbols'>aa</span>, until the end of the encounter.<br/>
+Source: DA<br/>
+
+\pagebreakNum
+
+###### Distracting Behavior (Improved)
+**Tier:** 4<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Distracting Behavior talent to benefit from this talent.* The Distracting Behavior maneuver inflicts <span class='symbols'>hh</span> on NPC's checks when NPC's target character's allies.<br/>
+Source: FH<br/>
+
+###### Don't Shoot!
+**Tier:** 4<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Once per session as an action, make a Hard
+(<span class='difficulty'>ddd</span>) Charm check. On a success, cannot be target of combat checks until the end of the encounter or until making a combat check.<br/>
+Source: FC<br/>
+
+###### Double or Nothing (Improved)
+**Tier:** 4<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Double or Nothing talent to benefit from this talent.* When performing the Double or Nothing incidental, after canceling opposing symbols, also double the amount of remaining
+<span class='symbols'>s</span>.<br/>
+Source: FC
+
+###### Enduring
+**Tier:** 4<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+Each rank of Enduring increases your character’s soak value by one.<br/>
+Source: GCRB<br/>
+
+###### Field Commander (Improved)
+**Tier:** 4<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Field Commander talent to benefit from this talent.* When your character uses the Field Commander talent, your character affects a number of allies equal to twice the character’s Presence. In addition, you may spend t to allow one ally to suffer 1 strain to perform an action, instead of a maneuver.<br/>
+Source: GCRB<br/>
+
+###### Fortune Favors the Bold
+**Tier:** 4<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+Once per session as an incidental, suffer 2 strain to flip one GM Story Point to a Player Story Point.<br/>
+Source: FC<br/>
+
+###### Full Throttle
+**Tier:** 4<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+While driving or flying, your character may use this talent to make a **Hard (<span class='difficulty'>ddd</span>) Piloting or Driving check**. If successful, the top speed of the vehicle increases by one (to a maximum of 5) for a number of rounds equal to your character’s Cunning. The specifics of this talent require the optional vehicle rules, on page 220. If your game does not use these rules, this talent simply makes the vehicle go much faster than normal, with the specifics up to your GM.<br/>
+Source: GCRB<br/>
+
+###### Full Throttle (Supreme)
+**Tier:** 4<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Full Throttle talent to benefit from this talent.* When performing Full Throttle, top speed increases by 2 instead of 1.<br/>
+Sources: ACRB, ECRB, EV<br/>
+
+###### Holistic Navigation
+**Tier:** 4<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+When making an Astrocartography skill check,
+the character may spend one Story Point to remove d, or to remove <span class='symbols'>h</span> equal to his ranks in Perception.<br/>
+Source: SS<br/>
+
+###### How Convenient!
+**Tier:** 4<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Once per session, your character may use this talent to make a **Hard (<span class='difficulty'>ddd</span>) Mechanics check**. If successful, one device involved in the current encounter (subject to your GM’s approval) spontaneously fails. This can be because of your character’s actions, or it can simply be incredibly convenient timing!<br/>
+Source: GCRB<br/>
+
+\pagebreakNum
+
+###### In The Know
+**Tier:** 4<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Once per session, make an opposed Deception vs Vigilance check with the difficulty downgraded a number of times equal to your ranks in deception to have a target NPC believe specific false intelligence.<br/>
+Source: DA<br/>
+
+###### Incite Rebellion
+**Tier:** 4<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Once per session, may take an Incite Rebellion action; make a **Hard (<span class='difficulty'>ddd</span>) Coercion check** to cause a number of beings up to ranks in Coercion to become rebellious until the end of the encounter.<br/>
+Source: ACRB<br/>
+
+###### Inspiring Rhetoric (Supreme)
+**Tier:** 4<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Inspiring Rhetoric talent to benefit from this talent.* Your character may choose to suffer 1 strain to use the Inspiring Rhetoric talent as a maneuver, instead of as an action.<br/>
+Source: GCRB<br/>
+
+###### It's Not that Bad
+**Tier:** 4<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Once per session when an ally would suffer a Critical Injury, may take an It's Not That Bad action; make a **Hard (<span class='difficulty'>ddd</span>) Medicine check** to stop the ally from gaining the Critical Injury.<br/>
+Source: ACRB<br/>
+
+\columnbreak
+
+###### Jury Rigged
+**Tier:** 4<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+The character chooses one personal weapon or piece of armor per rank of Jury Rigged. He may increase the damage of the weapon by one; decrease the a cost on its Critical, or any single other effect by one to a minimum of one; or increase armor's ranged or melee defense by one. Alternatively, he can decrease the encumbrance of the item by two to a minimum of one. The bonus only applies so long as the character is using the item. If the item is ever lost or destroyed, the character may apply Jury Rigged to a new personal weapon or piece or armor.<br/>
+Sources: ACRB, EBGR, ECRB<br/>
+
+###### Mad Inventor
+**Tier:** 4<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Once per session, your character may use this talent to make a Mechanics check to attempt to cobble together the functional equivalent of any item using spare parts or salvage. The difficulty of the check is based on the item’s rarity; see Table I.4–1: Mad Inventor Item Rarity in the Genesys Core Rulebook. Your GM will modify the check based on the circumstances and might decide that some items simply can’t be created with what’s available (if you are being held in a prison cell, for instance). Your GM may spend <span class='symbols'>d</span> on the check to indicate the item ends up being dangerous to the user and anyone around them in some way. For instance, a pistol might explode instead of running out of ammo, or a breathing mask might make the user light-headed.<br/>
+Source: GCRB<br/>
+
+###### Menace
+**Tier:** 4<br/>
+**Activation:** Active (Maneuver)<br/>
+**Ranked:** No<br/>
+Once per round on the character’s turn, the character may spend a maneuver to allow any suitably threatening creature linked through the Animal Companion talent and of Silhouette 2 or greater to perform the Menace maneuver when the creature is at short range with the enemy. The enemy gains <span class='setback'>b</span> on his next Combat check against the character.<br/>
+Source: SS<br/>
+
+\pagebreakNum
+
+###### Moving Target
+**Tier:** 4<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+If the character has already acted this round,
+increase ranged defense by 1 per rank of moving target.<br/>
+Source: FIB<br/>
+
+###### Not Today
+**Tier:** 4<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Signature Vehicle talent to benefit from this talent.* Once per session, spend a Story Point to save Signature Vehicle from destruction.<br/>
+Source: SOT<br/>
+
+###### Offensive Driving
+**Tier:** 4<br/>
+**Activation:** Active (Maneuver)<br/>
+**Ranked:** No<br/>
+As a maneuver, suffer system strain up to vehicle's highest defense to upgrade the difficulty of target's next Piloting check that many times.<br/>
+Source: ND<br/>
+
+###### Overbalance
+**Tier:** 4<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+Whenever an enemy engaged with the character makes a combat check, after the attack is resolved, the character may spend d or <span class='symbols'>hhh</span> to stagger the attacker until the end of the attacker's next turn.<br/>
+Sources: ND, KTP<br/>
+
+\columnbreak
+
+###### Overcharge
+**Tier:** 4<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Once per encounter, your character may use this talent to make a **Hard (<span class='difficulty'>ddd</span>) Mechanics check** and choose one of their cybernetic implants that grants them one of the following: +1 to a characteristic rating, +1 rank to a skill, +1 rank of a ranked talent. If your character succeeds, until the end of the encounter, the chosen cybernetic instead provides +2 to the affected characteristic rating (to a maximum of 7), skill (to a maximum of 5), or ranked talent. Your GM may spend <span class='symbols'>d</span> or <span class='symbols'>hhh</span> from the check to have the overcharged cybernetic short out at the end of the encounter; it provides no benefit until your character spends several hours making an **Average (<span class='difficulty'>dd</span>) Mechanics check** to repair it.<br/>
+Source: GCRB<br/>
+
+###### Precise Aim
+**Tier:** 4<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** Yes<br/>
+Once per round on the character’s turn, when the character performs an Aim maneuver before attempting a combat check, may suffer a number of strain. The number of strain cannot exceed his ranks in Precise Aim. He then decreases the target’s defense (ranged and melee) by one per strain suffered for that combat check.<br/>
+Sources: EBGR, ECRB, SS
+
+###### Prey on the Weak
+**Tier:** 4<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+Add +1 damage to one hit of successful combat checks against disoriented targets per rank of Prey on the Weak.<br/>
+Sources: FIB, FCRB<br/>
+
+###### Prime Positions
+**Tier:** 4<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+When this character or an ally in short range takes cover, he increases soak against ranged attacks by 1 per rank of Prime Positions until he leaves that cover.<br/>
+Sources: FIB, KTP<br/>
+
+\pagebreakNum
+
+###### Prophetic Aim
+**Tier:** 4<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+While benefiting from an Aim maneuver, <span class='symbols'>d</span> from the character's Ranged checks cannot cause attacks to hit allies engaged with the target.<br/>
+Source: KTP<br/>
+
+###### Rain of Death
+**Tier:** 4<br/>
+**Activation:** Active (Maneuver)<br/>
+**Ranked:** No<br/>
+Perform the Rain of Death maneuver to ignore the increased difficulty due to the Auto-fire quality of attacks made this turn.<br/>
+Sources: FIB, DC<br/>
+
+###### Reflect (Supreme)
+**Tier:** 4<br/>
+**Activation:** Active (Incidental, Out of Turn)<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Reflect Talent to benefit from this talent.* If the user did not make a combat check during previous turn, may suffer 1 strain to use Reflect.<br/>
+Source: FCRB<br/>
+
+###### Reinforced Frame
+**Tier:** 4<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Signature Vehicle talent to benefit from this talent.* Signature Vehicle gains Massive 1: when making an attack targeting the ship or vehicle, the Critical rating of any weapon used counts as 1 higher.<br/>
+Source: SOT<br/>
+
+###### Reroute Processors
+**Tier:** 4<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Once per encounter, may take a Reroute Processors action, make an **Average (<span class='difficulty'>dd</span>) Computers check** to reduce one of a droid's characteristics by 1 and increase another of its characteristics by 1.<br/>
+Source: SM<br/>
+
+\columnbreak
+
+###### Resolve
+**Tier:** 4<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+When a character involuntarily suffers strain, he suffers 1 less strain per rank of Resolve to a minimum of 1.<br/>
+Sources: ABGR, ACRB, EBGR, ECRB
+
+###### Savvy Negotiator
+**Tier:** 4<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+While engaged in a debate or argument, make a **Hard (<span class='difficulty'>ddd</span>) Negotiation check**. If successful, a number of bystanders or observers equal to your Presence sees one of the opponent’s points (chosen by your character) as maliciously unreasonable. The GM has the final say as to whether bystanders could see a point as unreasonable, based on who those bystanders are and what the point is. In these cases, the GM can suggest a modified version of that argument that would be more believable.<br/>
+Source: DOH<br/>
+
+###### Scathing Tirade (Supreme)
+**Tier:** 4<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Scathing Tirade talent to benefit from this talent.* Your character may choose to suffer 1 strain to use the Scathing Tirade talent as a maneuver, instead of as an action.<br/>
+Source: GCRB<br/>
+
+###### Second Chances
+**Tier:** 4<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** Yes<br/>
+Once per encounter choose a number of positive dice equal to ranks in Second Chances and reroll them.<br/>
+Sources: SOT, FC<br/>
+
+###### Showboat
+**Tier:** 4<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+When making a check in a vehicle, may suffer 2 strain to gain <span class='symbols'>t</span> on success or <span class='symbols'>d</span> on failure.<br/>
+Source: SOT<br/>
+
+\pagebreakNum
+
+###### Skilled Slicer
+**Tier:** 4<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+When making a Computers check may spend a <span class='symbols'>t</span> to make further Computers checks within this system as maneuvers.<br/>
+Sources: ACRB, ECRB<br/>
+
+###### Sorry About the Mess
+**Tier:** 4<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+Decrease the Critical Rating of a weapon by 1
+(to a minimum of 1) against targets that have not yet acted this encounter.<br/>
+Source: FC<br/>
+
+###### Speaks Binary (Improved)
+**Tier:** 4<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Speaks Binary talent to benefit from this talent.* When directing non-sentient NPC artificial life forms, those NPCs grant additional <span class='boost'>b</span> in addition to other benefits.<br/>
+Source: SM<br/>
+
+###### Spin Attack
+**Tier:** 4<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Your character may take the Spin Attack action, making an armed melee combat check at +1 difficulty against one engaged target. Your character may spend <span class='symbols'>aa</span> generated by this combat check to hit 1 additional target he is engaged with. He may do this once per engaged target, paying <span class='symbols'>aa</span> for each additional hit.<br/>
+Source: FCRB<br/>
+
+###### Spitfire
+**Tier:** 4<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+After a successful combined check with two Ranged (Light) weapons, additional hits can be allocated to other targets within range of the weapon.<br/>
+Source: FC<br/>
+
+\columnbreak
+
+###### Spur (Supreme)
+**Tier:** 4<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Spur talent to benefit from this talent.* When activating and maintaining Spur, the beast only suffers 1 strain instead of 2.<br/>
+Source: SOT<br/>
+
+###### Street Smarts
+**Tier:** 4<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** Yes<br/>
+Once per session, may take a Street Smarts action; make a Formidable (<span class='difficulty'>ddddd</span>) Streetwise or Knowledge check to learn one vital clue from the GM. Reduce the difficulty once per rank of Street Smarts.<br/>
+Sources: ACRB, EBGR, ECRB, FCRB<br/>
+
+###### Supporting Evidence
+**Tier:** 4<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+When assisting an ally with a Charm,
+Deception, Leadership, or Negotiation check,
+add automatic a per rank of Supporting Evidence.<br/>
+Source: DA<br/>
+
+###### That's How It's Done
+**Tier:** 4<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** Yes<br/>
+May suffer 1 strain on successful skill check to add <span class='symbols'>a</span> to the same skill check made by a number of allies equally to Willpower within short range during the next round. Range increases with ranks.<br/>
+Source: LBE<br/>
+
+###### Unrelenting Skeptic
+**Tier:** 4<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+When targeted by a Deception check, the character automatically adds <span class='symbols'>f</span> to the check equal to ranks in Vigilance.<br/>
+Sources: FH, EV
+
+\pagebreakNum
+
+### TIER 5
+
+###### Armor Master (Supreme)
+**Tier:** 5<br/>
+**Activation:** Active (Incidental, Out of Turn)<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Armor Master talent to benefit from this talent.* Once per round, when the character suffers a Critical Injury, he may suffer 3 strain to take the Armor Master incidental. If he does he reduces the Critical Injury result that he suffers by 10 per point of his soak, to a minimum of 1.<br/>
+Source: KTP<br/>
+
+###### Baleful Gaze
+**Tier:** 5<br/>
+**Activation:** Active (Incidental, Out of Turn)<br/>
+**Ranked:** No<br/>
+When targeted by combat check from within medium range, may spend a Story Point to upgrade the difficulty of the check a number of times equal to ranks in Coercion.<br/>
+Source: KTP<br/>
+
+###### Biggest Fan
+**Tier:** 5<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Once per session, may take a Biggest Fan action; make a **Hard (<span class='difficulty'>ddd</span>) Charm check** to turn one NPC into the character's biggest fan. The exact effects of this vary depending on the NPC and the situation. They can include drastically decreasing the difficulty of Social Interaction skill checks the character makes targeting his biggest fan, the fan being willing to perform minor or even significant favors for the character, or the character even becoming a reoccurring ally in the narrative. At the CM’s discretion, this talent may not be able to target certain NPCs whose adversarial nature is vital to the plot, or NPCs who would be unable to appreciate the character’s wor<br/>k Source: FH<br/>
+
+###### Center of Being (Improved)
+**Tier:** 5<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Center of Being talent to benefit from this talent.* Suffer 1 strain to perform Center of Being maneuver as an incidental.<br/>
+Source: FCRB<br/>
+
+###### Coordination Dodge
+**Tier:** 5<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+When targeted by a combat check, may spend 1 Story Point to add <span class='symbols'>f</span> equal to ranks in Coordination to check.<br/>
+Sources: FH, ND<br/>
+
+###### Crucial Point
+**Tier:** 5<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+Once per session, your character may introduce to negotiations one potential concession that an opponent will do nearly anything to obtain.<br/>
+Source: DOH<br/>
+
+###### Custom Loadout
+**Tier:** 5<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Signature Vehicle talent to benefit from this talent.* May add one mount for a weapon or piece of equipment (approved by the GM).<br/>
+Source: SM<br/>
+
+###### Dedication
+**Tier:** 5<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+Each rank of Dedication increases one of your character’s characteristics by one. This talent cannot increase a characteristic above 5. You cannot increase the same characteristic with Dedication twice.<br/>
+Source: GCRB<br/>
+
+###### Double or Nothing (Supreme)
+**Tier:** 5<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Double or Nothing talent to benefit from this talent.* When performing the Double or Nothing incidental, also double the number of
+<span class='symbols'>t</span> and <span class='symbols'>d</span>.<br/>
+Source: FC<br/>
+
+\pagebreakNum
+
+###### Full Throttle (Improved)
+**Tier:** 5<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Full Throttle talent to benefit from this talent.*
+Suffer 1 strain to attempt Full Throttle as a maneuver and decrease its difficulty to Average (<span class='difficulty'>dd</span>).<br/>
+Sources: ABGR, ACRB, EBGR, ECRB, EV<br/>
+
+###### Heavy Hitter
+**Tier:** 5<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+Once per session, spend <span class='symbols'>t</span> on a successful Ranged (Heavy) or Gunnery check to add the Breach 1 quality to the attack, or increase an existing Breach rating by 1.<br/>
+Sources: FIB, DC<br/>
+
+###### Indomitable
+**Tier:** 5<br/>
+**Activation:** Active (Incidental, Out of Turn)<br/>
+**Ranked:** No<br/>
+Once per encounter, when your character would be incapacitated due to exceeding their wound or strain threshold, you may spend a Story Point to use this talent. Then, your character is not incapacitated until the end of their next turn. If your character reduces their strain or wounds to below their threshold before the end of their next turn, they are not incapacitated.<br/>
+Source: GCRB<br/>
+
+###### Intense Focus
+**Tier:** 5<br/>
+**Activation:** Active (Maneuver)<br/>
+**Ranked:** No<br/>
+Perform an Intense Focus maneuver; suffer 1 strain and upgrade the ability of the next skill check once.<br/>
+Sources: ABGR, ACRB, ECRB, DOH<br/>
+
+###### Just Kidding!
+**Tier:** 5<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+Once per round as an incidental spend 1 Story Point to ignore <span class='symbols'>d</span> generated on a social check by the character or any ally in short range.<br/>
+Source: FC<br/>
+
+\columnbreak
+
+###### Master
+**Tier:** 5<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+When you purchase this talent for your character, choose one skill. Once per round, your character may suffer 2 strain to use this 
+talent to reduce the difficulty of the next check they make using that skill by two, to a minimum of Easy (<span class='difficulty'>d</span>).<br/>
+Source: GCRB<br/>
+
+###### Master Driver/Pilot
+**Tier:** 5<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+Once per round when driving, piloting, or operating a vehicle, may suffer 2 strain to perform any action as a maneuver.<br/>
+Sources: ACRB, ETU, ECRB<br/>
+
+###### Master Grenadier
+**Tier:** 5<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+Decrease the a cost to activate the Blast quality on any attack by 1 to a minimum of 1.<br/>
+Sources: ACRB, DC<br/>
+
+###### Master Instructor
+**Tier:** 5<br/>
+**Activation:** Active (Incidental, Out of Turn)<br/>
+**Ranked:** No<br/>
+Once per round, suffer 2 strain to allow an ally within short range to count as having the same number of ranks in Discipline as your character for the next Discipline check the ally makes.<br/>
+Source: DOH<br/>
+
+###### Master Merchant
+**Tier:** 5<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+When buying or selling goods, may suffer 2 strain to sell for 25% more or buy for 25% less.<br/>
+Sources: ACRB, ECRB<br/>
+
+\pagebreakNum
+
+###### Overcharge (Improved)
+**Tier:** 5<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Overcharge talent to benefit from this talent.* When using the Overcharge talent, your character may spend <span class='symbols'>aa</span> or <span class='symbols'>t</span> from the Mechanics check to immediately take one additional action. This talent can only be used once per check.<br/>
+Source: GCRB<br/>
+
+###### Pressure Point
+**Tier:** 5<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+When making a Brawl check against an opponent, instead of dealing damage, may deal equivalent strain plus additional strain equal to ranks of Medicine (this ignores soak).<br/>
+Source: ECRB<br/>
+
+###### Ruinous Repartee
+**Tier:** 5<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Once per encounter, your character may use this talent to make an opposed Charm or Coercion versus Discipline check targeting one character within medium range (or within earshot). If successful, the target suffers strain equal to twice your character’s Presence, plus one additional strain per <span class='symbols'>s</span>. Your character heals strain equal to the strain inflicted. If incapacitated due to this talent, the target could flee the scene in shame, collapse in a dejected heap, or throw themself at your character in fury, depending on your GM and the nature of your character’s witty barbs.<br/>
+Source: GCRB
+
+###### Speaks Binary (Supreme)
+**Tier:** 5<br/>
+**Activation:** Active (Maneuver)<br/>
+**Ranked:** No<br/>
+Once per encounter, may perform the Speaks Binary maneuver. A number of NPC artificial life forms up to ranks in Speaks Binary may use the character's ranks for 1 skill of character's choice.<br/>
+Source: SM<br/>
+
+\columnbreak
+
+###### Superhuman Reflexes
+**Tier:** 5<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+Once per session, after generating <span class='symbols'>d</span> on a Piloting check cancel the <span class='symbols'>d</span> and add <span class='symbols'>s</span> equal to ranks in Cool.<br/>
+Source: EV<br/>
+
+###### Thorough Assessment
+**Tier:** 5<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Once per session, take a Thorough Assessment action: make a Hard (<span class='difficulty'>ddd</span>)
+Knowledge check to gain <span class='boost'>b</span> equal to <span class='symbols'>s</span> that can be distributed during the encounter.<br/>
+Sources: DA, LBE<br/>
+
+###### Unrelenting Skeptic (Improved)
+**Tier:** 5<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Unrelenting Skeptic talent to benefit from this talent.* When targeted by a Deception check that fails, may spend 1 Story Point to add d to results.<br/>
+Source: FH
+
+\pagebreakNum
+
+### COMMUNITY CREATED
+*Talents Created by Members of the Fantasy Flight Games Genesys Forum<br/> (community.fantasyflightgames.com/topic/265863-genesys-talents-expanded/)*
+
+###### Catfall
+**Tier:** 1<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+When rolling Athletics or Coordination to reduce damage from falling, add <span class='boost'>b</span>. In addition, reduce damage and strain suffered from a fall by 1 per rank of Catfall.<br/>
+Source: CCC-Tom Cruise<br/>
+
+###### Deflect Spell
+**Tier:** 1<br/>
+**Activation:** Active (Incidental OOT)<br/>
+**Ranked:** Yes<br/>
+When your character suffers a hit from a magic based combat check, after damage is calculated but before soak is applied
+(immediately after Step 3 of Perform a Combat check, page 102), your character may suffer 3 strain to use this talent to reduce the damage of the hit by 2 plus their ranks in Deflect Spell. This talent can only be used once per hit.<br/>
+Source: CCC-Richardbuxton<br/>
+
+###### Intuitive Casting
+**Tier:** 1<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+Add <span class='boost'>b</span> to a spell casting skill check when your character is the first PC to act in the current encounter.<br/>
+Source: CCC-TheSapient<br/>
+
+###### Overchannel
+**Tier:** 1<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+When casting a spell, your character may select a number of additional effect in (d) up to their ranks in Overchannel. The effect must be limited to single (<span class='difficulty'>d</span>) effects. The character gains 2 threat per (<span class='difficulty'>d</span>) added in this way rather than increase the difficulty of the check. This is in addition to any Threat rolled. Threat added by this talent can be cancelled by rolled advantages.<br/>
+Source: CCC-ESP77<br/>
+
+\columnbreak
+
+###### Respected
+**Tier:** 1<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+When first acquired, choose one social group.
+The character downgrades the difficulty of checks to interact with members of that social group a number of times equal to his ranks in Respected. The social group affected must be approved by the GM, but possibilities include institutions of higher learning, law-enforcement agencies, the thieves' guild, etc.<br/>
+Source: CCC-SavageBob<br/>
+
+###### Specialist Knowledge
+**Tier:** 1<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+When you purchase this talent, select a specific area of expertise for your character. When making a Knowledge check which pertains to that area of knowledge, reduce the difficulty of the check once. <br/>
+Source: CCC-Tom Cruise<br/>
+
+###### Street Slang
+**Tier:** 1<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** Yes<br/>
+When making a social skill check in criminal or dubious company, may suffer a number of strain no greater than ranks in Street Slang to add an equal number of a to the check.<br/>
+Source: CCC-Klort<br/>
+
+###### Adroitness
+**Tier:** 2<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+When first acquired, choose a general skill.
+When making a check with that skill, reduce the time required by 25%. The GM may determine that this talent may not be used with certain skills or activities.<br/>
+Source: CCC-Swordbreaker<br/>
+
+\pagebreakNum
+
+###### Familiar
+**Tier:** 2<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+When your character purchases this talent, choose a silhouette 0 creature (approved by your GM). This creature becomes your character's familiar. Your character is bonded to this familiar as long as you choose, though the GM may decide to remove it due to mistreatment or other conditions. You instruct the familiar how to act telepathically. However, the only action a familiar may take is Exchange an Action for a Maneuver. It cannot fight except in self-defense, under the GM's direction. Once per round, your character may use a maneuver to direct the familiar to take specific maneuvers during your character's turn. As long as the familiar is in short range, it may use the Assist maneuver to give <span class='boost'>b</span> to all magic checks. This range increases with ranks in Familiar.<br/>
+Source: CCC-ESP77<br/>
+
+###### Fighter’s Stance
+**Tier:** 2<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+When making a combat check, if your character has performed the Guarded Stance maneuver this turn, you may suffer 1 strain to ignore the penalties of the Guarded Stance maneuver.<br/>
+Source: CCC-ESP77<br/>
+
+###### Pact Magic
+**Tier:** 2<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+You have entered into a Pact with a powerful otherworldly being. When you purchase this Talent, choose one spell type your character can not normally cast. Once per encounter, you may cast this spell using any magic skill you possess. The GM may spend <span class='symbols'>hh</span> to make your character suffer one wound.<br/>
+Source: CCC-ESP77<br/>
+
+###### Prepared Spell
+**Tier:** 2<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** Yes<br/>
+Once per session, your character may make a skill check to cast a spell without suffering strain.<br/>
+Source: CCC-TheSapient
+
+\columnbreak
+
+###### Blindsense
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+As long as your character can hear, you may ignore setback imposed by darkness or blindness within short range. Each additional rank increases range.<br/>
+Source: CCC-ESP77<br/>
+
+###### Blood Magic
+**Tier:** 3<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+When casting a spell your character may take two wounds instead of two strain.<br/>
+Source: CCC-ESP77<br/>
+
+###### Bonded Implement
+**Tier:** 3<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Choose one magical implement your character owns when taking this talent. Your character becomes bonded to this implement, and no other person may use it. Your character may attempt to summon it by making a **Hard (<span class='difficulty'>ddd</span>) Magic Skill check**. If your chosen implement is ever permanently lost or destroyed, you may select a new one of the same value.<br/>
+Source: CCC-TheSapient<br/>
+
+###### Combat Caster
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+Once per session your character may add the Deadly quality to a spell without increasing the difficulty.<br/>
+Source: CCC-ESP77<br/>
+
+###### Distant Spell
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+Once per session, when casting a spell the first range enhancement does not increase the difficulty of the spell.<br/>
+Source: CCC-ESP77<br/>
+
+\pagebreakNum
+
+###### Familiar (Improved)
+**Tier:** 3<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Familiar talent to benefit from this talent.*
+Your character may suffer 2 strain and make an Easy (<span class='difficulty'>d</span>) Magic Skill check. If successful, see and hear using your familiar's senses for one round, and you may suffer 1 strain per round to extend the duration.
+In addition, when the Familiar uses the Assist maneuver with the Character's magic check, the Assist maneuver provides <span class='boost'>bb</span> . The familiar must be within the range granted by ranks in the Familiar talent for your character to use the Familiar (Improved) talent.<br/>
+Source: CCC-ESP77<br/>
+
+###### Forbidden Knowledge
+**Tier:** 3<br/>
+**Activation:** Active (Maneuver)<br/>
+**Ranked:** No<br/>
+Once per session, suffer strain no greater than ranks in Knowledge to increase your ranks in Knowledge by an equal number for the purpose of determining the strength of additional effects for the next spell cast during that round. In this case, your temporary ranks in Knowledge may exceed the usual limit of 5.<br/>
+Source: CCC-Klort
+
+###### Life or Death
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+When your character suffers wounds equal to half of their wound threshold or greater, add <span class='boost'>b</span> to all combat checks they make.<br/>
+Source: CCC-Swordbreaker<br/>
+
+###### Lingering Spell
+**Tier:** 3<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+Spend a Story Point and your character may make concentration maneuver as an incidental.<br/>
+Source: CCC-TheSapient<br/>
+
+\columnbreak
+
+###### Magic Resistance
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** Yes<br/>
+Whenever you are being targeted by an enemy's spell, the caster adds <span class='setback'>b</span> to the check.
+When making a check to resist a negative magic effect, may add <span class='boost'>b</span> to the check.<br/>
+Source: CCC-Klort<br/>
+
+###### Maximize Spell
+**Tier:** 3<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** Yes<br/>
+Once per session, your character may add <span class='boost'>b</span>
+to the skill check to cast a spell once per rank in Maximize Spell.<br/>
+Source: CCC-ESP77<br/>
+
+###### Overchannel (Improved)
+**Tier:** 3<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Overchannel talent to benefit from this talent.* In addition to the effects of Overchannel, you may also add (<span class='difficulty'>dd</span>) effects.
+The character gains one Despair (including the associated failure) per (<span class='difficulty'>dd</span>) effect added in this way rather than increase the difficultly of the check. This is in addition to any <span class='symbols'>d</span> rolled.<br/>
+Source: CCC-ESP77<br/>
+
+###### Pinning Fire
+**Tier:** 3<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** Yes<br/>
+Select a target within range of your currently wielded ranged weapon and make a Pinning Fire action. Until the start of your next turn, the targeted character adds <span class='setback'>b</span> to their checks for each rank of Pinning Fire, and suffers 1 strain.<br/>
+Source: CCC-Tom Cruise<br/>
+
+###### Shape Spell
+**Tier:** 3<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** Yes<br/>
+When casting a spell with the Blast quality spend a to exclude 1 target that would be affected by the explosion, up to ranks in Shape Spell.<br/>
+Source: CCC-ESP77<br/>
+
+\pagebreakNum
+
+###### Shield Master
+**Tier:** 3<br/>
+**Activation:** Active (Maneuver)<br/>
+**Ranked:** No<br/>
+While wielding a shield, your character may make the Shield Master maneuver, suffering 1 Strain. Your shield's Defensive and Deflection qualities increase by one each until the end of your next turn.<br/>
+Source: CCC-Direach
+
+###### Sneak Attack
+**Tier:** 3<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+Once per round when performing the Aim maneuver you may suffer 1 Strain to also add Piece 2 to the Attack, or Increase Pierce of your weapon by 1, for the next Combat check you make this round.<br/>
+Source: CCC-yeti1069<br/>
+
+###### Turn Undead
+**Tier:** 3<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** Yes<br/>
+As an Action, force all undead creatures within short range (or other creatures deemed appropriate by the GM) to make a fear check with a Difficulty equal to your Discipline. In addition to the normal effects of Fear, any targets who fail the check are forced to spend their next turn moving outside the range of the Turn Undead Talent. All maneuvers must be spent on movement including downgrading Actions if possible. Each rank of Turn Undead increases the Range that targets are affected by one Range band.<br/>
+Source: CCC-ESP77<br/>
+
+###### Assassin Strike
+**Tier:** 4<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+After making a successful melee check, may spend a Story Point to disengage from an opponent as an incidental.<br/>
+Source: CCC-Tom Cruise<br/>
+
+\columnbreak
+
+###### Blood Magic (Improved)
+**Tier:** 4<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Blood Magic talent to benefit from this talent.* Once per encounter, suffer an additional 2 wounds while using Blood Magic and add one additional effect with a Difficulty Mod +<span class='difficulty'>d</span> to a spell without increasing the difficulty.<br/>
+Source: CCC-ESP77<br/>
+
+###### Faith Healing
+**Tier:** 4<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** Yes<br/>
+After making a skill check to cast a Heal spell, may choose to change one <span class='symbols'>s</span> to a per rank of Faith Healing.<br/>
+Source: CCC-TheSapient<br/>
+
+###### Familiar (Supreme)
+**Tier:** 4<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Familiar talent to benefit from this talent.* You may spend a Story Point and use your Familiar as the point of origin for casting a spell. The familiar must be within the range granted by ranks in the Familiar talent for your character to use the Familiar (Supreme) talent.<br/>
+Source: CCC-ESP77<br/>
+
+###### Finesse (Improved)
+**Tier:** 4<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Finesse talent to benefit from this talent.*
+Because you can rapidly strike with surgical precision, use Agility instead of Brawn for determining base damage for Brawl and Melee (Light) attacks.<br/>
+Source: CCC-Dragonshadow
+
+\pagebreakNum
+
+###### Flurry of Blows
+**Tier:** 4<br/>
+**Activation:** Active (Maneuver)<br/>
+**Ranked:** No<br/>
+Perform the Flurry of Blows maneuver, suffering strain up to your ranks in Coordination to gain the Linked quality with a rating equal to the amount of strain suffered on your next Melee or Brawl combat check this turn.<br/>
+Source: CCC-Klort<br/>
+
+###### Life or Death (Improved)
+**Tier:** 4<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Life or Death talent to benefit from this talent.*
+When your character suffers wounds equal to half of their wound threshold or greater, upgrade the ability of all combat checks they make once. This replaces the normal effects of Life or Death.<br/>
+Source: CCC-Swordbreaker<br/>
+
+###### Mage Hunter
+**Tier:** 4<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** Yes<br/>
+When targeted by a successful curse spell, perform the Mage Hunter action; make a **Daunting (<span class='difficulty'>dddd</span>) Discipline check** to remove status. Difficulty reduced per rank of Mage Hunter.<br/>
+Source: CCC-ESP77<br/>
+
+###### Mystic Theurge (Improved)
+**Tier:** 4<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+Mystic Theurge no longer limits use of the magic skill to once per encounter.<br/>
+Source: CCC-yeti1069<br/>
+
+###### Pinning Fire (Improved)
+**Tier:** 4<br/>
+**Activation:** Active (Action)<br/>
+**Ranked:** No<br/>
+Your character must have the Pinning Fire talent to benefit from this talent. When making a Pinning Fire action, you may affect a number of targets equal to ranks of Pinning Fire.<br/>
+Source: CCC-Tom Cruise<br/>
+
+\columnbreak
+
+###### Quickened Spell
+**Tier:** 4<br/>
+**Activation:** Active (Maneuver)<br/>
+**Ranked:** No<br/>
+Once per session, spend 2 strain to make a magic skill check as a maneuver.<br/>
+Source: CCC-ESP77<br/>
+
+###### Reflexive Barrier
+**Tier:** 4<br/>
+**Activation:** Active (Incidental, Out of Turn)<br/>
+**Ranked:** No<br/>
+Once per session, when your character is targeted by an attack, you may cast Barrier as an out of turn incidental.<br/>
+Source: CCC-ESP77<br/>
+
+###### Signature Spell (Improved)
+**Tier:** 4<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Signature Spell Talent to benefit from this talent.* Reduce the Strain cost to use Signature Spell by 1.<br/>
+Source: CCC-Richardbuxton
+
+###### Sneak Attack (Improved)
+**Tier:** 4<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Sneak Attack Talent to benefit from this talent.*
+Once per round when performing the Aim maneuver, you may choose to suffer 1 Strain to add Vicious 2, or increase your weapon's Vicious rating by 1, for your next combat check this round. This may be instead of, or in addition to the benefits of Sneak Attack's Pierce option.<br/>
+Source: CCC-Richardbuxton<br/>
+
+###### Vision of the Future
+**Tier:** 4<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+Once per session, after successfully casting a spell, you may spend <span class='symbols'>aa</span> or <span class='symbols'>t</span> to add one additional effect to the cast spell, which would normally have increased the difficulty by 1.<br/>
+Source: CCC-TheSapient<br/>
+
+\pagebreakNum
+
+###### Barbaric Strength
+**Tier:** 5<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+May use Melee (Heavy) weapons one-handed.
+Weapons used that way still use the Melee
+(Heavy) skill.<br/>
+Source: CCC-Klort<br/>
+
+###### Blood Magic (Supreme)
+**Tier:** 5<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+Once per session while using Blood Magic, suffer a critical. You may decrease the difficulty of the next spell skill check you make by three to a minimum of Average (<span class='difficulty'>dd</span>).<br/>
+Source: CCC-ESP77<br/>
+
+###### Bouncing Spell
+**Tier:** 5<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+When your character fails a spell casting skill check that targets another character or NPC, may spend <span class='symbols'>t</span> or <span class='symbols'>aaa</span> to immediately reroll the attempted spell with a new target.<br/>
+Source: CCC-TheSapient<br/>
+
+###### Life or Death (Supreme)
+**Tier:** 5<br/>
+**Activation:** Passive<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Life or Death talent to benefit from this talent.* The effects of Life or Death activate when your character takes wounds equal to one quarter of their wound threshold, instead of half.<br/>
+Source: CCC-Swordbreaker<br/>
+
+###### Sneak Attack (Supreme)
+**Tier:** 5<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+*Your character must have purchased the Sneak Attack Talent to benefit from this talent.*
+Once per encounter you may spend a story point to add <span class='symbols'>t</span> to the results of an Attack Action. This does not include the <span class='symbols'>s</span> usually associated with <span class='symbols'>t</span>.<br/>
+Source: CCC-Richardbuxton<br/>
+
+\columnbreak
+
+###### Turn Undead (Improved)
+**Tier:** 5<br/>
+**Activation:** Active (Incidental)<br/>
+**Ranked:** No<br/>
+When taking a Turn Undead action, your character may flip a story point to deal 2 strain damage per rank of Turn Undead to any creatures that failed their fear check. In addition you may perform a Concentration maneuver to maintain the effects in subsequent rounds.<br/>
+Source: CCC-ESP77<br/>
+
+\pagebreakNum
+
+###### SOURCES
+
+ABGA Age of Rebellion Beginner Game Adventure Book<br/>
+ABGR Age of Rebellion Beginner Game Rulebook<br/>
+ACRB Age of Rebellion Core Rulebook<br/>
+BTR Beyond the Rim<br/>
+CCC Community Created Content<br/>
+COTG Chronicles of the Gatekeeper<br/>
+COTGAD Citizens of the Galaxy Adversary Deck<br/>
+DA Desperate Allies<br/>
+DC Dangerous Covenants<br/>
+DITW Dead in the Water<br/>
+DOH Disciples of Harmony<br/>
+DOR Dawn of Rebellion<br/>
+EBGA Edge of the Empire Beginner Game Adventure Book<br/>
+EBGR Edge of the Empire Beginner Game Rulebook<br/>
+ECRB Edge of the Empire Core Rulebook<br/>
+ETU Enter the Unknown<br/>
+EV Endless Vigil<br/>
+FBGA Force and Destiny Beginner Game Adventure Book<br/>
+FBGR Force and Destiny Beginner Game Rulebook<br/>
+FC Fly Casual<br/>
+FCRB Force and Destiny Core Rulebook<br/>
+FH Far Horizons<br/>
+FIB Forged in Battle<br/>
+FLT Friends Like These<br/>
+FO Fully Operational<br/>
+GCRB Genesys Core Rulebook<br/>
+GHC Gencon 2017 Haunted City Module<br/>
+GMK Game Master's Kit<br/>
+GOD Ghosts of Dathomir<br/>
+HD Hidden Depths<br/>
+IARAD Imperials and Rebels Adversary Deck<br/>
+JOY Jewel of Yavin<br/>
+KTP Keeping the Peace<br/>
+LBE Lead by Example<br/>
+LONH Lords of Nal Hutta<br/>
+MPQ Mask of the Pirate Queen<br/>
+ND No Disintegrations<br/>
+NOP Nexus of Power<br/>
+OAA Onslaught at Arda I<br/>
+OS Operation Shadowpoint<br/>
+RAGP Rescue at Glare Peak<br/>
+SAVAD Scum and Villainy Adversary Deck<br/>
+SM Special Modifications<br/>
+SOF Suns of Fortune<br/>
+SOR Strongholds of Resistance<br/>
+SOT Stay on Target<br/>
+SS Savage Spirits
+
+<style>
+    #p5{ display: none;}
+</style>

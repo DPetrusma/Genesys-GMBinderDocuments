@@ -1,0 +1,796 @@
+<style>
+ .phb code {
+     font-size:10px;
+     padding-top: 0px;
+     padding-bottom: 0px;
+ }
+/* IMPORTS */
+
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,600,600i,700');
+
+/* Main Background */
+  .phb { background-image: url("https://www.gmbinder.com/images/5s6VJkT.png"); text-align:justify; text-indent:0px;}
+
+/* Fonts */
+
+.phb {
+    font-family: 'Crimson Text', serif;
+}
+
+.phb h1, .phb h2, .phb h3, .phb h4, .phb h5, .phb h6 { 
+    letter-spacing: 0.6px;
+    font-family: 'Bebas Neue';
+}
+
+.phb h1{
+    color: #1ABEEF;
+    font-weight:400;
+    font-variant: uppercase;
+    font-size:42pt;
+    margin-bottom:30px;
+}
+
+/* Makes the bigger "first letter" in paragraphs under H1 and H2*/
+.phb h1 + p:first-letter, .phb h2 + p:first-letter  {
+    font-family: 'Crimson Text';
+    color: #326DA1;
+    font-size:32pt;    
+    line-height:95%;
+    margin-bottom:-9px;
+    margin-right:2px;
+    margin-top:-5px;
+    float:left;
+}
+
+.phb h2 {
+    color: #1ABEEF;
+    font-variant: small-caps;
+    display:table;
+    font-size:32pt;
+    font-weight:300;
+    column-span:all;
+}
+
+/* create the offset underline under h2s */
+.phb h2:after {
+    content:"";
+    border-bottom: 2px solid #CCCCCC;
+    display: table;
+    width:100%;
+    margin-top:-5px;
+    margin-left:20px;
+}
+
+.phb h3 {
+    color: #1ABEEF;
+    font-variant: small-caps;
+    font-size: 18pt;
+    font-weight:1;
+    border:none;
+}
+
+.phb h4 {
+    color: #ed9629;
+    font-variant: small-caps;
+    font-size: 16pt;
+    text-align:center;
+}
+
+.phb h5 {
+    color: #326DA1;
+    font-weight: 1;
+    font-variant: small-caps;
+    font-size: 16pt;
+}
+
+.phb h6 {
+    color: #ea702b;
+    font-variant: small-caps;
+    font-size: 16pt;
+    display: table;
+    border-bottom: 1px solid #ea702b;
+}
+
+.phb p { 
+    font-size: 15px; 
+  	letter-spacing: -0.4px;
+  	line-height:1.15em;
+  	text-indent:0px !important;
+  	font-weight:400;
+  	padding-bottom:1px;
+  	column-fill:balance;
+  }
+  
+.phb p + p {
+    margin-top:0px;  
+  }
+
+.phb wide {clear:both;}
+.phb ul {
+    list-style: none;
+    font-family: 'Crimson Text';
+    font-size: 11pt
+}
+.phb ul li::before {
+    content: "•"; 
+    color: #F69337;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+
+/* Tables */
+.phb td {
+    font-family: 'Crimson Text', serif;
+    font-size:10pt;
+    font-weight:400;
+    text-align:left;
+}
+.phb td, th {border: 1px solid gray;}
+.phb table {overflow:auto;}
+.phb table tr:nth-child(odd) td {background-color: #E0F4FC;}
+.phb table thead th {
+    color: white; 
+    background-color: #F69337; 
+  	padding-top: 0.3em;
+    padding-left: 0.5em;
+    text-transform: uppercase;
+}
+.phb table tbody tr td {  padding: 0.5em;}
+.phb table thead {display: table-row-group; }
+.phb table .subheader td {
+    color:white;
+    text-transform:uppercase;
+    padding-bottom:2px;
+    background-color: #2D4864 !important;
+    font-size:10pt;
+    font-weight:bold;
+    }
+
+/* Genesys Notes */
+
+.phb .note
+{
+    position:relative;
+    color: white;
+    background-color: #2D4864;
+    border-radius: 0px 0px 30px 0px;
+    padding: 10px 20px;  
+    font-family: 'Crimson Text';
+    letter-spacing: 0.5px;
+    font-size:12ptx;
+    font-weight:600
+    }    
+
+.phb .note:before {
+    position:absolute;
+    content:" ";
+    border-style:solid;
+    border-width:1px;
+    -moz-border-image: -moz-linear-gradient(-45deg, rgba(219,219,219,.7) 0%, rgba(219,219,219,0) 50%, rgba(219,219,219,0) 100%);
+    -webkit-border-image: -webkit-linear-gradient(-45deg, rgba(219,219,219,.7) 0%,rgba(219,219,219,0) 50%,rgba(219,219,219,0) 100%);
+    border-image: linear-gradient(135deg, rgba(219,219,219,.7) 0%,rgba(219,219,219,0) 50%,rgba(219,219,219,0) 100%); 
+    left:4px;
+    top:4px;
+    right:4px;
+    bottom:4px;
+    border-image-slice:1;
+}
+
+.phb .note h5 {color:white;}
+.phb .note td {color:black;}
+.phb .note table tr:nth-child(even) td { background-color: #ffffff;}
+  
+  
+/* Example Block */
+
+.phb .example
+{
+    position:relative;
+    color: black;
+    background: rgba(204, 203, 199, 0.4);
+    border-radius: 0px 0px 30px 0px;
+    padding: 14px 20px;
+}
+
+/* Read-aloud */
+
+.phb .read {
+    display:block;
+    font-family: 'Crimson Text';
+    font-size:10pt;
+    font-style: italic;
+    line-height:1.2;
+    color: rgb(230,0,0);
+    border: 1px dotted rgb(230,0,0);
+    border-radius:20px;
+    padding:12px;
+    position:relative;
+    margin-bottom:10px;
+}
+
+.phb .read:before {
+    content:'';
+    position:absolute;
+    display:block;
+    border: 1px dotted rgb(230,0,2);
+    border-radius:20px;
+    left:1px;
+    top:1px;
+    right:1px;
+    bottom:1px;
+    }
+
+/* Footer */
+.phb .pageNumber { color: #000000}
+.phb .footnote { color: #000000 }
+.phb:nth-child(odd) .pageNumber { color: black;
+	right: 40px;
+	bottom: 52px;
+	width: 50px;
+	text-align: center;
+    font-family: 'Bebas Neue';
+    font-size:11pt;
+    font-weight:bold;
+}
+
+.phb:nth-child(even) .pageNumber { color: black;
+	left: 40px;
+	bottom: 52px;
+	width: 50px;
+    text-align: center;
+    font-family: 'Bebas Neue';
+    font-size:11pt;
+    font-weight:bold;
+}
+
+.phb .footnote { color: black 
+    font-family: 'Bebas Neue' 
+    font-weight: bold 
+    vertical-align: center;
+    padding-top:11px;
+}
+
+.phb:nth-child(even) .footnote {border-left:2px solid black;
+    padding-left:6px;
+}
+
+.phb:nth-child(odd) .footnote {border-right:2px solid black;
+    padding-right:6px;
+}
+
+.phb:after { 
+    background-image:url("none") 
+}
+
+
+
+/* Dice and Symbols */
+
+@font-face {
+  font-family: 'Genesys';
+  src: local('Genesys');
+}
+.phb .symbols {
+    font-family: Genesys;
+}
+
+@font-face {
+  font-family: 'Genesys1';
+  src: local('EotE Symbol');
+}
+.phb .dice {
+    font-family: Genesys1;
+}
+
+
+.phb .setback {
+    font-family: Genesys1;
+    color: black;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+.phb .note .setback, .phb .note .boost, .phb .note .challenge, .phb .note .proficiency, .phb .note .difficulty, .phb .note .ability {
+    text-shadow: -1px 0 #ffffff,0 1px #ffffff,1px 0 #ffffff,0 -1px #ffffff;
+}
+
+.phb .note  td > .setback, .phb .note td > .boost, .phb .note td > .challenge, .phb .note td > .proficiency, .phb .note td >  .difficulty, .phb .note td.ability {
+    text-shadow:  -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+.phb .boost {
+    font-family: Genesys1;
+    color: #76CDDB;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+.phb .challenge {
+    font-family: Genesys1;
+    color: #751317;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+.phb .proficiency {
+    font-family: Genesys1;
+    color: #FEF035;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+.phb .difficulty {
+    font-family: Genesys1;
+    color: #52287E;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+.phb .ability {
+    font-family: Genesys1;
+    color: #46AC4E;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+
+/* Archetypes */
+
+.phb .archetype {
+    background-image: url('https://www.gmbinder.com/images/wk1XTwj.png');
+    height:62px;
+    width:329px;
+    background-size:100%;
+    font-family: 'Bebas Neue';
+    font-size:14pt;
+
+    }
+
+.phb .archetype .bra {
+    position:relative;
+    left:14px;
+    top:6px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+}
+
+.phb .archetype .agi {
+    position:relative;
+    left:42px;
+    top:6px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+.phb .archetype .int {
+    position:relative;
+    left:68px;
+    top:6px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+
+.phb .archetype .cun {
+    position:relative;
+    left:95px;
+    top:6px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+.phb .archetype .wil {
+    position:relative;
+    left:122px;
+    top:6px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+.phb .archetype .pre {
+    position:relative;
+    left:148px;
+    top:6px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+/* Adversaries */
+
+.phb .adversary {
+    background-image: url('https://www.gmbinder.com/images/ks1JaPU.png');
+    height:47px;
+    width:329px;
+    background-position: -3px 0px;
+    background-size:102%;
+    font-family: 'Bebas Neue';
+    font-size:14pt;
+}
+
+.phb .adversary .soak {
+    position:relative;
+    left:26px;
+    top:13px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+.phb .adversary .wound {
+    position:relative;
+    left:79px;
+    top:13px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+.phb .adversary .strain {
+    position:relative;
+    left:135px;
+    top:13px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+.phb .adversary .mdef {
+    position:relative;
+    left:176px;
+    top:13px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+.phb .adversary .rdef {
+    position:relative;
+    left:175px;
+    top:13px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+
+/* MINION STAT BLOCK */
+
+.phb .minion {
+    background-image: url('https://www.gmbinder.com/images/K1aEwZa.png');
+    height:63px;
+    width:329px;
+    background-position: 42px 0px;
+    background-repeat:no-repeat;
+    background-size:75%;
+    font-family: 'Bebas Neue';
+    font-size:14pt;
+}
+
+.phb .minion .soak {
+    position:relative;
+    left:71px;
+    top:13px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+
+.phb .minion .wound {
+    position:relative;
+    left:125px;
+    top:13px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+
+.phb .minion .mdef {
+    position:relative;
+    left:165px;
+    top:13px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+.phb .minion .rdef {
+    position:relative;
+    left:165px;
+    top:13px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+}
+
+/* Vehicles */
+
+.phb .vehicle {
+    background-image: url('https://www.gmbinder.com/images/JEgri2b.png');
+    height:80px;
+    width:329px;
+    background-size: 100%;
+    background-repeat:no-repeat;
+    font-family: 'Bebas Neue';
+    font-size:14pt;
+}
+
+
+.phb .vehicle .sil {
+    position:relative;
+    left:14px;
+    top:6px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+}
+
+.phb .vehicle .speed {
+    position:relative;
+    left:41px;
+    top:6px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+}
+
+.phb .vehicle .hand {
+    position:relative;
+    left:67px;
+    top:6px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+}
+
+.phb .vehicle .armor {
+    position:relative;
+    left:107px;
+    top:12px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+}
+.phb .vehicle .def {
+    position:relative;
+    left:163px;
+    top:12px;
+    text-align:center;
+    display:inline-block;
+    width:25px;    
+}
+.phb .vehicle .ht {
+    position:relative;
+    left:53px;
+    top:53px;
+    text-align:center;
+    display:inline-block;
+    width:25px;    
+}
+
+.phb .vehicle .ss {
+    position:relative;
+    left:107px;
+    top:53px;
+    text-align:center;
+    display:inline-block;
+    width:25px;    
+}
+
+/*Index*/
+
+.phb .index-letter {
+    color:rgb(118,18,19);
+    font-size:24pt;font-weight:bold; 
+    font-family:'Bebas Neue';
+    line-height:1.1em;
+}
+
+.phb .index {
+    list-style:none;
+    padding:0;
+    overflow-x:hidden;
+    max-width:329px;
+}
+
+.phb .index li::before {
+            content: ""; }
+            
+.phb .index li {
+    
+    display:flex;
+}
+            
+.phb .index li span:first-child {
+    margin-right:0.2em;
+    order:1;
+}
+            
+.phb .index li::after {
+  content: "";
+  border-bottom: 1px dotted;
+  flex-grow: 1;
+  order: 2;
+  position:relative;
+  top:-5px
+}
+
+.phb .index span + span {
+    order:3;
+    margin-left:0.2em;
+    }
+    
+/* NON BLENDED IMAGE BORDER */
+    
+.phb .non-blended {
+    padding:10px;
+    border-width:2px;
+    border-style:solid;
+    border-image:linear-gradient(135deg, rgba(230,0,0,1) 0%,rgba(230,0,0,0.01) 99%,rgba(230,0,0,0) 100%);
+    -moz-border-image:-moz-linear-gradient(-45deg, rgba(230,0,0,1) 0%, rgba(230,0,0,0.01) 99%, rgba(230,0,0,0) 100%); -webkit-border-image:-webkit-linear-gradient(-45deg, rgba(230,0,0,1) 0%,rgba(230,0,0,0.01) 99%,rgba(230,0,0,0) 100%);
+    border-image-slice: 1;
+}
+
+
+</style>
+
+# Edge of Tamriel
+
+##  [Alchemy](https://docs.google.com/document/d/195s93Dzdat0pdNjaedFb4FyFHY_ZYTxxY0iDxWK43Wg/edit?usp=sharing)
+
+##  [Enchanting](https://docs.google.com/document/d/1xBZkMp8cWyOVz7NKVRB46QM99eYx1pbvwqAYXpRcWsY/edit?usp=sharing)
+
+##  [Origins and Classes](https://docs.google.com/document/d/1YR7Cvr-9cSSwIGWuI0RBQ4QHO_ToCSmW8PCEkhmQgTA/edit?usp=sharing)
+
+Basically, you choose an origin which gives you half of your career skills, and your class gives you the other half (and maybe provides unique talents).
+
+##  [Birthsigns](https://docs.google.com/document/d/1NIa0VwAbwAR1mZwVg8rFF0OHq5NoJJb38q7XBPa8tHI/edit?usp=sharing)
+
+Cool little abilities depending on your birthsign, e.g., "The Ritual" gives you Blessed Word (Once per Encounter, cast this power to force an Undead target within Medium range to suffer the effects of fear for 3 rounds) and Mara's Gift (Once per Session, may use this power as an Action to restore 5 Wounds on themselves)
+
+\pagebreakNum
+
+# [Primeval Thule](https://drive.google.com/file/d/1ipS-mZnsPIuv07vCxMUZoVCCv5clXnSj/view?usp=sharing)
+
+##  Narratives and Milestones
+
+You choose a background, basically, which gives you some minor bonuses, e.g., Add <span class="boost">b</span> to Stealth checks and it becomes a career skill (or you gain a free rank in it if it's already career), plus, once per session, if you attack a target that is unaware, gain automatic <span class="symbols">sa</span>.
+
+Then, at XP miletones, such as 200 and 400 xp, you gain more abilities, e.g., Add <span class="boost">b</span> to all skill checks again animals, and then "You become chief of your tribe or establish a new tribe with followers".
+
+##  Merits and Hindrances
+
+Small bonuses/penalties during character creation for a small cost/increase in XP, e.g., minor merit for 5 XP is "Attractive", adding <span class="boost">b</span> to all Charm, Coercion, and Negotiation checks made with members of the opposite sex, and a major Hindrance for 10 XP is "Touch of Madness", adding <span class="setback">b</span> to all Charm, Negotiation, and Riding checks made with any animal or person that is not also occult-oriented.
+
+\pagebreakNum
+
+# Star Wars
+
+##  Obligation
+
+<div class="wide">
+<table>
+    <thead>
+        <tr>
+            <th>d100 roll</th><th>Obligation Type
+        </tr>
+    </thead>
+    <tbody>
+        <tr> 
+            <td>01-08</td><td>Addiction: The character has a strong addiction he must keep feeding. Whether it’s a physical addiction to stims, dust, or alcohol, or a mental addiction such as gambling, law-breaking, or priceless antiques, the character devotes a lot of time, energy, and resources to pursuing or obtaining the object of his addiction. Avoiding this Obligation has an almost immediate result—withdrawal. The exact nature depends on the addiction, but the character finds it increasingly difficult to concentrate on even mundane tasks, often reflected in the GM adding anywhere from <span class="setback">b</span> to <span class="setback">bbb</span> in skill checks.</td>
+        </tr>
+        <tr> 
+            <td>09-16</td><td>Betrayal: This Obligation can work in one of two ways: either the character is the target of a deep and personal betrayal, or the character is the one who betrayed others. Whether it’s as simple as a betrayed confidence or broken promise or as serious as treason or mutiny, the betrayal eats away at the character and affects his everyday life. The target of the betrayal may seek answers, compensation, or simply revenge.</td>
+        </tr>
+        <tr> 
+            <td>17-24</td><td>Blackmail: Someone has discovered one of the PC’s dirty secrets and is using that knowledge for some sort of gain. To make matters worse, the blackmailer possesses evidence that could possibly leak out—a holovid, bank records, a weapon used during a crime, and so on. In order to keep the secret safe, the character must do what he is told, although the blackmailer is savvy enough to keep the demand simple, easy, or cheap enough to maintain the blackmail for as long as possible, generally money or favors.</td>
+        </tr>
+        <tr> 
+            <td>25-32</td><td>Bounty: For some reason, the character has a price on his head. This may be in the form of a legal warrant or a contract by criminals, collection agencies, or even someone who felt his honor violated in some way. What he did to earn this mark is up to his background, and the severity of his actions can be based on the size of his Obligation.</td>
+        </tr>
+        <tr> 
+            <td>33-40</td><td>Criminal: The character has a criminal record, or was accused of a crime (perhaps one he didn’t even commit), and is somehow embroiled in the legal system. Obligation may be settled by paying ongoing legal costs, making attempts to bury evidence, or efforts to prove his innocence.</td>
+        </tr>
+        <tr> 
+            <td>41-48</td><td>Debt: The character owes someone a great deal, whether that debt consists of money or something else. Perhaps the PC has a huge gambling debt to a Hutt, is indebted to the Czerka Corporation for his starship, owes a wealthy family for patronage, or has some other serious financial obligation. To make matters worse, depending on who owns the debt, even fully paying it off might not get the character completely off the hook—if the character can get that money, he can surely get more.</td>
+        </tr>
+        <tr> 
+            <td>49-56</td><td>Dutybound: The PC has a deep sense of duty that he feels compelled to fulfill, such as military service, making good on a contract, or following some sort of thieves’ code. Unlike the Oath Obligation (see below), a Dutybound character has some legal or ritualistic bind to an organization or cause making it extremely difficult or detrimental if he fails to live up to that commitment.</td>
+        </tr>
+        <tr> 
+            <td>57-64</td><td>Family: The character has deep ties with his family that require a great deal of time and attention. This could include the care and assistance of siblings or parents, the management of an inheritance, trust, or family business, or simply mediating between squabbling family members.</td>
+        </tr>
+        <tr> 
+            <td>65-72</td><td>Favor: The PC owes a big favor. Perhaps officials looked the other way when he smuggled in goods, or a friend got him out of prison. Regardless, the favors are stacking up, and soon he’s going to be asked to pay them back or return the favor. This favor may be called in a little at a time, prolonging the Obligation.</td>
+        </tr>
+        <tr> 
+            <td>73-80</td><td>Oath: The character has sworn some sort of oath that dictates his thoughts and actions, shaping his moral view of the world. This could be an oath to a deity, a way of living (such as the Jedi Code), or a willingness to sacrifice for the betterment of some group or cause. Whatever the case, the Oath should be both serious and make life difficult in some ways for the character. It is a personal and deep undertaking, possibly without a truly obtainable end goal in sight. Characters who do not live up to this oath face an internal and moral struggle.</td>
+        </tr>
+        <tr> 
+            <td>81-88</td><td>Obsession: The PC has some unhealthy obsession that tends to interfere in his life, whether with a celebrity, a region, a political movement, a cultural icon, or some other facet of society or life. He must pursue this, possibly to the detriment of his health, finances, or well being. A character with this Obligation tends to get along well with others that share his interest, but is looked at with pity, amusement, or even a bit of fear from others that don’t understand.</td>
+        </tr>
+        <tr> 
+            <td>89-96</td><td>Responsibility: A character with the Responsibility Obligation feels a strong sense of accountability or relationship to a person, place, or thing (a responsibility to kin falls under the Family Obligation described above). This could include a strong connection to a mentor, a strong desire to care for orphans in a given location, or taking on the needs of an under-represented minority.</td>
+        </tr>
+        <tr> 
+            <td>97-00</td><td>Roll twice on this chart. Starting Obligation is split into two different origins (this does not increase the Obligation’s magnitude; divide the starting Obligation into two equal parts, each with a different type).</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+\pagebreakNum
+
+##  Duty
+
+<div class="wide">
+<table>
+    <thead>
+        <tr>
+            <th>d100 roll</th><th>Duty Type
+        </tr>
+    </thead>
+    <tbody>
+        <tr> 
+            <td>01–08</td><td>Combat Victory: The Player Character is driven to show that the Alliance can hold its own against Imperial forces in any troop vs. troop engagement. He wants to engage the Empire’s military—their best, whenever possible—and provide more victories for the Alliance to tout to the galaxy as proof it can ultimately win the war. This means daring raids, excellent tactics, and acquiring the best firepower possible.</td>
+        </tr>
+        <tr> 
+            <td>09–16</td><td>Counter-Intelligence: The PC knows that the survival of the Alliance depends upon its ability to hide from the Empire and avoid complete destruction at the hands of its overwhelming military superiority. To this end, he wants to hunt down and eliminate enemy agents and threats, feed false information to Imperial intelligence networks, and cover the movements of all Alliance assets from observation and reporting.</td>
+        </tr>
+        <tr> 
+            <td>17–24</td><td>Intelligence: The PC knows that every victory hinges on knowing as much about the Empire’s military might and other assets as possible. He is driven to gather any and all potentially useful data, wishing to locate vital and vulnerable targets for Rebellion forces to strike at. He not only wants to know what the Imperial military factions are up to, but also the state of technological research, economic policies, and other aspects of Imperial strength.</td>
+        </tr>
+        <tr> 
+            <td>25–32</td><td>Internal Security: The most dangerous threat to the Alliance comes from within its own ranks. Any Rebel soldier, operative, or ally could be an insidious threat waiting to take an action at a critical moment to bring entire operations crashing down, costing lives and assets. Knowing that vigilance against these threats is the truest form of devotion to the cause of the Alliance, the PC watches for any and all signs of betrayal.</td>
+        </tr>
+        <tr> 
+            <td>33–40</td><td>Personnel: More than machines, credits, or information, the people of the Alliance are the most important and vital assets there are, and the Player Character knows this. He is devoted to seeing to their safety, well-being, and capacity for success. No one should ever be left behind; the most successful missions might not achieve every goal, but they are successful nonetheless when no one dies.</td>
+        </tr>
+        <tr> 
+            <td>41–48</td><td>Political Support: Every blaster, starfighter, and thermal detonator in the galaxy is useless without the political will to truly challenge and overthrow Palpatine and his New Order. The Player Character understands this all too well and is determined to see to it that as many factions, systems, and sectors as possible come to the side—and the aid—of the Alliance against the Empire.</td>
+        </tr>
+        <tr> 
+            <td>49–56</td><td>Recruiting: Every engagement with the Empire is a war of attrition, and that is a war the Rebellion simply cannot win. Nonetheless, more people must be found to serve, and they are needed in every capacity. Not only does the Alliance military need more soldiers and pilots, it needs more technicians, engineers, mechanics, scientists, doctors, slicers, and just about every other kind of worker. This Player Character understands the risks of recruitment, as well as the needs, and is constantly on the lookout for allies who are both talented and trustworthy.</td>
+        </tr>
+        <tr> 
+            <td>57–64</td><td>Resource Acquisition: There are never enough supplies to fully support those fighting against the juggernaut that is the Empire, and this PC knows it very well. He is determined to seek out new sources of raw materials, food, clothing, weapons, armor, and equipment of all kinds. One spare crate of medpacs can save quite a few lives, and a handful of comlinks can mean the difference between success and failure on a mission. He will trade, beg, borrow, and steal anything for the cause.</td>
+        </tr>
+        <tr> 
+            <td>65–72</td><td>Sabotage: The largest and most powerful military force in the history of the galaxy is also the most vulnerable to acts of destruction and asset denial. The character is focused on disrupting Imperial operations in any way possible, whether it’s the manufacture of weapons, troop movements, supply shipments, banking systems, or any other key operation, in order to make the Empire act more slowly and less capably. Truly showy acts of destruction also work to erode a population’s will to support the Empire, or so the PC often believes (though the Alliance expressly forbids actual acts of terrorism).</td>
+        </tr>
+        <tr> 
+            <td>73–80</td><td>Space Superiority: As the Combat Victory-driven PC feels about troop conflicts, so this Player Character feels about ship-to-ship combat and naval engagements. To him, the war will ultimately be decided in the stars, and what the Alliance lacks in sheer numbers, it more than makes up for in the quality and tenacity of its pilots. Every single space battle is an opportunity to show the rest of the galaxy that the Alliance not only can win the war, but is destined to do so.</td>
+        </tr>
+        <tr> 
+            <td>81–88</td><td>Tech Procurement: There is no more prolific or productive time for technological developments than during a war, and this one is no exception. This Player Character sees the true opportunity for Alliance victory in the hands of scientists, engineers, and technicians. Not only can they get the most performance from existing machines and resources, but they can design and develop new ships, weapons, medical techniques, and equipment that can provide the vital edge necessary to survive against the Empire’s might. The way this PC sees it, stealing the best developments of the Empire is a crucial way to even the odds.</td>
+        </tr>
+        <tr> 
+            <td>89–96</td><td>Support: Individually, the lone agents of the Alliance don’t stand a chance against the combined might of the Galactic Empire. Only by working together can they hope to achieve a victory in this civil war. This PC is devoted to helping fellow Rebels fulfill their Duties by providing whatever assistance they need. Although he might not get the same amount of reward or recognition as the people he is helping, the PC has many more opportunities than his fellows to fulfill his Duty to the Rebellion.</td>
+        </tr>
+        <tr> 
+            <td>97–00</td><td>Roll twice on this chart. The PC’s Duty is equally split between two different areas of focus, and success in either is good for increasing the Duty score.</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+\pagebreakNum
+
+##  Morality
+
+\pagebreakNum
+
+# AngryGM
+
+## [Travel](https://www.gmbinder.com/documents/edit/-LBr5dV92jVJvpTBMh5D)
+
+## [XP Tokens](https://theangrygm.com/no-one-plays-vanilla-wow/)
+
+## [Disabled Status](https://theangrygm.com/no-one-plays-vanilla-wow/)
+
+\pagebreakNum
+
+# Various
+
+## Magic
+
+Rituals (longer casting time for certain epic spells, but you can reduce the difficulty). Could require certain ranks in the appropriate magic skill to cast them
+
+## Crafting
+
+### Terrinoth
+
+### [Primeval Thule](https://drive.google.com/file/d/1ipS-mZnsPIuv07vCxMUZoVCCv5clXnSj/view?usp=sharing)
+
+## Cost of Living
+
+You can carry 10 days worth of rations for 1 encumbrance, and 1 day worth of water for 1 encumbrance.

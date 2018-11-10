@@ -4,6 +4,8 @@
 
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,600,700');
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=Almendra+SC');
+
 
 /* Main Background */
   .phb { background-image: url("https://www.gmbinder.com/images/TqYKFv2.jpg"); text-align:justify; text-indent:0px;}
@@ -1202,138 +1204,317 @@
 
 </style>
 
-# How to Actually Handle Travel
+# Edge of Tamriel
 
-Source: [The Angry GM](http://theangrygm.com/getting-there-is-half-the-fun/)
+######  Golden Saint Pelaurig (Nemesis)
 
-Offer a few basic routes to the destination, and decide on roughly how long each route will take. For example:
-* Directly through the woods, including a river crossing, will take 4 days
-* The long, winding road will take 10 days
-* An old road through the ruins, then following the river, takes 7 days
- 
-For each route, decide on the following attributes, giving each a rating from 1 to 5:
-* **Length** - How long is each route?
-* **Danger** - How dangerous is each route (or each section)? 
-* **Navigation** - How easy is each route to navigate (or each section)? 
-* **Resources** - What’s the available of resources along each route (or each section)? 
-* **Discovery** - How likely is the party to get sidetracked by an interesting discovery on each route? 
+<div class="adversary">
+<span class="bra">4</span>
+<span class="agi">4</span>
+<span class="int">4</span>
+<span class="cun">3</span>
+<span class="wil">5</span>
+<span class="pre">3</span>
+<br>
+<span class="lblbra">BRAWN</span>
+<span class="lblagi">AGILITY</span>
+<span class="lblint">INTELLECT</span>
+<span class="lblcun">CUNNING</span>
+<span class="lblwil">WILLPOWER</span>
+<span class="lblpre">PRESENCE</span>
+<br>
+<span class="lblsoak">SOAK VALUE</span>
+<span class="lblwound">W. THRESHOLD</span>
+<span class="lblstrain">S. THRESHOLD</span>
+<span class="lbldef">M/R DEFENSE</span>
+<br>
+<span class="soak">8</span>
+<span class="wound">28</span>
+<span class="strain">24</span>
+<span class="mdef">3</span>
+<span class="rdef">3</span>
+</div>
 
-Example ratings for Danger:
-* 1 is a relatively safe, civilized region or a barren, desolate region.
-* 2 is a dangerous frontier.
-* 3 is enemy territory.
-* 4 is regularly patrolled, extremely hostile territory. 
-* 5 is reserved for the sort of terrain which is filled with monsters that are actively trying to destroy all intruders and can detect the intruders with supernatural means (Hell, or The Land of the Dead).
- 
-Example ratings for Navigation:
-* 1 Gently rolling flatlands
-* 5 Deserts
-* +1/-1 for Fantasy factors like confounding fair curses or the blessings of the Land Spirits
+<br/>
 
-Example ratings for Resources:
-* 1 Verdant forests and lush meadows
-* 5 Deserts
-* +1/-1 for Fantasy factors like confounding fair curses or the blessings of the Land Spirits
- 
-Of course, certain routes will have no rating for a given attribute; for example, following a road or river makes Navigation moot. And traveling through civilized, friendly farmland makes Resources moot. In that case, ignore that attribute.
+### Skills
+Athletics 3, Coordination 2, Charm 2, Arcana 3, Cool 2, Deception 3, Coercion 4, Ranged 2, Melee (Light) 3, Melee (Heavy) 4, Resilience 2, Perception 2, Vigilance 2
 
-##### Table I.1 Route Attribute Difficulty
-| Rating | Difficulty |
-|:----:|:-------------:|:-:|
-| 1 | <span class='difficulty'>d</span> |
-| 2  | <span class='difficulty'>dd</span> |
-| 3 | <span class='difficulty'>ddd</span> |
-| 4 | <span class='difficulty'>dddd</span> |
-| 5 | <span class='difficulty'>ddddd</span> |
+### Talents
+**Adversary 2** Upgrade difficulty of all combat checks against this creature twice
 
-### Choosing a Route
+**Confidence 4** This character reduces the difficulty of Fear checks by 4.
 
-The first step for the players is choosing a route, and they need to somehow find out what the lay of the land is and learn any interesting details about the routes in question. They should have a rough idea about how long each route is, how dangerous, how difficult it is to navigate, and how difficult it is to forage, because they are going to need to plan their food supplies accordingly. Presumably, they will have access to a map or local knowledge or research.
+### Abilities
+**Daedra** Non-magical weapons deal half damage (after soak), rounded up, to Daedra. Count as a Daedra for spellcasting purposes.
 
-However, the party doesn't need to know everything. Partway through a trip through a forest, they can encounter signs that are passing into goblin territory or cursed land, for example, and they can make a decision then and there about whether to press through the new territory or whether to try to go around or even retreat and try a different route.
+**Normal Weapon Immunity** This character takes no damage from non-magical weapons.
 
-### The Travel Day
+**Arrogance** Add <span class="setback">b</span> to all **Cool** or **Leadership** checks targeting a Mazken or Aureal.
 
-Once the players decide on a route and set out, it's time to resolve each day of travel. At the beginning of the day, the party decides what kind of pace to set: Slow, Medium, or Fast.
+**Mad God’s Visage** Mazken and Aureals add <span class="boost">bb</span> to all **Arcane** checks
 
-At a **Slow Pace**, the party is moving carefully and quietly. They gain the following effects:
+**Command** As a maneuver, Pelaurig can add <span class="boost">b</span> the next action performed by an ally.
 
-* The party gains <span class='boost'>b</span> to all checks to perceive danger
-* All hostile creatures gain <span class='setback'>b</span> to detect the party, allowing the party to surprise enemies.
-* The party can forage for food normally if they maintain a slow pace for the entire day.
-* Navigation checks enjoy <span class='boost'>b</span>.
-* The party’s speed is reduced by a third. So every three days of travel count as only two days of travel.
+**Aura of Mania** When in sight of a Pelaurig, allies may suffer 1 Strain to add <span class="boost">b</span> to their next action.
 
-\pagebreakNum
+### Equipment
+**Aureal Longsword** Melee (Light); Damage 8; Critical 3; Range (Engaged); Pierce 3; Vicious 2
 
-At a **Medium pace**, the party travels normally. They may forage for food with <span class='setback'>b</span>.
+**Aureal Claymore** Melee (Heavy); Damage 10; Critical 2; Range (Engaged); Pierce 3, Vicious 2, Cumbersome 3
 
-At a **Fast pace**, the party travels more quickly. They gain the following effects:
-* Their speed is increased by a third. So every three days of travel count as four days.
-* The party cannot forage for food at all.
-* The party suffers <span class='setback'>b</span> on all checks to perceive dangers and on navigation checks.
-* Hostile creatures enjoy <span class='boost'>b</span> on checks to detect or track the party.
-
-Once the party has set the pace for the day, they can change the pace based on what happens to them during the day, but that will be resolved later.
-
-Roll 6d6, representing a time period of the day -  **Morning**, **Afternoon**, **Evening**, **Dusk**, **Midnight**, **Predawn**. For each one that shows the Danger number or less, an encounter *might* happen. Now roll 1d6, and if that shows the Discovery number or less, you need to tantalize the party with something interesting off the road for them to check out. A ruined tower, a sign of magic, an old tomb, an ancient henge, a shrine, etc. The key is that it has to be far enough off the path that the party has to choose whether to waste a few hours investigating it or to ignore it.
-
-Play out the daytime encounters as they happen, remembering that surprise is a possibility. If the party is moving slowly and quietly and the enemy doesn't detect them, they should be able to plan an ambush or bypass the encounter. If the party is rushing, they might very well be surprised and ambushed themselves. In fact, it is entirely possible that neither party detects the other and the encounter never happens.
-
-If no encounters or discoveries happen, the day passes uneventfully and the PCs find a place to make camp for the night.
-
-### Making Camp
-
-First of all, you have to find out if the party is lost. To do this, have the best navigator make a **Survival check** or **Knowledge (Geography)**, with a difficulty according to the Navigation rating of the route and **Table I.1**. If the party traveled at a Fast pace at any point during the day, apply <span class='setback'>b</span>. Make this roll in secret. If they fail, the party has gotten lost at some point during the day. They just don't know it yet.
-
-Now, calculate how many days of travel the party logged during the day. If the party isn't lost, this is determined by their pace. They either log 2/3, 1, or 1 1/3 days depending on the slowest pace they moved at during the day. If the party has now logged enough days to finish their route, they will reach their destination tomorrow. If the party stopped to investigate a discovery, subtract 1/3 from their progress unless they spent the whole day on the discovery, in which case they make no progress. Use your best judgment. Likewise, use your best judgment if the party does something weird like stopping halfway through the day.
-
-Finally, calculate how much food and water the party has consumed.
-
-* **Slow Pace:** Allow each character to make a **Survival check** with a difficulty according to the Resources rating of the route and **Table I.1**
-* **Medium Pace:** Allow each character to make a **Survival check**, adding <span class='setback'>b</span>, with a difficulty according to the Resources rating of the route and **Table I.1**
-* **Fast Pace:** No character can forage for food
-
-Each character that fails did not find enough food, and so they must consume one day's worth of rations *(3 days' worth of rations is 1 encumbrace)*. If any character generates <span class="symbols">t</span>, they find enough food to provide for another character. Assume that, as long as anyone succeeds at foraging, the party turned up enough water to refill their waterskins and drink their fill, unless of course water would be extra difficult to come by, such as in a desert. If everyone fails, they drain their waterskins and are now out of water. If their waterskins were already drained and they don't have a backup supply, they are now dehydrating. *(This still required some Genesys rules)*
-
-For each day a character does not have enough food, i.e., they failed at foraging and have no rations, their strain threshold is temporarily reduced by 1. Once they have enough food at least two days in a row, their strain threshold increases by one per day until it is at its initial level. Similarly for lacking water, but the temporary reduction is 3 per day instead of 1.
-
-This process should go quickly. Roll for Navigation and determine if they are lost and then mark off the progress if they aren’t. Then, everyone rolls a forage checks and marks off food. Done and done. Now, it’s time for the night.
-
-Play out the nighttime encounters (if any), remembering the possibilities for detection and ambush. Roll randomly to determine who is awake and on watch for each encounter.
-
-Once the night has passed, start again from [The Travel Day](#how-to-actually-handle-travel-table-i1-route-attribute-difficulty-the-travel-day) until they arrive at their destination.
+\columnbreak
 
 \pagebreakNum
 
-### Being Lost
+# Adversary Catalogue
 
-If the party is lost (by failing their check against the Navigation rating in [Making Camp](#how-to-actually-handle-travel-table-i1-route-attribute-difficulty-making-camp)), each day of travel doesn't contribute any progress. Make a secret **Survival check** or **Knowledge (Geography)**, again with a difficulty according to the Navigation rating of the route and **Table I.1**. If the check succeeds, the navigator will recognize that the party has become lost the next morning as the party is starting to set out. Otherwise, the party continues to make no progress every day.
+######  Stone Golem (Nemesis)
+These golems often take the form of humanoid stone statues, and can be difficult to detect when still. They are frequently constructed with multiple limbs, each wielding a weapon, and can attack relentlessly with all of them.
 
-There are other ways for the party to realise they are lost:
-* If the party travels in one direction long enough, they are going to discover an unexpected feature. They will hit a river, a new type of terrain, a lake, a road. If you drew a map, determine randomly what they will hit and where they will hit it or just pick something. Assume they travel in a straight line in a random direction from the middle of whatever terrain or route they were in.
-* If the party knows the trip should have taken three to five days, and they hit day seven, they are going to realize they are lost.
+<div class="adversary">
+<span class="bra">5</span>
+<span class="agi">2</span>
+<span class="int">1</span>
+<span class="cun">2</span>
+<span class="wil">3</span>
+<span class="pre">1</span>
+<br>
+<span class="lblbra">BRAWN</span>
+<span class="lblagi">AGILITY</span>
+<span class="lblint">INTELLECT</span>
+<span class="lblcun">CUNNING</span>
+<span class="lblwil">WILLPOWER</span>
+<span class="lblpre">PRESENCE</span>
+<br>
+<span class="lblsoak">SOAK VALUE</span>
+<span class="lblwound">W. THRESHOLD</span>
+<span class="lblstrain">S. THRESHOLD</span>
+<span class="lbldef">M/R DEFENSE</span>
+<br>
+<span class="soak">7</span>
+<span class="wound">24</span>
+<span class="strain">18</span>
+<span class="mdef">4</span>
+<span class="rdef">0</span>
+</div>
+
+<br/>
+
+### Skills
+Melee (Light) 2, Vigilance 2
+
+### Talents
+**Adversary 1** Upgrade difficulty of all combat checks against this creature once
+
+### Abilities
+**Silhouette 2**
+
+**Construct** A construct does not require food, drink, air, or sleep. Constructs are immune to poison, disease, Coercion, Fear, Charm, or any mind-affecting ability
+
+**Magic Resistance** A golem upgrades the difficulty of any magic skill check targeting it by one
+
+**Multiple Limbs** A stone golem has four to six limbs, and wields a weapon in each hand. A stone golem does not increase the difficulty of its attacks to activate auto-fire, and its initial target does not need to be the target with the highest difficulty and defense. A stone golem may attack twice when taking the attack action, but may only activate auto-fire from a single attack per turn
+
+### Equipment
+**Swords** Melee(Light); Damage 8; Critical 2; Range (Engaged); Defensive 1, Pierce 1, Auto-fire
+
+\pagebreak
+
+######  Valroth Demon (Apex Nemesis)
+These huge, fiery demons are the greatest of their kind. They appear as massive horned figures wreathed in infernal fire and writhing shadows, wielding a huge flaming sword and a cruelly barbed whip. Many serve as champions and executioners for their infernal masters. All other demons obey their commands, and they often lead hordes of demons into battle.
+
+<div class="adversary">
+<span class="bra">6</span>
+<span class="agi">3</span>
+<span class="int">3</span>
+<span class="cun">4</span>
+<span class="wil">5</span>
+<span class="pre">4</span>
+<br>
+<span class="lblbra">BRAWN</span>
+<span class="lblagi">AGILITY</span>
+<span class="lblint">INTELLECT</span>
+<span class="lblcun">CUNNING</span>
+<span class="lblwil">WILLPOWER</span>
+<span class="lblpre">PRESENCE</span>
+<br>
+<span class="lblsoak">SOAK VALUE</span>
+<span class="lblwound">W. THRESHOLD</span>
+<span class="lblstrain">S. THRESHOLD</span>
+<span class="lbldef">M/R DEFENSE</span>
+<br>
+<span class="soak">8</span>
+<span class="wound">45</span>
+<span class="strain">30</span>
+<span class="mdef">2</span>
+<span class="rdef">1</span>
+</div>
+
+<br/>
+
+### Skills
+Athletics 3, Cool 3, Discipline 4, Leadership 3, Melee (Light) 4, Resilience 4, Vigilance 3
+
+### Talents
+**Adversary 2** Upgrade difficulty of all combat checks against this creature twice
+
+### Abilities
+**Silhouette 3**
+
+**Demonic** A demon is immune to poison and disease. A demon doubles its soak vs. non-magical attacks
+
+**Terrifying** At the start of the encounter, all of their opponents must make a Formidable fear check as an out-of-turn incidental. If there are multiple sources of fear in the encounter, the opponents only make one fear check against the most terrifying enemy
+
+**Devastating** When a valroth inflicts a Critical Injury, +40 is added to the resulting Critical Injury result
+
+**Fireborn** A valroth does not suffer damage from natural heat or flame, and doubles its soak for purposes of reducing damage from magical fire
+
+**Magic Resistance** A golem upgrades the difficulty of any magic skill check targeting it by one
+
+**Fire and Shadow** A valroth is surrounded by magical flames and shadows, granting it +1 Defense. For each ranged band farther than  Engaged that an enemy is from a valroth, increase its Defense by 1
+
+**Hellfire Aura** A creature that begins its turn in Engaged range with a Valroth suffers 4 wounds from the demon's blazing aura
+
+**Multiattack** A valroth does not increase the difficulty of combined checks to attack with its flaming sword and whip, and may spend 2 Advantage or Triumph to hit with each additional weapon
+
+**Whip Drag** A valroth that Ensnares a target with its whip may suffer 2 strain to drag the target one range band closer, to a minimum of Engaged. While a target is Ensnared, the valroth cannot use its whip to make attacks
+
+### Equipment
+**Flaming Sword** Melee (Light); Damage: 16; Critical: 2; Range (Short); Burn 2, Defensive 1, Pierce 2, Vicious 2
+
+**Barbed Whip** Melee (Light); Damage: 12; Critical: 3; Range (Medium); Ensnare 3, Pierce 2
+
+\pagebreak
+
+# AngryGM
+
+###### Blazing Archon (Armoured/Enraged)
+
+<div class="adversary">
+<span class="bra">3</span>
+<span class="agi">4</span>
+<span class="int">1</span>
+<span class="cun">2</span>
+<span class="wil">3</span>
+<span class="pre">1</span>
+<br>
+<span class="lblbra">BRAWN</span>
+<span class="lblagi">AGILITY</span>
+<span class="lblint">INTELLECT</span>
+<span class="lblcun">CUNNING</span>
+<span class="lblwil">WILLPOWER</span>
+<span class="lblpre">PRESENCE</span>
+<br>
+<span class="lblsoak">SOAK VALUE</span>
+<span class="lblwound">W. THRESHOLD</span>
+<span class="lblstrain">S. THRESHOLD</span>
+<span class="lbldef">M/R DEFENSE</span>
+<br>
+<span class="soak">6</span>
+<span class="wound">20/20</span>
+<span class="strain">12/12</span>
+<span class="mdef">1</span>
+<span class="rdef">1</span>
+</div>
+
+<br/>
+
+### Skills
+Melee (Light) 3, Brawl 3, Discipline 3, Resilence 2, Vigilance 2, Cool 1, Perception 3
  
-*(Alternatively, each day that they travel while lost, roll a d6 when logging their progress. On a 1, they managed to travel in the right direction and log progress normally. On a 5 or 6, they are losing ground and subtract however much progress they would have made based on their route. For anything else, add no progress.)*
+### Talents
+**Finesse** The Blazing Archon may use Agility instead of Brawn when making Melee (Light) checks
 
-Once the party realises they are lost, they need to decide on a new plan. They might pick a direction they know will lead them to something, they might try to find a landmark to make toward, or they might try to backtrack. You can resolve each of those simply by assuming the party starts a new route and figuring it out accordingly. At this point, the party is no longer lost on the new route. The important thing is that the party can't just get unlost. They need to have an alternative plan once they are lost. Otherwise, they will just keep wandering.
+**Adversary 2** Upgrade all combat checks targeting the Blazing Archon by 2
 
-\pagebreakNum
+### Abilities
+**Paragon Fortitude** This character has multiple Wound and Strain thresholds, each of which is tracked separately. All damage and healing must be completely applied to only one threshold. When a threshold is exceeded, all ongoing conditions and effects affecting this character end. Once a threshold has been exceeded, that threshold cannot receive any healing for the remainder of the encounter. If all wound or all strain thresholds are exceeded, this character is defeated
 
-### Encounters
+**Paragon Fury** This character may take one additional turn in each round of combat for each of its wound thresholds that have been exceeded. Each subsequent turn the character gains is inserted immediately after any one PC's turn
 
-The encounters represent all of the *potential* dangers and hazards an area might present to travelers. They aren't just a list of combat encounters. Remember, the party might evade an encounter, or vice versa, and you don’t even have to assume every encounter is hostile: Bandits might be willing to accept coin to leave the part alone; some monsters might ignore the party if they distract it with food; Orcs might trade threats and insults with the party in a structured social encounter; Some animals might merely threaten the party and try to frighten them away from their nest or other territory. The encounters can also represent hazards: Quicksand in swamps; flash floods in hills and badlands; booby traps in kobold territory. They can also be obstacles like rockfalls across a road or a washed out bridge.
+**Paragon Transformation** This character has multiple forms, each corresponding to one of its pairs of wound/strain thresholds. It begins the encounter in its primary form. When that form's wound or strain threshold is exceeded, it assumes its next form immediately. Statistics, talents, abilities, or equipment keyed to a specific form are only used when this character is in that form
 
-Your encounters should be interesting, but not complicated. Focus on single creatures or small groups of identical creatures. Instead of a list of encounters, you can just have a small bestiary of creatures you can mix and match easily to get the results you want. In goblin territory, you can get a lot of mileage by mixing and matching goblin skirmishers, goblin archers, and giant spider pets in different combinations.
+**Elemental** Fire elementals are immune to damage from fire, and damage from cold or water have their critical rating reduced to 1
 
-Keep in mind that the party will have the opportunity to rest and recover more frequently in the wild. To compensate, it’s important to skew your combat encounters toward the hard end of the difficulty curve.
+<!--Darkvision *(When making skill checks, Elementals remove up to <span class="setback">bb</span> imposed due to darkness)*-->
 
-### Discoveries
+<!--Flame Blast *(Once per encounter, the Blazing Archon may select up to 3 target characters in short or engaged rnage and make an **Average (<span class="difficulty">dd</span>) Resilience check**. If the check succeeds, each affected character suffers 5 damage +1 for each <span class="symbols">s</span>. The Blazing Archon may spend <span class="symbols">aa</span> to cause the affected targets to suffer the same damage next turn)*-->
 
-It can be tough to come up with discoveries on the fly. But, the party should only encounter one or two during an entire trip unless they are wandering through an ancient kingdom lousy with ruins.
+**Fire form [Enraged Form]** At the end of this character's turn, engaged characters suffer 3 wounds. When this character moves from short range to engaged, one engaged character suffers 3 wounds
 
-Discoveries are basically just encounters that somehow bait the party into checking them out. But most of them should offer some kind of reward. Either something interesting or something valuable or both.
+**Uncontrolled [Enraged Form]** This character does not have allies and is not an ally of any character. On each turn, it attacks the last character that dealt damage to it. If no character has done damage to it, it attacks the nearest character that it can see. If it cannot see any character, it attacks the nearest object
 
-An old ruined tower with an intact cellar, for example, might have a strongbox in the basement with some money and other trinkets, but it might be protected by a booby trap. Or something living in the cellar. An ancient shrine might reward an offering with a minor blessing or boon and might punish anyone taking from the offering bowl.
+**Many-armed [Enraged Form]** *he Blazing Archon adds <span class="boost">b</span> to Brawl checks and may use <span class="symbols">aa</span> to hit a second engaged character with the same damage as the first target
 
-These discoveries are your chance to give the players something to interact with if they are willing to waste time. Remember, if the rat survives the trap, he ends up with some free cheese for his trouble. You'll need one or two discoveries for every three days of travel, more than likely. But it’s always good to have a pile of them in case you ever need one on the fly.
+### Equipment
+**Flame Blast** Resilience; Damage 5; Critical 2; Range (Short); Burn 1; Overchage (Burn); Slow-Firing 3; Blast 5
+
+**Flaming Kilij [Armoured Form]** Melee (Light); Damage 8; Critical 3; Range (Engaged); Burn 2; Overchage (Burn)
+
+**Flaming touch [Enraged Form]** Brawl; Damage 5; Critical 3; Range (Engaged); Burn 2; Overchage (Burn)
+
+Paragon Ability Source: [Angry GM](http://theangrygm.com/elemental-boogaloo/)
+
+
+### Extra Rules
+
+**Overcharge (Quality)** The named quality of the weapon requires 1 fewer <span class="symbols">a</span> to activate, to a minimum of 1
+
+<!--
+### Blazing Archon (Enraged)
+
+<div class="adversary">
+<span class="bra">3</span>
+<span class="agi">4</span>
+<span class="int">1</span>
+<span class="cun">2</span>
+<span class="wil">3</span>
+<span class="pre">1</span>
+<br>
+<span class="lblbra">BRAWN</span>
+<span class="lblagi">AGILITY</span>
+<span class="lblint">INTELLECT</span>
+<span class="lblcun">CUNNING</span>
+<span class="lblwil">WILLPOWER</span>
+<span class="lblpre">PRESENCE</span>
+<br>
+<span class="lblsoak">SOAK VALUE</span>
+<span class="lblwound">W. THRESHOLD</span>
+<span class="lblstrain">S. THRESHOLD</span>
+<span class="lbldef">M/R DEFENSE</span>
+<br>
+<span class="soak">6</span>
+<span class="wound">20</span>
+<span class="strain">12</span>
+<span class="mdef">1</span>
+<span class="rdef">1</span>
+</div>
+
+<br/>
+
+**Skills:**
+* Melee (Light) 3
+* Brawl 3
+* Discipline 3
+* Resilence 2
+* Vigilance 2
+* Cool 1
+* Perception 3
+ 
+**Talents:**
+* Finesse (The Blazing Archon may use Agility instead of Brawn when making Melee (Light) checks)
+* Adversary 2 (Upgrade all combat checks targeting the Blazing Archon by 2)
+
+**Abilities:**
+* Elemental Immunity Fire (Fire elementals are immune to damage from sources with Burn)
+* Elemental Weakness Water (Fire elementals suffer 5 wounds when doused in water)
+* Extra-planar stability (Archons cannot be Immobilised or knocked Prone)
+* Darkvision (When making skill checks, Elementals remove up to <span class="setback">bb</span> imposed due to darkness)
+* Flame Blast (Once per encounter, the Blazing Archon may select up to 3 target characters in short or engaged rnage and make an **Average (<span class="difficulty">dd</span>) Resilience check**. If the check succeeds, each affected character suffers 5 damage +1 for each <span class="symbols">s</span>. The Blazing Archon may spend <span class="symbols">aa</span> to cause the affected targets to suffer the same damage next turn)
+* Fire form [Enraged Form] (Engaged characters take damage as if from a Severity 3 fire. If the Archon moves from short to engaged, one character takes 3 damage and is on fire until put out, according to pg 111 GCRB)
+* Uncontrolled [Enraged Form] (Always attacks whoever damaged it last. Else, closest it can see. No allies)
+* Many-armed [Enraged Form] (The Blazing Archon adds <span class="boost">b</span> to Brawl checks and may use <span class="symbols">aa</span> to hit a second engaged character with the same damage as the first target)
+
+**Equipment:** Flaming touch [Enraged Form] (Brawl; Damage 5; Critical 3; Range [Engaged]; Burn 2; Burn may be activated with <span class="symbols">a</span> instead of <span class="symbols">aa</span>)
+-->
