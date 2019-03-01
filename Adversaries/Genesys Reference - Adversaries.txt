@@ -1376,7 +1376,7 @@ Athletics 3, Cool 3, Discipline 4, Leadership 3, Melee (Light) 4, Resilience 4, 
 
 **Hellfire Aura** A creature that begins its turn in Engaged range with a Valroth suffers 4 wounds from the demon's blazing aura
 
-**Multiattack** A valroth does not increase the difficulty of combined checks to attack with its flaming sword and whip, and may spend 2 Advantage or Triumph to hit with each additional weapon
+**Multiattack** A valroth does not increase the difficulty of combined checks to attack with its flaming sword and whip, and may spend <span class='symbols'>aa</span> or <span class='symbols'>t</span> to hit with each additional weapon
 
 **Whip Drag** A valroth that Ensnares a target with its whip may suffer 2 strain to drag the target one range band closer, to a minimum of Engaged. While a target is Ensnared, the valroth cannot use its whip to make attacks
 
@@ -1389,7 +1389,7 @@ Athletics 3, Cool 3, Discipline 4, Leadership 3, Melee (Light) 4, Resilience 4, 
 
 # AngryGM
 
-###### Blazing Archon (Armoured/Enraged)
+###### Blazing Archon [Armoured/Enraged] (Paragon Nemesis)
 
 <div class="adversary">
 <span class="bra">3</span>
@@ -1429,11 +1429,11 @@ Melee (Light) 3, Brawl 3, Discipline 3, Resilence 2, Vigilance 2, Cool 1, Percep
 **Adversary 2** Upgrade all combat checks targeting the Blazing Archon by 2
 
 ### Abilities
-**Paragon Fortitude** This character has multiple Wound and Strain thresholds, each of which is tracked separately. All damage and healing must be completely applied to only one threshold. When a threshold is exceeded, all ongoing conditions and effects affecting this character end. Once a threshold has been exceeded, that threshold cannot receive any healing for the remainder of the encounter. If all wound or all strain thresholds are exceeded, this character is defeated
+**Paragon Fortitude** This adversary has multiple Wound and Strain thresholds, each of which is tracked separately. All damage and healing must be completely applied to only one threshold. When a threshold is exceeded, all ongoing conditions and effects affecting this adversary end. Once a threshold has been exceeded, that threshold cannot receive any healing for the remainder of the encounter. If all wound or all strain thresholds are exceeded, this adversary is defeated
 
-**Paragon Fury** This character may take one additional turn in each round of combat for each of its wound thresholds that have been exceeded. Each subsequent turn the character gains is inserted immediately after any one PC's turn
+**Paragon Fury** This adversary may take one additional turn in each round of combat for each of its wound thresholds that have been exceeded. Each subsequent turn the adversary gains is inserted immediately after any one PC's turn
 
-**Paragon Transformation** This character has multiple forms, each corresponding to one of its pairs of wound/strain thresholds. It begins the encounter in its primary form. When that form's wound or strain threshold is exceeded, it assumes its next form immediately. Statistics, talents, abilities, or equipment keyed to a specific form are only used when this character is in that form
+**Paragon Transformation** This adversary has multiple forms, each corresponding to one of its pairs of wound/strain thresholds. It begins the encounter in its primary form. When that form's wound or strain threshold is exceeded, it assumes its next form immediately. Statistics, talents, abilities, or equipment keyed to a specific form are only used when this character is in that form
 
 **Elemental** Fire elementals are immune to damage from fire, and damage from cold or water have their critical rating reduced to 1
 
@@ -1441,11 +1441,11 @@ Melee (Light) 3, Brawl 3, Discipline 3, Resilence 2, Vigilance 2, Cool 1, Percep
 
 <!--Flame Blast *(Once per encounter, the Blazing Archon may select up to 3 target characters in short or engaged rnage and make an **Average (<span class="difficulty">dd</span>) Resilience check**. If the check succeeds, each affected character suffers 5 damage +1 for each <span class="symbols">s</span>. The Blazing Archon may spend <span class="symbols">aa</span> to cause the affected targets to suffer the same damage next turn)*-->
 
-**Fire form [Enraged Form]** At the end of this character's turn, engaged characters suffer 3 wounds. When this character moves from short range to engaged, one engaged character suffers 3 wounds
+**Fire form [Enraged Form]** At the end of this adversary's turn, engaged characters suffer 3 wounds. When this adversary moves from short range to engaged, one engaged character suffers 3 wounds
 
-**Uncontrolled [Enraged Form]** This character does not have allies and is not an ally of any character. On each turn, it attacks the last character that dealt damage to it. If no character has done damage to it, it attacks the nearest character that it can see. If it cannot see any character, it attacks the nearest object
+**Uncontrolled [Enraged Form]** This adversary does not have allies and is not an ally of any character. On each turn, it attacks the last character that dealt damage to it. If no character has done damage to it, it attacks the nearest character that it can see. If it cannot see any character, it attacks the nearest object
 
-**Many-armed [Enraged Form]** *he Blazing Archon adds <span class="boost">b</span> to Brawl checks and may use <span class="symbols">aa</span> to hit a second engaged character with the same damage as the first target
+**Many-armed [Enraged Form]** The Blazing Archon adds <span class="boost">b</span> to Brawl checks and may use <span class="symbols">aa</span> to hit a second engaged character with the same damage as the first target
 
 ### Equipment
 **Flame Blast** Resilience; Damage 5; Critical 2; Range (Short); Burn 1; Overchage (Burn); Slow-Firing 3; Blast 5
@@ -1460,6 +1460,111 @@ Paragon Ability Source: [Angry GM](http://theangrygm.com/elemental-boogaloo/)
 ### Extra Rules
 
 **Overcharge (Quality)** The named quality of the weapon requires 1 fewer <span class="symbols">a</span> to activate, to a minimum of 1
+
+\pagebreak
+
+###### Lemurian Darter (Minion)
+
+<div class="minion">
+<span class="bra">1</span>
+<span class="agi">3</span>
+<span class="int">1</span>
+<span class="cun">2</span>
+<span class="wil">1</span>
+<span class="pre">1</span>
+<br>
+<span class="lblbra">BRAWN</span>
+<span class="lblagi">AGILITY</span>
+<span class="lblint">INTELLECT</span>
+<span class="lblcun">CUNNING</span>
+<span class="lblwil">WILLPOWER</span>
+<span class="lblpre">PRESENCE</span>
+<br>
+<span class="lblsoak">SOAK VALUE</span>
+<span class="lblwound">W. THRESHOLD</span>
+<span class="lbldef">M/R DEFENSE</span>
+<br>
+<span class="soak">2</span>
+<span class="wound">5</span>
+<span class="mdef">0</span>
+<span class="rdef">0</span>
+</div>
+
+<br/>
+
+### Skills
+Athletics, Coordination, Melee (Light), Vigilance
+
+### Abilities
+**Cat-Like Acrobatics** Lemurians do not suffer damage from falls from short range. If a Lemurian falls further than short range, it suffers damage for the fall as normal
+
+**Standing Leap** As a maneuver, the Lemurian may jump up to short range in any direction, including straight up
+
+**Spider Climb** The Lemurian can climb difficult surfaces, including upside down on ceilings, without penalty
+
+**Scurry** The darter can perform a second maneuver each turn for free
+
+### Equipment
+**Bone Club** Melee (Light); Damage: 6; Critical: 4; Range (Engaged)
+
+\columnbreak
+
+###### Lemurian Behemoth (Rival)
+
+<div class="minion">
+<span class="bra">3</span>
+<span class="agi">3</span>
+<span class="int">1</span>
+<span class="cun">2</span>
+<span class="wil">1</span>
+<span class="pre">1</span>
+<br>
+<span class="lblbra">BRAWN</span>
+<span class="lblagi">AGILITY</span>
+<span class="lblint">INTELLECT</span>
+<span class="lblcun">CUNNING</span>
+<span class="lblwil">WILLPOWER</span>
+<span class="lblpre">PRESENCE</span>
+<br>
+<span class="lblsoak">SOAK VALUE</span>
+<span class="lblwound">W. THRESHOLD</span>
+<span class="lbldef">M/R DEFENSE</span>
+<br>
+<span class="soak">5</span>
+<span class="wound">15</span>
+<span class="mdef">0</span>
+<span class="rdef">0</span>
+</div>
+
+<br/>
+
+### Skills
+Athletics 3, Coordination 2, Brawl 1, Resilience 1, Vigilance 1
+
+### Talents
+**Adversary 1** Upgrade difficulty of all combat checks against this adversary once
+
+### Abilities
+**Cat-Like Acrobatics** Lemurians do not suffer damage from falls from short range. If a Lemurian falls further than short range, it suffers damage for the fall as normal
+
+**Standing Leap** As a maneuver, the Lemurian may jump up to short range in any direction, including straight up
+
+**Spider Climb** The Lemurian can climb difficult surfaces, including upside down on ceilings, without penalty
+
+**Pounce** If the behemoth moves from short range to engaged, including straight down from above, and succeeds with a Kick attack on the same turn, the behemoth may make an **opposed Athletics vs. Athletics check** targeting one engaged opponent, as an incidental, to knock that opponent prone. If the target is knocked prone, the behemoth can make one Bite attack against it as a bonus action.
+
+### Equipment
+**Slam** Brawl; Damage: 6; Critical: 4; Range (Engaged); Linked 1
+
+**Kick** Brawl; Damage: 8; Critical: 4; Range (Engaged)
+
+**Bite** Brawl; Damage: 3; Critical: 2; Range (Engaged); Pierce 1
+
+\pagebreak
+
+# Misc
+
+[Source](https://gamedetective.wordpress.com/2017/11/27/five-awesome-creatures-in-the-dd-monster-manual-and-how-to-use-them/)
 
 <!--
 ### Blazing Archon (Enraged)
