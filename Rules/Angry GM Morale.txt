@@ -1,0 +1,1329 @@
+<style>
+
+/* IMPORTS */
+
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+/* Main Background */
+  .phb { background-image: url("https://www.gmbinder.com/images/TqYKFv2.jpg"); text-align:justify; text-indent:0px;}
+  .phb::after {background-image:none;}
+
+/* Fonts */
+
+.phb {
+    font-family: 'EB Garamond', serif;
+    padding-top:70px;
+    /*font-weight:400;*/
+}
+
+.phb h1, .phb h2, .phb h3, .phb h4, .phb h5, .phb h6 { 
+    letter-spacing: 0.6px;
+    font-family: 'Bolton';
+    text-align:center;
+}
+
+.phb h1{
+    color: #761213;
+    font-weight:400;
+    text-transform: uppercase;
+    font-size:22pt;
+    margin-bottom:30px;
+}
+
+/* Makes the bigger "first letter" in paragraphs under H1 and H2*/
+.phb h1 + p:first-letter, .phb h2 + p:first-letter  {
+    font-family: 'Bolton';
+    color: #761213;
+    font-size:24.3pt;    
+    line-height:100%;
+    margin-bottom:-9px;
+    margin-right:2px;
+    margin-top:2px;
+    float:left;
+}
+
+.phb h2 {
+    color: #761213;
+    text-transform: uppercase;
+    font-size:16pt;
+    font-weight:300;
+}
+
+
+.phb h3 {
+    color: #761213;
+     text-transform: uppercase;
+    font-size: 11pt;
+    font-weight:1;
+    border:none;
+}
+
+.phb h4 {
+    color: #dfcfb5;
+    text-transform: uppercase;
+    font-size: 10pt;
+    text-align:center;
+    margin-bottom:15px;
+
+}
+
+.phb .wide-note-top h4, .phb .wide-note-bottom h4 {
+    
+    column-span:all;
+}
+
+.phb h4 + p:first-letter  {
+    font-family: 'Bolton';
+    color: ##dfcfb5;
+    font-size:24.3pt;    
+    line-height:100%;
+    margin-bottom:-9px;
+    margin-right:2px;
+    margin-top:2px;
+    float:left;
+
+}
+
+.phb h5 {
+    color: #761213;
+    font-weight: 1;
+    text-transform: uppercase;
+    font-size: 16pt;
+    text-align:left;
+}
+
+.phb h6 {
+    color: #761213;
+    text-transform: uppercase;
+    font-size: 16pt;
+    display: table;
+    border-bottom: 1px solid #ea702b;
+}
+
+.phb p { 
+    font-size: 11pt; 
+  	letter-spacing: -0.4px;
+  	line-height:1.15em;
+  	text-indent:0px !important;
+  	font-weight:400;
+  	padding-bottom:1px;
+  	column-fill:balance;
+  }
+  
+.phb p + p {
+    margin-top:0px;  
+  }
+
+.phb wide {clear:both;}
+.phb ul {
+    list-style: none;
+    font-size: 11pt;
+    /*font-weight: 700;*/
+}
+.phb ul li::before {
+    content: "•"; 
+    color: #761213;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+
+/* Tables */
+.phb td {
+    font-family: 'EB Garamond', serif;
+    font-size:8pt;
+    font-weight:400;
+    text-align:left;
+}
+.phb td, th {border: 1px solid gray;}
+.phb table {overflow:auto;}
+.phb table tbody tr:nth-child(odd) {background: transparent;}
+.phb table tr:nth-child(even) td {background-color: #b5a192;}
+.phb table thead th {
+    color: white; 
+    background-color: #c05734; 
+  	padding-top: 0.3em;
+    padding-left: 0.5em;
+    text-transform: uppercase;
+    font-family: 'Bolton', serif;
+    font-weight: 400;
+}
+.phb table tbody tr td {  padding: 0.5em;}
+.phb table thead {display: table-row-group; }
+
+
+/* Genesys Notes */
+
+.phb .note
+{
+    position:relative;
+    width:289px;
+    color: #dfcfb5;
+    /*background-color: #57391b;*/
+    padding: 10px 20px;  
+    font-family: 'EB Garamond';
+    letter-spacing: 0.5px;
+    font-size:12ptx;
+    background-color:#56391b;
+    margin-left:15px;
+    
+    }
+    
+.phb .note-wrapper:before {
+    content:" ";
+    background-image:url('https://www.gmbinder.com/images/4fERGtC.png');
+    height:64px;
+    width:289px;
+    position:relative;
+    left:0px;
+    display:block;
+    background-repeat:no-repeat;
+    background-size:cover;
+    margin-left:15px;
+}
+
+.phb .note-wrapper:after {
+    content:" ";
+    background-image:url('https://www.gmbinder.com/images/FnU5pjn.png');
+    height:64px;
+    width:289px;
+    position:relative;
+    left:0px;
+    display:block;
+    background-repeat:no-repeat;
+    background-size:cover;
+    margin-left:15px;
+}
+
+.phb .wide-note-wrapper-top {
+    column-span:all; 
+    position:relative;
+    top:-75px;
+    }
+
+.phb .wide-note-wrapper-bottom {
+    column-span:all; 
+    position:absolute;
+    bottom:0px;
+    left:1.7cm;
+}
+
+.phb .wide-note-wrapper-bottom:before {
+    content:" ";
+    background-image:url('https://www.gmbinder.com/images/xiunaI0.png');
+    display:block;
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:89px;
+    width:100%;
+    }
+    
+.phb .wide-note-wrapper-top:after {
+    content:" ";
+    background-image:url('https://www.gmbinder.com/images/jaBYxab.png');
+    display:block;
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:89px;
+    width:100%;
+    }
+    
+.phb .wide-note-top {
+
+    width:100%;
+    color: #dfcfb5;
+    padding: 10px 20px;  
+    font-family: 'EB Garamond';
+    letter-spacing: 0.5px;
+    font-size:12ptx;
+    background-color:#56391b;
+    padding-top:75px;
+    column-count:2;
+    column-gap:1cm;
+    column-fill:auto;
+}
+
+.phb .wide-note-bottom {
+    
+    width:687px;
+    color: #dfcfb5;
+    padding: 10px 20px;  
+    font-family: 'EB Garamond';
+    letter-spacing: 0.5px;
+    font-size:12ptx;
+    background-color:#56391b;
+    padding-bottom:75px;
+    column-count:2;
+    column-gap:1cm;
+    column-fill:auto;
+
+}
+
+.phb .wide-note-bottom .bg-top {
+
+    position: absolute;
+    width: 100%;
+    height: 223px;
+    top: 25px;
+    left: 0px;
+    z-index: 2;
+    background-image:url('https://www.gmbinder.com/images/FUiMT6F.png');
+    background-repeat:no-repeat;
+    background-size:687px 223px;
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,.05)), to(rgba(0,0,0,0)));
+    
+}
+
+
+.phb .wide-note-bottom .bg-bot {
+
+    position: absolute;
+    width: 100%;
+    height: 223px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 2;
+    background-image:url('https://www.gmbinder.com/images/N54LUB6.png');
+    background-repeat:no-repeat;
+    background-size:687px 223px;
+    -webkit-mask-image:-webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,.05)), to(rgba(0,0,0,0)));
+    
+}
+
+
+.phb .wide-note-top .bg-top {
+
+    position: absolute;
+    width: 100%;
+    height: 223px;
+    top: -15px;
+    left: 0px;
+    z-index: 2;
+    background-image:url('https://www.gmbinder.com/images/Fv6LvKN.png');
+    background-repeat:no-repeat;
+    background-size:687px 223px;
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,.05)), to(rgba(0,0,0,0)));
+    
+}
+
+
+.phb .wide-note-top .bg-bot {
+
+    position: absolute;
+    width: 100%;
+    height: 223px;
+    bottom: 25px;
+    left: 0px;
+    z-index: 2;
+    background-image:url('https://www.gmbinder.com/images/ImVMfBQ.png');
+    background-repeat:no-repeat;
+    background-size:687px 223px;
+    -webkit-mask-image:-webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,.05)), to(rgba(0,0,0,0)));
+    
+}
+
+.phb .note .bg-top {
+    position: absolute;
+    width: 100%;
+    height: 223px;
+    top: -50px;
+    left: 0px;
+    z-index: 2;
+    background-image:url('https://www.gmbinder.com/images/qlfPZDn.png');
+    background-repeat:no-repeat;
+    background-size:289px 223px;
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,.05)), to(rgba(0,0,0,0)));
+    
+}
+
+
+.phb .note .bg-bot {
+    position: absolute;
+    width: 100%;
+    height: 223px;
+    bottom: -50px;
+    left: 0px;
+    z-index: 2;
+    background-image:url('https://www.gmbinder.com/images/Gx0Yt8z.png');
+    background-repeat:no-repeat;
+    background-size:289px 223px;
+    -webkit-mask-image:-webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,.05)), to(rgba(0,0,0,0)));
+    
+}
+
+
+.phb .wide-note-bottom p, .phb .wide-note-top p, .phb .note p, .phb .wide-note-bottom ul, .phb .wide-note-top ul, .phb .note ul {
+  z-index:5;
+}
+
+
+.phb .note h5 {color:white;}
+.phb .note td {color:black;}
+.phb .note table tr:nth-child(even) td { background-color: #ffffff;}
+
+
+  
+  
+/* Example Block */
+
+
+
+
+.phb .example
+{
+    position:relative;
+    color: white;
+    background:#724A2D;
+    background:
+		linear-gradient(135deg, transparent 10px, #c00 0) top left,
+		linear-gradient(225deg, transparent 10px, #c00 0) top right,
+		linear-gradient(315deg, transparent 10px, #c00 0) bottom right,
+		linear-gradient(45deg,  transparent 10px, #c00 0) bottom left;
+    background-repeat: no-repeat;
+    background-size: 51% 51%;
+    background-image:
+		radial-gradient(circle at 0 0, rgba(204,0,0,0) 14px, #724A2D 15px),
+		radial-gradient(circle at 100% 0, rgba(204,0,0,0) 14px, #724A2D 15px),
+		radial-gradient(circle at 100% 100%, rgba(204,0,0,0) 14px, #724A2D 15px),
+		radial-gradient(circle at 0 100%, rgba(204,0,0,0) 14px, #724A2D 15px);
+    padding: 14px 20px;
+}
+
+
+/* Read-aloud */
+
+.phb .read {
+    display:block;
+    font-family: 'PT Sans', sans-serif;
+    font-size:10pt;
+    font-style: italic;
+    color:#fff793;
+    padding:15px;
+    position:relative;
+    background-color:#761213;
+    margin-bottom:25px;
+    --notchSize: 10px;
+  
+    clip-path: 
+     polygon(
+      0% var(--notchSize), 
+      var(--notchSize) 0%, 
+      calc(100% - var(--notchSize)) 0%, 
+      100% var(--notchSize), 
+      100% calc(100% - var(--notchSize)), 
+      calc(100% - var(--notchSize)) 100%, 
+      var(--notchSize) 100%, 
+      0% calc(100% - var(--notchSize))
+    );
+}
+
+
+/* Footer */
+
+.phb:nth-child(odd) .pageNumber { color: #761213;
+	right: 5px;
+	bottom: 22px;
+	width: 50px;
+	text-align: center;
+    font-family: 'Bolton';
+    font-size:12pt;
+}
+
+.phb:nth-child(even) .pageNumber { color: #761213;
+	left: 5px;
+	bottom: 22px;
+	width: 50px;
+    text-align: center;
+    font-family: 'Bolton';
+    font-size:12pt;
+}
+
+.phb .footnote, .phb:nth-child(even) .footnote { 
+    color: #775231; 
+    font-family: 'JSL Ancient' ;
+    font-size:8pt;
+    vertical-align: center;
+    text-align:center;
+    position:absolute;
+    top:30px;
+    left:300px;
+}
+
+.phb .footnote .p {
+    font-size:4.2pt;
+    }
+}
+
+.phb:after { 
+    background-image:url("none") 
+}
+
+
+
+/* Dice and Symbols */
+
+@font-face {
+  font-family: 'Genesys';
+  src: local('Genesys');
+}
+.phb .symbols {
+    font-family: Genesys;
+}
+
+@font-face {
+  font-family: 'Genesys1';
+  src: local('EotE Symbol');
+}
+.phb .dice {
+    font-family: Genesys1;
+}
+
+
+.phb .setback {
+    font-family: Genesys1;
+    color: black;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+.phb .note .setback, .phb .note .boost, .phb .note .challenge, .phb .note .proficiency, .phb .note .difficulty, .phb .note .ability {
+    text-shadow: -1px 0 #dfcfb5,0 1px #dfcfb5,1px 0 #dfcfb5,0 -1px #dfcfb5;
+}
+
+.phb .note  td > .setback, .phb .note td > .boost, .phb .note td > .challenge, .phb .note td > .proficiency, .phb .note td >  .difficulty, .phb .note td.ability {
+    text-shadow:  -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+.phb .boost {
+    font-family: Genesys1;
+    color: #76CDDB;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+.phb .challenge {
+    font-family: Genesys1;
+    color: #751317;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+.phb .proficiency {
+    font-family: Genesys1;
+    color: #FEF035;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+.phb .difficulty {
+    font-family: Genesys1;
+    color: #52287E;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+.phb .ability {
+    font-family: Genesys1;
+    color: #46AC4E;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+
+/* Archetypes */
+
+.phb .archetype {
+    background-image: url('https://www.gmbinder.com/images/ydDYUwN.png');
+    height:62px;
+    width:329px;
+    background-size:100%;
+
+
+    }
+
+.phb .archetype .bra {
+    position:relative;
+    left:18px;
+    top:17px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .archetype .lblbra {
+    position:relative;
+    left:19px;
+    top:13px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .archetype .agi {
+    position:relative;
+    left:45px;
+    top:16px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .archetype .lblagi {
+    position:relative;
+    left:45px;
+    top:13px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .archetype .int {
+    position:relative;
+    left:72px;
+    top:16px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+        font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .archetype .lblint {
+    position:relative;
+    left:68px;
+    top:13px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .archetype .cun {
+    position:relative;
+    left:98px;
+    top:16px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+        font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .archetype .lblcun {
+    position:relative;
+    left:95px;
+    top:13px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+
+.phb .archetype .wil {
+    position:relative;
+    left:124px;
+    top:16px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+        font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .archetype .lblwil {
+    position:relative;
+    left:119px;
+    top:13px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+
+.phb .archetype .pre {
+    position:relative;
+    left:150px;
+    top:16px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+        font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .archetype .lblpre {
+    position:relative;
+    left:148px;
+    top:13px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+/* Adversaries */
+
+.phb .adversary {
+    background-image: url('https://www.gmbinder.com/images/bkEqK0z.png');
+    height:80px;
+    width:344px;
+    background-position: -3px 0px;
+    background-size:102%;
+    font-family: 'Bolton';
+    position:relative;
+}
+
+.phb .adversary .bra {
+    position:relative;
+    left:38px;
+    top:8px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .adversary .lblbra {
+    position:relative;
+    left:38px;
+    top:3px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .adversary .agi {
+    position:relative;
+    left:56px;
+    top:8px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .adversary .lblagi {
+    position:relative;
+    left:56px;
+    top:3px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .adversary .int {
+    position:relative;
+    left:75px;
+    top:8px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .adversary .lblint {
+    position:relative;
+    left:72px;
+    top:3px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .adversary .cun {
+    position:relative;
+    left:94px;
+    top:8px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .adversary .lblcun {
+    position:relative;
+    left:93px;
+    top:3px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+
+.phb .adversary .wil {
+    position:relative;
+    left:113px;
+    top:8px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .adversary .lblwil {
+    position:relative;
+    left:108px;
+    top:3px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+
+.phb .adversary .pre {
+    position:relative;
+    left:132px;
+    top:8px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .adversary .lblpre {
+    position:relative;
+    left:130px;
+    top:3px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .adversary .lblsoak {
+    position:relative;
+    left:31px;
+    top:5px;
+    text-align:center;
+    display:inline-block;
+    width:45px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+
+.phb .adversary .soak {
+    position:relative;
+    left:42px;
+    top:6px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-size:9pt;
+}
+
+.phb .adversary .lblwound {
+    position:relative;
+    left:59px;
+    top:5px;
+    text-align:center;
+    display:inline-block;
+    width:45px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .adversary .wound {
+    position:relative;
+    left:75px;
+    top:6px;
+    width:55px;
+    text-align:center;
+    display:inline-block;
+    font-size:9pt;
+}
+
+.phb .adversary .lblstrain {
+    position:relative;
+    left:89px;
+    top:5px;
+    text-align:center;
+    display:inline-block;
+    width:45px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+.phb .adversary .strain {
+    position:relative;
+    left:92px;
+    top:6px;
+    width:58px;
+    text-align:center;
+    display:inline-block;
+    font-size:9pt;
+}
+
+.phb .adversary .lbldef {
+    position:relative;
+    left:120px;
+    top:5px;
+    text-align:center;
+    display:inline-block;
+    width:45px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .adversary .mdef {
+    position:relative;
+    left:114px;
+    top:6px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-size:9pt;
+}
+.phb .adversary .rdef {
+    position:relative;
+    left:106px;
+    top:6px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-size:9pt;
+}
+
+/* MINION STAT BLOCK */
+
+.phb .minion {
+    background-image: url('https://www.gmbinder.com/images/RoOXD1Y.png');
+    height:80px;
+    width:344px;
+    background-position: 27px 0px;
+    background-repeat:no-repeat;
+    background-size:85%;
+    font-family: 'Bolton';
+    font-size:14pt;
+     position:relative;
+}
+
+.phb .minion .bra {
+    position:relative;
+    left:42px;
+    top:1px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .minion .lblbra {
+    position:relative;
+    left:42px;
+    top:-14px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .minion .agi {
+    position:relative;
+    left:58px;
+    top:1px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .minion .lblagi {
+    position:relative;
+    left:58px;
+    top:-14px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .minion .int {
+    position:relative;
+    left:73px;
+    top:1px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .minion .lblint {
+    position:relative;
+    left:70px;
+    top:-14px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .minion .cun {
+    position:relative;
+    left:88px;
+    top:1px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+        font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .minion .lblcun {
+    position:relative;
+    left:87px;
+    top:-14px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+
+.phb .minion .wil {
+    position:relative;
+    left:104px;
+    top:1px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .minion .lblwil {
+    position:relative;
+    left:98px;
+    top:-14px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+
+.phb .minion .pre {
+    position:relative;
+    left:118px;
+    top:1px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .minion .lblpre {
+    position:relative;
+    left:116px;
+    top:-14px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .minion .lblsoak {
+    position:relative;
+    left:72px;
+    top:-24px;
+    text-align:center;
+    display:inline-block;
+    width:45px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+
+.phb .minion .soak {
+    position:relative;
+    left:82px;
+    top:-31px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-size:9pt;
+}
+
+.phb .minion .lblwound {
+    position:relative;
+    left:100px;
+    top:-24px;
+    text-align:center;
+    display:inline-block;
+    width:45px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .minion .wound {
+    position:relative;
+    left:130px;
+    top:-31px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-size:9pt;
+}
+
+.phb .minion .lbldef {
+    position:relative;
+    left:127px;
+    top:-24px;
+    text-align:center;
+    display:inline-block;
+    width:45px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .minion .mdef {
+    position:relative;
+    left:167px;
+    top:-31px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-size:9pt;
+}
+.phb .minion .rdef {
+    position:relative;
+    left:153px;
+    top:-31px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-size:9pt;
+}
+
+
+/*Index*/
+
+.phb .index-letter {
+    color:rgb(118,18,19);
+    font-size:24pt;font-weight:bold; 
+    font-family:'Bebas Neue';
+    line-height:1.1em;
+}
+
+.phb .index {
+    list-style:none;
+    padding:0;
+    overflow-x:hidden;
+    max-width:329px;
+}
+
+.phb .index li::before {
+            content: ""; }
+            
+.phb .index li {
+    
+    display:flex;
+}
+            
+.phb .index li span:first-child {
+    margin-right:0.2em;
+    order:1;
+}
+            
+.phb .index li::after {
+  content: "";
+  border-bottom: 1px dotted;
+  flex-grow: 1;
+  order: 2;
+  position:relative;
+  top:-5px
+}
+
+.phb .index span + span {
+    order:3;
+    margin-left:0.2em;
+    }
+
+
+</style>
+
+# How to Actually Handle Travel
+
+Source: [The Angry GM](https://theangrygm.com/flesh-is-willing-spirit-failed/)
+
+
+For each route, decide on the following attributes, giving each a rating from 1 to 5:
+* **Length** - How long is each route?
+* **Danger** - How dangerous is each route (or each section)? 
+* **Navigation** - How easy is each route to navigate (or each section)? 
+* **Resources** - What’s the available of resources along each route (or each section)? 
+* **Discovery** - How likely is the party to get sidetracked by an interesting discovery on each route? 
+
+
+##### Table I.1 Route Attribute Difficulty
+| Rating | Difficulty |
+|:----:|:-------------:|:-:|
+| 1 | <span class='difficulty'>d</span> |
+| 2  | <span class='difficulty'>dd</span> |
+| 3 | <span class='difficulty'>ddd</span> |
+| 4 | <span class='difficulty'>dddd</span> |
+| 5 | <span class='difficulty'>ddddd</span> |
+
+The Angry GM’s Admittedly Complex and Kludgey Solution to Bringing Back Morale for D&D
+Whenever a creature takes enough damage to make it go “oh shit, I’m really in trouble,” it makes a Wisdom saving throw. If the saving throw fails, so does the creature’s morale.
+
+
+If you like these sorts of overly complicated, highly subjective mechanics, leave a tip by clicking on the goblin.
+
+Now, I realize that’s really complicated and it leaves a lot open to interpretation. So, I probably should explain a few details. And I hope you’ll hear me out. Because, despite having to keep track of a complex rules system that requires you to roll an entire Wisdom saving throw periodically and then put a checkmark next to a creature on your combat tracker, it really does add a lot of depth. It just depends on you doing everything right.
+
+First of all, let’s talk about the “oh shit” moment. Because that’s really what I call it. Every monster, during the battle, has one moment where they realize they are really screwed. And, while I’d love to say that I have a system for determining that moment, I really don’t. I have a few. But they all make perfect logical sense. It’s an easy judgment call to make. I call it “wounded, bloodied, or about to die.”
+
+So, in D&D 4E, there was this condition called “bloodied” that was truly wasted potential. Because it didn’t do much mechanically. Like, very few things keyed off of it. And more stuff should have. But it was a great condition nonetheless. The logic is this: most of the damage you suffer during combat represents fatigue and bruising and strain and that kind of thing. Most attacks hit your armor or your shield or get partially parried or just represent grazes and surface wounds. But once you’ve lost half your hit points, the injuries and fatigue are starting to build up. You are visibly wearing down. You’re slowing. You’re limping. You’re struggling. Something. There is something visible about you that says, “this isn’t just surface wounds anymore, this is starting to endanger my life.” And when a combatant got bloodied – be it a monster or a PC – it was announced to the table. That last hit was a solid hit. And now the creature is really hurting. When it was a PC that got bloodied, that was usually a signal that they needed healing or help. When a monster got bloodied, the party knew they were making progress. It was a good moment. And that’s all it really had to be.
+
+I still follow that rule. Once you’ve lost half your hit points, it is visible to the world that you’re beaten up and you’re feeling it. And it gets announced. That’s all.
+
+Except, most monsters in my world – especially humanoids – also have to make a Morale Saving Throw when they get bloodied. Easy peasy. That’s the general rule.
+
+Now, you might realize this has the knock-on effect of reducing the effective hit points of most monsters. Roughly speaking, under my system, my monsters have an average of 72.5% of the hit points they are supposed to have. And if you realized that, good for you. You’re good at math and analyzing mechanics. Now, if you think this somehow breaks the balance of the game, well, you’re wrong. I already explained above why it’s a good thing. And I only mention it here because I know someone is going to helpfully comment about how I’ve effectively reduced the hit points of most monsters if there’s a die roll to determine if they give up the fight when they are only half dead. As if I somehow missed that.
+
+Not a bug. Working as intended. And it works well. Trust me. I’ve been doing this for YEARS.
+
+\pagebreak
+
+Now, some monsters are a bit too powerful for that “bloodied” rule. Strong solo-type monsters, boss monsters, fanatics, whatever. To them, I apply a different threshold. I call it the “about to die” threshold. Basically, if a powerful monster takes a hit that leaves it with enough hit points that two more similar hits will kill it, it’s about to die. So, if the dragon takes 8 points of damage and is left with around 15 to 20 hit points, it makes a morale check. I use that rule for big fights. Fights that would be disappointing if they ended only halfway through. Or for leader-type enemies. This is part of that “scaling battles” thing I mentioned. During climatic, important, or plot-relevant battles, one or more of the enemies will follow the “about to die” threshold, instead of the “bloodied” threshold. It’s me acknowledging the fight should be more epic.
+
+Now, I can mix and match these. So, in the final showdown with the goblins and their hobgoblin leader, the hobgoblin might use the “about to die” threshold, while the goblins use the “bloodied” threshold. But also, read on. Because I screw with this system a lot. And that’s when it gets powerful.
+
+Finally, for minor fights with wandering monsters or mooks or whatever – you know, nuisance fights – I follow the “wounded” rule. As soon as the creature takes a hit, it checks morale.
+
+Now, here’s the thing: if I WANTED to make this more systematic, I easily could. I could set an HP threshold for any monster in a fight. Just list it right after their HP in their stat block.
+
+HP: 150 (30)
+HP: 25 (12)
+HP 10 (9)
+
+In that case, the “about to die” threshold is set at about 20% of the monster’s maximum HP. The “blooded” threshold is obviously 50%. And the “wounded” threshold is anything less than maximum. Though you could make a case for 90% or 80%. I’m still fiddling with where the numerical thresholds should sit, to be honest.
+
+So, how does a creature actually check their morale? Well, it’s a Wisdom saving throw, as I said. The DC is generally 12. But it could also be 7 if the creature is really super brave. Or super disciplined. Or it could be 17 if the creature is really cowardly and I want to drive home how cowardly the creature is. You’ll notice that this is also a simple rule. DC 12 plus or minus 5 depending on whether I want the save to be Easy, Medium, or Hard for the creature to make. You’ll also notice I could add a line to the monster stat block called “Morale Save DC.”
+
+The other rule I follow is that creatures only check morale once. There’s no reason to do it more than once. Either the creature runs when its threshold is reached or else it is willing to fight to the bitter end. Mostly. Because, again, see below. And because I make the morale check as soon as the creature takes the hit that drops them below their threshold, I don’t even have to remember if the creature made their check already. I only make it when they cross the threshold.
+
+And when they do make that check, I describe them making that check. I don’t say “and the monster takes out a d20 and checks his morale.” But, as part of my narrating the result of the hit, I describe the monster’s moment of doubt and that it either steels its resolve or else that it drops back and intends to leave the fight.
+
+“You landed a solid blow. The goblin is forced backward by the might of your swing and you hear and feel several of its ribs crack. The creature looks panicked. It steps back, stunned and winded, and is frantically looking around for an escape route. It’s about to flee.”
+
+Or:
+
+“You landed a solid blow. The hobgoblin drops back a step, its armor dented. For a moment, it hesitates, glancing around the battlefield. But then its resolve firms. Its eyes narrow and it steps back up, ready to answer your attack with one of its own.”
+
+And my players have learned that that is me narrating a morale check. And telegraphing the monster’s next intentions. If the goblin is about to flee, the players know they can safely ignore it and pick a different target. They won’t waste attacks on a creature whose morale has broken.
+
+So, that’s it. That’s Angry Morale. When a creature is bloodied – or wounded or about to die – that creature must succeed on a DC 12 Wisdom saving throw – or DC 7 or DC 17 – or else its morale has broken and it won’t keep fighting.
+
+Where is All the Depth?
+I know what you’re now thinking. Or what you should be thinking. You should be thinking “where is all the depth? You promised depth. This isn’t deep. It’s a random roll to determine whether the creature has fewer hit points.” Well, calm your tits, there, McGee, I’m getting to it. I agree that that rule alone isn’t very deep. But it does open the door for a lot of depth.
+
+For example, what does the monster do when its morale breaks? As it stands, I have several keywords that I assign to monsters that determine what the monsters do when their morale breaks. And those keywords are Panic, Rout, Retreat, Surrender, Rage, or Betray.
+
+Panicked creatures have lost their minds with fear. They drop their weapons – if they have any – and run as far and as fast as they can. Heedless of opportunity attacks, mind you. So, if any player wants to be a dick and stab a fleeing monster in the back, they can. And, in my world, that’s generally viewed as pretty rotten behavior. Or, at the very least, dishonorable. Routed creatures don’t drop their weapons and flee. They withdraw and then move away. But they don’t care about their allies. Retreating creatures behave the same way, but they do care about their allies. They will call for a retreat and try to withdraw with their allies in good order. More importantly, if retreating creatures are cut off from escape, they will go back to fighting. Panicked and routed creatures will surrender if cornered.
+
+\pagebreak
+
+Surrendering creatures make it clear that they don’t want to fight anymore and they are relying on their enemies to let them live. This usually leads to some kind of social interaction after the fight is over. Obviously, this option is reserved for lawful creatures who think they can rely on their enemies – the heroes – to respect the rules of engagement and behave in an honorable fashion.
+
+Enraged enemies are fun. When their morale breaks, they keep fighting. But they don’t recognize their allies as allies. That doesn’t mean they turn on their allies. But it does mean that things that affect allies or key off of having allies don’t work anymore. And, if they find themselves without a target for their rage, they will attack the closest creature. Former friend or foe. Basically, they’ve gone berserk. Really berserk. And finally, Traitorous enemies turn on their own. They actually start fighting their allies. They don’t consider the PCs allies – though they might make friends in some interaction at the end – but they don’t consider their allies allies anymore and they attack their allies, ignoring the PCs. This is generally reserved for opportunistic mercenaries and sellswords who think the PCs will reward them for their betrayal. And it is also for summoned elementals, demons, golems, and other enslaved creatures – magically enslaved or just abused and brutally mistreated – who will turn on their masters if their morale breaks and control is lost. I love that last option. The players do, too. It’s fun.
+
+Now, this is also easy enough to note in a systematic way. That same line that I could add to every monster stat block that lists the Morale Save DC could also list the monster’s behavior when its morale breaks.
+
+Morale: Wisdom save DC 17 or Panic
+Morale: Wisdom save DC 12 or Retreat
+Morale: Wisdom save DC 7 or Rage
+
+But those keywords also provide narrative and mechanical hooks on which to hang other effects. For example, if you really want to make gnolls terrifying. You can give them some kind of bonus when their morale breaks. Like extra damage or advantage on attack rolls or an attack they can only use when enraged. Or a “parting shot” attack when the creature becomes panicked. A routed dragon might explode in elemental fury to cover its escape. What might be the effect when a creature with telepathic abilities – especially some weird aberration – becomes panicked? And, obviously, if the party is fighting a goblin boss and his enslaved ogre, well, if the party can whittle the ogre down to “almost dead” and its morale fails – DC 17, because it’s an ogre – it might beat goblin boss to death.
+
+So, there’s some depth right there. But now consider smart players who know how these rules work and use them to their advantage. If you have a spell or ability that can weaken someone’s Wisdom saving throws in some way, you can try to push on these sorts of conditions. You can try to break the ogre’s resolve. But do not, under any circumstances, try to break the will of the gnolls or the mind flayer with the psychic scream. That’s pretty neat, right? But can we go further?
+
+Breaking the Rules of Breaking the Spirit
+Remember in my last ranting BS article when I said I am all about general rules that are easy to keep in your head and then hanging other stuff off of them. Well, this is a perfect example. The simple rule is “when a creature is bloodied, it must roll a DC 12 Wisdom saving throw or else its morale breaks.” But, there’s some exceptions. Like the “wounded” threshold or the “about to die threshold” or pushing the DC up or down by 5. Those are simple levers to tug on and easy enough to apply during the game or to scribble in the margins of your monster stat blocks. Then, there’s the set of keywords: Panic, Rout, Retreat, Surrender, Rage, and Betray. Sure, you can write up how those behaviors play out. But, as a GM, it’s pretty easy to choose actions based on those cues.
+
+But there are lots of other ways to play with those basic rules. I’ve already mentioned hanging other mechanics off of them or using them to emphasize elements of the narrative. And I already hinted at the fact that because this is a Wisdom saving throw, it’s automatically tied into other elements. That includes, by the ways, modifiers like Advantage and Disadvantage. You could create leader-type enemies that grant Advantage on their allies’ Morale Saving Throws. Or create effects that grant Disadvantage.
+
+Beyond that, though, you also don’t have to restrict yourself to the basic HP threshold trigger. I use that threshold for all monsters. But I also give some monsters extra triggers that also force them to check morale. For example, many normal animals in my games have to check morale if they take fire damage. Because many animals are afraid of fire. Many monsters that have lots particular vulnerabilities – especially if they are also mostly immune or resistant to damage – make Morale Saving Throws when they suffer damage they’re vulnerable to. Or, at least, they suffer Disadvantage on the Morale Saving Throw if the damage that pushes them over their threshold comes from a source of damage they are vulnerable to.
+
+That adds a lot of character to the monsters.
+
+Not only do I add different Morale triggers to certain enemies to emphasize certain traits, I also adjudicate actions based on the Morale rules. So, if a player wants to make an Intimidate check to try and break a monster’s morale, they can. Provided they spend an action. Their Intimidate check becomes the DC for the Wisdom saving throw. If the monster is uninjured or part of a force that has the PCs outnumbered, it has Advantage on the save. If the monster is below its damage threshold or its allies have already started to flee, it has Disadvantage.
+
+\pagebreak
+
+And other NPCs can take so-called Morale actions too. I’ve had leader characters use their actions and skills like Intimidate or Persuasion to “unbreak” their allies morale. Effectively, they get to make a new saving throw using their skill against the NPCs Morale DC. If successful, the NPC gets their nerve back. I’ve also had some panicky creatures spread their broken morale. So, a panicked goblin who flees past an ally might force that ally to make a Morale Saving Throw to avoid also panicking.
+
+In addition, there are some monsters that never check morale. Mindless undead, for example. And uncontrolled constructs. That is, constructs not under the direct control of another creature in combat. And I’ve even created magical effects that grant Fearlessness, which basically means NPCs don’t make Morale Saving Throws. They stay in the fight to the death.
+
+All of these specific mechanics are things I can either adjudicate on the fly based on the simple morale rule — that when a monster says “oh shit, I’m in trouble” it has to make a DC 12 Wisdom saving throw or else its morale breaks — or they’re effects effects that I can add to specific encounters or specific monsters to add an extra dimension to the game.
+
+Recently, I started applying the same thing to NPC henchmen and allies. In an adventure I ran recently with a panicky teenaged sorcerer who the party was trying to protect, his morale kept breaking. And he panicked. And he stopped recognizing the party as allies. It led to some real ugliness.
+
+And moreover, I wish I’d been at the design meetings for D&D 5E. But Crawford and Mearls and their buddies don’t return my calls. Like ever. I’m starting to think they don’t like me. Because there’s all sorts of other game effects that could have benefited from this general system. For example, turning undead and abjuring various magical creatures? That could just be hooked to the morale system. Same with spells like cause fear. And you could build some great abilities for warlocks and barbarians around this crap too.
+
+And I have actually started using my morale system to streamline those mechanical effects.
+
+And, as before, with the Tension Pool, I know other people will find other ways to use, expand, and drastically and unnecessarily overcomplicate this whole system. Which is also great. Because it’s simple but versatile and extendable. And if I were writing an RPG, it’s another one of those things I’d build in from the get-go.
+
+But that’s just me dreaming again.
