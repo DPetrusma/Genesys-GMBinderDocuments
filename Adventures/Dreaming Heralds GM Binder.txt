@@ -279,55 +279,59 @@
   font-family: 'Genesys1';
   src: local('EotE Symbol');
 }
-.phb .dice {
+
+
+.setback,
+.boost,
+.difficulty,
+.ability,
+.challenge,
+.proficiency {
     font-family: Genesys1;
+	-webkit-text-stroke-width: 1.5px;
+	-webkit-text-stroke-color: black;
 }
 
-
-.phb .setback {
+.note .setback,
+.note .boost,
+.note .difficulty,
+.note .ability,
+.note .challenge,
+.note .proficiency {
     font-family: Genesys1;
-    color: black;
-    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+	-webkit-text-stroke-width: 1.5px;
+	-webkit-text-stroke-color: white;
 }
 
-.phb .note .setback, .phb .note .boost, .phb .note .challenge, .phb .note .proficiency, .phb .note .difficulty, .phb .note .ability {
-    text-shadow: -1px 0 #ffffff,0 1px #ffffff,1px 0 #ffffff,0 -1px #ffffff;
-}
-
-.phb .note  td > .setback, .phb .note td > .boost, .phb .note td > .challenge, .phb .note td > .proficiency, .phb .note td >  .difficulty, .phb .note td.ability {
-    text-shadow:  -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
-}
-
-.phb .boost {
+.note td > .setback,
+.note td > .boost,
+.note td > .difficulty,
+.note td > .ability,
+.note td > .challenge,
+.note td > .proficiency {
     font-family: Genesys1;
-    color: #76CDDB;
-    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+    -webkit-text-stroke-width: 1.5px;
+	-webkit-text-stroke-color: black;
 }
 
-.phb .challenge {
-    font-family: Genesys1;
-    color: #751317;
-    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+.setback {
+    color: #000000;
 }
-
-.phb .proficiency {
-    font-family: Genesys1;
-    color: #FEF035;
-    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+.boost {
+    color: #72CDDC;
 }
-
-.phb .difficulty {
-    font-family: Genesys1;
-    color: #52287E;
-    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+.difficulty {
+    color: #6C2B83;
 }
-
-.phb .ability {
-    font-family: Genesys1;
-    color: #46AC4E;
-    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+.ability {
+    color: #41AD49;
 }
-
+.challenge {
+    color: #7D1721;
+}
+.proficiency {
+    color: #FDE700;
+}
 
 /* Archetypes */
 

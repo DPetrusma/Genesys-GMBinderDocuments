@@ -9,7 +9,7 @@
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,600,600i,700');
 
 /* Main Background */
-  .phb { background-image: url("https://i.imgur.com/5s6VJkT.png"); text-align:justify; text-indent:0px;}
+  .phb { background-image: url("https://www.gmbinder.com/images/5s6VJkT.png"); text-align:justify; text-indent:0px;}
 
 /* Fonts */
 
@@ -277,56 +277,63 @@
     font-family: Genesys1;
 }
 
-
-.phb .setback {
+.setback,
+.boost,
+.difficulty,
+.ability,
+.challenge,
+.proficiency {
     font-family: Genesys1;
-    color: black;
-    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+	-webkit-text-stroke-width: 1.5px;
+	-webkit-text-stroke-color: black;
 }
 
-.phb .note .setback, .phb .note .boost, .phb .note .challenge, .phb .note .proficiency, .phb .note .difficulty, .phb .note .ability {
-    text-shadow: -1px 0 #ffffff,0 1px #ffffff,1px 0 #ffffff,0 -1px #ffffff;
-}
-
-.phb .note  td > .setback, .phb .note td > .boost, .phb .note td > .challenge, .phb .note td > .proficiency, .phb .note td >  .difficulty, .phb .note td.ability {
-    text-shadow:  -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
-}
-
-.phb .boost {
+.note .setback,
+.note .boost,
+.note .difficulty,
+.note .ability,
+.note .challenge,
+.note .proficiency {
     font-family: Genesys1;
-    color: #76CDDB;
-    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+	-webkit-text-stroke-width: 1.5px;
+	-webkit-text-stroke-color: white;
 }
 
-.phb .challenge {
+.note td > .setback,
+.note td > .boost,
+.note td > .difficulty,
+.note td > .ability,
+.note td > .challenge,
+.note td > .proficiency {
     font-family: Genesys1;
-    color: #751317;
-    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+	-webkit-text-stroke-width: 1.5px;
+	-webkit-text-stroke-color: black;
 }
 
-.phb .proficiency {
-    font-family: Genesys1;
-    color: #FEF035;
-    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
-}
 
-.phb .difficulty {
-    font-family: Genesys1;
-    color: #52287E;
-    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+.setback {
+    color: #000000;
 }
-
-.phb .ability {
-    font-family: Genesys1;
-    color: #46AC4E;
-    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+.boost {
+    color: #72CDDC;
 }
-
+.difficulty {
+    color: #6C2B83;
+}
+.ability {
+    color: #41AD49;
+}
+.challenge {
+    color: #7D1721;
+}
+.proficiency {
+    color: #FDE700;
+}
 
 /* Archetypes */
 
 .phb .archetype {
-    background-image: url('https://i.imgur.com/wk1XTwj.png');
+    background-image: url('https://www.gmbinder.com/images/wk1XTwj.png');
     height:62px;
     width:329px;
     background-size:100%;
@@ -388,7 +395,7 @@
 /* Adversaries */
 
 .phb .adversary {
-    background-image: url('https://i.imgur.com/ks1JaPU.png');
+    background-image: url('https://www.gmbinder.com/images/ks1JaPU.png');
     height:47px;
     width:329px;
     background-position: -3px 0px;
@@ -441,7 +448,7 @@
 /* MINION STAT BLOCK */
 
 .phb .minion {
-    background-image: url('https://i.imgur.com/K1aEwZa.png');
+    background-image: url('https://www.gmbinder.com/images/K1aEwZa.png');
     height:63px;
     width:329px;
     background-position: 42px 0px;
@@ -489,7 +496,7 @@
 /* Vehicles */
 
 .phb .vehicle {
-    background-image: url('https://i.imgur.com/JEgri2b.png');
+    background-image: url('https://www.gmbinder.com/images/JEgri2b.png');
     height:80px;
     width:329px;
     background-size: 100%;
@@ -616,6 +623,7 @@
 
 
 </style>
+
 
 <span class="index-letter">Tier 1</span>
 <ul class="index">
