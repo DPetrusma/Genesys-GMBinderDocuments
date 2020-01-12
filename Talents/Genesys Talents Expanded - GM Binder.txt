@@ -1003,6 +1003,9 @@
 \pagebreak
 
 # Gensys Talents Expanded
+
+### Source: [FFG Forum Thread](https://community.fantasyflightgames.com/topic/265863-genesys-talents-expanded/)
+
 <div class="note wide">Genesys Talents Expanded is a community effort to bring a wider selection of talents to the Genesys Roleplaying System, published by Fantasy Flight Games, to provide GM’s and players more options for constructing their campaigns and characters. The bulk of these talents are from Fantasy Flight Games publications, mostly from the Star Wars Roleplaying games; Edge of the Empire, Age of Rebellion, and Force and Destiny. Talents from the Star Wars games, which do not fit the nature and/or standards of Genesys, were modified and/or renamed, or omitted altogether.<br/>
 Additional talents, at the end of the collection, were created and vetted by the Genesys gaming community.</div>
 

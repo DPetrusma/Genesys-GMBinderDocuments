@@ -1,4 +1,7 @@
 <style>
+
+.phb:after { content: ""; }
+
  .phb code {
      font-size:10px;
      padding-top: 0px;
@@ -662,11 +665,11 @@ DC15 Wisdom (Perception) = Rank 2 Vigilance (Willpower)
 
 ### Preparation
 
-The Dreaming Heralds is a short D&D Next adventure suitable for 4-6 1 st level characters, which has been converted to work with the Genesys RPG by Fantasy Flight Games, for a party of 4-6 starting characters. It would work well as a side quest or introductory adventure for new characters. A rogue or other character skilled in dealing with traps would be useful to have, but is not essential. They are assumed to begin the adventure as travelling companions heading down the Baron's Road.
+The Dreaming Heralds is a short D&D Next adventure suitable for 4-6 1st level characters, which has been converted to work with the Genesys RPG by Fantasy Flight Games, for a party of 4-6 starting characters. It would work well as a side quest or introductory adventure for new characters. A rogue or other character skilled in dealing with traps would be useful to have, but is not essential. They are assumed to begin the adventure as travelling companions heading down the Baron's Road.
 
 Whilst the adventure can be played as written, the DMs who wish to convert for their campaign mythology should change place names (the Baron's Road, Merthington Woods) and use an appropriate sun god in place of Ra (e.g. Pelor for Greyhawk, Lathander for Forgotten Realms etc.). At several points throughout the adventure the characters find symbols of Ra – these should also be changed as appropriate for the relevant deity.
 
-Similar to the "Coinage" suggestiib in the Genesys Core Rulebook pg 143, silver pieces have a currency value of 1, and gold pieces have a currency value of 10. These are hefty coins, and so, assuming they are stored efficiently in a pouch of some sort, 20 gold or silver pieces have an encumbrance value of 1.
+Similar to the "Coinage" suggestion in the Genesys Core Rulebook pg 143, silver pieces have a currency value of 1, and gold pieces have a currency value of 10. These are hefty coins, and so, assuming they are stored efficiently in a pouch of some sort, 20 gold or silver pieces have an encumbrance value of 1.
 
 Red boxed text is to be read aloud to players.
 
@@ -806,7 +809,7 @@ For every hour of travel, roll a d20. On a result of 20 a random encounter occur
 
 For creature encounters, characters travelling at a slow or moderate pace should be able to spot the creatures before they are seen, and should have a chance to avoid an encounter. Most of the animals of Merthington Woods are not interested in preying on humanoids, but will attack if cornered or desperate. Encounters marked with an asterisk are described below.
 
-**Briar trap:** Randomly select one character. Whilst walking, they accidentally snag their foot in a briar, and must make an **Average (<span class='difficulty'>dd</span>) Coordination check** to avoid stumbling. They gain <span class='boost'>b</span> on this save if they are keeping watch or searching whilst travelling. Failure indicates they twist their ankle and suffers 3 strain. They now add <span class='setback'>b</span> to all skill checks using Brawn or Agility until they are able to take a long rest.
+**Briar trap:** Randomly select one character. Whilst walking, they accidentally snag their foot in a briar, and must make an **Average (<span class='difficulty'>dd</span>) Coordination check** to avoid stumbling. They gain <span class='boost'>b</span> on this save if they are keeping watch or searching whilst travelling. Failure indicates they twist their ankle and suffers 3 strain. They now add <span class='setback'>b</span> to all skill checks using Brawn or Agility until they are able to rest overnight.
 
 **Strange fetishes:** Each character may make an **Average (<span class='difficulty'>dd</span>) Vigilance check**, with <span class='boost'>b</span> if they are searching. Any who succeed notice strange humanoid fetishes carved from twigs dangling in one particular grove of trees. Good-aligned characters get an uneasy feeling around them. No signs of their makers exist. It is up to the DM to pursue this mystery in later adventures if desired.
 
@@ -819,7 +822,7 @@ For creature encounters, characters travelling at a slow or moderate pace should
 
 The temple sits in an overgrown clearing in the woods. It is three stories high, and covered in vines. The building is squat and functional, and rises to a stone dome. The only markings revealing its religious dedication are on the doors to the outside.
 
-There are walkways around the second and third floors. An **Average (<span class='difficulty'>dd</span>) Athletics check** is required to climb up each floor. The walkway to the second floor is railed and characters would need to bend the bars (**Hard (<span class='difficulty'>ddd</span>) Brawn check**) to gain access to it. A Small character could squeeze between the bars with a **Easy (<span class='difficulty'>d</span>) Coordination check**. The third floor walkway is open to the elements.
+There are walkways around the second and third floors. An **Average (<span class='difficulty'>dd</span>) Athletics check** is required to climb up each floor. The walkway to the second floor is railed and characters would need to bend the bars (**Hard (<span class='difficulty'>ddd</span>) Athletics check**) to gain access to it. A Small character could squeeze between the bars with a **Easy (<span class='difficulty'>d</span>) Coordination check**. The third floor walkway is open to the elements.
 
 Unless otherwise noted, the temple has the following physical characteristics:
 
@@ -827,9 +830,9 @@ Unless otherwise noted, the temple has the following physical characteristics:
 
 **Walls:** Walls are made of stone.
 
-**External doors:** External doors are made of stone, and locked. They require a **Daunting (<span class='difficulty'>dddd</span>) Brawn check** to break down, or a **Hard (<span class='difficulty'>ddd</span>) Skullduggery check** to pick the lock.
+**External doors:** External doors are made of stone, and locked. They require a **Daunting (<span class='difficulty'>dddd</span>) Athletics check** to break down, or a **Hard (<span class='difficulty'>ddd</span>) Skullduggery check** to pick the lock.
 
-**Internal doors:** Internal doors are made of wood. They can be broken down with a **Easy (<span class='difficulty'>d</span>) Brawn check** Strength check. Some are locked where noted - to pick the lock requires a **Hard (<span class='difficulty'>ddd</span>) Skullduggery check**.
+**Internal doors:** Internal doors are made of wood. They can be broken down with a **Easy (<span class='difficulty'>d</span>) Athletics check** check. Some are locked where noted - to pick the lock requires a **Hard (<span class='difficulty'>ddd</span>) Skullduggery check**.
 
 **Lighting:** The temple is in darkness.
 
@@ -932,7 +935,7 @@ Both the entrances to this chamber are guarded with magical warding, which appea
 
 \pagebreakNum
 
-Any living creature that touches the warding must succeed at an **Average (<span class='difficulty'>dd</span>) Presence check** or take 1d3 damage and be knocked back 5 ft. A character can attempt this multiple times, but will take damage each time she fails her save. A character wearing one of the holy symbols worn by the Heralds is immune to this effect.
+Any living creature that touches the warding must succeed at an **Average (<span class='difficulty'>dd</span>) Cool check** or take 1d3 damage and be knocked back 5 ft. A character can attempt this multiple times, but will take damage each time she fails her save. A character wearing one of the holy symbols worn by the Heralds is immune to this effect.
 
 <div class='read'>
 Eight wooden desks and chairs are arranged neatly for work in this chamber, covered  in  undisturbed  thick  dust. Several alcoves reach from floor to ceiling around the walls and within each are shelves piled high with scrolls. </div>
@@ -998,7 +1001,7 @@ Sturdy tables are covered with tools and crafting implements, and a small forge 
 
 Close inspection of the tools reveals that they are specialized for creating traps. Half-finished arrows, scythes and trigger mechanisms cover the surfaces. By spending a turn studying the style of the mechanisms, a character receives advantage when attempting to disable any mechanical trap in the temple.
 
-The door to the east is swollen shut with water. Upon opening it floodwaters pour into the room. Any standing character must make an **Anverage (<span class='difficulty'>dd</span>) Brawn check** or be knocked prone.
+The door to the east is swollen shut with water. Upon opening it floodwaters pour into the room. Any standing character must make an **Anverage (<span class='difficulty'>dd</span>) Athletics check** or be knocked prone.
 
 **Treasure:** From the specialized tools here a character could assemble 2 sets of thieves' tools. The weapons in the corner include 2 long swords, 1 short sword, 3 spears and 35 arrows. However, all the metal parts of the weapons have rusted slightly, such that the weapons are of poor quality, and have the *Inferior* quality. They are worth a quarter of their listed value if sold.
 
@@ -1012,7 +1015,7 @@ Boxes are piled high in the corners of this dank cellar. A door leads to the sou
 
 The Heralds used this area for storage. The boxes contain spare white robes, blankets, tools for stone working and some kegs of spoiled cider. Alas the preservation magic placed upstairs does cover this area, so none of the stored items have rotted or rusted, and are of no value.
 
-**Hazard:** The winch next to the portcullis triggers a trap. If turned, a 10 ft. deep pit open up beneath any characters standing with 10 ft. of the door. They must make an **Average (<span class='difficulty'>dd</span>) Coordination check** or fall into the pit suffering 10 damage and 10 strain. The portcullis can be lifted with a **Hard (<span class='difficulty'>ddd</span>) Brawn check**, or characters who thoroughly search the room will find a small lever in the northeast corner, hidden behind some of the boxes. Pulling the lever raises the portcullis safely.
+**Hazard:** The winch next to the portcullis triggers a trap. If turned, a 10 ft. deep pit open up beneath any characters standing with 10 ft. of the door. They must make an **Average (<span class='difficulty'>dd</span>) Coordination check** or fall into the pit suffering 10 damage and 10 strain. The portcullis can be lifted with a **Hard (<span class='difficulty'>ddd</span>) Athletics check**, or characters who thoroughly search the room will find a small lever in the northeast corner, hidden behind some of the boxes. Pulling the lever raises the portcullis safely.
 
 <div class="footnote">The Dreaming Heralds<BR />
 <p>GENESYS</p></div>
@@ -1083,7 +1086,7 @@ The doors to this room are both locked
 A couple of small wooden desks line the walls of this dusty chamber, with blank paper neatly stacked to one side. In one corner of the room sits a small ironbound chest
 </div>
 
-The chest is trapped to prevent petty pilferers with a simple poison needle trap. If a character attempts to open the chest without disabling the trap, he must make an **Average (<span class='difficulty'>dd</span>) Coordination check**. If he fails, he is pricked by a needle and must make an additional **Easy (<span class='difficulty'>d</span>) Resilience check**. Failure on this second check means the character suffers 5 wounds from the poison.
+The chest is trapped to prevent petty pilferers with a simple poison needle trap. If a character attempts to open the chest without disabling the trap, he must make an **Average (<span class='difficulty'>dd</span>) Coordination check**. If he fails, he is pricked by a needle and must make an additional **Average (<span class='difficulty'>dd</span>) Resilience check**. Failure on this second check means the character suffers 5 wounds from the poison.
 
 **Treasure:** The chest contains 400 silver and 110 gold pieces, along with a small bronze key. This unlocks the door to the stairs leading to [area 17](#the-dreaming-heralds-the-temple-of-ra-third-floor-17-vestry)
 

@@ -1,0 +1,557 @@
+<div style='margin-top:450px;text-align:center' class='wide'>
+
+# Arcanics Spellbook
+
+##### Attack, Barrier, Conjure, Dispel
+
+</div>
+
+\pagebreak
+
+<div class="wide">
+
+<center><h1>Attack</h1></center>
+
+**Concentration:** No
+
+When making a magic attack, the character must select one target at short range (but not engaged). The default difficulty of the check is Easy (<span class="difficulty">d</span>). The attack deals damage equal to the characteristic linked to the skill used to make the attack (so if the character uses Arcanics, they would deal damage equal to their Intellect), plus 1 damage per uncanceled <span class="symbols">s</span>. The caster suffers 2 strain. The attack has no set Critical rating, so you may only inflict a Critical Injury with a <span class="symbols">t</span>.
+
+#### Magic Attack Additional Effects
+
+| Effects | Difficulty Mod |
+|:---|:--|
+| **Blast:** The attack gains the Blast quality with a rating equal to your character’s ranks in Knowledge (Lore). The attack also gains Wind Affinity. | +<span class="difficulty">d</span> |
+|**Close Combat:** May select a target engaged with your character.|+<span class="difficulty">d</span>|
+|**Deadly:** The attack gains a Critical rating of 2. The attack also gains the Vicious quality with a rating equal to the character’s ranks in Knowledge (Lore).|+<span class="difficulty">d</span>|
+|**Fire:** The attack gains the Burn quality with a rating equal to your character’s ranks in Knowledge (Lore).|+<span class="difficulty">d</span>|
+|**Ice:** The attack gains the Ensnare quality with a rating equal to the character’s ranks in Knowledge (Lore). The attack also gains Water Affinity.|+<span class="difficulty">d</span>|
+|**Impact:** The attack gains the Knockdown quality. The attack also gains the Disorient quality with a rating equal to the character’s ranks in Knowledge (Lore).|+<span class="difficulty">d</span>|
+|**Lightning:** The attack gains the Stun quality with a rating equal to the character’s ranks in Knowledge (Lore). The attack also gains the Auto-fire quality (you must increase the difficulty by one to use the Auto-fire quality as normal). The attack also gains Lightning Affinity.|+<span class="difficulty">d</span>|
+|**Manipulative:** If the attack hits, you may spend <span class="symbols">a</span> to move the target up to one range band in any direction.|+<span class="difficulty">d</span>|
+|**Range:** Increase the range of the spell by one range band. This may be added multiple times, increasing the range by one range band each time.|+<span class="difficulty">d</span>|
+|**Destructive:** The attack gains the Sunder quality. The attack also gains the Pierce quality with a rating equal to the character’s ranks in Knowledge (Lore). The attack also gains Earth Affinity.|+<span class="difficulty">dd</span>|
+|**Empowered:** The attack deals damage equal to twice the characteristic linked to the skill (instead of dealing damage equal to the characteristic). If the attack has the Blast quality, it affects all characters within short range, instead of engaged.|+<span class="difficulty">dd</span>|
+|**Poisonous:** If the attack deals damage, the target must immediately make a Hard (<span class="difficulty">ddd</span>) Resilience check or suffer wounds equal to the character’s ranks in Knowledge (Lore), and strain equal to the character’s ranks in Knowledge (Lore). This counts as a poison.|+<span class="difficulty">dd</span>|
+
+## Known Spells
+
+</div>
+
+\pagebreak
+
+<div class="wide">
+
+<center><h1>Barrier</h1></center>
+
+**Concentration:** Yes
+
+The character selects one target they are engaged with (which can be themself), then makes an Arcanics skill check. The default
+difficulty of the check is Easy (<span class="difficulty">d</span>). If the check is successful, until the end of the character’s next turn, reduce the damage of all hits the target suffers by one, and further reduce it by one for every uncanceled <span class="symbols">ss</span> beyond the first. The caster suffers 2 strain.
+
+#### Barrier Additional Effects
+
+| Effects | Difficulty Mod |
+|:---|:--|
+| **Additional Target:** The spell affects one additional target within range of the spell. In addition, after casting the spell, you may spend <span class="symbols">a</span> to affect one additional target within range of the spell (and may trigger this multiple times, spending <span class="symbols">a</span> each time). | +<span class="difficulty">d</span> |
+|**Range:** Increase the range of the spell by one range band. This may be added multiple times, increasing the range by one range band each time.|+<span class="difficulty">d</span>|
+|**Resistance:** Choose an element. The barrier reduces damage with that affinity by one more than usual. In addition, after casting the spell, you may spend <span class="symbols">aa</span> to reduce damage with the chosen affinity by one more, and you may trigger this multiple times.|+<span class="difficulty">d</span>|
+|**Add Defense:** Each affected target gains ranged and melee defense equal to your ranks in Knowledge (Lore).|+<span class="difficulty">dd</span>|
+|**Empowered:** The barrier reduces damage equal to the number of uncanceled <span class="symbols">s</span> instead of the normal effect.|+<span class="difficulty">dd</span>|
+|**Reflection:** If an opponent makes a magic attack against an affected target and generates <span class="symbols">ttt</span> or <span class="symbols">y</span> on the check, after the check is resolved, they suffer a hit dealing damage equal to the total damage of the attack.|+<span class="difficulty">dd</span>|
+
+## Known Spells
+
+</div>
+
+\pagebreak
+
+<div class="wide">
+
+<center><h1>Conjure</h1></center>
+
+**Concentration:** Yes
+
+The default difficulty for the check is Easy (<span class="difficulty">d</span>). If the check is successful, the character summons a simple tool with no moving parts (such as a shovel or pickax), a one-handed melee weapon with no moving parts (such as a sword or knife), or a minion no bigger than silhouette 1 (such as an animal, magi-cal creature, elemental spirit, or even undead mon-strosity). These appear engaged with the character. The summoned minion or item remains present until the end of the character’s next turn. The caster suffers 2 strain.
+If the character summons a creature, the creature behaves in the best approximation of its natural instincts (as determined by the GM). It is not controlled by the character, and may even be hostile to them. In a structured encounter, it takes its turn immediately after the character.
+
+#### Conjure Additional Effects
+
+| Effects | Difficulty Mod |
+|:---|:--|
+| **Additional Summon:** The spell summons one additional item, weapon, or creature. In addition, after casting the spell, you may spend <span class="symbols">aa</span> to summon one additional item, weapon, or creature (and may trigger this multiple times, spending <span class="symbols">aa</span> each time). | +<span class="difficulty">d</span> |
+|**Medium Summon:** The character may summon a more complicated tool with moving parts, a rival no larger than silhouette 1, or a two-handed melee weapon.|+<span class="difficulty">d</span>|
+|**Range:** Increase the range of the spell (the distance from the character that the summoned item or creature appears) by one range band. This may be added multiple times, increasing the range by one range band each time.|+<span class="difficulty">d</span>|
+|**Summon Ally:** The creature the character summons is friendly to them and obeys their commands. The character may spend a maneuver to direct the creature, allowing them to determine its action and maneuver. If the character summons multiple creatures, the character may spend one maneuver on their turn to direct the turns of all summoned creatures.|+<span class="difficulty">d</span>|
+|**Grand Summon:** The character may summon a rival of up to silhouette 3.|+<span class="difficulty">dd</span>|
+
+## Known Spells
+
+</div>
+
+\pagebreak
+
+<div class="wide">
+
+<center><h1>Dispel</h1></center>
+
+**Concentration:** No
+
+The character selects one target within short range that is under the effects of a spell, then makes an Arcana skill check. The default difficulty for the check is Hard (<span class="difficulty">ddd</span>). If the check is successful, the effects the target is under immediately end (if the spell affected multiple targets, the other targets remain affected). The caster suffers 2 strain.
+
+#### Dispel Additional Effects
+
+| Effects | Difficulty Mod |
+|:---|:--|
+|**Range:**  Increase the range of the spell by one range band. This may be added multiple times, increasing the range by one range band each time.|+<span class="difficulty">d</span>|
+| **Additional Target:** The spell affects one additional target within range of the spell. In addition, after casting the spell, you may spend <span class="symbols">a</span> to affect one additional target within range of the spell (and may trigger this multiple times, spending <span class="symbols">aa</span> each time).| +<span class="difficulty">dd</span> |
+
+## Known Spells
+
+</div>
+
+\pagebreak
+
+<div style='margin-top:450px;text-align:center' class='wide'>
+
+# Esper Spellbook
+
+##### Attack, Augment, Curse, Heal
+
+</div>
+
+\pagebreak
+
+<div class="wide">
+
+<center><h1>Attack</h1></center>
+
+**Concentration:** No
+
+When making a magic attack, the character must select one target at short range (but not engaged). The default difficulty of the check is Easy (<span class="difficulty">d</span>). The attack deals damage equal to the characteristic linked to the skill used to make the attack (so if the character uses Esper, they would deal damage equal to their Willpower), plus 1 damage per uncanceled <span class="symbols">s</span>. The caster suffers 2 strain. The attack has no set Critical rating, so you may only inflict a Critical Injury with a <span class="symbols">x</span>.
+
+#### Magic Attack Additional Effects
+
+| Effects | Difficulty Mod |
+|:---|:--|
+| **Blast:** The attack gains the Blast quality with a rating equal to your character’s ranks in Knowledge (Lore). The attack also gains Wind Affinity. | +<span class="difficulty">d</span> |
+|**Close Combat:** May select a target engaged with your character.|+<span class="difficulty">d</span>|
+|**Deadly:** The attack gains a Critical rating of 2. The attack also gains the Vicious quality with a rating equal to the character’s ranks in Knowledge (Lore).|+<span class="difficulty">d</span>|
+|**Fire:** The attack gains the Burn quality with a rating equal to your character’s ranks in Knowledge (Lore).|+<span class="difficulty">d</span>|
+|**Ice:** The attack gains the Ensnare quality with a rating equal to the character’s ranks in Knowledge (Lore). The attack also gains Water Affinity.|+<span class="difficulty">d</span>|
+|**Impact:** The attack gains the Knockdown quality. The attack also gains the Disorient quality with a rating equal to the character’s ranks in Knowledge (Lore).|+<span class="difficulty">d</span>|
+|**Lightning:** The attack gains the Stun quality with a rating equal to the character’s ranks in Knowledge (Lore). The attack also gains the Auto-fire quality (you must increase the difficulty by one to use the Auto-fire quality as normal). The attack also gains Lightning Affinity.|+<span class="difficulty">d</span>|
+|**Non-Lethal:** The attack gains the Stun Damage quality.|+<span class="difficulty">d</span>|
+|**Range:** Increase the range of the spell by one range band. This may be added multiple times, increasing the range by one range band each time.|+<span class="difficulty">d</span>|
+|**Destructive:** The attack gains the Sunder quality. The attack also gains the Pierce quality with a rating equal to the character’s ranks in Knowledge (Lore). The attack also gains Earth Affinity.|+<span class="difficulty">dd</span>|
+|**Empowered:** The attack deals damage equal to twice the characteristic linked to the skill (instead of dealing damage equal to the characteristic). If the attack has the Blast quality, it affects all characters within short range, instead of engaged.|+<span class="difficulty">dd</span>|
+|**Poisonous:** If the attack deals damage, the target must immediately make a Hard (<span class="difficulty">ddd</span>) Resilience check or suffer wounds equal to the character’s ranks in Knowledge (Lore), and strain equal to the character’s ranks in Knowledge (Lore). This counts as a poison.|+<span class="difficulty">dd</span>|
+
+## Known Spells
+
+</div>
+
+\pagebreak
+
+<div class="wide">
+
+<center><h1>Augment</h1></center>
+
+**Concentration:** Yes
+
+This is using magic to enhance people. A character selects one target they are engaged with (which can be themself), then makes an Esper skill check. The default difficulty of the check is Average (<span class="difficulty">dd</span>). If the check is successful, until the end of your character’s next turn, the target increases the ability of any skill checks they make by one (in effect, this means they add <span class="ability">d</span> to their checks). A character may not be affected by more than one Augment spell at the same time (so no stacking effects).
+
+#### Augment Additional Effects
+
+| Effects | Difficulty Mod |
+|:---|:--|
+| **Haste:** Targets affected by the spell can always perform a second maneuver during their turn without spending strain (they may still only perform two maneuvers a turn). | +<span class="difficulty">d</span> |
+|**Range:** Increase the range of the spell by one range band. This may be added multiple times, increasing the range by one range band each time.|+<span class="difficulty">d</span>|
+|**Swift:** Targets affected by the spell ignore the effects of difficult terrain and cannot be immobilised.|+<span class="difficulty">d</span>|
+|**Health:** The target increases their wound threshold by a value equal to the character's ranks in Knowledge (Lore) for the duration of the spell.|+<span class="difficulty">d</span>|
+|**Elemental Affinity:** Choose an element. Attacks made by the target gain affinity for that element.|+<span class="difficulty">d</span>|
+|**Primal Fury:** The target adds damage equal to the character's ranks in Knowledge (Lore) to unarmed combat checks, and their Critical rating for unarmed combat checks becomes 3.|+<span class="difficulty">d</span>|
+|**Additional Target:**  The spell affects one additional target within range of the spell. In addition, after casting the spell, you may spend <span class="symbols">a</span> to affect one additional target within range of the spell (and may trigger this multiple times, spending <span class="symbols">s</span> each time).|+<span class="difficulty">dd</span>|
+
+## Known Spells
+
+</div>
+
+\pagebreak
+
+<div class="wide">
+
+<center><h1>Curse</h1></center>
+
+**Concentration:** Yes
+
+This action represents the combat use of curse magic. Your character selects one target within short range, then makes an Esper skill check. The default difficulty of the check is Average (<span class="difficulty">dd</span>) If it is successful, until the end of the character’s next turn, the target decreases the ability of any skill checks they make by one (in effect, this means they remove one <span class="ability">d</span> from their checks).
+
+#### Curse Additional Effects
+
+| Effects | Difficulty Mod |
+|:---|:--|
+| **Enervate:** If a target suffers strain for any reason, they suffer 1 additional strain. | +<span class="difficulty">d</span> |
+| **Misfortune:** After the target makes a check, you may change one <span class="setback">b</span> to a face displaying a <span class="symbols">f</span>. | +<span class="difficulty">d</span> |
+| **Range:** Increase the range of the spell by one range band. This may be added multiple times, increasing the range by one range band each time.| +<span class="difficulty">d</span> | 
+| **Elemental Weakness:** Choose an element. Attacks with affinity for that element gain <span class="boost">b</span> against the target.| +<span class="difficulty">d</span> | 
+| **Additional Target:** The spell affects one additional target within range of the spell. In addition, after casting the spell, you may spend <span class="symbols">a</span> to affect one additional target within range of the spell (and may trigger this multiple times, spending <span class="symbols">a</span> each time).| +<span class="difficulty">dd</span> |
+| **Despair:** The target’s strain and wound thresholds are reduced by an amount equal to the character’s ranks in Knowledge (Lore). This effect may not be combined with the additional target effect.| +<span class="difficulty">dd</span> |
+| **Doom:** After a target makes a check, you may change any one die in the pool not displaying a <span class="symbols">x</span> or <span class="symbols">y</span> to a different face. | +<span class="difficulty">dd</span> |
+| **Paralysed:** The target is staggered for the duration of the spell. This affect may not be combined with the additional target effect. | +<span class="difficulty">ddd</span> |
+
+## Known Spells
+
+</div>
+
+\pagebreak
+
+<div class="wide">
+
+<center><h1>Heal</h1></center>
+
+**Concentration:** No
+
+The character can use the Esper magic skill in place of a Medicine check in order to remove damage or heal Critical Injuries. When making the check, the character selects one target they are engaged with who is not incapacitated. The default difficulty of the check is Easy (<span class="difficulty">d</span>). Upon success, the character heals 1 wound per uncanceled <span class="symbols">s</span>, and 1 strain per uncanceled <span class="symbols">a</span>.
+
+#### Heal Additional Effects
+
+| Effects | Difficulty Mod |
+|:---|:---|
+| **Additional Target:** The spell affects one additional target within range of the spell. In addition, after casting the spell, you may spend <span class="symbols">a</span> to affect one additional target within range of the spell (and may trigger this multiple times, spending <span class="symbols">a</span> each time).| +<span class="difficulty">d</span> |
+| **Range:** Increase the range of the spell by one range band. This may be added multiple times, increasing the range by one range band each time.| +<span class="difficulty">d</span> | 
+| **Restoration:** Select one ongoing status effect the target is suffering. This status effect immediately ends. | +<span class="difficulty">d</span> |
+| **Heal Critical:** Select one Critical Injury the target is suffering. If the spell is successful, the Critical Injury is also healed.  | +<span class="difficulty">dd</span> |
+| **Revive Incapacitated:** The character may select targets who are incapacitated. | +<span class="difficulty">dd</span> |
+| **Resurrection:** The character may select a target who has died during this encounter. If the check is successful, the target is restored to life, suffering wounds equal to their wound threshold. If the check fails, no characters may attempt to resurrect the target again.| +<span class="difficulty">dddd</span> |
+
+## Known Spells
+
+</div>
+
+<style>
+
+.phb{
+    width : 210mm;
+    height : 297mm;
+    padding: 1cm 1cm;
+    padding-bottom: 1.3cm;
+}
+
+.phb:after { 
+    content: "";
+    /*background:white;*/
+}
+
+.phb:nth-child(1):after,
+.phb:nth-child(2):after,
+.phb:nth-child(3):after,
+.phb:nth-child(4):after,
+.phb:nth-child(5):after{
+    content: "Arcanics Spellbook"
+}
+
+.phb:nth-child(6):after,
+.phb:nth-child(7):after,
+.phb:nth-child(8):after,
+.phb:nth-child(9):after,
+.phb:nth-child(10):after{
+    content: "Esper Spellbook"
+}
+
+
+.phb:nth-child(even) {
+    /*background-image:url(https://www.gmbinder.com/images/zltlOxX.jpg);*/
+    background:white;
+    background-size: cover;
+    background-position:left;
+    padding:1.5cm 1.5cm 1.5cm 2.1cm;
+}
+
+.phb:nth-child(odd) {
+    /*background-image:url(https://www.gmbinder.com/images/zltlOxX.jpg);*/
+    background:white;
+    background-size: cover;
+    background-position: right;
+    padding:1.5cm 2.1cm 1.5cm 1.5cm;
+}
+*/
+@import url('https://fonts.googleapis.com/css?family=Almendra+SC');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+
+.phb { background-image: url("https://www.gmbinder.com/images/5s6VJkT.png"); text-align:justify; text-indent:0px;}
+
+.phb td {
+    font-family: 'Crimson Text', serif;
+    font-size:9pt;
+    font-weight:400;
+    text-align:left;
+}
+.phb td, th {border: 1px solid gray;}
+.phb table {overflow:auto;}
+.phb table tr:nth-child(odd) td {
+    background-color: #E0F4FC;
+    /*background-color: #D5CCB6;*/
+    /*color:white;*/
+}
+
+/*.phb table tr:nth-child(even) td {
+    background-color: #C2C9C0;
+}*/
+
+.phb table thead th {
+    color: white; 
+    /*font-family: 'Almendra SC';*/
+    /*background-color: #F69337;*/
+    background-color: #4F3D59;
+  	padding-top: 0.3em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    text-transform: uppercase;
+}
+.phb table tbody tr td {  padding: 0.5em;}
+.phb table thead {display: table-row-group; }
+
+.phb table .subheader td {
+    color:white;
+    text-transform:uppercase;
+    padding-bottom:2px;
+    background-color: #2D4864 !important;
+    font-size:10pt;
+    font-weight:bold;
+    }
+
+.phb h1, .phb h2, .phb h3, .phb h4, .phb h5, .phb h6 { 
+    letter-spacing: 0.6px;
+    font-family: 'Bebas Neue';
+}
+
+.phb h5 {
+    color: #326DA1;
+    font-weight: 1;
+    font-variant: small-caps;
+    font-size: 16pt;
+}
+
+.phb h6 {
+    color: #ea702b;
+    font-variant: small-caps;
+    font-size: 16pt;
+    display: table;
+    border-bottom: 1px solid #ea702b;
+}
+
+.phb wide {clear:both;}
+.phb ul {list-style: none;}
+.phb ul li::before {
+    content: "•"; 
+    color: #761213;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+
+/* Dice and Symbols */
+
+@font-face {
+  font-family: 'Genesys';
+  src: local('Genesys');
+}
+.phb .symbols {
+    /*For Genesys, threat is h, despair is d, triumph is t
+    For EotE, threat is t, despair is y, triumph is x
+    Both use a for advantage, s for success, f for failure
+    /*font-family: 'Genesys';*/
+    font-family: 'EotE Symbol';
+}
+
+@font-face {
+  font-family: 'Genesys1';
+  src: local('EotE Symbol');
+}
+
+.setback,
+.boost,
+.difficulty,
+.ability,
+.challenge,
+.proficiency {
+    font-family: Genesys1;
+	-webkit-text-stroke-width: 1.5px;
+	-webkit-text-stroke-color: black;
+}
+
+
+.setback {
+    color: #000000;
+}
+.boost {
+    color: #72CDDC;
+}
+.difficulty {
+    color: #6C2B83;
+}
+.ability {
+    color: #41AD49;
+}
+.challenge {
+    color: #7D1721;
+}
+.proficiency {
+    color: #FDE700;
+}
+
+/* Terrinoth style Archetypes */
+
+.phb .archetype {
+    /*background-image: url('https://drive.google.com/uc?id=1g3A8rDXM_APNZ7piZJyujNQeptjKkXKF');*/
+    background-image: url('https://www.gmbinder.com/images/ydDYUwN.png');
+    height:62px;
+    width:329px;
+    background-size:100%;
+
+
+    }
+
+.phb .archetype .bra {
+    position:relative;
+    left:18px;
+    top:17px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .archetype .lblbra {
+    position:relative;
+    left:19px;
+    top:13px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .archetype .agi {
+    position:relative;
+    left:44px;
+    top:16px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+    font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .archetype .lblagi {
+    position:relative;
+    left:44px;
+    top:13px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .archetype .int {
+    position:relative;
+    left:70px;
+    top:16px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+        font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .archetype .lblint {
+    position:relative;
+    left:67px;
+    top:13px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+.phb .archetype .cun {
+    position:relative;
+    left:95px;
+    top:16px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+        font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .archetype .lblcun {
+    position:relative;
+    left:93px;
+    top:13px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+
+.phb .archetype .wil {
+    position:relative;
+    left:121px;
+    top:16px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+        font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .archetype .lblwil {
+    position:relative;
+    left:117px;
+    top:13px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+
+
+.phb .archetype .pre {
+    position:relative;
+    left:147px;
+    top:16px;
+    width:25px;
+    text-align:center;
+    display:inline-block;
+        font-family: 'Bolton';
+    font-size:9pt;
+}
+
+.phb .archetype .lblpre {
+    position:relative;
+    left:145px;
+    top:13px;
+    text-align:center;
+    display:inline-block;
+    width:25px;
+    font-family: 'EB Garamond';
+    font-size:4.5pt;
+    color:white;
+}
+    
+</style>

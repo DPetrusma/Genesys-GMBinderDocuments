@@ -1,4 +1,90 @@
+# The Tension Pool and Complications Source: [The Angry GM](https://theangrygm.com/making-things-complicated/)
+
+The Tension Pool can be used when the players are involved in an extended scene or activity which is likely to involve many actions or several encounters, and where there is a risk for the players to sit and do nothing, or there is an inherit risk of complication in the players actions. Examples:
+* Exploring a dungeon
+* Questioning witnesses around town and chasing suspects
+* Traveling through the wilderness
+* Trying to convince a leader to see their point of view
+
+You'll need six six-sided dice and someplace in the middle of your table to put the dice as they accumulate. A small, transparent container that dice make a nice, loud noise when dropped into, like a glass bowl or tumbler works really well.
+
+Each die will represent either time spent or actions taken. For example, during dungeon exploration or wilderness travel, each die should represent a specific amount of time that has passed. In those scenes, tension rises whether the party does anything or not. If the party wastes time, there is still a risk something is going to go wrong. During social interaction, though, or while the party is shaking down criminals for information about their boss, things likely won’t get any worse unless the party does something.
+
+Options for time values of each die:
+* When tracking actions that take seconds, each die represents about 10 seconds of time passing and every time the pool clears, a minute has passed.
+* When tracking actions that take minutes, each die represents about 10 minutes and every time the pool clears, an hour has passed.
+* When tracking actions that take hours, each die represents about 4 hours and the pool clears once every day.
+* When tracking actions that take even longer – like really long-term scenes like preparing a town for war - each die represents one day and the pool clears once a week.
+
+### Actions with the tension pool
+
+* Add a die to the Tension Pool
+* Pick up all the dice in the Tension Pool, roll them, and then put them back
+* Add a die to the Tension Pool and then pick up all the dice and roll them and put them back
+* Roll all the dice in the Tension Pool and then put them aside, clearing the pool
+
+Whenever you roll the pool, if any dice show a "1", that means a Complication arises. Something happens to make the situation worse.
+
+###### Add a Die
+
+You add a die whenever the party does something that chews up whatever amount of time each die represents OR whenever a player takes a careful or deliberate action.
+
+###### Roll the Pool
+
+You roll the dice whenever the party does something reckless, crazy, or dangerous that might cause them trouble OR whenever a player takes a reckless, brash, or crazy action. If there are no dice in the pool when you roll it, one die and then put it aside again. You always roll at least one die when you roll the Tension Pool.
+
+###### Add a Die, Then Roll the Pool
+
+You add a die and then roll the pool whenever the party does something reckless, crazy, or dangerous that also chews up whatever amount of time each die represents.
+
+###### Roll and Clear the Pool
+
+And finally, whenever you add the sixth die to the pool, no matter what, you roll all the dice in the Tension Pool and then put the dice aside, clearing the pool.
+
+### Usage
+
+As the players do things, they can see that each action they take or each chunk of time they waste makes it more likely something is going to go wrong. Meanwhile, the GM can use it to keep track of how much time the party has spent on things.
+
+\pagebreakNum
+
+## Complications
+
+A Complication is a random event that you drop into your game to make the players’ lives a little worse as a result of the fact that they let the Tension Pool fill up too many times or forced you to roll the dice once too often. It’s the downside of exploration and taking actions.
+
+When you're using the Tension Pool, you should have a list of potential Complications to drop into the game whenever it’s time for one, based on whatever you're the Tension Pool for in the first place. Build about twice as many Complications onto the List as you think you’ll need but assume the party won’t see the ones highest on the list, so don’t put important plot moments too high up. Think about what the list might represent in the story and in the world so that the Complications won’t seem like random screwjobs but organic elements of the story.
+
+For example, if the Tension Pool is just tracking time while the party explores a dungeon, the list of Complications will probably mostly consist of the same sorts of things that used to appear on wandering monster tables. However, never make the entire Complications table just about random monsters. The Complications need to vary in severity and impact. And the relative numbers of serious Complications – like combats – and minor Complications – like stubbed toes or spooky winds that blow the torch out – determine how dangerous the setting is. 
+
+For a major dungeon, where I want there to be, say, a 50% chance of a wandering monster every hour, that means I need to populate my Complication table with one non-monster for every three monsters. That is, I want the table to be 75% monsters to 25% not monsters.
+
+#### Options
+
+You can just make a list of potential Complications and pick one whenever one is called for. You can make a random table. And you can also cross items off the list as you use them to ensure there are no repeats. You can also build a Ladder. A Ladder is a list that you work through in order. The best time to use a Ladder is when you have something in the adventure that is getting worse. Imagine, for example, the party is trying to close an elemental portal. It’s spewing more and more dangerous elementals with every passing hour. So, the encounters get more and more severe until, finally, out comes the elder elemental evil. And that thing has to be defeated even if the portal is closed. Or it escapes and creates new adventures.
+
+\columnbreak
+
+##### Encounters
+
+You can put encounters on the table (that don’t have to be combats necessarily. They can be neutral creatures which may or may not pose a threat to the party depending on what the party does). I wouldn’t recommend putting allies on the list, but it’s probably okay if you do that as long as the ally isn’t a major boon, and if the party has to do something to earn the ally’s… alliance. That makes it a choice and a problem, not just a gift.
+
+##### Flavour Effects
+Flavor Effects do not really have any impact on the game. They mostly just bring the environment to life and spook the party into thinking something bad is coming. They are like warning shots. In a haunted catacomb, the walls might start bleeding, or a weird moaning sound might issue from down the hallway. In the twisted caves of a mind flayer, maybe the party experiences headaches or minor hallucinations or whatever. In a network of caves, maybe a small earth tremor might rock the area or the distant sound of a rockfall might be heard. Or a flock of bats might take wing, disturbed by the party, and panic the players for a moment before flying off and leaving them covered in bat guano. Just don’t use too many of these because the players can start to lose their fear of Complications if they are all just jump scares.
+
+##### Hazard Card
+Hazard Cards actually do something to hurt or hinder the party. They can deal damage – with or without a saving throw – or they can impose a negative condition on the party. Or they can make an area of the dungeon dangerous or inhospitable. In the haunted catacomb, an icy wind can extinguish all light sources, plunging the party into darkness and costing them resources. In the mind flavor caves, a sudden psychic shockwave might force everyone to save against fear or take some psychic damage and panic. In the seismic caves, a gout of superhot steam from a vent might blast the party. Or several rooms might be filled with sulfurous smoke which ruins visibility and makes combat more difficult.
+
+\pagebreakNum
+
+##### Global Effect
+Basically, it’s something that makes the whole scene or adventure harder. And usually, it reflects the antagonists or cosmic forces in the adventure actively working against the PCs. So, it works better in adventures with some sort of major antagonistic force that becomes increasingly aware of the PCs activities and works to oppose them. In the haunted catacomb, it might be a cloying necromantic miasma that imposes a penalty on all Wisdom saving throws for living creatures. Or it might bolster the saving throws of all undead so they are harder to turn. During a murder investigation, the villain might start spreading rumors about the PCs which makes all their interaction checks more difficult. Or, while they are preparing a village for war, the villagers’ morale might start to falter and they become harder to train and command as a result. For obvious reasons, Global Effects work really well in Complication Ladders.
+
+##### Plot Development
+Plot Developments are very specific events that represent major changes in the adventure itself. The classic example from the original Ravenloft adventure and – to some extent – the inferior Curse of Strahd remake is that Strahd – the adventure’s villain – sometimes teleports to where the party is and messes with them. One I’ve used to good effect is an Alert Status. When the party is infiltrating some lair or fortress or whatever, I set up two or three alert levels that change where the encounters are and what the NPCs are doing and how they respond to trouble. And then I build changes to the Alert Status onto the Complication Ladder. Of course, a Complication Ladder, by itself, can also reflect a growing alert status.
+
 <style>
+
+.phb:after { content: ""; }
+
  .phb code {
      font-size:10px;
      padding-top: 0px;
@@ -31,14 +117,14 @@
 }
 
 /* Makes the bigger "first letter" in paragraphs under H1 and H2*/
+
 .phb h1 + p:first-letter, .phb h2 + p:first-letter  {
     font-family: 'Crimson Text';
     color: #326DA1;
-    font-size:32pt;    
+    font-size:30pt;    
     line-height:95%;
-    margin-bottom:-9px;
     margin-right:2px;
-    margin-top:-5px;
+    margin-bottom:-10px;
     float:left;
 }
 
@@ -273,16 +359,40 @@
   font-family: 'Genesys1';
   src: local('EotE Symbol');
 }
-.phb .dice {
+
+.setback,
+.boost,
+.difficulty,
+.ability,
+.challenge,
+.proficiency {
     font-family: Genesys1;
-}
-
-
-.setback, .boost, .difficulty, .ability, .challenge, .proficiency {
-    font-family: EotE;
 	-webkit-text-stroke-width: 1.5px;
 	-webkit-text-stroke-color: black;
 }
+
+.note .setback,
+.note .boost,
+.note .difficulty,
+.note .ability,
+.note .challenge,
+.note .proficiency {
+    font-family: Genesys1;
+	-webkit-text-stroke-width: 1.5px;
+	-webkit-text-stroke-color: white;
+}
+
+.note td > .setback,
+.note td > .boost,
+.note td > .difficulty,
+.note td > .ability,
+.note td > .challenge,
+.note td > .proficiency {
+    font-family: Genesys1;
+	-webkit-text-stroke-width: 1.5px;
+	-webkit-text-stroke-color: black;
+}
+
 
 .setback {
     color: #000000;
@@ -301,44 +411,6 @@
 }
 .proficiency {
     color: #FDE700;
-}
-    
-.phb .note .setback, .phb .note .boost, .phb .note .challenge, .phb .note .proficiency, .phb .note .difficulty, .phb .note .ability {
-    text-shadow: -1px 0 #ffffff,0 1px #ffffff,1px 0 #ffffff,0 -1px #ffffff;
-}
-
-.phb .note  td > .setback, .phb .note td > .boost, .phb .note td > .challenge, .phb .note td > .proficiency, .phb .note td >  .difficulty, .phb .note td.ability {
-    text-shadow:  -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
-}
-
-.phb .boost {
-    font-family: Genesys1;
-    color: #76CDDB;
-    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
-}
-
-.phb .challenge {
-    font-family: Genesys1;
-    color: #751317;
-    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
-}
-
-.phb .proficiency {
-    font-family: Genesys1;
-    color: #FEF035;
-    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
-}
-
-.phb .difficulty {
-    font-family: Genesys1;
-    color: #52287E;
-    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
-}
-
-.phb .ability {
-    font-family: Genesys1;
-    color: #46AC4E;
-    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
 }
 
 
@@ -635,187 +707,3 @@
 
 
 </style>
-
-# My Own Talents
-
-Blood Magic: Wounds instead of Strain, gain boost
-
-Fire: Add Burn to Attach, Summon, and Augment for no cost. Also Frost (slow), lightning (stun), Acid (Pierce)
-
-Drain: Attach spells give you health
-
-Cantrips: Easy spells become simple (and no strain? Or 1?)
-
-Focussed Casting: Using "aim" to add boost on all spells
-
-Dig Deep: For one round?/Encounter?, count Knowledge?/Arcana? as double its actual score
-
-Co-operative casting: Aiding somone with same skill uses highest characteristic and add two boost
-
-Gestureless/Silent: Remove setback from tied hands/gagged
-
-Swift: Once per encounter, may cast a spell at most 3 difficulty as a maneouver
-
-Cryptic: Opponents gain setback when using counterspell (or upgrade D to C?)
-
-Lingering: Concentrate effect lasts one turn after you stop concentrating
-
-Signature Spell: Once per session, cast your signature spell at -dd
-
-Imbue gem/focus: Can cast one spell at -d to store in your gem/focus. Release later as an action for d.
-
-Disciplined: Gain boost when checking to maintain concentration
-
-Blood Magic (other): If you cause a wound with a melee attack, your next spell gains b
-
-All in: Suffer 2/3 strain to add 2 boost to your spell. Once per round. (could be ranked)
-
-Individual attunement: When learned, choose a fellow PC. All your spells targetting them gain boost.
-
-Gifted: Add aa to all spells cast (maybe one type of spell?)
-
-Careful: Remove two threat from spell cast (maybe one type of spell?)
-
-Quick study/eagle Eye: If you case the same spell as another PC or NPC this round or last round, gain boost
-
-Light of faith: When casting augment on self, all engaged allies recover 2 strain
-
-Warcaster: Remove setback from magic checks due to armour per ranks in warcaster.
-
-## Talents for career specialisations
-
-### Divine
-
-#### Death
-
-Can cast conjuration, but it must be an undead creature. Heal only works on undead.
-
-Magic attacks restore your health OR necrotic damage ignores soak
-
-Resistance to critical injuries
-
-Cause fear on one creature
-
-Insta-kill attack once per session? If high level, just paralyse
-
-Curse character to be vulnerable to critical hits
-
-\columnbreak
-
-#### War
-
-Augment self add Burn to all melee and ranged attacks
-
-Armour and weapons don't hinder magic
-
-Choose a creature antithesis of your god. Gain boost to all checks against them
-
-All weapons count as magical
-
-Smite - once per session, story point, epic divine attack. Roll twice? Double success?
-
-Once per encounter, add ranks in Discipline/Presence to damage
-
-Ignore critical injury until end of encounter
-
-\pagebreak
-
-#### Sun
-
-Turn undead - barrier's sanctuary forces them to flee (maybe take damage?)
-
-Heal is stronger somehow
-
-Restore wounds and strain to all allies in short range
-
-PCs in party recover more wounds with nightly rest. Better healing for incapacitated
-
-### Primal
-
-#### Twilight/Duskwalker (natural order of life and death)
-
-Speak with dead as a utility spell
-
-Attack is "holy" against undead
-
-Fey step - Spent time in the dead realm to teleport/move easily seek answers
-
-Resistance to "necrotic" damage - attacks from undead, and critical wounds
-
-Using heal provides -1 damage as well
-
-Marked for death - one target receives +2 damage per attack for one round
-
-When healing an incapacitated character, double successes/advantages (or add bb)
-
-False life: Increase target WT
-
-#### Shepherds (animal protectors)
-
-"Summon" on self as wild form, free upgrade to silhouette 1 and ally, lasts until end of encounter (maybe a few defined forms?)
-
-Animal companion - improved somehow?
-
-Summon animal spirit to give bonus
-
-Speak with animals
-
-Summoned beasts are stronger
-
-When incapacitated, summon beasts to protect you
-
-#### Chaos/Wilderness (make allies and enemies go a little crazy)
-
-Replace heal with Curse
-
-Free upgrade on Augment if target suffers strain
-
-Can add effect to curse - "target attacks closest character once"
-
-Conjure to animate objects
-
-Ground erupts, plants, etc, dealing damage in a small area and creating difficult terrain
-
-Frenzy - Ally gains attack power but suffers strain (or setback?)
-
-### Arcane
-
-#### Evocation (Damage)
-
-Elemental mastery - that type of damage deals bonus damage, ignores resistance. Free upgrade?
-
-War caster - can hold concentration, ignore armour setbacks
-
-Spell sniper - Remove up to 2 setback from your attacks (defence, weather, etc)
-
-Reflexive attack - once per encounter, immediately attack someone who attacked you (melee?)
-
-Tactical Wit - Bonus to initiative somehow?
-
-Power surge - Once per encounter, extra damage
-
-#### Convocation/Commander
-
-Summon ally for no cost
-
-Barrier adds soak and defence
-
-Durable sumons - creatures have more WT, items are tougher
-
-Second sight - summoned creatures gain boost on all attacks
-
-Concentration for barrier is an incidental (but can still be interrupted)
-
-Reflexive barrier - Once per encounter, when you or an ally is hit, add 2 setback to attack roll
-
-#### Invocation/Witch/Summoning
-
-Select one species - your curses against them gain boost
-
-Curse weapon/item?
-
-Curse for 1 strain?
-
-Special curse "attack" - oppose to willpower/discipline, and they despair somehow
-
-Your attacks temporarily drain a characteristic

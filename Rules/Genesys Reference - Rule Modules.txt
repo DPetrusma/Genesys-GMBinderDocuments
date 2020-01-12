@@ -794,3 +794,49 @@ Rituals (longer casting time for certain epic spells, but you can reduce the dif
 ## Cost of Living
 
 You can carry 10 days worth of rations for 1 encumbrance, and 1 day worth of water for 1 encumbrance.
+
+## My own career "specs"/narratives
+
+Rogue: Assassin, Thief, Performer?
+
+Warrior: Archer, Barbarian, Knight
+
+Paladin: Oath of Vigilance, Oath of Protection, Oath of Witch-Hunting
+
+Performer: Bard, Actor, Diplomat
+
+Scholar: Physician, Alchemist, Arcanist
+
+#### Bonuses
+
+Thief: Pickpocket - gain boost for skulduggery when picking pockets
+
+Assassin: Meld into Shadow - During combat, become unseen. Death blow - gain damage to target that is at >1/2 WT
+
+Archer: All Ranged (Heavy) gains +1 damage
+
+Knight: gain boost on discipline and leadership
+
+Oath of Witch-Hunting: gain boost against magic users
+
+Arcanist: Read all dead languages
+
+Physician: +1 wound/night
+
+Alchemist: Add 1 success and 1 advantage when finding ingredients
+
+Oath of Protection: Taunt enemy to attack
+
+Diplomat: (look at Age of Rebellion)
+
+## Magic user paths
+
+Sorcerer: Innate spellcasting ability -> Arcane magic skill as is. Talents for easier magic
+
+Druid: Power from nature -> Primal magic skill as is
+
+Wizard: Learns magic through study -> Only knows limited spells, access to talents for more powerful magic. All spells are stronger by default?
+
+Warlock: Power from infernal beings -> New "infernal", with only attack, curse, and summon. Uses obligation from EotE to start with an "implement" or familiar. Obligation trigger -> -2 ST, + boost on all spells, feedback is worse. Take more obligation for ...something.
+
+Priest: Power from the gods -> Divine magic as is, uses Duty from AoR. When triggers, +1 WT, and succeeding gives you Duty which is your standing in the church. At 100, get some cool blessing

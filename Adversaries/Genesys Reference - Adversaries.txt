@@ -1319,6 +1319,58 @@ Melee (Light) 2, Vigilance 2
 ### Equipment
 **Swords** Melee(Light); Damage 8; Critical 2; Range (Engaged); Defensive 1, Pierce 1, Auto-fire
 
+\columnbreak
+
+###### Zombie (Minion)
+
+<div class="minion">
+<span class="bra">2</span>
+<span class="agi">1</span>
+<span class="int">0</span>
+<span class="cun">1</span>
+<span class="wil">1</span>
+<span class="pre">0</span>
+<br>
+<span class="lblbra">BRAWN</span>
+<span class="lblagi">AGILITY</span>
+<span class="lblint">INTELLECT</span>
+<span class="lblcun">CUNNING</span>
+<span class="lblwil">WILLPOWER</span>
+<span class="lblpre">PRESENCE</span>
+<br>
+<span class="lblsoak">SOAK VALUE</span>
+<span class="lblwound">W. THRESHOLD</span>
+<span class="lbldef">M/R DEFENSE</span>
+<br>
+<span class="soak">2</span>
+<span class="wound">10</span>
+<span class="mdef">0</span>
+<span class="rdef">0</span>
+</div>
+
+### Power Ratings
+**Combat:** 1 (or maybe 2?)
+**Social:** 1
+**General:** 1
+
+<br/>
+
+### Skills
+Brawl, Resilience
+
+### Abilities
+**Undead** Does not need to breathe, eat, or drink, and can survive underwater; immune to poisons and toxins.
+
+<!--Unnecessary I think, since skeletons are the ones to get back up. These just have high wound thresholds
+**Undying** May spend <span class="symbols">hhh</span> from any check made by a PC to return one previously defeated Zombie to an existing minion group, removing damage from the group accordingly. Spend <span class="symbols">t</span> to return two Zombies to a minion group.-->
+
+**Maul** A Zombie adds <span class="boost">bb</span> to Brawl checks against prone or immobilized targets
+
+### Equipment
+**Grasping Hands** Brawl; Damage: 1; Critical: 5; Range (Engaged); Ensnare 1
+
+**Teeth** Brawl; Damage: 5; Critical: 3; Range (Engaged)
+
 \pagebreak
 
 ######  Valroth Demon (Apex Nemesis)
@@ -1389,7 +1441,8 @@ Athletics 3, Cool 3, Discipline 4, Leadership 3, Melee (Light) 4, Resilience 4, 
 
 # AngryGM
 
-###### Blazing Archon [Armoured/Enraged] (Paragon Nemesis)
+## Blazing Archon [Armoured/Enraged]
+### Paragon Nemesis
 
 <div class="adversary">
 <span class="bra">3</span>
@@ -1412,8 +1465,8 @@ Athletics 3, Cool 3, Discipline 4, Leadership 3, Melee (Light) 4, Resilience 4, 
 <span class="lbldef">M/R DEFENSE</span>
 <br>
 <span class="soak">6</span>
-<span class="wound">20/20</span>
-<span class="strain">12/12</span>
+<span class="wound">20</span>
+<span class="strain">12</span>
 <span class="mdef">1</span>
 <span class="rdef">1</span>
 </div>
@@ -1429,7 +1482,7 @@ Melee (Light) 3, Brawl 3, Discipline 3, Resilence 2, Vigilance 2, Cool 1, Percep
 **Adversary 2** Upgrade all combat checks targeting the Blazing Archon by 2
 
 ### Abilities
-**Paragon Fortitude** This adversary has multiple Wound and Strain thresholds, each of which is tracked separately. All damage and healing must be completely applied to only one threshold. When a threshold is exceeded, all ongoing conditions and effects affecting this adversary end. Once a threshold has been exceeded, that threshold cannot receive any healing for the remainder of the encounter. If all wound or all strain thresholds are exceeded, this adversary is defeated
+**Paragon Fortitude 2** This adversary has 2 identical Wound and Strain thresholds, each of which is tracked separately. All damage and healing must be completely applied to only one threshold. When a threshold is exceeded, all ongoing conditions and effects affecting this adversary end. Once a threshold has been exceeded, that threshold cannot receive any healing for the remainder of the encounter. If all wound or all strain thresholds are exceeded, this adversary is defeated
 
 **Paragon Fury** This adversary may take one additional turn in each round of combat for each of its wound thresholds that have been exceeded. Each subsequent turn the adversary gains is inserted immediately after any one PC's turn
 
@@ -1448,11 +1501,11 @@ Melee (Light) 3, Brawl 3, Discipline 3, Resilence 2, Vigilance 2, Cool 1, Percep
 **Many-armed [Enraged Form]** The Blazing Archon adds <span class="boost">b</span> to Brawl checks and may use <span class="symbols">aa</span> to hit a second engaged character with the same damage as the first target
 
 ### Equipment
-**Flame Blast** Resilience; Damage 5; Critical 2; Range (Short); Burn 1; Overchage (Burn); Slow-Firing 3; Blast 5
+**Flame Blast** Resilience; Damage 5; Critical 2; Range (Short); Burn 1, Overchage (Burn), Slow-Firing 3, Blast 5
 
-**Flaming Kilij [Armoured Form]** Melee (Light); Damage 8; Critical 3; Range (Engaged); Burn 2; Overchage (Burn)
+**Flaming Kilij [Armoured Form]** Melee (Light); Damage 8; Critical 3; Range (Engaged); Burn 2, Overchage (Burn)
 
-**Flaming touch [Enraged Form]** Brawl; Damage 5; Critical 3; Range (Engaged); Burn 2; Overchage (Burn)
+**Flaming Touch [Enraged Form]** Brawl; Damage 5; Critical 4; Range (Engaged); Burn 2, Overchage (Burn)
 
 Paragon Ability Source: [Angry GM](http://theangrygm.com/elemental-boogaloo/)
 
@@ -1460,6 +1513,76 @@ Paragon Ability Source: [Angry GM](http://theangrygm.com/elemental-boogaloo/)
 ### Extra Rules
 
 **Overcharge (Quality)** The named quality of the weapon requires 1 fewer <span class="symbols">a</span> to activate, to a minimum of 1
+
+\pagebreak
+
+## Umbral Pudding
+### Paragon Nemesis
+
+[Paragon Slime Rules](https://theangrygm.com/oh-no-more-bosses-oozes-slimes-and-a-duplicating-wizard/)
+
+Tireless, mindless, and eternally hungry, black slime is one of the most feared perils of the
+deep places of the world. The potent acid of its seething form dissolves everything but stone.
+
+<div class="adversary">
+<span class="bra">4</span>
+<span class="agi">1</span>
+<span class="int">1</span>
+<span class="cun">2</span>
+<span class="wil">1</span>
+<span class="pre">1</span>
+<br>
+<span class="lblbra">BRAWN</span>
+<span class="lblagi">AGILITY</span>
+<span class="lblint">INTELLECT</span>
+<span class="lblcun">CUNNING</span>
+<span class="lblwil">WILLPOWER</span>
+<span class="lblpre">PRESENCE</span>
+<br>
+<span class="lblsoak">SOAK VALUE</span>
+<span class="lblwound">W. THRESHOLD</span>
+<span class="lblstrain">S. THRESHOLD</span>
+<span class="lbldef">M/R DEFENSE</span>
+<br>
+<span class="soak">5</span>
+<span class="wound">16</span>
+<span class="strain">25</span>
+<span class="mdef">0</span>
+<span class="rdef">0</span>
+</div>
+
+<br/>
+
+### Skills
+Brawl 2, Vigilance 2, Perception 2
+ 
+### Talents
+**Adversary 1** Upgrade all combat checks targeting this creature by 1
+
+### Abilities
+**Paragon Fortitude 8** This adversary has 8 identical wound and strain thresholds, each of which is tracked separately. All damage and healing must be completely applied to only one threshold. When a threshold is exceeded, all ongoing conditions and effects affecting this adversary end. Once a threshold has been exceeded, that threshold cannot receive any healing for the remainder of the encounter. If all wound or all strain thresholds are exceeded, this adversary is defeated
+
+**Paragon Stabilization** Once per round, after all other characters have acted, this adversary may distribute all of its current wounds evenly amongst all of its wound thresholds above zero. This adversary may not distribute wounds to any threshold that has been exceeded.
+
+**Paragon Replication** [This adversary uses Paragon Stabilization. Then,] this adversary may spawn a duplicate of itself by transferring one or more of its wound and strain thresholds to the new adversary. The new adversary has the same statistics as the original, however it only has as many wound and strain thresholds as are transferred to it. It has as many current wounds in each pool as are transferred to it. The original adversary loses the transferred wound and strain thresholds completely; they are not reduced to zero. Any effects based on the number of wound thresholds are refigured based on the new number of wound thresholds for both creatures, including number of turns in combat. The new creature is not worth any experience points when defeated.
+
+**Paragon Absorption** If this adversary is adjacent to a Paragon adversary of the same name, it may absorb that adversary. The absorbed target is destroyed. This adversary gains the wound and strain thresholds of the target, including the current wounds and strain. If any of those thresholds has been exceeded, this adversary gains that threshold, but that threshold is still exceeded. All effects based on the wound thresholds of this adversary are refigured based on the new number of wound thresholds. [This adversary may immediately use Paragon Stabilization].
+
+**(Reaction) Paragon Division** When this adversary has more than one wound threshold and is successfully attacked with a bladed weapon or an attack dealing lightning damage, this adversary splits into two new adversaries. [[Before the division, this adversary uses Paragon Stabilization.]] This adversary's wound thresholds, including the current wounds in each pool, are divided as evenly as possible amongst the new adversary. Apart from the wounds, the new adversaries have identical statistics. Each creature is worth half as many experience points as the original when defeated.
+
+**Paragon Expansion** This adversary's silhouette is based on the number of wounds thresholds it has that have not been exceeded. At six or more, this adversary is silhouette 3. At four or more, this adversary is silhouette 2. At two or more, this adversary is silhouette 1. At one, this adversary is silhouette 0.
+
+**Slime** This adversary is immune to blindness, deafness, any mind-affecting ability or skill, acid, or knockdown, as well as damage from bladed weapons and lightning
+
+**Wall Crawler** This adversary may move along walls or ceilings without needing to make an Athletics check
+
+**Flailing Pseudopods** This adversary does not increase the difficulty of its attacks to activate auto-fire, and its initial target does not need to be the target with the highest difficulty and defense
+
+**Corrosive Form** Any weapon or object not made of stone that strikes this adversary is immediately damaged by one step. Any creature not made of stone that succeeds in a Brawl attack against this adversary suffers 6 damage. Any armour made of metal, wood, or leather that is struck by this adversary is immediately damaged by one step (in addition to its pseudopod's Sunder quality). This adversary may spend Triumph on an attack roll (or Despair on an enemy's roll) to immediately destroy an enemy's metal, wood, or leather weapon or armour
+
+### Equipment
+
+**Pseudopods** Brawl; Damage: 6; Critical: 2; Range (Engaged); Auto-fire, Burn 2, Sunder
 
 \pagebreak
 
@@ -1502,7 +1625,9 @@ Athletics, Coordination, Melee (Light), Vigilance
 
 **Spider Climb** The Lemurian can climb difficult surfaces, including upside down on ceilings, without penalty
 
-**Scurry** The darter can perform a second maneuver each turn for free
+**Scurry** The darter may disengage as an incidental rather than a maneuver.
+
+**Morale:** Make a **Average (<span class='difficulty'>dd</span>) Discipline check** or Retreat
 
 ### Equipment
 **Bone Club** Melee (Light); Damage: 6; Critical: 4; Range (Engaged)
@@ -1553,6 +1678,11 @@ Athletics 3, Coordination 2, Brawl 1, Resilience 1, Vigilance 1
 
 **Pounce** If the behemoth moves from short range to engaged, including straight down from above, and succeeds with a Kick attack on the same turn, the behemoth may make an **opposed Athletics vs. Athletics check** targeting one engaged opponent, as an incidental, to knock that opponent prone. If the target is knocked prone, the behemoth can make one Bite attack against it as a bonus action.
 
+**Morale:** Make a **Average (<span class='difficulty'>dd</span>) Discipline check** or Rage
+
+### Morale
+Make a **Average (<span class='difficulty'>dd</span>) Discipline check** or Rage
+
 ### Equipment
 **Slam** Brawl; Damage: 6; Critical: 4; Range (Engaged); Linked 1
 
@@ -1565,6 +1695,106 @@ Athletics 3, Coordination 2, Brawl 1, Resilience 1, Vigilance 1
 # Misc
 
 [Source](https://gamedetective.wordpress.com/2017/11/27/five-awesome-creatures-in-the-dd-monster-manual-and-how-to-use-them/)
+
+###### Copper Automaton (Rival)
+
+Copper automatons are magical statues of copper and bronze with hidden weights, levers, and clockwork gears, all of which are held together by enchantments that cause them to move and attack under particular circumstances. Copper automatons are the results of artifice and skill, and as such, these human figures of copper, iron, and bronze reflect the whims and preferences of their makers. Some are tall and long- legged, others short and stocky, but all share the same blank eyes and corroding surfaces. Their metal plates are sometimes embellished with silver or golden inlays. They are usually sculpted to resemble warriors in armor, but they may just as easily look like nobles, peasants, or even humanoid monsters.
+
+Slow but limber, their movements are regulated by the orders given to them by their creators. Their mechanical limbs respond quickly and powerfully, and their articulation is almost as good as a human's - their fingers can grasp, their waists can bend, and their walk is even, if not as fast as a human's.
+
+<div class="minion">
+<span class="bra">3</span>
+<span class="agi">2</span>
+<span class="int">1</span>
+<span class="cun">1</span>
+<span class="wil">1</span>
+<span class="pre">1</span>
+<br>
+<span class="lblbra">BRAWN</span>
+<span class="lblagi">AGILITY</span>
+<span class="lblint">INTELLECT</span>
+<span class="lblcun">CUNNING</span>
+<span class="lblwil">WILLPOWER</span>
+<span class="lblpre">PRESENCE</span>
+<br>
+<span class="lblsoak">SOAK VALUE</span>
+<span class="lblwound">W. THRESHOLD</span>
+<span class="lbldef">M/R DEFENSE</span>
+<br>
+<span class="soak">5</span>
+<span class="wound">15</span>
+<span class="mdef">0</span>
+<span class="rdef">0</span>
+</div>
+
+<br/>
+
+### Skills
+Brawl 2, Melee (Light) 2, Resilience 3, Vigilance 1
+
+### Abilities
+**Construct** A construct does not require food, drink, air, or sleep. Constructs are immune to poison, disease, Coercion, Fear, Charm, or any mind-affecting ability
+
+**Internal Heat** As the automaton attacks, its body heats up. From the second round of combat onwards, an automaton's fists attack gains the Burn 1 quality.
+
+
+### Equipment
+**Fists** Brawl; Damage: 6; Critical: 4; Range (Engaged)
+
+**Scimitar** Melee (Light); Damage: 6; Critical: 3; Range (Engaged)
+
+\pagebreak
+
+# My Own
+
+###### Revenant (Rival)
+
+<div class="minion">
+<span class="bra">4</span>
+<span class="agi">3</span>
+<span class="int">2</span>
+<span class="cun">3</span>
+<span class="wil">3</span>
+<span class="pre">3</span>
+<br>
+<span class="lblbra">BRAWN</span>
+<span class="lblagi">AGILITY</span>
+<span class="lblint">INTELLECT</span>
+<span class="lblcun">CUNNING</span>
+<span class="lblwil">WILLPOWER</span>
+<span class="lblpre">PRESENCE</span>
+<br>
+<span class="lblsoak">SOAK VALUE</span>
+<span class="lblwound">W. THRESHOLD</span>
+<span class="lbldef">M/R DEFENSE</span>
+<br>
+<span class="soak">5</span>
+<span class="wound">30</span>
+<span class="mdef">0</span>
+<span class="rdef">0</span>
+</div>
+
+<br/>
+
+### Skills
+Brawl 3, Coercion 3, Athletics 4, Perception 4, Vigilance 4, Resilience 2
+
+### Abilities
+**Undead** Does not need to breathe, eat, or drink, and can survive underwater; immune to poisons and toxins.
+
+**Implacable** A Revenant cannot be immobilised, disoriented, or staggered.
+
+**Regeneration** At the beginning of its turn, this creature automatically heals 3 wounds.
+
+**Vengeful Tracker** The Revenant knows the distance to and direction of any creature against which it seeks revenge. If the creature being tracked by the Revenant dies, the Revenant knows.
+
+**Vengeful Glare** As an action, the Revenant may make an opposed **Coercion vs. Discipline check** against the being against which it has sworn vengeance within medium range. If successful the target becomes immobilised until the end of the Revenant's next turn and disoriented for the remainder of the encounter.
+
+**Rejuvination** When the Revenant's body is destroyed, its soul lingers. After 24 hours, the soul inhabits and animated another humanoid corpse and heals all of its wounds.
+
+
+### Equipment
+**Fists** Brawl; Damage: 4; Critical: 4; Range (Engaged); Knockdown; against the creature the Revenant has sworn revenge, Fists deal 8 damage.
 
 <!--
 ### Blazing Archon (Enraged)
