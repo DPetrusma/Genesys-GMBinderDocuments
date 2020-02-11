@@ -673,7 +673,34 @@ Like alchemists and apothecaries, artificers often travel with specialised kits.
 
 A magitech toolkit allows your character to perform most Mechanics checks to repair devices (or dismantle them).
 
-<div class='pageNumber'>13</div>
+\pagebreakNum
+
+# Equipment
+
+<div class="wide">
+
+## Melee Weapons
+| Name | Skill | Dam | Crit | Range | Encum | HP | Price | Rarity | Special | Craftmanship Available |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Axe | Melee (Light) | +3 | 3 | Engaged | 2 | 1 | 150 | 1 | Vicious 1 | Orcish, Elvish, Akaviri |
+| Axe | Melee (Light) | +3 | 3 | Engaged | 2 | 1 | 150 | 1 | Vicious 1 | Orcish, Elvish, Akaviri |
+| Axe | Melee (Light) | +3 | 3 | Engaged | 2 | 1 | 150 | 1 | Vicious 1 | Orcish, Elvish, Akaviri |
+
+## Ranged Weapons
+| Name | Skill | Dam | Crit | Range | Encum | HP | Price | Rarity | Special |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Bow | Ranged | 7 | 3 | Medium | 2 | 1 | 275 | 2 | Unwieldy 2 |
+| Axe | Melee (Light) | +3 | 3 | Engaged | 2 | 1 | 150 | 1 | Vicious 1 |
+| Axe | Melee (Light) | +3 | 3 | Engaged | 2 | 1 | 150 | 1 | Vicious 1 |
+
+## Craftsmanship
+| Name | Dam | Crit | Encum | HP | Price | Rarity | Special |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Orcish | +1 | -1 | | | x1 or x3 | +1 or +3 | Superior, <span class="boost">b</span> to checks when boasting or proving martial prowess |
+
+</div>
+
+<div class='pageNumber'>14</div>
 
 <style>
 
