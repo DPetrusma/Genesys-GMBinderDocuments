@@ -1692,6 +1692,65 @@ Make a **Average (<span class='difficulty'>dd</span>) Discipline check** or Rage
 
 \pagebreak
 
+## Manticore (CR 16/2/2)
+### Paragon Nemesis
+
+<div class="adversary">
+<span class="bra">4</span>
+<span class="agi">3</span>
+<span class="int">1</span>
+<span class="cun">2</span>
+<span class="wil">2</span>
+<span class="pre">1</span>
+<br>
+<span class="lblbra">BRAWN</span>
+<span class="lblagi">AGILITY</span>
+<span class="lblint">INTELLECT</span>
+<span class="lblcun">CUNNING</span>
+<span class="lblwil">WILLPOWER</span>
+<span class="lblpre">PRESENCE</span>
+<br>
+<span class="lblsoak">SOAK VALUE</span>
+<span class="lblwound">W. THRESHOLD</span>
+<span class="lblstrain">S. THRESHOLD</span>
+<span class="lbldef">M/R DEFENSE</span>
+<br>
+<span class="soak">5</span>
+<span class="wound">21</span>
+<span class="strain">19</span>
+<span class="mdef">1</span>
+<span class="rdef">0</span>
+</div>
+
+<br/>
+
+### Skills
+Athletics 2, Brawl 3, Ranged 2
+
+### Abilities
+**Flyer [Wings]** Can fly; see page GCR page 100
+
+**Silhouette 2**
+
+**Paragon Fortitude 2** This adversary has 2 identical wound and strain thresholds, each of which is tracked separately. All damage and healing must be completely applied to only one threshold. When a threshold is exceeded, all ongoing conditions and effects affecting this adversary end. Once a threshold has been exceeded, that threshold cannot receive any healing for the remainder of the encounter. If all wound or all strain thresholds are exceeded, this adversary is defeated
+
+**Paragon Fury** This adversary may take one additional turn in each round of combat for each of its wound thresholds that have been exceeded. Each subsequent turn the adversary gains is inserted immediately after any one PC's turn
+
+**Multipart Monstrosity (Wings 10; Tail 5)** The manticore has one or more body parts, each of which has its own wound threshold as shown as a part of this ability. Characters may use the Aim maneuver to target a specific body part as per GCR p98. When a body part suffers wounds, the manticore suffers the same amount of wounds. When the body part exceeds its wound threshold, it is destroyed. Certain abilities and equipment are tied to a specific body part and cannot be used if that body part is destroyed.
+
+
+### Equipment
+**Claws and fangs** Brawl; Damage 6; Critical 3; Range (Engaged)
+
+**Stinger [Tail]** Ranged; Damage 7; Critical 3; Range (Medium); Slow-Firing 1, Pierce 2, Poison 4
+
+
+### Extra Rules
+
+**Poison** A character wounded by a weapon with the Poison quality must make a **Hard (<span class='difficulty'>ddd</span>) Resilience check** as an out-of-turn incidental or suffer a number of wounds equal to the ranks of poison. They must check again on  their next turn if the check generates <span class='symbols'>d</span>
+
+\pagebreak
+
 # Misc
 
 [Source](https://gamedetective.wordpress.com/2017/11/27/five-awesome-creatures-in-the-dd-monster-manual-and-how-to-use-them/)

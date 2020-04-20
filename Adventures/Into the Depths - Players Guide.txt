@@ -643,7 +643,7 @@ If a creature or attack has more than one affinity, repeat this process for each
 
 \pagebreakNum
 
-# GM Rules
+# GM Rules (WIP)
 
 ## Disabled Status
 
@@ -681,29 +681,28 @@ A magitech toolkit allows your character to perform most Mechanics checks to rep
 
 <div class="wide">
 
-## Melee Weapons
+## Melee Weapons (WIP)
 | Name | Skill | Dam | Crit | Range | Encum | HP | Price | Rarity | Special | Craftmanship Available |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| Axe | Melee (Light) | +3 | 3 | Engaged | 2 | 1 | 150 | 1 | Vicious 1 | Orcish, Dwemer, Daedric |
+| Axe | Melee (Light) | +3 | 3 | Engaged | 2 | 1 | 150 | 1 | Vicious 1 | Orcish, Dwarfish, Adamantium |
 | Cestus | Brawl | +1 | 4 | Engaged | 1 | 0 | 40 | 1 | Disorient 3 |  |
-| Dagger | Melee (Light) | +2 | 3 | Engaged | 1 | 1 | 60 | 1 | Accurate 1 | Elven, Glass, Ebony, Daedric, Akaviri |
+| Dagger | Melee (Light) | +2 | 3 | Engaged | 1 | 1 | 60 | 1 | Accurate 1 | Elven, Glass, Ebony, Adamantium, Ancient |
 | Flail | Melee (Heavy) | +4 | 3 | Engaged | 4 | 2 | 150 | 3 | Cumbersome 3, Linked 1, Unwieldy 3 |  |
 | Greataxe | Melee (Heavy) | +4 | 3 | Engaged | 4 | 2 | 300 | 4 | Cumbersome 3, Pierce 2, Vicious 1 | Orcish |
-| Greatsword | Melee (Heavy) | +4 | 2 | Engaged | 3 | 1 | 300 | 4 | Defensive 1, Pierce 1, Unwieldy 3 | Ebony, Daedric, Akaviri |
-| Halberd | Melee (Heavy) | +3 | 3 | Engaged | 5 | 3 | 250 | 3 | Defensive 1, Pierce 3 | Orcish, Glass, Daedric |
+| Greatsword | Melee (Heavy) | +4 | 2 | Engaged | 3 | 1 | 300 | 4 | Defensive 1, Pierce 1, Unwieldy 3 | Ebony, Adamantium, Ancient |
+| Halberd | Melee (Heavy) | +3 | 3 | Engaged | 5 | 3 | 250 | 3 | Defensive 1, Pierce 3 | Orcish, Glass, Adamantium |
 | Katar | Brawl | +1 | 2 | Engaged | 1 | 1 | 175 | 4 | Accurate 1 |  |
-| Mace | Melee (Light) | +3 | 4 | Engaged | 2 | 1 | 75 | 1 | | Dwemer, Daedric |
+| Mace | Melee (Light) | +3 | 4 | Engaged | 2 | 1 | 75 | 1 | | Dwarfish, Adamantium |
 | Military Pick | Melee (Light) | +1 | 2 | Engaged | 3 | 1 | 160 | 2 | Pierce 2 |  |
 | Pike | Melee (Heavy) | +4 | 4 | Short | 4 | 2 | 100 | 2 | Prepare 1 |  |
-| Shield | Melee (Light) | +0 | 6 | Engaged | 1 | 1 | 80 | 1 | Defensive 1, Deflection 1, Inaccurate 1, Knockdown | Dwemer, Ebony, Akaviri |
-| Shield, Large | Melee (Light) | +1 | 5 | Engaged | 2 | 2 | 160 | 2 | Defensive 2, Deflection 2, Inaccurate 2, Knockdown | Orcish, Daedric |
+| Shield | Melee (Light) | +0 | 6 | Engaged | 1 | 1 | 80 | 1 | Defensive 1, Deflection 1, Inaccurate 1, Knockdown | Dwarfish, Ebony, Ancient |
+| Shield, Large | Melee (Light) | +1 | 5 | Engaged | 2 | 2 | 160 | 2 | Defensive 2, Deflection 2, Inaccurate 2, Knockdown | Orcish, Adamantium |
 | Shield, Bulwark | Melee (Light) | +2 | 5 | Engaged | 3 | 2 | 280 | 3 | Cumbersome 4, Defensive 2, Deflection 3, Inaccurate 2, Knockdown, Reinforced |  |
 | Spear | Melee (Heavy) | +3 | 3 | Engaged | 3 | 1 | 110 | 2 | Accurate 1 | Elven, Glass, Ebony |
 | Spear, Light | Melee (Light) | +2 | 4 | Engaged | 2 | 1 | 90 | 1 | Accurate 1, Defensive 1 |  |
 | Staff | Melee (Heavy) | +2 | 4 | Engaged | 2 | 1 | 40 | 0 | Defensive 1 |  |
-| Sword | Melee (Light) | +3 | 2 | Engaged | 1 | 1 | 200 | 2 | Defensive 1 |  |
-| Shortsword | Melee (Light) | +3 | 2 | Engaged | 1 | 1 | 200 | 2 | Defensive 1 | Elven, Glass, Akaviri |
-| Longsword | Melee (Light) | +3 | 2 | Engaged | 1 | 1 | 200 | 2 | Defensive 1 | Dwemer, Ebony, Daedric, Akaviri |
+| Shortsword | Melee (Light) | +3 | 2 | Engaged | 1 | 1 | 200 | 2 | Defensive 1 | Elven, Glass, Ancient |
+| Longsword | Melee (Light) | +3 | 2 | Engaged | 1 | 1 | 200 | 2 | Defensive 1 | Dwarfish, Ebony, Adamantium, Ancient |
 | War Hammer | Melee (Heavy) | +5 | 4 | Engaged | 4 | 2 | 600 | 3 | Concussive 1, Cumbersome 4, Inaccurate 1, Knockdown | Orcish |
 
 </div>
@@ -716,19 +715,17 @@ A magitech toolkit allows your character to perform most Mechanics checks to rep
 | Name | Skill | Dam | Crit | Range | Encum | HP | Price | Rarity | Special | Craftmanship Available |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | Bow | Ranged | 7 | 3 | Medium | 2 | 1 | 275 | 2 | Unwieldy 2 | Elven |
-| Axe | Melee (Light) | +3 | 3 | Engaged | 2 | 1 | 150 | 1 | Vicious 1 | |
-| Axe | Melee (Light) | +3 | 3 | Engaged | 2 | 1 | 150 | 1 | Vicious 1 | |
 
-## Craftsmanship
+## Craftsmanship (WIP)
 | Name | Dam | Crit | Encum | HP | Price | Rarity | Special |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| Orcish | +1 | -1 | | | x1 or x3 | +1 or +3 | Superior, <span class="boost">b</span> to checks when boasting or proving martial prowess |
+| Orcish | +1 | -1 | | | x3(?) | +3(?) | Superior, +<span class="boost">b</span> to checks when boasting or proving martial prowess |
 | Elven | | -1 | -1 | | x2 | +2 | +1 Pierce |
-| Dwemer | +1 | | +1 | | x4 | +5 | +1 Vicious or Defensive |
+| Dwarfish(?) | +1 | | +1 | | x4 | +5 | +1 Vicious or Defensive |
 | Glass | +1 | | -1 | | x4.5 | +6 | +2 Vicious, damaged by <span class='symbols'>hh</span> instead of <span class='symbols'>hhh</span> |
 | Ebony | +1 | | | | x10 | +4 | +1 Defensive, +1 Deflection, +1 Pierce, Unbreakable |
-| Daedric | +2 | -1 | | | x15 | +8 | +1 Defensive, +1 Deflection, +2 Vicious, Terrifying 3 |
-| Akaviri | +1 | | | | x20 | +7 | +2 Pierce, +1 Vicious |
+| Adamantium(?) | +2 | -1 | | | x15 | +8 | +1 Defensive, +1 Deflection, +2 Vicious, Terrifying 3 |
+| Ancient(?) | +1 | | | | x20 | +7 | +2 Pierce, +1 Vicious |
 
 </div>
 
