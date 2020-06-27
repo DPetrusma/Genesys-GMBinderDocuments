@@ -714,18 +714,53 @@ A magitech toolkit allows your character to perform most Mechanics checks to rep
 ## Ranged Weapons (WIP)
 | Name | Skill | Dam | Crit | Range | Encum | HP | Price | Rarity | Special | Craftmanship Available |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| Bow | Ranged | 7 | 3 | Medium | 2 | 1 | 275 | 2 | Unwieldy 2 | Elven |
+| Bow | Ranged | 7 | 3 | Medium | 2 | 1 | 275 | 2 | Unwieldy 2 | Elven, Glass, Adamantium |
+| Crossbow | Ranged | 7 | 2 | Medium | 3 | 1 | 600 | 4 | Pierce 2, Prepare 1 | Dwarfish |
+| Crossbow, Hand | Ranged | 5 | 2 | Short | 2 | 0 |750 | 5 | Pierce 1, Prepare 1 |  |
+| Crossbow, Heavy | Ranged | 8 | 2 | Long | 4 | 2 | 1,000 | 5 | Cumbersome 3, Pierce 3, Prepare 2 |  |
+| Crossbow, Repeating | Ranged | 6 | 2 | Short | 3 | 2 | 800 | 7 | Linked 2, Prepare 2 |  |
+| Longbow | Ranged | 8 | 3 | Long | 3 | 2 | 450 | 4 | Unwieldy 3 | Elven, Adamantium |
+| Sling | Ranged | 4 | 4 | Medium | 0 | 0 | 20 | 0 | Disorient 2, Prepare 1 |  |
+| Throwing Axe | Ranged | +2 | 3 | Short | 1 | 1 | 50 | 1 | Inaccurate 1, Limited Ammo 1, Vicious 1 |  |
 
-## Craftsmanship (WIP)
+## Armour (WIP)
+| Name | Defense | Soak | Encum | HP | Price | Rarity | Special | Craftmanship Available |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Brigandine | 1 | +1 | 2 | 1 | 400 | 5 | | Elven |
+| Chainmail | 0 | +2 | 3 | 2 | 550 | 4 | +<span class="setback">b</span> to Stealth | Elven, Ebony |
+| Heavy Robes | 1 | 0 | 1 | 1 | 45 | 0 |  |  |
+| Leather | 0 | +1 | 2 | 1 | 50 | 3 |  | Orcish |
+| Padded | 0 | +1 | 2 | 0 | 35 | 2 |  | Glass |
+| Plate | 1 | +2 | 4 | 2 | 1,000 | 6 | +<span class="setback">bb</span> to Stealth | Dwarfish, Ebony, Adamantium, Ancient |
+| Scale | 0 | +2 | 4 | 1 | 410 | 4 | +<span class="setback">b</span> to Stealth | Orcish |
+
+## Weapon Craftsmanship (WIP)
 | Name | Dam | Crit | Encum | HP | Price | Rarity | Special |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| Orcish | +1 | -1 | | | x3(?) | +3(?) | Superior, +<span class="boost">b</span> to checks when boasting or proving martial prowess |
+| Orcish | +1 | -1 | | | x3(?) | +3 | Superior, +<span class="boost">b</span> to checks when boasting or proving martial prowess |
 | Elven | | -1 | -1 | | x2 | +2 | +1 Pierce |
 | Dwarfish(?) | +1 | | +1 | | x4 | +5 | +1 Vicious or Defensive |
 | Glass | +1 | | -1 | | x4.5 | +6 | +2 Vicious, damaged by <span class='symbols'>hh</span> instead of <span class='symbols'>hhh</span> |
 | Ebony | +1 | | | | x10 | +4 | +1 Defensive, +1 Deflection, +1 Pierce, Unbreakable |
 | Adamantium(?) | +2 | -1 | | | x15 | +8 | +1 Defensive, +1 Deflection, +2 Vicious, Terrifying 3 |
 | Ancient(?) | +1 | | | | x20 | +7 | +2 Pierce, +1 Vicious |
+
+</div>
+
+\pagebreakNum
+
+<div class="wide">
+
+## Armour Craftsmanship (WIP)
+| Name | Defense | Soak | Encum | HP | Price | Rarity | Special |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Orcish | +1 | | | | x3(?) | +3 | Add <span class="boost">b</span> to checks when boasting or proving martial prowess |
+| Elven | | | | -2 | x2 | +2 | Remove <span class="setback">b</span> from Stealth |
+| Dwarfish(?) | | | +1 | | x3 | +2 | Ignore 1 rank of Pierce |
+| Glass | | +1 | -1 | | x4 | +4 | Damaged by <span class='symbols'>hh</span> instead of <span class='symbols'>hhh</span> |
+| Ebony | +1 | +1 | +1 | | x10 | +5 |  |
+| Adamantium(?) | +2 | +1 | +1 | -1 | x15 | +8 | Add <span class="boost">b</span> to Leadership and Charm |
+| Ancient(?) | +1 | +1 | -1 | | x20 | +7 | Add <span class="boost">b</span> to Leadership and Coercion |
 
 </div>
 
