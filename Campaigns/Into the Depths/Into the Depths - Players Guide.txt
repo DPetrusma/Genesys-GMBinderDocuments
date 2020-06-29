@@ -703,8 +703,8 @@ If a creature or attack has more than one affinity, repeat this process for each
 ## Weapon Craftsmanship (WIP)
 | Name | Dam | Crit | Encum | HP | Price | Rarity | Special |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| Orcish | +1 | -1 | | | x3(?) | +3 | Superior, +<span class="boost">b</span> to checks when boasting or proving martial prowess |
 | Elven | | -1 | -1 | | x2 | +2 | +1 Pierce |
+| Orcish | +1 | -1 | | | x3 | +3 | Superior, +<span class="boost">b</span> to checks when boasting or proving martial prowess |
 | {dwarfish} | +1 | | +1 | | x4 | +5 | +1 Vicious (weapons) or Defensive (shields) |
 | Glass | +1 | | -1 | | x4.5 | +6 | +2 Vicious, damaged by <span class='symbols'>hh</span> instead of <span class='symbols'>hhh</span> |
 | {ebony} | +1 | | | | x10 | +4 | +1 Defensive (shields), +1 Deflection (shields), +1 Pierce (weapons), Unbreakable |
