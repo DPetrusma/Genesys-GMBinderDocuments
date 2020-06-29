@@ -2,7 +2,7 @@
 
 # Arcanics Spellbook
 
-##### Attack, Barrier, Conjure, Dispel
+##### Attack, Barrier, Conjure, Dispel, Mask
 
 </div>
 
@@ -14,7 +14,7 @@
 
 **Concentration:** No
 
-When making a magic attack, the character must select one target at short range (but not engaged). The default difficulty of the check is Easy (<span class="difficulty">d</span>). The attack deals damage equal to the characteristic linked to the skill used to make the attack (so if the character uses Arcanics, they would deal damage equal to their Intellect), plus 1 damage per uncanceled <span class="symbols">s</span>. The caster suffers 2 strain. The attack has no set Critical rating, so you may only inflict a Critical Injury with a <span class="symbols">t</span>.
+When making a magic attack, the character must select one target at short range (but not engaged). The default difficulty of the check is **Easy** (<span class="difficulty">d</span>). The attack deals damage equal to the characteristic linked to the skill used to make the attack (so if the character uses Arcanics, they would deal damage equal to their Intellect), plus 1 damage per uncanceled <span class="symbols">s</span>. The caster suffers 2 strain. The attack has no set Critical rating, so you may only inflict a Critical Injury with a <span class="symbols">t</span>.
 
 #### Magic Attack Additional Effects
 
@@ -31,7 +31,7 @@ When making a magic attack, the character must select one target at short range 
 |**Range:** Increase the range of the spell by one range band. This may be added multiple times, increasing the range by one range band each time.|+<span class="difficulty">d</span>|
 |**Destructive:** The attack gains the Sunder quality. The attack also gains the Pierce quality with a rating equal to the character’s ranks in Knowledge (Lore). The attack also gains Earth Affinity.|+<span class="difficulty">dd</span>|
 |**Empowered:** The attack deals damage equal to twice the characteristic linked to the skill (instead of dealing damage equal to the characteristic). If the attack has the Blast quality, it affects all characters within short range, instead of engaged.|+<span class="difficulty">dd</span>|
-|**Poisonous:** If the attack deals damage, the target must immediately make a Hard (<span class="difficulty">ddd</span>) Resilience check or suffer wounds equal to the character’s ranks in Knowledge (Lore), and strain equal to the character’s ranks in Knowledge (Lore). This counts as a poison.|+<span class="difficulty">dd</span>|
+|**Poisonous:** If the attack deals damage, the target must immediately make a **Hard (<span class="difficulty">ddd</span>) Resilience check** or suffer wounds equal to the character’s ranks in Knowledge (Lore), and strain equal to the character’s ranks in Knowledge (Lore). This counts as a poison.|+<span class="difficulty">dd</span>|
 
 ## Known Spells
 
@@ -45,8 +45,7 @@ When making a magic attack, the character must select one target at short range 
 
 **Concentration:** Yes
 
-The character selects one target they are engaged with (which can be themself), then makes an Arcanics skill check. The default
-difficulty of the check is Easy (<span class="difficulty">d</span>). If the check is successful, until the end of the character’s next turn, reduce the damage of all hits the target suffers by one, and further reduce it by one for every uncanceled <span class="symbols">ss</span> beyond the first. The caster suffers 2 strain.
+The character selects one target they are engaged with (which can be themself), then makes an Arcanics skill check. The default difficulty of the check is **Easy** (<span class="difficulty">d</span>). If the check is successful, until the end of the character’s next turn, reduce the damage of all hits the target suffers by one, and further reduce it by one for every uncanceled <span class="symbols">ss</span> beyond the first. The caster suffers 2 strain.
 
 #### Barrier Additional Effects
 
@@ -57,7 +56,7 @@ difficulty of the check is Easy (<span class="difficulty">d</span>). If the chec
 |**Resistance:** Choose an element. The barrier reduces damage with that affinity by one more than usual. In addition, after casting the spell, you may spend <span class="symbols">aa</span> to reduce damage with the chosen affinity by one more, and you may trigger this multiple times.|+<span class="difficulty">d</span>|
 |**Add Defense:** Each affected target gains ranged and melee defense equal to your ranks in Knowledge (Lore).|+<span class="difficulty">dd</span>|
 |**Empowered:** The barrier reduces damage equal to the number of uncanceled <span class="symbols">s</span> instead of the normal effect.|+<span class="difficulty">dd</span>|
-|**Reflection:** If an opponent makes a magic attack against an affected target and generates <span class="symbols">ttt</span> or <span class="symbols">y</span> on the check, after the check is resolved, they suffer a hit dealing damage equal to the total damage of the attack.|+<span class="difficulty">dd</span>|
+|**Reflection:** If an opponent makes a magic attack against an affected target and generates <span class="symbols">hhh</span> or <span class="symbols">d</span> on the check, after the check is resolved, they suffer a hit dealing damage equal to the total damage of the attack.|+<span class="difficulty">dd</span>|
 
 ## Known Spells
 
@@ -71,7 +70,7 @@ difficulty of the check is Easy (<span class="difficulty">d</span>). If the chec
 
 **Concentration:** Yes
 
-The default difficulty for the check is Easy (<span class="difficulty">d</span>). If the check is successful, the character summons a simple tool with no moving parts (such as a shovel or pickax), a one-handed melee weapon with no moving parts (such as a sword or knife), or a minion no bigger than silhouette 1 (such as an animal, magi-cal creature, elemental spirit, or even undead mon-strosity). These appear engaged with the character. The summoned minion or item remains present until the end of the character’s next turn. The caster suffers 2 strain.
+The default difficulty for the check is **Easy** (<span class="difficulty">d</span>). If the check is successful, the character summons a simple tool with no moving parts (such as a shovel or pickax), a one-handed melee weapon with no moving parts (such as a sword or knife), or a minion no bigger than silhouette 1 (such as an animal, magi-cal creature, elemental spirit, or even undead mon-strosity). These appear engaged with the character. The summoned minion or item remains present until the end of the character’s next turn. The caster suffers 2 strain.
 If the character summons a creature, the creature behaves in the best approximation of its natural instincts (as determined by the GM). It is not controlled by the character, and may even be hostile to them. In a structured encounter, it takes its turn immediately after the character.
 
 #### Conjure Additional Effects
@@ -96,7 +95,7 @@ If the character summons a creature, the creature behaves in the best approximat
 
 **Concentration:** No
 
-The character selects one target within short range that is under the effects of a spell, then makes an Arcana skill check. The default difficulty for the check is Hard (<span class="difficulty">ddd</span>). If the check is successful, the effects the target is under immediately end (if the spell affected multiple targets, the other targets remain affected). The caster suffers 2 strain.
+The character selects one target within short range that is under the effects of a spell, then makes an Arcanics skill check. The default difficulty for the check is **Hard** (<span class="difficulty">ddd</span>). If the check is successful, the effects the target is under immediately end (if the spell affected multiple targets, the other targets remain affected). The caster suffers 2 strain.
 
 #### Dispel Additional Effects
 
@@ -111,11 +110,40 @@ The character selects one target within short range that is under the effects of
 
 \pagebreak
 
+<div class="wide">
+
+<center><h1>Mask</h1></center>
+
+**Concentration:** Yes
+
+This is using magic to create an illusion, or to disguise a character’s appearance. The character makes an Arcanics skill check. The default difficulty for the check is **Easy** (<span class="difficulty">d</span>). If the check is successful, the character creates an illusion of a creature or object that is silhouette 1 or smaller. The illusion appears within short range of the character. Alternatively, the illusion changes the appearance of the caster or one silhouette 1 (or smaller) target they are engaged with. The illusion cannot obscure the basic size and shape of the target.
+
+Illusions can generate light and sound, but they cannot cause harm or interact with their environment in any way. Illusions can be animated and can move, as long as they remain within the range of the spell. A keen observer can attempt to spot the false nature of the illusion by making an **Average (<span class="difficulty">dd</span>) Vigilance check** (or **Average [<span class="difficulty">dd</span>] Perception check** if the observer suspects that their senses may be fooled). Success means the observer recognizes the object’s illusory nature. The caster suffers 2 strain.
+
+#### Mask Additional Effects
+
+| Effects | Difficulty Mod |
+|:---|:--|
+|**Blur:** If the spell targets a character, it blurs and obscures their form. Until the spell ends, add <span class="symbols">h</span> to the results of combat checks targeting the character (this applies even if the attacker realizes the effect is an illusion). |+<span class="difficulty">d</span>|
+|**Mirror Image:** If the spell targets a character, it creates multiple images that move with the target and distract opponents. Until the spell ends, the character may spend <span class="symbols">hhh</span> or <span class="symbols">d</span> from any combat check targeting them to cause the attack to harmlessly hit a mirror image rather than the character (this applies even if the attacker realizes the effect is an illusion). |+<span class="difficulty">d</span>|
+|**Additional Illusion:** The spell creates one additional illusion or disguises one additional character. In addition, after casting the spell, you may spend <span class="symbols">aa</span> to create another additional illusion or disguise another additional character (you may trigger this multiple times, spending <span class="symbols">aa</span> each time).|+<span class="difficulty">d</span>|
+|**Range:** Increase the range of the spell by one range band. This may be added multiple times, increasing the range by one range band each time.|+<span class="difficulty">d</span>|
+|**Size:**  Increase the silhouette of the illusion created by one, or disguise the appearance of a target one silhouette larger. This may be added multiple times, increasing the silhouette of the illusion created or target disguised by one each time.|+<span class="difficulty">d</span>|
+|**Realism:** Increase the difficulty of checks to determine that the illusion is fake by one. In addition, after casting the spell, you may spend <span class="symbols">aa</span> to increase the difficulty of checks to determine that the illusion is fake by one (you may trigger this multiple times, spending <span class="symbols">aa</span> each time). The illusion can also fool additional senses such as smell, taste, or touch.|+<span class="difficulty">d</span>|
+|**Terror:**The illusion terrifies those who behold it. When any character who does not know the illusion is fake spots it, they must make a **Hard (<span class="difficulty">ddd</span>) Discipline check**. They suffer 2 strain per <span class="symbols">h</span> and, if they fail, are unable to approach the illusion. (If you are using the Fear rules from page 243 of the Genesys Core Rulebook, this can be a **Hard (<span class="difficulty">ddd</span>) fear check**).|+<span class="difficulty">dd</span>|
+|**Invisibility:** If the spell targets a character, it renders them invisible to sight instead of changing their appearance. |+<span class="difficulty">ddd</span>|
+
+## Known Spells
+
+</div>
+
+\pagebreak
+
 <div style='margin-top:450px;text-align:center' class='wide'>
 
 # Esper Spellbook
 
-##### Attack, Augment, Curse, Heal
+##### Attack, Augment, Curse, Heal, Predict
 
 </div>
 
@@ -127,7 +155,7 @@ The character selects one target within short range that is under the effects of
 
 **Concentration:** No
 
-When making a magic attack, the character must select one target at short range (but not engaged). The default difficulty of the check is Easy (<span class="difficulty">d</span>). The attack deals damage equal to the characteristic linked to the skill used to make the attack (so if the character uses Esper, they would deal damage equal to their Willpower), plus 1 damage per uncanceled <span class="symbols">s</span>. The caster suffers 2 strain. The attack has no set Critical rating, so you may only inflict a Critical Injury with a <span class="symbols">x</span>.
+When making a magic attack, the character must select one target at short range (but not engaged). The default difficulty of the check is **Easy** (<span class="difficulty">d</span>). The attack deals damage equal to the characteristic linked to the skill used to make the attack (so if the character uses Esper, they would deal damage equal to their Willpower), plus 1 damage per uncanceled <span class="symbols">s</span>. The caster suffers 2 strain. The attack has no set Critical rating, so you may only inflict a Critical Injury with a <span class="symbols">t</span>.
 
 #### Magic Attack Additional Effects
 
@@ -144,7 +172,7 @@ When making a magic attack, the character must select one target at short range 
 |**Range:** Increase the range of the spell by one range band. This may be added multiple times, increasing the range by one range band each time.|+<span class="difficulty">d</span>|
 |**Destructive:** The attack gains the Sunder quality. The attack also gains the Pierce quality with a rating equal to the character’s ranks in Knowledge (Lore). The attack also gains Earth Affinity.|+<span class="difficulty">dd</span>|
 |**Empowered:** The attack deals damage equal to twice the characteristic linked to the skill (instead of dealing damage equal to the characteristic). If the attack has the Blast quality, it affects all characters within short range, instead of engaged.|+<span class="difficulty">dd</span>|
-|**Poisonous:** If the attack deals damage, the target must immediately make a Hard (<span class="difficulty">ddd</span>) Resilience check or suffer wounds equal to the character’s ranks in Knowledge (Lore), and strain equal to the character’s ranks in Knowledge (Lore). This counts as a poison.|+<span class="difficulty">dd</span>|
+|**Poisonous:** If the attack deals damage, the target must immediately make a **Hard (<span class="difficulty">ddd</span>) Resilience check** or suffer wounds equal to the character’s ranks in Knowledge (Lore), and strain equal to the character’s ranks in Knowledge (Lore). This counts as a poison.|+<span class="difficulty">dd</span>|
 
 ## Known Spells
 
@@ -158,7 +186,7 @@ When making a magic attack, the character must select one target at short range 
 
 **Concentration:** Yes
 
-This is using magic to enhance people. A character selects one target they are engaged with (which can be themself), then makes an Esper skill check. The default difficulty of the check is Average (<span class="difficulty">dd</span>). If the check is successful, until the end of your character’s next turn, the target increases the ability of any skill checks they make by one (in effect, this means they add <span class="ability">d</span> to their checks). A character may not be affected by more than one Augment spell at the same time (so no stacking effects).
+This is using magic to enhance people. A character selects one target they are engaged with (which can be themself), then makes an Esper skill check. The default difficulty of the check is **Average** (<span class="difficulty">dd</span>). If the check is successful, until the end of your character’s next turn, the target increases the ability of any skill checks they make by one (in effect, this means they add <span class="ability">d</span> to their checks). A character may not be affected by more than one Augment spell at the same time (so no stacking effects).
 
 #### Augment Additional Effects
 
@@ -184,7 +212,7 @@ This is using magic to enhance people. A character selects one target they are e
 
 **Concentration:** Yes
 
-This action represents the combat use of curse magic. Your character selects one target within short range, then makes an Esper skill check. The default difficulty of the check is Average (<span class="difficulty">dd</span>) If it is successful, until the end of the character’s next turn, the target decreases the ability of any skill checks they make by one (in effect, this means they remove one <span class="ability">d</span> from their checks).
+This action represents the combat use of curse magic. Your character selects one target within short range, then makes an Esper skill check. The default difficulty of the check is **Average** (<span class="difficulty">dd</span>) If it is successful, until the end of the character’s next turn, the target decreases the ability of any skill checks they make by one (in effect, this means they remove one <span class="ability">d</span> from their checks).
 
 #### Curse Additional Effects
 
@@ -196,7 +224,7 @@ This action represents the combat use of curse magic. Your character selects one
 | **Elemental Weakness:** Choose an element. Attacks with affinity for that element gain <span class="boost">b</span> against the target.| +<span class="difficulty">d</span> | 
 | **Additional Target:** The spell affects one additional target within range of the spell. In addition, after casting the spell, you may spend <span class="symbols">a</span> to affect one additional target within range of the spell (and may trigger this multiple times, spending <span class="symbols">a</span> each time).| +<span class="difficulty">dd</span> |
 | **Despair:** The target’s strain and wound thresholds are reduced by an amount equal to the character’s ranks in Knowledge (Lore). This effect may not be combined with the additional target effect.| +<span class="difficulty">dd</span> |
-| **Doom:** After a target makes a check, you may change any one die in the pool not displaying a <span class="symbols">x</span> or <span class="symbols">y</span> to a different face. | +<span class="difficulty">dd</span> |
+| **Doom:** After a target makes a check, you may change any one die in the pool not displaying a <span class="symbols">t</span> or <span class="symbols">d</span> to a different face. | +<span class="difficulty">dd</span> |
 | **Paralysed:** The target is staggered for the duration of the spell. This affect may not be combined with the additional target effect. | +<span class="difficulty">ddd</span> |
 
 ## Known Spells
@@ -211,7 +239,7 @@ This action represents the combat use of curse magic. Your character selects one
 
 **Concentration:** No
 
-The character can use the Esper magic skill in place of a Medicine check in order to remove damage or heal Critical Injuries. When making the check, the character selects one target they are engaged with who is not incapacitated. The default difficulty of the check is Easy (<span class="difficulty">d</span>). Upon success, the character heals 1 wound per uncanceled <span class="symbols">s</span>, and 1 strain per uncanceled <span class="symbols">a</span>.
+The character can use the Esper magic skill in place of a Medicine check in order to remove damage or heal Critical Injuries. When making the check, the character selects one target they are engaged with who is not incapacitated. The default difficulty of the check is **Easy** (<span class="difficulty">d</span>). Upon success, the character heals 1 wound per uncanceled <span class="symbols">s</span>, and 1 strain per uncanceled <span class="symbols">a</span>.
 
 #### Heal Additional Effects
 
@@ -223,6 +251,31 @@ The character can use the Esper magic skill in place of a Medicine check in orde
 | **Heal Critical:** Select one Critical Injury the target is suffering. If the spell is successful, the Critical Injury is also healed.  | +<span class="difficulty">dd</span> |
 | **Revive Incapacitated:** The character may select targets who are incapacitated. | +<span class="difficulty">dd</span> |
 | **Resurrection:** The character may select a target who has died during this encounter. If the check is successful, the target is restored to life, suffering wounds equal to their wound threshold. If the check fails, no characters may attempt to resurrect the target again.| +<span class="difficulty">dddd</span> |
+
+## Known Spells
+
+</div>
+
+\pagebreak
+
+<div class="wide">
+
+<center><h1>Predict</h1></center>
+
+**Concentration:** No
+
+This is using magic to attempt to predict the future. The character makes an Esper skill check, then asks one question about events that will unfold within the next 24 hours. The default difficulty of the check is **Average** (<span class="difficulty">dd</span>). If the check is successful, your GM must provide the character with a truthful answer, but that answer could be one that can be interpreted multiple ways or is somewhat enigmatic. Whether the check succeeds or fails, the character may not make another predict check to ask about the same events for the remainder of the session.
+
+#### Predict Additional Effects
+
+| Effects | Difficulty Mod |
+|:---|:---|
+| **Quicksilver Reflexes:** Instead of asking a question about events, the character adds <span class="symbols">ss</span> to the results of any checks they make to determine Initiative during the next structured encounter they participate in.| - | 
+| **Scry:**  Instead of asking a question about events, the character may learn the location of one silhouette 0 item within long range. They must know what item they are looking for before they cast the spell, and the spell does not reveal how to get through any obstacles such as locked doors, hidden passages, or traps. | +<span class="difficulty">d</span> |
+| **Empowered:** The character may ask a question about events that will unfold within the next month. | +<span class="difficulty">d</span> |
+| **Additional Questions:**  The character may ask one additional question about events. In addition, after casting the spell, you may spend <span class="symbols">aa</span> to ask another additional question about events (and may trigger this multiple times, spending <span class="symbols">aa</span> each time).| +<span class="difficulty">d</span> |
+| **Flash of Precognition:** In addition to asking a question, once before the end of the current encounter, the character may add <span class="symbols">s</span> to the results of one of their checks. In addition, once before the end of the current encounter, the character may add <span class="symbols">f</span> to the results of a check targeting them. In addition, after the character casts the spell, you may spend <span class="symbols">aaa</span> to add <span class="symbols">ss</span> to the results of one of their checks, and add <span class="symbols">ff</span> to the results of a check targeting them, instead of this effect’s normal benefits. | +<span class="difficulty">dd</span> |
+| **Cheat Death:** In addition to asking a question, the character forsees a possible doom for themselves in the next 24 hours. Once before the end of the current session, when the character would otherwise be incapacitated or killed, you may spend a Story Point to have them suffer wounds and strain until they reach (but do not exceed) their wound and strain thresholds instead. Their survival should be described narratively, taking into account that they “saw” their potential death coming.| +<span class="difficulty">dd</span> |
 
 ## Known Spells
 
@@ -361,9 +414,9 @@ The character can use the Esper magic skill in place of a Medicine check in orde
 .phb .symbols {
     /*For Genesys, threat is h, despair is d, triumph is t
     For EotE, threat is t, despair is y, triumph is x
-    Both use a for advantage, s for success, f for failure
-    /*font-family: 'Genesys';*/
-    font-family: 'EotE Symbol';
+    Both use a for advantage, s for success, f for failure*/
+    font-family: 'Genesys';
+    /*font-family: 'EotE Symbol';*/
 }
 
 @font-face {
