@@ -1211,20 +1211,11 @@ Offer a few basic routes to the destination, and decide on roughly how long each
 * The long, winding road will take 10 days
 * An old road through the ruins, then following the river, takes 7 days
  
-For each route, decide on the following attributes, giving each a rating from 1 to 5:
-* **Length** - How long is each route?
-* **Danger** - How dangerous is each route (or each section)? 
-* **Navigation** - How easy is each route to navigate (or each section)? 
-* **Resources** - What’s the available of resources along each route (or each section)? 
-* **Discovery** - How likely is the party to get sidetracked by an interesting discovery on each route? 
+For each route or section, decide on the following attributes, giving each a rating from 1 to 5:
+* **Navigation** - How easy is each route to navigate?
+* **Resources** - What’s the available of resources along each route?
+* **Discovery** - How likely is the party to get sidetracked by an interesting discovery on each route?
 
-Example ratings for Danger:
-* 1 is a relatively safe, civilized region or a barren, desolate region.
-* 2 is a dangerous frontier.
-* 3 is enemy territory.
-* 4 is regularly patrolled, extremely hostile territory. 
-* 5 is reserved for the sort of terrain which is filled with monsters that are actively trying to destroy all intruders and can detect the intruders with supernatural means (Hell, or The Land of the Dead).
- 
 Example ratings for Navigation:
 * 1 Gently rolling flatlands
 * 5 Deserts
@@ -1248,7 +1239,7 @@ Of course, certain routes will have no rating for a given attribute; for example
 
 ### Choosing a Route
 
-The first step for the players is choosing a route, and they need to somehow find out what the lay of the land is and learn any interesting details about the routes in question. They should have a rough idea about how long each route is, how dangerous, how difficult it is to navigate, and how difficult it is to forage, because they are going to need to plan their food supplies accordingly. Presumably, they will have access to a map or local knowledge or research.
+The first step for the players is choosing a route, and they need to somehow find out what the lay of the land is and learn any interesting details about the routes in question. They should have a rough idea about how long each route is, how dangerous, how difficult it is to navigate, and how difficult it is to forage, because they are going to need to plan their food supplies accordingly.
 
 However, the party doesn't need to know everything. Partway through a trip through a forest, they can encounter signs that are passing into goblin territory or cursed land, for example, and they can make a decision then and there about whether to press through the new territory or whether to try to go around or even retreat and try a different route.
 
@@ -1262,21 +1253,21 @@ At a **Slow Pace**, the party is moving carefully and quietly. They gain the fol
 * All hostile creatures gain <span class='setback'>b</span> to detect the party, allowing the party to surprise enemies.
 * The party can forage for food normally if they maintain a slow pace for the entire day.
 * Navigation checks enjoy <span class='boost'>b</span>.
-* The party’s speed is reduced by a third. So every three days of travel count as only two days of travel.
+* The party’s speed is reduced by a third. So every three days of travel count as only two days of travel. For tension pool travel periods, they travel only 6 miles per 4 hour period instead of 8 miles.
 
 \pagebreakNum
 
 At a **Medium pace**, the party travels normally. They may forage for food with <span class='setback'>b</span>.
 
 At a **Fast pace**, the party travels more quickly. They gain the following effects:
-* Their speed is increased by a third. So every three days of travel count as four days.
+* Their speed is increased by a third. So every three days of travel count as four days. For tension pool travel periods, they travel 10 miles per 4 hour period instead of 8 miles.
 * The party cannot forage for food at all.
 * The party suffers <span class='setback'>b</span> on all checks to perceive dangers and on navigation checks.
 * Hostile creatures enjoy <span class='boost'>b</span> on checks to detect or track the party.
 
 Once the party has set the pace for the day, they can change the pace based on what happens to them during the day, but that will be resolved later.
 
-Roll 6d6, representing a time period of the day -  **Morning**, **Afternoon**, **Evening**, **Dusk**, **Midnight**, **Predawn**. For each one that shows the Danger number or less, an encounter *might* happen. Now roll 1d6, and if that shows the Discovery number or less, you need to tantalize the party with something interesting off the road for them to check out. A ruined tower, a sign of magic, an old tomb, an ancient henge, a shrine, etc. The key is that it has to be far enough off the path that the party has to choose whether to waste a few hours investigating it or to ignore it.
+Using the tension pool, roll 6d6 for the full day of travel. Now roll 1d6, and if that shows the Discovery number or less, you need to tantalize the party with something interesting off the road for them to check out. A ruined tower, a sign of magic, an old tomb, an ancient henge, a shrine, etc. The key is that it has to be far enough off the path that the party has to choose whether to waste a few hours investigating it or to ignore it.
 
 Play out the daytime encounters as they happen, remembering that surprise is a possibility. If the party is moving slowly and quietly and the enemy doesn't detect them, they should be able to plan an ambush or bypass the encounter. If the party is rushing, they might very well be surprised and ambushed themselves. In fact, it is entirely possible that neither party detects the other and the encounter never happens.
 
@@ -1294,9 +1285,9 @@ Finally, calculate how much food and water the party has consumed.
 * **Medium Pace:** Allow each character to make a **Survival check**, adding <span class='setback'>b</span>, with a difficulty according to the Resources rating of the route and **Table I.1**
 * **Fast Pace:** No character can forage for food
 
-Each character that fails did not find enough food, and so they must consume one day's worth of rations *(3 days' worth of rations is 1 encumbrace)*. If any character generates <span class="symbols">t</span>, they find enough food to provide for another character. Assume that, as long as anyone succeeds at foraging, the party turned up enough water to refill their waterskins and drink their fill, unless of course water would be extra difficult to come by, such as in a desert. If everyone fails, they drain their waterskins and are now out of water. If their waterskins were already drained and they don't have a backup supply, they are now dehydrating. *(This still required some Genesys rules)*
+Each character that fails did not find enough food, and so they must consume one day's worth of rations *(3 days' worth of rations is 1 encumbrace)*. If any character generates <span class="symbols">t</span>, they find enough food to provide for another character. Assume that, as long as anyone succeeds at foraging, the party turned up enough water to refill their waterskins and drink their fill, unless of course water would be extra difficult to come by, such as in a desert. If everyone fails, they drain their waterskins and are now out of water. If their waterskins were already drained and they don't have a backup supply, they are now dehydrating.shold by half
 
-For each day a character does not have enough food, i.e., they failed at foraging and have no rations, their strain threshold is temporarily reduced by 1. Once they have enough food at least two days in a row, their strain threshold increases by one per day until it is at its initial level. Similarly for lacking water, but the temporary reduction is 3 per day instead of 1.
+For each day a character does not have enough food, i.e., they failed at foraging and have no rations, their strain threshold is temporarily reduced by 1. Once they have enough food at least two days in a row, their strain threshold increases by one per day until it is at its initial level. Similarly for lacking water, but the temporary reduction is 3 per day instead of 1. (Or use the guidelines from the Genesys Foundry Skills Guide)
 
 This process should go quickly. Roll for Navigation and determine if they are lost and then mark off the progress if they aren’t. Then, everyone rolls a forage checks and marks off food. Done and done. Now, it’s time for the night.
 
@@ -1318,7 +1309,7 @@ There are other ways for the party to realise they are lost:
 
 Once the party realises they are lost, they need to decide on a new plan. They might pick a direction they know will lead them to something, they might try to find a landmark to make toward, or they might try to backtrack. You can resolve each of those simply by assuming the party starts a new route and figuring it out accordingly. At this point, the party is no longer lost on the new route. The important thing is that the party can't just get unlost. They need to have an alternative plan once they are lost. Otherwise, they will just keep wandering.
 
-\pagebreakNum
+\columnbreak
 
 ### Encounters
 
@@ -1337,3 +1328,25 @@ Discoveries are basically just encounters that somehow bait the party into check
 An old ruined tower with an intact cellar, for example, might have a strongbox in the basement with some money and other trinkets, but it might be protected by a booby trap. Or something living in the cellar. An ancient shrine might reward an offering with a minor blessing or boon and might punish anyone taking from the offering bowl.
 
 These discoveries are your chance to give the players something to interact with if they are willing to waste time. Remember, if the rat survives the trap, he ends up with some free cheese for his trouble. You'll need one or two discoveries for every three days of travel, more than likely. But it’s always good to have a pile of them in case you ever need one on the fly.
+
+\pagebreakNum
+
+## Using the Tension Pool
+
+Source: [The Angry GM](https://theangrygm.com/tension-on-the-road/)
+
+The travel day is divided into six segments, each represented by one tension die:
+* **Dawn**: This is the period around sunrise and into the morning. About 4 AM to 8 AM.
+* **Morning**: This is the midmorning to noon period. About 8 AM to 12 PM.
+* **Afternoon**: This is the period after noon. About 12 PM to 4 PM.
+* **Evening**: From late afternoon to nightfall. About 4 PM to 8 PM.
+* **Night**: From nightfall to midnight. About 8 PM to 12 AM.
+* **Predawn**: From midnight to before or just around daybreak. About 12 AM to 4 AM
+
+On a normal day of travel, simply Roll a Full Pool - Ignore what's in the pool, pick up 6d6 and roll them, brining in a complication on any 1's. If the players decide to change their plan during the day, you can note how many dice would be in the pool at that hour, add that many dice and roll the pool.
+
+Normally, a part would travel for three periods (12 hours covering sunrise to sunset, or Dawn, Morning, Afternoon). To go to four travel periods, make an **Average (<span class='difficulty'>dd</span>) Resilience check**, with failure causing the character to be come Disoriented. To then go five travel periods, make a **Hard (<span class='difficulty'>ddd</span>) Resilience check** with the same consequences. For each further travel period, increase the difficulty of the check by one and check each time. A rest of two travel periods will remove the penalties for exhaustion.
+
+On top of that, any time they travel in "dangerous" areas or act recklessly, roll the pool with the number of dice corresponding to the time of day as with the normal tension pool.
+
+If you need distance, assume 8 miles in a travel period at a normal pace, 10 at a fast pace, and 6 at a slow pace.
